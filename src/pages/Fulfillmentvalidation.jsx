@@ -182,7 +182,7 @@ const handleApora=()=>{
         <img src={orderprocessing} alt=""  className='image--cover'/>
     </div>
     <div className='multichannelintegration-content'>
-        <p style={{textAlign:"justify",padding:"40px"}}>Same day delivery is increasingly becoming normal expectation of customers. With capital scarcity Brick and mortar business are also keen to achieve just-in-time inventory efficiency. In the bustling world of warehouse operations, streamlining processes to maximize efficiency is a top priority. Traditional order picking methods often result in a large number of picklists, leading to increased complexity and reduced productivity. However, with the power of AI-powered order synchronization, organizations can revolutionize their warehouse operations. <br /> <br /> Our AI-powered order synchronization, showcases how it optimizes efficiency and effectively reduces the number of picklists, which results in significant reduction of walk around time and increase same day deliveries.</p>    </div>
+        <p style={{textAlign:"justify",padding:"40px"}}>AI-powered fulfilment validation is a game-changer for organizations aiming to enhance accuracy, efficiency, and customer satisfaction in their warehouse picking process. By harnessing the power of artificial intelligence, businesses can automate order verification, item inspection, packaging, and labelling checks. With enhanced accuracy, improved efficiency, real-time error detection, and data-driven insights, organizations can streamline their warehouse operations and deliver accurate and seamless order fulfilment experiences.</p>    </div>
    </div>
 
 
@@ -196,7 +196,7 @@ const handleApora=()=>{
           {/* Card 1 */}
           <div className="col-md-4 col-sm-12 mb-4">
           <div className='card-orderprocessing' style={{background:"white"}}>
-            <h5 style={{color:"white",background:"#303097"}}>Intelligent Order Varification</h5>
+            <h5 style={{color:"white",background:"#303097"}}>Intelligent Order Verification</h5>
             <div className='image-crop-orderprocessing'>
               <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
             </div>
@@ -260,7 +260,7 @@ const handleApora=()=>{
   <div className='valuedelivered-thirddiv-orderprocessing'>
     <img src={improvedorderaccuracy} alt="" />
     {/* <h6>Improved Order Accuracy</h6> */}
-    <p><b>Real-time Error Detection</b> is a key feature of the AI-powered fulfillment validation system, which continuously analyzes data such as order details, item specifications, and packaging requirements. It detects errors or discrepancies in real-time and alerts warehouse staff, enabling them to quickly rectify issues before the order is shipped. This proactive approach minimizes delays, reduces the likelihood of customer complaints, and improves overall operational efficiency.</p>
+    <p><b>Real-Time Error Detection</b> is a key feature of the AI-powered fulfillment validation system, which continuously analyzes data such as order details, item specifications, and packaging requirements. It detects errors or discrepancies in real-time and alerts warehouse staff, enabling them to quickly rectify issues before the order is shipped. This proactive approach minimizes delays, reduces the likelihood of customer complaints, and improves overall operational efficiency.</p>
   </div>
  
 </div>

@@ -183,7 +183,8 @@ function Ecommerceintegration() {
         <img src={orderprocessing} alt=""  className='image--cover'/>
     </div>
     <div className='multichannelintegration-content'>
-        <p style={{textAlign:"justify",padding:"40px"}}>Same day delivery is increasingly becoming normal expectation of customers. With capital scarcity Brick and mortar business are also keen to achieve just-in-time inventory efficiency. In the bustling world of warehouse operations, streamlining processes to maximize efficiency is a top priority. Traditional order picking methods often result in a large number of picklists, leading to increased complexity and reduced productivity. However, with the power of AI-powered order synchronization, organizations can revolutionize their warehouse operations. <br /> <br /> Our AI-powered order synchronization, showcases how it optimizes efficiency and effectively reduces the number of picklists, which results in significant reduction of walk around time and increase same day deliveries.</p>    </div>
+        <p style={{textAlign:"justify",padding:"40px"}}>In e-commerce, efficient order fulfilment is essential to meet customer expectations and drive business growth.
+        API-based e-commerce portals integrations revolutionize order fulfilment by seamlessly connecting online stores with the warehouse fulfilment system. Real-time order synchronization, inventory management, order tracking, and streamlined processing are just a few of the benefits provided by these integrations. With seamless data exchange, order consolidation, customization options, and scalability, businesses can enhance their operational efficiency, improve order accuracy, and deliver exceptional customer experiences.</p>    </div>
    </div>
 
 
@@ -192,18 +193,18 @@ function Ecommerceintegration() {
 
    <div className="container mt-5 valuedelivered-workforcemanagement">
         <div className="d-flex justify-content-center">
-          <h2 className="gradient-text">Value Delivered</h2>
+          <h2 className="gradient-text">Features</h2>
         </div>
         <div className="row justify-content-center ">
           {/* Card 1 */}
           <div className="col-md-4 col-sm-12 mb-4">
           <div className='card-orderprocessing' style={{background:"white"}}>
-            <h5 style={{color:"white",background:"#303097"}}>Enhanced Efficiency</h5>
+            <h5 style={{color:"white",background:"#303097"}}>Real-Time Data Exchange</h5>
             <div className='image-crop-orderprocessing'>
               <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
             </div>
             <div className='bio-orderprocessing' >
-              <p style={{color:"black",fontSize:"14px"}}>AI-powered workforce optimization leverages advanced algorithms to intelligently allocate tasks and resources. By analysing real-time data such as order volumes, item locations, and employee performance, the system optimizes the assignment of picking tasks to the workforce. This automation streamlines the picking process, reduces travel time, and increases overall efficiency.</p>
+              <p style={{color:"black",fontSize:"14px"}}>The API-based integration system enables real-time data exchange between e-commerce portals and the warehouse fulfilment system. It utilizes secure and reliable APIs to transfer order information, inventory updates, and tracking details, ensuring accurate and up-to-date data throughout the order fulfilment process.</p>
             </div>
           </div>
           </div>
@@ -211,14 +212,14 @@ function Ecommerceintegration() {
           {/* Card 2 */}
           <div className="col-md-4 col-sm-12 mb-4">
           <div className='card-orderprocessing' style={{background:"white"}}>
-            <h5 style={{color:"white",background:"#303097"}}>Improved Productivity
+            <h5 style={{color:"white",background:"#303097"}}>Order Consolidation
 
 </h5>
             <div className='image-crop-orderprocessing'>
               <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
             </div>
             <div className='bio-orderprocessing' >
-              <p style={{color:"black",fontSize:"14 px"}}>With AI-powered workforce optimization, organizations can unlock the full potential of their workforce. The system takes into account employee skills, experience, and availability to allocate tasks that align with individual strengths. By matching the right employees with the right tasks, productivity is maximized, and employees are empowered to perform at their best.</p>
+              <p style={{color:"black",fontSize:"14 px"}}>The integration system consolidates orders from different e-commerce platforms into a centralized order management system. It gathers orders from various channels, merges them into a single interface, and transfers them to the warehouse system for processing. This consolidation simplifies order management, reduces complexity, and improves operational efficiency.</p>
             </div>
           </div>
           </div>
@@ -226,12 +227,15 @@ function Ecommerceintegration() {
           {/* Card 3 */}
           <div className="col-md-4 col-sm-12 mb-4">
           <div className='card-orderprocessing' style={{background:"white"}}>
-            <h5 style={{color:"white",background:"#303097"}}>Adaptive Planning</h5>
+            <h5 style={{color:"white",background:"#303097"}}>Customization and Flexibility</h5>
             <div className='image-crop-orderprocessing'>
               <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
             </div>
             <div className='bio-orderprocessing' >
-              <p style={{color:"black",fontSize:"14px"}}>The dynamic nature of warehousing requires flexible planning and resource allocation. AI-powered workforce optimization adapts to changing circumstances by continuously analysing data and adjusting workforce assignments accordingly. Whether it's a sudden increase in order volumes or a change in order priorities, the system optimizes workforce planning to meet shifting demands effectively
+              <p style={{color:"black",fontSize:"14px"}}>API-based integrations offer customization options to align with specific business requirements. The system allows businesses to configure workflows, define order processing rules, and implement business logic tailored to their needs. This flexibility ensures a seamless integration that adapts to unique fulfilment processes and maximizes operational efficiency.
+
+
+
 
 </p>
             </div>
@@ -251,24 +255,22 @@ function Ecommerceintegration() {
     <div className='valuedelivered-maindiv-orderprocessing'>
   <div className='valuedelivered-firstdiv-orderprocessing'>
     <img src={improveresouceutilisation} alt="" />
-    <h6>Improved Resource Utilisation</h6>
-    <p>AI-powered order synchronization leverages advanced algorithms to intelligently analyse order similarities and content item proximities within the warehouse. By identifying patterns, the system synchronizes multiple orders that share common items or are in close proximity. This synchronization reduces the number of picklists, enabling warehouse staff to complete orders more efficiently.</p>
+    {/* <h6>Improved Resource Utilisation</h6> */}
+    <p> <b>Real-Time Order Sync</b> is enabled through API-based integrations, ensuring seamless synchronization between e-commerce portals and the warehouse fulfillment system. As soon as a customer places an order, the integration instantly transfers the details to the warehouse, eliminating delays, reducing manual data entry, and providing up-to-date information for efficient processing.</p>
   </div>
   <div className='valuedelivered-seconddiv-orderprocessing'>
     <img src={efficiency} alt="" />
-    <h6>Real Time Visibility</h6>
-    <p>Traditional order picking processes often result in numerous picklists, walking around multiple times for each pick list, creating complexity and making it challenging for warehouse staff to manage and prioritize tasks. AI-powered order synchronization simplifies the process by consolidating related orders into a single picklist. This consolidation reduces the complexity of order fulfilment, allowing warehouse staff to focus on completing tasks more effectively.</p>
+    {/* <h6>Real Time Visibility</h6> */}
+    <p> <b>Order Tracking and Notifications
+    </b>  are streamlined through API-based integrations, which automatically update shipment statuses and tracking numbers on the e-commerce portal. Customers can easily access real-time tracking information, while automated notifications, including order confirmations, shipping updates, and delivery alerts, improve transparency and communication.</p>
   </div>
   <div className='valuedelivered-thirddiv-orderprocessing'>
     <img src={improvedorderaccuracy} alt="" />
-    <h6>Improved Order Accuracy</h6>
-    <p>By reducing the number of picklists, AI-powered order synchronization optimizes the workflow within the warehouse. Warehouse staff can spend less time managing and switching between picklists, resulting in increased productivity. The streamlined process allows employees to work more efficiently, fulfil orders faster, and meet customer demands effectively</p>
+    {/* <h6>Improved Order Accuracy</h6> */}
+    <p> <b>Streamlined Order Processing
+    </b> is achieved through API-based integrations, which automatically transfer order details—including product information, quantities, customer data, and shipping preferences—from e-commerce platforms to the warehouse fulfilment system. This eliminates manual intervention, reduces errors, and accelerates fulfilment times.</p>
   </div>
-  <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src={improvedorderaccuracy} alt="" />
-    <h6>Improved Order Accuracy</h6>
-    <p>AI-powered order synchronization takes into account the proximity of items within the warehouse. By synchronizing orders with similar item locations, the system optimizes the allocation of resources. Warehouse staff can efficiently navigate the warehouse, minimizing travel time and maximizing resource utilization. This optimization results in a more efficient use of labour and equipment, leading to cost savings.</p>
-  </div>
+ 
 </div>
 </Container>
 

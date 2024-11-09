@@ -4,15 +4,29 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
 
 import {
+  faDownLong,
   faEnvelope,
   faLocationDot,
   faPhone,
   faShare,
+  faUpDown,
+  faUpLong,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 function Footer() {
+
+
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const scrollToBottom = () => {
+    window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+  };
   return (
     <div>
+      
       <footer class="footer-section">
         <div class="container">
           <div class="footer-cta pt-5 pb-5">
@@ -168,45 +182,35 @@ function Footer() {
                         />
                       </button>
                     </form>
+                    <div class="copyright-text" >
+                  <p className="text-black mt-3">2011 © Nacre System All rights reserved.</p>
+                </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="copyright-area">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-12 col-lg-12 text-center">
-                <div class="copyright-text" >
-                  <p >2011 © Nacre System All rights reserved.</p>
-                </div>
-              </div>
-              {/* <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                <div class="footer-menu">
-                  <ul>
-                    <li>
-                      <a href="/home">Home</a>
-                    </li>
-                    <li>
-                      <a href="/terms">Terms</a>
-                    </li>
-                    <li>
-                      <a href="/privacy">Privacy</a>
-                    </li>
-                    <li>
-                      <a href="/policy">Policy</a>
-                    </li>
-                    <li>
-                      <a href="/contact">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-              </div> */}
-            </div>
-          </div>
-        </div>
+       
       </footer>
+      <button 
+        onClick={scrollToBottom} 
+        style={{
+          position: 'fixed',
+          bottom: '20px',
+          right: '20px',
+          padding: '10px 15px',
+          backgroundColor: 'blue',
+          color: 'white',
+          border: 'none',
+          borderRadius: '50%',
+          cursor: 'pointer',
+          fontSize: '16px',
+        }}
+      >
+        <FontAwesomeIcon icon={faDownLong}/>
+      </button> 
+    
     </div>
   );
 }

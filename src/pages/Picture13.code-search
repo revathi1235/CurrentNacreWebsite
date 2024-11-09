@@ -1,0 +1,9 @@
+# Query: Picture13
+# ContextLines: 1
+
+1 result - 1 file
+
+src\pages\Deconsolidation.jsx:
+  7        items: [
+  8:         { name: 'Vendor Management', image: '../Assets/Picture13.svg',description: 'Empowering vendors leads to enhanced performance and growth' },
+  9          { name: 'Goods Receipt Management', image: '../Assets/picture14.svg',description: 'Streamline your operations with efficient goods receipt management.' },

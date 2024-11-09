@@ -1,5 +1,6 @@
 import React from 'react'
 import './chart2.css'
+
 import { useNavigate } from 'react-router-dom'
 function Chart2() {
 
@@ -44,7 +45,7 @@ const handlePurveywms=()=>{
   <h1 class="level-12 rectangle "   onClick={handlePurveywms}>Purvey</h1>
   <ol class="level-22-wrapper">
     <li>
-      <h6 class="level-22 rectangle2" onClick={handleInbountreceipt}>Inbount Receipt</h6>
+      <h6 class="level-22 rectangle2" onClick={handleInbountreceipt}>Inbound Receipt</h6>
      
     </li>
     <li>

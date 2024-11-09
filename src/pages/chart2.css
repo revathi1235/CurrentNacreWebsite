@@ -158,47 +158,7 @@
   
   /* MQ STYLES
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  @media screen and (max-width: 700px) {
-    .rectangle {
-      padding: 20px 10px;
-    }
-  
-    .level-1,
-    .level-2 {
-      width: 100%;
-    }
-  
-    .level-1 {
-      margin-bottom: 2px;
-    }
-  
-    .level-1::before,
-    .level-2-wrapper > li::before {
-      display: none;
-    }
-    
-    .level-2-wrapper,
-    .level-2-wrapper::after,
-    .level-2::after {
-      display: block;
-    }
-  
-    .level-2-wrapper {
-      width: 90%;
-      margin-left: 10%;
-    }
-  
-    .level-2-wrapper::before {
-      left: -20px;
-      width: 2px;
-      height: calc(100% + 40px);
-    }
-  
-    .level-2-wrapper > li:not(:first-child) {
-      margin-top: 50px;
-    }
-  }
-  
+ 
   
   /* FOOTER
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -215,3 +175,45 @@
     margin-left: 4px;
   }
   
+
+  @media (max-width: 768px) {
+    .container-chart2 {
+      margin: 10px;
+    }
+    .level-22-wrapper::before {
+    display: none;
+  }
+    /* Display the list items in a block layout for smaller screens */
+    .level-22-wrapper {
+      display: block;
+    }
+  
+    .level-22 {
+      display: block;
+      margin-bottom: 15px; /* Space between items */
+      background-color: #e0e0e0;
+      padding: 12px;
+      cursor: pointer;
+    }
+    .rectangle2 {
+      width: 100%; /* Ensure each item takes full width on small screens */
+      box-sizing: border-box;
+    }
+  
+    /* Adjust the styling for individual items in smaller screens */
+    
+    .level-12 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 84%;
+      margin-left: 56px;
+      cursor: pointer;
+      color: white;
+      font-size: 30px;
+      border-radius: 15px;
+      font-family: 'Pirulen';
+      background: linear-gradient(to bottom, blue, green);
+  }
+  }

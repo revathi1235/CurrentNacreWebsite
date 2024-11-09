@@ -191,19 +191,8 @@ function Workforcemanagement() {
         </div>
         <div className="multichannelintegration-content">
           <p style={{ textAlign: "justify", padding: "40px" }}>
-            Same day delivery is increasingly becoming normal expectation of
-            customers. With capital scarcity Brick and mortar business are also
-            keen to achieve just-in-time inventory efficiency. In the bustling
-            world of warehouse operations, streamlining processes to maximize
-            efficiency is a top priority. Traditional order picking methods
-            often result in a large number of picklists, leading to increased
-            complexity and reduced productivity. However, with the power of
-            AI-powered order synchronization, organizations can revolutionize
-            their warehouse operations. <br /> <br /> Our AI-powered order
-            synchronization, showcases how it optimizes efficiency and
-            effectively reduces the number of picklists, which results in
-            significant reduction of walk around time and increase same day
-            deliveries.
+          In the dynamic world of warehousing and order fulfilment, optimizing workforce productivity is a constant challenge. Optimizing your workforce is crucial for achieving operational excellence and maintaining a competitive edge. Workforce optimization involves strategically managing your human resources, empowering them with the right tools and technologies. With AI-powered workforce optimization, organizations can revolutionize their warehouse picking processes.
+          Upon arrival, goods are quickly scanned and recorded in the system, AI-powered workforce optimization is a game-changer for organizations striving for efficiency and productivity in warehouse picking processes. By harnessing the power of artificial intelligence, businesses can optimize task allocation, maximize workforce productivity, and minimize errors. With intelligent task allocation, real-time performance monitoring, and machine learning algorithms, organizations can unlock the full potential of their workforce and meet customer demands effectively.
           </p>{" "}
         </div>
       </div>

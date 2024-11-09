@@ -199,9 +199,9 @@ function AporaFulfillmentautomation() {
  </div>
 
 
-  <div className='valuedelivered-section-aporafulfillment'>
+  <div className='valuedelivered-section-aporafulfillment ' >
   <div className='value-del-aporafulfillment'>
-    <h1 style={{fontSize:"30px",marginTop:"200px"}}>Value Delivered</h1>
+    <h1 style={{fontSize:"30px"}}>Value Delivered</h1>
     </div>
 <div class="container-aporafulfill">
    

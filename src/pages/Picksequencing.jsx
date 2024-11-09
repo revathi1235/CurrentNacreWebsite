@@ -183,7 +183,8 @@ function Picksequencing() {
         <img src={orderprocessing} alt=""  className='image--cover'/>
     </div>
     <div className='multichannelintegration-content'>
-        <p style={{textAlign:"justify",padding:"40px"}}>Same day delivery is increasingly becoming normal expectation of customers. With capital scarcity Brick and mortar business are also keen to achieve just-in-time inventory efficiency. In the bustling world of warehouse operations, streamlining processes to maximize efficiency is a top priority. Traditional order picking methods often result in a large number of picklists, leading to increased complexity and reduced productivity. However, with the power of AI-powered order synchronization, organizations can revolutionize their warehouse operations. <br /> <br /> Our AI-powered order synchronization, showcases how it optimizes efficiency and effectively reduces the number of picklists, which results in significant reduction of walk around time and increase same day deliveries.</p>    </div>
+        <p style={{textAlign:"justify",padding:"40px"}}>Optimizing order fulfilment processes is crucial to meet customer demands efficiently. Traditional pick routing methods often rely on manual decision-making, which can be time-consuming and prone to errors. However, with the advent of AI-powered pick routing systems integrated into Warehouse Management Systems (WMS), organizations can revolutionize their operations.
+        Our AI-powered pick routing system is a game-changer for organizations seeking to optimize order fulfilment and enhance overall warehouse productivity. By harnessing the power of artificial intelligence, businesses can intelligently determine the most efficient picking routes, reduce errors and adapt to real-time changes. With enhanced efficiency, improved accuracy and real-time adaptability, organizations can streamline their warehouse operations and deliver exceptional customer experiences.</p>    </div>
    </div>
 
 
@@ -254,12 +255,12 @@ function Picksequencing() {
   <div className='valuedelivered-seconddiv-orderprocessing'>
     <img src={efficiency} alt="" />
     {/* <h6>Real Time Visibility</h6> */}
-    <p><b>Real-time adaptability</b> is a key feature of AI-powered pick routing systems, which continuously monitor and analyze data within the warehouse environment. This capability allows the system to adjust to changing conditions, such as products stored in multiple locations and stocks comprised of various batches or lots. As a result, picking routes are dynamically optimized for efficiency and responsiveness.</p>
+    <p><b>Real-Time Adaptability</b> is a key feature of AI-powered pick routing systems, which continuously monitor and analyze data within the warehouse environment. This capability allows the system to adjust to changing conditions, such as products stored in multiple locations and stocks comprised of various batches or lots. As a result, picking routes are dynamically optimized for efficiency and responsiveness.</p>
   </div>
   <div className='valuedelivered-thirddiv-orderprocessing'>
     <img src={improvedorderaccuracy} alt="" />
     {/* <h6>Improved Order Accuracy</h6> */}
-    <p><b>Error reduction</b> is a significant benefit of AI-powered pick routing, which eliminates the susceptibility to manual decision-making errors, such as selecting incorrect routes or overlooking optimal paths. By leveraging intelligent algorithms that make data-driven decisions, the system reduces the likelihood of picking mistakes, improves order accuracy, and enhances customer satisfaction.</p>
+    <p><b>Error Reduction</b> is a significant benefit of AI-powered pick routing, which eliminates the susceptibility to manual decision-making errors, such as selecting incorrect routes or overlooking optimal paths. By leveraging intelligent algorithms that make data-driven decisions, the system reduces the likelihood of picking mistakes, improves order accuracy, and enhances customer satisfaction.</p>
   </div>
  
 </div>

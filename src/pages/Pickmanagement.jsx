@@ -64,7 +64,7 @@ const handlePurveywms=()=>{
   <h1 class="level-12 rectangle "   onClick={handlePurveywms}>Purvey</h1>
   <ol class="level-22-wrapper">
     <li>
-      <h6 class="level-22 rectangle2" onClick={handleInbountreceipt}>Inbount Receipt</h6>
+      <h6 class="level-22 rectangle2" onClick={handleInbountreceipt}>Inbound Receipt</h6>
      
     </li>
     <li>
@@ -132,7 +132,7 @@ const handlePurveywms=()=>{
         <img src={multichannelintegration} alt="" className='image--cover'/>
     </div>
     <div className='multichannelintegration-content'>
-      <h2 >  DISCRETE PICKING </h2>
+      
         <p style={{textAlign:"justify",padding:"40px"}}>  We have a deep understanding of the challenges faced by warehouses in discrete picking operations.
         Our solutions are designed to address these challenges and deliver measurable results. We stay updated with the latest industry trends and technologies to ensure that our clients receive the most advanced and effective solutions. PURVEY provides an efficient and reliable solutions for discrete picking within warehouse management systems (WMS). Our cutting-edge technology and expertise in this field ensure that your warehouse operations are optimized, resulting in increased productivity and accuracy. we understand the importance of streamlined and error-free picking processes in a warehouse.   </p>
     </div>
@@ -158,23 +158,20 @@ const handlePurveywms=()=>{
   <div className='valuedelivered-firstdiv-orderprocessing'>
     <img src={improveresouceutilisation} alt="" />
     {/* <h6>Enhanced Efficiency</h6> */}
-    <p><b>Enhanced Efficiency</b> through AI-powered order synchronization leverages advanced algorithms to intelligently analyze order similarities and content item proximities within the warehouse. By identifying patterns, the system synchronizes multiple orders that share common items or are in close proximity. This synchronization reduces the number of picklists, enabling warehouse staff to complete orders more efficiently.</p>
+    <p><b>Advanced Order Allocation</b>  in PURVEY's discrete picking module uses sophisticated algorithms to assign orders to the most suitable pickers. Picklists are generated based on factors like location, optimized pick sequencing, priority, and picker availability, ensuring optimal resource utilization and minimizing travel time. This results in faster order fulfillment and enhanced operational efficiency.</p>
   </div>
   <div className='valuedelivered-seconddiv-orderprocessing'>
     <img src={efficiency} alt="" />
     {/* <h6>Reduced Complexity</h6> */}
-    <p><b>Reduced Complexity</b> in traditional order picking processes often leads to numerous picklists, requiring warehouse staff to walk around multiple times for each list. AI-powered order synchronization simplifies this by consolidating related orders into a single picklist, allowing staff to manage tasks more effectively and focus on efficient order fulfillment.</p>
+    <p><b>Performance Analytics and Reporting
+    </b>  in our WMS allow you to monitor key metrics such as picking rates, accuracy levels, picker efficiency, and order fulfillment times. These insights help identify areas for improvement, optimize processes, and enable data-driven decisions to enhance warehouse operations. Our dashboards offer valuable visibility into your picking operations, supporting performance tracking and driving continuous improvement.</p>
   </div>
   <div className='valuedelivered-thirddiv-orderprocessing'>
     <img src={improvedorderaccuracy} alt="" />
     {/* <h6>Increased Productivity</h6> */}
-    <p><b>Increased Productivity</b> is achieved by reducing the number of picklists through AI-powered order synchronization. Warehouse staff spend less time managing and switching between lists, which allows for a more streamlined process. This efficiency enables employees to work faster, fulfill orders promptly, and effectively meet customer demands in the warehouse</p>
+    <p><b> Barcode and RFID Integration</b>  in our WMS ensures efficient and accurate item identification during the picking process. These technologies provide real-time inventory visibility, reduce picking errors, and enhance overall inventory accuracy, allowing you to track and manage inventory effectively, minimize stockouts, and improve order fulfillment rates.</p>
   </div>
-  <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src={improvedorderaccuracy} alt="" />
-    {/* <h6>Improved Resource Utilization</h6> */}
-    <p><b>Improved Resource Utilization</b> is achieved through AI-powered order synchronization, which considers the proximity of items within the warehouse. By synchronizing orders based on similar item locations, staff can navigate efficiently, minimizing travel time and maximizing the use of labor and equipment, ultimately leading to significant cost savings for the operation.</p>
-  </div>
+ 
 </div>
 </Container>
 
@@ -184,46 +181,46 @@ const handlePurveywms=()=>{
 <div class="image-container-multichannelintegration">
   
   <div class="overlay">
-    <p style={{fontFamily:"normal"}}>"Quality Assurance process in our advanced WMS, you can ensure superior product quality, minimize errors, and maintain customer satisfaction. By leveraging our standardized procedures, real-time tracking, and automated alerts, you can streamline your quality control process, reduce returns, and enhance your brand reputation. Choose our WMS to optimize your quality assurance operations and deliver excellence in every shipment."</p>
+    <p className='mt-3'>"Quality Assurance process in our advanced WMS, you can ensure superior product quality, minimize errors, and maintain customer satisfaction. By leveraging our standardized procedures, real-time tracking, and automated alerts, you can streamline your quality control process, reduce returns, and enhance your brand reputation. Choose our WMS to optimize your quality assurance operations and deliver excellence in every shipment."</p>
   </div>
 </div>
 </Container>
 
 
 
-<div className='valuedelivered-section-aporafulfillment'> 
+<div className='valuedelivered-section-inbountreceipt'> 
   <div className='value-del-aporafulfillment'>
     <h1 style={{fontSize:"30px",marginTop:"50px"}}>Value Delivered</h1>
     </div>
-<div class="container-crossdocking">
+<div class="container-inbountreceipt">
    
-    <div  className='row-crossdocking'>
+    <div  className='row-inbountreceipt'>
       
-        <div className="service-crossdocking rainbow-crossdocking">
+        <div className="service-inbountreceipt rainbow-inbountreceipt">
           
-            <h2 class="service_heading-crossdocking">Increased Productivity</h2>
-            <p class="service_para-crossdocking">
+            <h2 class="service_heading-inbountreceipt">Increased Productivity</h2>
+            <p class="service_para-inbountreceipt">
             Our discrete picking solutions optimize the picking process, reducing travel time and maximizing picker efficiency allowing you to handle higher order volumes with the same resources.
 </p>           
         </div>
-        <div className="service-crossdocking rainbow-crossdocking">
+        <div className="service-inbountreceipt rainbow-inbountreceipt">
            
-            <h2 class="service_heading-crossdocking">Improved Accuracy</h2>
-            <p class="service_para-crossdocking">
+            <h2 class="service_heading-inbountreceipt">Improved Accuracy</h2>
+            <p class="service_para-inbountreceipt">
             By incorporating barcode/RFID guidance systems, we minimize picking errors and enhance overall accuracy. This reduces the risk of order discrepancies, returns, and customer dissatisfaction.
             </p>
         </div>
-        <div className="service-crossdocking rainbow-crossdocking">
+        <div className="service-inbountreceipt rainbow-inbountreceipt">
            
-            <h2 class="service_heading-crossdocking">Real Time Inventory Visibility</h2>
-            <p class="service_para-crossdocking">
+            <h2 class="service_heading-inbountreceipt">Real Time Inventory Visibility</h2>
+            <p class="service_para-inbountreceipt">
             Barcode and RFID integration provides real-time visibility into your inventory. You can accurately track stock levels, monitor item locations, and ensure inventory accuracy. This helps prevent stockouts, enables better inventory planning, and enhances order fulfilment rates.
             </p>
         </div>
-        <div className="service-crossdocking rainbow-crossdocking">
+        <div className="service-inbountreceipt rainbow-inbountreceipt">
            
-            <h2 class="service_heading-crossdocking">Data Driven Decision Making</h2>
-            <p class="service_para-crossdocking">
+            <h2 class="service_heading-inbountreceipt">Data Driven Decision Making</h2>
+            <p class="service_para-inbountreceipt">
             Our performance dashboard features provide valuable insights into your picking operations. By monitoring key metrics, you can identify bottlenecks, optimize processes, and make data-driven decisions to drive continuous improvement.
             </p>
         </div>

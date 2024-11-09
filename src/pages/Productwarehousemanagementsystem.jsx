@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
 import purvey_apora_black from "../Assets/purvey_apora_black.png";
 import Chart2 from "./Chart2";
+import ValuedeliveredProductwms from './ValuedeliveredProductwms'
 import {
   faEnvelope,
   faLocationDot,
@@ -124,14 +125,14 @@ const Productwarehousemanagementsystem = () => {
 
 
 
-
+{/* <ValuedeliveredProductwms/> */}
 
  <div className='firstdiv-multichannelintegration ' >
     <div className='multichannelintegration-image wrapper'>
         <img src={multichannelintegration} alt="" className='image--cover'/>
     </div>
     <div className='multichannelintegration-content'>
-      <h2 >Purvey OMS- Order Management System</h2>
+      {/* <h2 >Purvey OMS- Order Management System</h2> */}
         <p style={{textAlign:"justify",padding:"40px"}}>Our WMS is designed to provide a comprehensive solution for all your warehouse management needs. Whether you operate a small-scale facility or a large distribution centre, our scalable and flexible software can be tailored to meet your specific requirements. With Purvey WMS, you can streamline your operations, reduce errors, and enhance productivity, ultimately driving your business towards greater profitability.</p>
     </div>
    </div>
@@ -219,7 +220,7 @@ const Productwarehousemanagementsystem = () => {
                       <div className="WhatWeDo_boxContent">
                         <ul>
                           <li>
-                            <p style={{fontSize:"1.3rem",width:"500px",color:'black',fontFamily:"bold"}}>{descriptions[i]}</p>
+                            <p className="valuedeliverd-productwms">{descriptions[i]}</p>
                           </li>
                         </ul>
                       </div>

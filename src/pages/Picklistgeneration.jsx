@@ -225,9 +225,9 @@ const handleApora=()=>{
     <p><b>Warehouse Layout Optimization </b>is crucial for effective order fulfillment, as it takes into account the physical arrangement of aisles, shelves, and storage locations. By understanding the proximity of items and their popularity, the system generates picklists that minimize travel time for warehouse staff, ensuring that orders are fulfilled quickly and efficiently.</p>
   </div>
   <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src={improvedorderaccuracy} alt="" />
-    <h6>Integration with Warehouse Management Systems:</h6>
-    <p>The AI-powered picklist generation system seamlessly integrates with existing warehouse management systems, providing a cohesive workflow. The system can receive and process order data, generate optimized picklists, and update the status of picks in real-time. This integration eliminates manual data entry and ensures that the picklist generation process is streamlined.</p>
+    <img src={improvedorderaccuracy} alt="improvedorderaccuracy" />
+    {/* <h6>Warehouse Layout Optimization</h6> */}
+    <p><b>Integration with Warehouse Management Systems </b> allows the AI-powered picklist generation system to seamlessly enhance your workflow. It processes order data, generates optimized picklists, and updates pick statuses in real time, eliminating manual data entry and streamlining the entire process.</p>
   </div>
 </div>
    

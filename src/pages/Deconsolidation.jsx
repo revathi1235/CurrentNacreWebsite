@@ -1,215 +1,296 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import {Row,Col, Container} from 'react-bootstrap'
+import { Row, Col, Container } from "react-bootstrap";
 // Sample data for headers and corresponding items with images
 const data = {
-  'Yard Management': {
-      items: [
-        { name: 'Our yard management function generates unique QR code labels, defining zones and enhancing warehouse yard organization.', image: '../Assets/Picture13.svg',description: 'In warehouse yard management, the lack of clear zone definition, aisle, rack, and tote labelling can lead to several issues, including loss due to item misplacement and expiry, adding to operational inefficiencies, safety risks, and financial losses.' },
-        { name: 'Labels improve item placement and retrieval processes, reducing time spent searching for inventory.',  },
-        { name: 'Streamlined operations lead to increased efficiency, minimizing delays in put-away and retrieval tasks.',  },
-        { name: 'Improved efficiency supports timely deliveries, enhancing overall customer satisfaction and operational performance.', },
-         ],
-    },
-    'Material inward': {
-      items: [
-        { name: 'PURVEY WMS utilizes QR code label generation to ensure precise tracking of inventory levels and locations, reducing discrepancies.', image: '../Assets/uniquescan.jpeg',description: 'The lack of pallet, bag, and carton level tracking can lead to significant discrepancies in inventory counts. Inaccurate records may result in overstocking or stockouts, negatively affecting order fulfillment, operational efficiency, and ultimately impacting customer satisfaction and the overall profitability of the warehouse.' },
-       { name: 'PURVEY WMS optimizes crossdocking processes by efficiently managing incoming and outgoing shipments, reducing handling time and improving operational flow.'},
-       ],
-    },
-    'Deconsolidation & Crossdocking': {
-      items: [
-        { name: 'Enhanced Inventory Accuracy: Barcode/QR codes generated at the item level ensure precise tracking during deconsolidation, reducing discrepancies and improving overall inventory accuracy.', image: '../Assets/scan.svg',description:'Enhanced Inventory Accuracy: Barcode/QR codes generated at the item level ensure precise tracking during deconsolidation, reducing discrepancies and improving overall inventory accuracy.' },
-        { name: 'Enhanced Inventory Accuracy: Barcode/QR codes generated at the item level ensure precise tracking during deconsolidation, reducing discrepancies and improving overall inventory accuracy.', image: '../Assets/Picture6.svg' ,description:"From receipt to storage, connect GRNs with packages for total transparency."},
-        
-      ],
-    },
-    'Quality Assurance': {
-      items: [
-        { name: 'Streamlined Inspection: QR/barcode scan-based results enable quick marking of items as approved or rejected, speeding up the inspection process.', image: '../Assets/Picture11.svg',description:'Item-level unique scan codes: enhancing traceability and accuracy in operations' },
-        { name: 'Organized Staging: Scanned data assigns specific areas for approved and rejected items, reducing congestion and improving processing speed.', image: '../Assets/goodsreceipt.svg',description:'Ensure accuracy in inventory with Goods Receipt Note to package linking.' },
-        { name: 'Real-Time Visibility: QR/barcode systems provide instant status updates, allowing staff to quickly locate approved or rejected products.', image: '../Assets/Package linking.png' ,description:'Transform your logistics with direct package to item level connections.'},
-        { name: 'Optimized Storage: Scanning technology offers clear guidance for storing items based on their status, enhancing space utilization and accessibility.', image: '../Assets/acceptance.svg' ,description:'Optimize workflows by effectively separating acceptance from rejection.'},
-         
-      ],
-    },
-    'Unpacking & Repacking': {
-      items: [
-        { name: 'Repack Level Unique Scan Code Generation', image: '../Assets/work4.jpg',description:'Achieve accuracy with repack level unique scan code generation for streamlined tracking.' },
-        { name: 'Item Loss Tracking', image: '../Assets/work3.jpg',description:'Track item losses seamlessly to enhance operational efficiency' },
-        { name: 'Item Staging Location Assignment', image: '../Assets/work4.jpg',description:'Streamline operations by effectively assigning staging locations for every item.' },
-        { name: 'Item Scan Code Level  Batch Creation & Quality Status Mapping', image: '../Assets/work3.jpg',description:'' },
-        { name: 'Automated Notification Generation To Put Away', image: '../Assets/work4.jpg',description:'Transform your operations with effective item scan code batch creation and quality status mapping.  ' },
-       
-      ],
-    },
-    'PutAway': {
-        items: [
-          { name: 'Dynamic Put Away Method', image: '../Assets/work4.jpg' ,description:'Enhance warehouse performance using our innovative dynamic put away method.'},
-          { name: 'Automated Put Away List Generation', image: '../Assets/work3.jpg' ,descr:"Simplify your warehouse operations with real-time automated put away lists."},
-          { name: 'Item Staging Location  Indication For Easy Pick', image: '../Assets/work4.jpg' ,description:'Optimize order fulfillment through strategic item staging location signage.'},
-          { name: 'Zone Aligned & Existing Stock Location Proximity Based  Put Away Location Indication', image: '../Assets/work3.jpg' ,description:'Optimize your storage strategy with proximity-based put away location indicators.'},
-          { name: 'Warehouse Rack Location Mapped Put Away Confirmation', image: '../Assets/work4.jpg',description:'Ensure accuracy with mapped rack locations for seamless put away confirmation.' },
-          { name: 'Item Scan Code Level  Batch Location Level  Record Creation', image: '../Assets/work2.jpg',description:'Streamline your processes with item scan code-driven batch location records.' },
-          { name: 'Real Time Inventory Information', image: '../Assets/work3.jpg',description:"Achieve efficiency and accuracy with real-time inventory visibility." },
-
-      
-
-        ],
-      },
-      'Picking': {
+  "Yard Management": {
     items: [
-        {
-            name: 'Whole Sale Dispatch Method',
-            image: '../Assets/work4.jpg',
-            description: 'Transform your distribution process with optimized wholesale dispatch technique.'
-        },
-        {
-            name: 'Retail Dispatch Method',
-            image: '../Assets/work3.jpg',
-            description: 'Optimize your retail operations with an efficient dispatch method'
-        },
-        {
-            name: 'Automated FIFO Pick Method',
-            image: '../Assets/work4.jpg',
-            description: 'Automated FIFO picking: the smart way to manage your inventory flow.'
-        },
-        {
-            name: 'Multiple Order Simultaneous Pick',
-            image: '../Assets/work3.jpg',
-            description: 'Boost efficiency with multiple order simultaneous picking for streamlined operations.'
-        },
-        {
-            name: 'Unidirectional Pick Sequencing',
-            image: '../Assets/work4.jpg',
-            description: 'Maximize productivity by implementing unidirectional pick sequencing in your warehouse.'
-        },
-        {
-            name: 'Automated Reorder Level Notification',
-            image: '../Assets/work2.jpg',
-            description: 'Automatically notifies when stock reaches a predefined reorder level, ensuring timely replenishment of inventory.'
-        },
-        {
-            name: 'Real Time Order Fulfilment Status Information',
-            image: './Assets/work3.jpg',
-            description: 'Achieve transparency and efficiency with real-time order fulfillment status information.'
-        },
-        
+      {
+        name: "Our yard management function generates unique QR code labels, defining zones and enhancing warehouse yard organization.",
+        image: "../Assets/rowrack.jpg",
+        description:
+          "In warehouse yard management, the lack of clear zone definition, aisle, rack, and tote labelling can lead to several issues, including loss due to item misplacement and expiry, adding to operational inefficiencies, safety risks, and financial losses.",
+      },
+      {
+        name: "Labels improve item placement and retrieval processes, reducing time spent searching for inventory.",
+      },
+      {
+        name: "Streamlined operations lead to increased efficiency, minimizing delays in put-away and retrieval tasks.",
+      },
+      {
+        name: "Improved efficiency supports timely deliveries, enhancing overall customer satisfaction and operational performance.",
+      },
     ],
-},
+  },
+  "Material inward": {
+    items: [
+      {
+        name: "PURVEY WMS utilizes QR code label generation to ensure precise tracking of inventory levels and locations, reducing discrepancies.",
+        image: "../Assets/materialinward.jpg",
+        description:
+          "The lack of pallet, bag, and carton level tracking can lead to significant discrepancies in inventory counts. Inaccurate records may result in overstocking or stockouts, negatively affecting order fulfillment, operational efficiency, and ultimately impacting customer satisfaction and the overall profitability of the warehouse.",
+      },
+      {
+        name: "The system ensures that received items match purchase orders, facilitating efficient receiving and minimizing errors.",
+      },
+      {
+        name: "QR codes enable effective tracking of product lots, improving the ability to trace items throughout the supply chain for quality control.",
+      },
+      {
+        name: "PURVEY WMS optimizes crossdocking processes by efficiently managing incoming and outgoing shipments, reducing handling time and improving operational flow.",
+      },
+    ],
+  },
+  "Deconsolidation & Crossdocking": {
+    items: [
+      {
+        name: "Enhanced Inventory Accuracy: Barcode/QR codes generated at the item level ensure precise tracking during deconsolidation, reducing discrepancies and improving overall inventory accuracy.",
+        image: "../Assets/crossdocking.jpeg",
+        description:
+          "The deconsolidation process in warehouses faces challenges such as inefficient workflows, inaccurate inventory tracking, and poor visibility of incoming shipments. Manual processes introduce errors and slow operations, while inadequate space utilization and safety hazards further complicate handling.",
+      },
+      {
+        name: "Improved Visibility: Real-time tracking through barcodes/QR codes provides better visibility of inventory levels and locations, allowing for quicker identification and resolution of issues during deconsolidation.",
+        image: "../Assets/Picture6.svg",
+        description:
+          "From receipt to storage, connect GRNs with packages for total transparency.",
+      },
+    ],
+  },
+  "Quality Assurance": {
+    items: [
+      {
+        name: "Streamlined Inspection: QR/barcode scan-based results enable quick marking of items as approved or rejected, speeding up the inspection process.",
+        image: "../Assets/qc.JPG",
+        description:
+          "Quality assurance in warehouses faces challenges such as inconsistent inspection processes, poor documentation, and inefficient staging for approved and rejected items. These issues lead to delays, miscommunication, and inadequate visibility. ",
+      },
+      {
+        name: "Organized Staging: Scanned data assigns specific areas for approved and rejected items, reducing congestion and improving processing speed.",
+        image: "../Assets/goodsreceipt.svg",
+        description:
+          "Ensure accuracy in inventory with Goods Receipt Note to package linking.",
+      },
+      {
+        name: "Real-Time Visibility: QR/barcode systems provide instant status updates, allowing staff to quickly locate approved or rejected products.",
+        image: "../Assets/Package linking.png",
+        description:
+          "Transform your logistics with direct package to item level connections.",
+      },
+      {
+        name: "Optimized Storage: Scanning technology offers clear guidance for storing items based on their status, enhancing space utilization and accessibility.",
+        image: "../Assets/acceptance.svg",
+        description:
+          "Optimize workflows by effectively separating acceptance from rejection.",
+      },
+    ],
+  },
+  "Unpacking And Repacking": {
+    items: [
+      {
+        name: "Enhanced Traceability: Scan-based serialization allows precise tracking from bulk packaging to the source, ensuring accountability.",
+        image: "../Assets/unpack.JPG",
+        description:
+          "Unpacking and repacking bulk items in a food and beverage warehouse presents challenges, including inefficient processes, inaccurate portioning, item loss, and cross-contamination risks. These issues can impact operational efficiency, product quality and impact profitability.",
+      },
+      {
+        name: "Improved Compliance: It maintains a detailed audit trail, helping businesses meet regulatory requirements and industry standards.",
+        image: "../Assets/work3.jpg",
+        description:
+          "Track item losses seamlessly to enhance operational efficiency",
+      },
+      {
+        name: "Efficient Recall Management: Serialization enables quick identification of affected items during recalls, facilitating faster responses.",
+        image: "../Assets/work4.jpg",
+        description:
+          "Streamline operations by effectively assigning staging locations for every item.",
+      },
+      {
+        name: "Increased Inventory Accuracy: It improves inventory management with real-time visibility, reducing discrepancies and ensuring accurate records",
+        image: "../Assets/work3.jpg",
+        description: "",
+      },
+    ],
+  },
+  'PutAway': {
+    items: [
+      {
+        name: "Maximized Space Utilization: Market rack locations and dynamic putaway optimize storage, ensuring efficient use of all areas.",
+        image: "../Assets/putaway.jpg",
+        description:
+          "Inefficient putaway processes in warehouses lead to significant pain points, including delayed inventory placement and increased handling times. These issues negatively impact space management, causing congestion and hindering optimal storage utilization. Additionally, poor batch management can result in inventory discrepancies and difficulties in tracking product expiration dates, affecting overall operational efficiency.",
+      },
+      {
+        name: "Improved Inventory Flow: Dynamic methods enhance inventory management, reducing congestion and improving transitions.",
+        image: "../Assets/work3.jpg",
+        descr:
+          "Simplify your warehouse operations with real-time automated put away lists.",
+      },
+      {
+        name: "Enhanced Picking Efficiency: Proximity AI algorithms optimize item placement, minimizing picker travel time and boosting speed.",
+        image: "../Assets/work4.jpg",
+        description:
+          "Optimize order fulfillment through strategic item staging location signage.",
+      },
+      {
+        name: "Data-Driven Decisions: Proximity AI allows placing the same item from different batches close together, making picking easier and faster by reducing travel time for staff and streamlining order fulfillment.",
+        image: "../Assets/work3.jpg",
+        description:
+          "Optimize your storage strategy with proximity-based put away location indicators.",
+      },
+    ],
+  },
+  'Picking': {
+    items: [
+      {
+        name: "Bulk Picking: Orders are typically picked in larger quantities to meet bulk shipping requirements, reducing handling time.",
+        image: "../Assets/dispatch_lady.jpg",
+        description:
+          "Warehouse picking for wholesale and retail with FIFO include inventory management complexity, order prioritization, picking errors, and space utilization. Challenges also involve labor issues and balancing speed with accuracy.",
+      },
+      {
+        name: "Batch Processing: Orders are processed in batches to maximize efficiency and reduce travel time within the warehouse.",
+        image: "../Assets/work3.jpg",
+        description:
+          "Optimize your retail operations with an efficient dispatch method",
+      },
+      {
+        name: "Individual Item Picking: Orders are picked item-by-item to fulfill specific retail needs, ensuring accuracy in smaller quantities.",
+        image: "../Assets/work4.jpg",
+        description:
+          "Automated FIFO picking: the smart way to manage your inventory flow.",
+      },
+      {
+        name: "Prioritized Picking: Retail orders are prioritized based on urgency, ensuring timely fulfillment and customer satisfaction.",
+        image: "../Assets/work3.jpg",
+        description:
+          "Boost efficiency with multiple order simultaneous picking for streamlined operations.",
+      },
+    ],
+  },
 
-      'Van Delivery & Sales': {
-        items: [
-          { name: 'Packed delivery Product Count & Batch Tracking', image: '../Assets/work4.jpg', description: 'An efficient dispatch method designed for bulk orders, ensuring quick and accurate delivery of large quantities to retailers.' },
-          { name: 'Packed Delivery Note Receipt', image: '../Assets/work3.jpg', description: 'A tailored dispatch approach for retail orders, focusing on meeting customer demand while minimizing lead time.' },
-          { name: 'Dynamic delivery Updation', image: '../Assets/work4.jpg', description: 'Utilizes the First-In-First-Out (FIFO) principle to enhance inventory management and reduce waste.' },
-          { name: 'Loose Delivery Product Count & Batch Tracking', image: '../Assets/work3.jpg', description: 'Enables the picking of multiple orders at once, improving efficiency and reducing processing time in warehouses.' },
-          { name: 'Track Loose Items', image: '../Assets/work4.jpg', description: 'A systematic approach to order picking that minimizes travel time by following a unidirectional path through the storage area.' },
-        
-          
-      ],
-      },    
-  };
-  
-  const HeaderComponent = () => {
-    const [selectedHeader, setSelectedHeader] = useState('Yard Management');
-    const [items, setItems] = useState([]);
-    const [selectedItem, setSelectedItem] = useState(null);
-  
-    useEffect(() => {
-      setItems(data[selectedHeader].items); // Update items based on the selected header
-      setSelectedItem(data[selectedHeader].items[0]); // Set default selected item for each header
-    }, [selectedHeader]);
-  
+  "Delivery Management System ": {
+    items: [
+      {
+        name: "Route Optimization: Smart algorithms optimize routes considering traffic, priorities, and proximity, reducing costs and delays.",
+        image: "../Assets/tms (2).jpg",
+        description:
+          "Distribution centers face challenges in optimizing delivery management, such as inefficient route planning, poor real-time tracking, and inconsistent proof of delivery, leading to higher costs and delays. Last-mile delivery, complicated by urban congestion, is a critical area for improving overall efficiency and customer satisfaction.",
+      },
+      {
+        name: "Real-Time Tracking: GPS-enabled systems provide real-time fleet monitoring through centralized dashboards for quick decision-making.",
+        image: "../Assets/work3.jpg",
+        description:
+          "A tailored dispatch approach for retail orders, focusing on meeting customer demand while minimizing lead time.",
+      },
+      {
+        name: "Proof of Delivery: Electronic signatures and barcode scanning ensure accurate, verifiable delivery confirmations, minimizing disputes.",
+        image: "../Assets/work4.jpg",
+        description:
+          "Utilizes the First-In-First-Out (FIFO) principle to enhance inventory management and reduce waste.",
+      },
+      {
+        name: "Last-Mile Optimization: Advanced logistics models and micro-fulfillment centers enhance last-mile efficiency, reducing congestion and improving delivery precision.",
+        image: "../Assets/work4.jpg",
+        description:
+          "Utilizes the First-In-First-Out (FIFO) principle to enhance inventory management and reduce waste.",
+      },
+    ],
+  },
+};
+
+const HeaderComponent = () => {
+  const [selectedHeader, setSelectedHeader] = useState("Yard Management");
+  const [items, setItems] = useState([]);
+  const [selectedItem, setSelectedItem] = useState(null);
+
+  useEffect(() => {
+    setItems(data[selectedHeader].items); // Update items based on the selected header
+    setSelectedItem(data[selectedHeader].items[0]); // Set default selected item for each header
+  }, [selectedHeader]);
 
   const handleHeaderClick = (header) => {
     setSelectedHeader(header);
   };
 
-  const handleItemClick = (item) => {
-    setSelectedItem(item); // Set the selected item when clicked
-  };
+  // const handleItemClick = (item) => {
+  //   setSelectedItem(item);
+  // };
 
-  ;
   return (
     <div>
-
       <Container>
-      <p className='font-highlight-deconsol mt-5'> Revolutionize your warehouse operations with our AI-driven software designed for optimal warehouse management solutions.</p>  
-      <br />
-    
-      <div style={{display:"flex",justifyContent:"center"}}>
-     
-     <p   className='deconsolidation-paragraph'>
-     Our innovative  enhances efficiency by enabling the seamless management of your inventory and logistics, ensuring that every product is tracked in real-time. Experience lightning-speed fulfillment that significantly boosts customer satisfaction. With intelligent automation features and smart analytics, our WMS solution  streamlines your operations, reduces costs, and maximizes productivity. Transform the way you manage your warehouse and take your logistics to the next level with our cutting-edge technology.
-     </p>
-     <div style={{height:'30vh'}}></div>
-      </div>
+        <p className="font-highlight-deconsol mt-5">
+          {" "}
+          Revolutionize your warehouse operations with our AI-driven software
+          designed for optimal warehouse management solutions.
+        </p>
+        <br />
+
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <p className="deconsolidation-paragraph">
+            Our innovative enhances efficiency by enabling the seamless
+            management of your inventory and logistics, ensuring that every
+            product is tracked in real-time. Experience lightning-speed
+            fulfillment that significantly boosts customer satisfaction. With
+            intelligent automation features and smart analytics, our WMS
+            solution streamlines your operations, reduces costs, and maximizes
+            productivity. Transform the way you manage your warehouse and take
+            your logistics to the next level with our cutting-edge technology.
+          </p>
+          <div style={{ height: "30vh" }}></div>
+        </div>
       </Container>
-       <h1 className='headingStyle'>Purvey - WMS</h1>
+      <h1 className="headingStyle">Purvey - WMS</h1>
+
+      <div className="mt-4">
+        {/* Main Headers */}
+        <ul className="responsive-list">
+          {Object.keys(data).map((header) => (
+            <li
+              key={header}
+              onClick={() => handleHeaderClick(header)}
+              className={selectedHeader === header ? "selected-header" : ""}
+            >
+              {header.toUpperCase()}
+            </li>
+          ))}
+        </ul>
+      </div>
+
      
-            <div className='mt-4'>
-                {/* Main Headers */}
-                <ul className="responsive-list">
-        {Object.keys(data).map((header) => (
-          <li
-            key={header}
-            onClick={() => handleHeaderClick(header)}
-            className={selectedHeader === header ? 'selected-header' : ''}
-          >
-            {header.toUpperCase()}
-          </li>
-        ))}
-      </ul>
-            </div>
-
-            {/* List of Items based on Selected Header */}
-            <div className='backgroundimg-deconsolidation'>
-    <Container>
-        <Row>
+      <div className="dummy-bg" >
+        <Container >
+          <Row>
             <Col lg={6} md={12}>
-
-
-            {selectedItem && (
-                    <div>
-                        <img
-                            src={selectedItem.image}
-                            alt={selectedItem.name}
-                            className='deconsolidation-img'
-                        />
-                      <div className="text-center">  {/* Add a class for centering */}
-    <p className='ms-4' style={{ marginTop: '1px', fontSize: '1em' }}>
-    In warehouse yard management, the lack of clear zone definition, aisle, rack, and tote labelling can lead to several issues, including loss due to item misplacement and expiry, adding to operational inefficiencies, safety risks, and financial losses.
-
+              {selectedItem && (
+                <div>
+                   <p className='ms-4  mt-2' style={{ fontWeight: "bold" }}>
+                        "{selectedItem.description}"
     </p>
-</div>
-                    </div>
-                )}  
-
-
-
-
-             
+                  <img
+                    src={selectedItem.image}
+                    alt={selectedItem.name}
+                    className="deconsolidation-img"
+                  />
+                
+                </div>
+              )}
             </Col>
             <Col lg={6} md={12}>
-            {selectedHeader && (
-                    <div>
-                        <ul className="block-list-deconsolidation mt-5">
-                            {items.map((item) => (
-                                <li
-                                    key={item.name}
-                                    >
-                                    {item.name}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                )}
+              {selectedHeader && (
+                <div>
+                  <ul className="block-list-deconsolidation mt-5 ">
+                    {items.map((item) => (
+                      <li key={item.name}>{item.name}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </Col>
-        </Row>  
-    </Container>
-</div>
-   
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 };

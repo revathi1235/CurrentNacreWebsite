@@ -34,6 +34,9 @@ import IOTintegration from './pages/IOTintegration';
 import Casestudies from './pages/Casestudies';
 import Productwarehousemanagementsystem from './pages/Productwarehousemanagementsystem';
 import Blogs from './pages/Blogs';
+import LastmileDelivery from './pages/Deliverymanagementsystem';
+import Yardmanagement from './pages/Yardmanagement';
+import Deliverymanagementsystem from './pages/Deliverymanagementsystem';
 
 function App() {
   return (
@@ -71,6 +74,8 @@ function App() {
     <Route path='/casestudies' element={<Casestudies/>}/>
     <Route path='/productwarehousemanagementsystem' element={<Productwarehousemanagementsystem/>}/>
     <Route path='/blogs' element={<Blogs/>}/>
+    <Route path='/deliverymanagementsystem' element={<Deliverymanagementsystem/>}/>
+    <Route path='/yardmanagement' element={<Yardmanagement/>}/>
      {/* <Route path='/deconsolidation' element={<Deconsolidation/>}/>
    
     <Route path='/contactus' element={<CommonContact/>}/>

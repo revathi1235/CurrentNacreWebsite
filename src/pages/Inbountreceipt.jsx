@@ -99,7 +99,7 @@ const handlePurveywms=()=>{
   <h1 class="level-12 rectangle "   onClick={handlePurveywms}>Purvey</h1>
   <ol class="level-22-wrapper">
     <li>
-      <h6 class="level-22 rectangle2  bg-success text-white" onClick={handleInbountreceipt}>Inbount Receipt</h6>
+      <h6 class="level-22 rectangle2  bg-success text-white" onClick={handleInbountreceipt}>Inbound Receipt</h6>
      
     </li>
     <li>
@@ -146,24 +146,12 @@ const handlePurveywms=()=>{
       </div>
 
       <div className="firstdiv-multichannelintegration ">
-        <div className="multichannelintegration-image">
-          <img
-            src={multichannelintegration}
-            alt=""
-            style={{ borderRadius: "10px" }}
-          />
-        </div>
+      <div className='multichannelintegration-image wrapper'>
+        <img src={multichannelintegration} alt="" className='image--cover'/>
+    </div>
         <div className="multichannelintegration-content">
           <p style={{ textAlign: "justify", padding: "40px" }}>
-            <h4
-              style={{
-                fontFamily: "pirulen",
-                fontSize: "30px",
-                letterSpacing: "3px",
-              }}
-            >
-              INBOUND RECEIPT
-            </h4>
+          
             The Inbound Receipt process in PURVEY Warehouse Management System
             (WMS) is designed to eliminate manual errors and reduce processing
             time. Upon arrival, goods are quickly scanned and recorded in the
@@ -188,34 +176,22 @@ const handlePurveywms=()=>{
         <div className="valuedelivered-maindiv-inbountreceipt">
           <div className="valuedelivered-firstdiv-inbountreceipt">
             <img src={improveresouceutilisation} alt="" />
-            <h6>Seamless integration with supplier systems</h6>
-            <p style={{ fontSize:"12px"}}>
-              PURVEY WMS seamlessly integrates with supplier systems, allowing
-              for automated exchange of information such as purchase orders,
-              advance shipment notifications, and invoices. This integration
-              facilitates smooth communication and enhances supply chain
-              collaboration.
+            {/* <h6>Seamless integration with supplier systems</h6> */}
+            <p style={{ fontSize:"15px"}}>
+           <b> Seamless Integration with Supplier Systems</b> enables PURVEY WMS to automate the exchange of information like purchase orders, advance shipment notifications, and invoices. This connectivity promotes smooth communication and strengthens supply chain collaboration.
             </p>
           </div>
           <div className="valuedelivered-seconddiv-inbountreceipt">
             <img src={efficiency} alt="" />
-            <h6>Real-time tracking and visibility </h6>
-            <p style={{ fontSize:"12px"}}>
-              PURVEY WMS provides real-time tracking and visibility into inbound
-              shipments. With detailed information on arrival times, quantities,
-              and product details, you can effectively plan and allocate
-              resources to optimize warehouse operations.
+           
+            <p style={{ fontSize:"15px"}}>
+             <b>Real-Time Tracking and Visibility </b>into inbound shipments through PURVEY WMS provide detailed insights into arrival times, quantities, and product specifics, enabling you to plan and allocate resources effectively for optimized warehouse operations
             </p>
           </div>
           <div className="valuedelivered-thirddiv-inbountreceipt">
             <img src={improvedorderaccuracy} alt="" />
-            <h6>Quality control checks</h6>
-            <p style={{ fontSize:"12px"}}>
-              The Inbound Receipt function in PURVEY WMS includes a module of
-              quality control checks built-in. Upon receipt, goods are inspected
-              for quantity accuracy, damage, and compliance with specified
-              standards. Any discrepancies or issues are immediately flagged for
-              resolution.
+            <p style={{ fontSize:"15px"}}>
+           <b> Quality Control Checks</b>  are built into the Inbound Receipt function of PURVEY WMS, ensuring that goods are inspected upon receipt for quantity accuracy, damage, and compliance with specified standards. Any discrepancies or issues are promptly flagged for resolution.
             </p>
           </div>
         </div>
@@ -223,32 +199,23 @@ const handlePurveywms=()=>{
         <div className="valuedelivered-secondmaindiv-inbountreceipt">
           <div className="valuedelivered-firstdiv-inbountreceipt">
             <img src={improveresouceutilisation} alt="" />
-            <h6>Compliance documentation</h6>
-            <p style={{ fontSize:"12px"}}>
-              The Inbound Receipt function in PURVEY WMS ensures compliance.
-              Documentations, including receipts, supplier information, product
-              specifications, and certificates, is automatically generated and
-              readily accessible for audits.
+          
+            <p style={{ fontSize:"15px"}}>
+            <b>Compliance Documentation</b> is ensured through the Inbound Receipt function in PURVEY WMS, where receipts, supplier information, product specifications, and certificates are automatically generated and readily accessible for audits.
             </p>
           </div>
           <div className="valuedelivered-seconddiv-inbountreceipt">
             <img src={efficiency} alt="" />
-            <h6>Streamlined return processes</h6>
-            <p style={{ fontSize:"12px"}}>
-              In case of discrepancies, damaged goods, or rejections, our WMS
-              facilitates streamlined return processes. The system captures all
-              relevant information, including return reasons and resolutions,
-              allowing for prompt coordination with suppliers and minimizing
-              disruptions in your supply chain.
+            
+            <p style={{ fontSize:"15px"}}>
+            <b>Streamlined Return Processes</b> in our WMS handle discrepancies, damaged goods, or rejections efficiently. The system captures all relevant details, including return reasons and resolutions, enabling prompt coordination with suppliers and minimizing supply chain disruptions
             </p>
           </div>
           <div className="valuedelivered-thirddiv-inbountreceipt">
             <img src={improvedorderaccuracy} alt="" />
-            <h6>Gain valuable insights</h6>
-            <p style={{ fontSize:"12px"}}>
-              You can gain valuable insights into inbound shipments, supplier
-              performance, receipt accuracy, and received product quality,
-              enabling data-driven decision-making..
+          
+            <p style={{ fontSize:"15px"}}>
+           <b> Gain Valuable Insights</b> into inbound shipments, supplier performance, receipt accuracy, and product quality, empowering data-driven decision-making.
             </p>
           </div>
         </div>
@@ -257,20 +224,14 @@ const handlePurveywms=()=>{
       <Container>
         <div class="image-container-multichannelintegration">
           <div class="overlay">
-            <p style={{ fontFamily: "normal" }}>
-              "PURVEY WMS provides exceptional Inbound Receipt functionality
-              within our advanced Warehouse Management System. With our
-              state-of-the-art technology and commitment to excellence, we
-              guarantee efficient handling, accurate tracking, and streamlined
-              operations for your incoming goods. Partner with us to leverage
-              the power of our WMS and experience enhanced efficiency and
-              improved inventory management in your warehouse."
+            <p className="px-1 mt-3">
+            PURVEY WMS provides exceptional Inbound Receipt functionality within our advanced Warehouse Management System. With our state-of-the-art technology and commitment to excellence, we guarantee efficient handling, accurate tracking, and streamlined operations for your incoming goods. Partner with us to leverage the power of our WMS and experience enhanced efficiency and improved inventory management in your warehouse.
             </p>
           </div>
         </div>
       </Container>
 
-      <div className="valuedelivered-section-aporafulfillment">
+      <div className="valuedelivered-section-inbountreceipt">
         <div className="value-del-aporafulfillment">
           <h1 style={{ fontSize: "30px", marginTop: "50px" }}>
             Value Delivered

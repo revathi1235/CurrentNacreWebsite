@@ -7,7 +7,7 @@ import Deconsolidation from './Deconsolidation'
 import AporaHomepage from './AporaHomepage'
 import IndustriesServe from './IndustriesServe'
 
-
+import Cardflip from './Cardflip'
 
 
 
@@ -44,7 +44,7 @@ function Content() {
     {
       highlightText: "On",
       mainTitle: "CLOUD",
-      subheading: "Embrace Elastic Scalability Without Capital Spend",
+      subheading: "Embrace  Elastic  Scalability  Without  Capital  Spend",
       ctas: [
         "Save UpTo 50% on IT Cost",
         "90% of Saas Users find it Easy To Use",
@@ -99,40 +99,37 @@ function Content() {
         <meta name="twitter:image" content="../Assets/Banner picture1.png" />
       </Helmet>
         <Container className='first-content'>
-      <Row className='primary-heading' >
+      {/* <Row className='primary-heading' >
         <Col lg={1}></Col>
         <Col lg={7} className="text-lg-start text-center px-5 ">
-        <div className="text-container">
-            {/* Dynamic content based on contentIndex */}
-            <>
-              <span className="highlight-text" style={{ fontFamily: "Good Times" }}>{contentData[contentIndex].highlightText}</span>
-              <span className="main-title" style={{ fontFamily: "pirulen" }}>{contentData[contentIndex].mainTitle}</span>
-              <span className="subheading" style={{ fontFamily: "Good Times" }}>{contentData[contentIndex].subheading}</span>
-             <div className='cta-full-div'>
-             {contentData[contentIndex].ctas.map((cta, index) => (
-                <span className='cta' style={{ fontFamily: "arial" }} key={index}>{cta}</span>
-              ))}
-             </div>
-            </>
-          </div>
+          <div className="text-container">
+              <>
+                <span className="highlight-text" style={{ fontFamily: "Good Times" }}>{contentData[contentIndex].highlightText}</span>
+                <span className="main-title" style={{ fontFamily: "pirulen" }}>{contentData[contentIndex].mainTitle}</span>
+                <span className="subheading" style={{ fontFamily: "Good Times" }}>{contentData[contentIndex].subheading}</span>
+              <div className='cta-full-div'>
+              {contentData[contentIndex].ctas.map((cta, index) => (
+                  <span className='cta' style={{ fontFamily: "arial" }} key={index}>{cta}</span>
+                ))}
+              </div>
+              </>
+            </div>
         </Col>
      
-        {/* <Col lg={3}>
-        <img src='../Assets/Banner picture1.png' alt="integrationimage" className='integrationimage'/>
-        </Col> */}
-        {/* <Col lg={1} style={{marginTop:"150px"}}>
-        <span className='next-btn' onClick={handleToggleContent}>
-        <FontAwesomeIcon className='next-btn' icon={faGreaterThan} style={{color:"green",fontSize:"50px"}}/>
-          </span>
-        </Col> */}
-      </Row>
+      
+      </Row> */}
+      <Cardflip/>
     </Container>
     <Deconsolidation/>
     <AporaHomepage/>
     <IndustriesServe/>
-{/* <div className='res-footer'>
+
+
+
+<div className='mt-5'>
+  
 <Footer/>
-</div> */}
+</div>
     </div>
   )
 }

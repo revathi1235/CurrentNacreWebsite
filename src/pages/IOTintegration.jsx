@@ -64,7 +64,7 @@ const handlePurveywms=()=>{
   <h1 class="level-12 rectangle "   onClick={handlePurveywms}>Purvey</h1>
   <ol class="level-22-wrapper">
     <li>
-      <h6 class="level-22 rectangle2" onClick={handleInbountreceipt}>Inbount Receipt</h6>
+      <h6 class="level-22 rectangle2" onClick={handleInbountreceipt}>Inbound Receipt</h6>
      
     </li>
     <li>
@@ -133,7 +133,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
         <img src={multichannelintegration} alt="" className='image--cover'/>
     </div>
     <div className='multichannelintegration-content'>
-      <h2 >IOT Integration</h2>
+     
         <p style={{textAlign:"justify",padding:"40px"}}>In today's digital era, the Internet of Things (IoT) is revolutionizing the way warehouses operate, bringing increased automation, efficiency, and connectivity. By integrating IoT technologies into your WMS, you can unlock a wide range of benefits and transform your warehouse operations.</p>
     </div>
    </div>
@@ -183,39 +183,39 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
 <div class="image-container-multichannelintegration">
   
   <div class="overlay">
-    <p style={{fontFamily:"normal"}}>"Quality Assurance process in our advanced WMS, you can ensure superior product quality, minimize errors, and maintain customer satisfaction. By leveraging our standardized procedures, real-time tracking, and automated alerts, you can streamline your quality control process, reduce returns, and enhance your brand reputation. Choose our WMS to optimize your quality assurance operations and deliver excellence in every shipment."</p>
+    <p >This results in faster order processing, improved customer satisfaction, and increased operational efficiency. Embrace IoT integration to gain a competitive edge, streamline your operations, and deliver superior customer experiences.</p>
   </div>
 </div>
 </Container>
 
 
 
-<div className='valuedelivered-section-aporafulfillment'> 
+<div className='valuedelivered-section-inbountreceipt'> 
   <div className='value-del-aporafulfillment'>
     <h1 style={{fontSize:"30px",marginTop:"50px"}}>Value Delivered</h1>
     </div>
-<div class="container-crossdocking">
+<div class="container-inbountreceipt">
    
-    <div  className='row-crossdocking'>
+    <div  className='row-inbountreceipt'>
       
-        <div className="service-crossdocking rainbow-crossdocking">
+        <div className="service-inbountreceipt rainbow-inbountreceipt">
           
-            <h2 class="service_heading-crossdocking">Enhanced Product Quanlity</h2>
-            <p class="service_para-crossdocking">
+            <h2 class="service_heading-inbountreceipt">Enhanced Product Quanlity</h2>
+            <p class="service_para-inbountreceipt">
             Our Quality Assurance process enables you to maintain strict quality standards for every product leaving your warehouse. By identifying and rectifying any deviations or defects, you can deliver superior quality products to your customers, enhancing their satisfaction and loyalty.
 </p>           
         </div>
-        <div className="service-crossdocking rainbow-crossdocking">
+        <div className="service-inbountreceipt rainbow-inbountreceipt">
            
-            <h2 class="service_heading-crossdocking">Reduced Returns and complaints</h2>
-            <p class="service_para-crossdocking">
+            <h2 class="service_heading-inbountreceipt">Reduced Returns and complaints</h2>
+            <p class="service_para-inbountreceipt">
             With accurate and comprehensive quality control measures in place, you can minimize returns and customer complaints due to substandard or defective products. This saves costs associated with returns processing and improves your overall customer experience.
             </p>
         </div>
-        <div className="service-crossdocking rainbow-crossdocking">
+        <div className="service-inbountreceipt rainbow-inbountreceipt">
            
-            <h2 class="service_heading-crossdocking">Complailance with Regulations and Standards</h2>
-            <p class="service_para-crossdocking">
+            <h2 class="service_heading-inbountreceipt">Complailance with Regulations and Standards</h2>
+            <p class="service_para-inbountreceipt">
             Our WMS helps ensure compliance with industry regulations and quality standards. By implementing standardized quality assurance procedures, you can meet legal requirements, industry-specific guidelines, and customer expectations for product quality.
             </p>
         </div>
@@ -224,21 +224,21 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
 
 </div>
 </div>
-<div class="container-crossdocking">
+<div class="container-inbountreceipt">
    
-    <div  className='row-crossdocking'>
+    <div  className='row-inbountreceipt'>
       
-        <div className="service-crossdocking rainbow-crossdocking">
+        <div className="service-inbountreceipt rainbow-inbountreceipt">
           
-            <h2 class="service_heading-crossdocking">Increased Operational Efficiency</h2>
-            <p class="service_para-crossdocking">
+            <h2 class="service_heading-inbountreceipt">Increased Operational Efficiency</h2>
+            <p class="service_para-inbountreceipt">
             Automation of the quality assurance process streamlines inspection procedures, and improves overall operational efficiency. This allows your team to focus on value-added tasks and optimize productivity.       </p>
            
         </div>
-        <div className="service-crossdocking rainbow-crossdocking">
+        <div className="service-inbountreceipt rainbow-inbountreceipt">
            
-            <h2 class="service_heading-crossdocking">Enhanced Bank Reputation</h2>
-            <p class="service_para-crossdocking">
+            <h2 class="service_heading-inbountreceipt">Enhanced Bank Reputation</h2>
+            <p class="service_para-inbountreceipt">
             By consistently delivering high-quality products, you can strengthen your brand reputation and differentiate yourself in the market. Positive customer experiences and a reputation for quality contribute to increased customer trust and loyalty.
             </p>
         </div>

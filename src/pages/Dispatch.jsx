@@ -1,119 +1,158 @@
-import React from 'react'
-import { Container } from 'react-bootstrap'
-import purvey_apora_black from '../Assets/purvey_apora_black.png'
-import Chart2 from './Chart2'
-import multichannelintegration from '../Assets/work3.jpg'
-import improveresouceutilisation from '../Assets/Improveresourceutilisation.svg'
-import efficiency from '../Assets/Efficiency.svg'
-import improvedorderaccuracy from '../Assets/improvedorderaccuracy.svg'
+import React from "react";
+import { Container } from "react-bootstrap";
+import purvey_apora_black from "../Assets/purvey_apora_black.png";
+import Chart2 from "./Chart2";
+import multichannelintegration from "../Assets/work3.jpg";
+import improveresouceutilisation from "../Assets/Improveresourceutilisation.svg";
+import efficiency from "../Assets/Efficiency.svg";
+import improvedorderaccuracy from "../Assets/improvedorderaccuracy.svg";
 import { useNavigate } from "react-router-dom";
-import Footer from '../components/Footer'
+import Footer from "../components/Footer";
 
 function Dispatch() {
-  const navigate=useNavigate()
-const handleInbountreceipt=()=>{
-  navigate('/inbountreceipt')
-}
-const handleCrossdocking=()=>{
-  navigate('/crossdocking')
-}
-const handleDeconsolidation=()=>{
-  navigate('/purveydeconsolidation')
-}
-const handleQualitycheck=()=>{
-  navigate('/qualitycheck')
-}
-const handleRepackingandputaway=()=>{
-  navigate('/repackingandputaway')
-}
-const handlePickmanagement=()=>{
-  navigate('/aporapickmanagement')
-}
-const handleDispatch=()=>{
-  navigate('/dispatch')
-}
-const handleInventorymanagement=()=>{
-navigate('/inventorymanagement')
-}
-const handleAPIintegration=()=>{
-  navigate('/apiintegration')
-}
-const handleIotintegration=()=>{
-  navigate('/iotintegration')
-}
-const handlePurveywms=()=>{
-  navigate('/productwarehousemanagementsystem')
-}
+  const navigate = useNavigate();
+  const handleInbountreceipt = () => {
+    navigate("/inbountreceipt");
+  };
+  const handleCrossdocking = () => {
+    navigate("/crossdocking");
+  };
+  const handleDeconsolidation = () => {
+    navigate("/purveydeconsolidation");
+  };
+  const handleQualitycheck = () => {
+    navigate("/qualitycheck");
+  };
+  const handleRepackingandputaway = () => {
+    navigate("/repackingandputaway");
+  };
+  const handlePickmanagement = () => {
+    navigate("/aporapickmanagement");
+  };
+  const handleDispatch = () => {
+    navigate("/dispatch");
+  };
+  const handleInventorymanagement = () => {
+    navigate("/inventorymanagement");
+  };
+  const handleAPIintegration = () => {
+    navigate("/apiintegration");
+  };
+  const handleIotintegration = () => {
+    navigate("/iotintegration");
+  };
+  const handlePurveywms = () => {
+    navigate("/productwarehousemanagementsystem");
+  };
   return (
     <div>
-      <div style={{height:"40vh"}}>
- <div className='starting-picklistgeneration'>
-    <h1 className="gradient-text">Efficient Dispatch Services for 
+      <div style={{ height: "40vh" }}>
+        <div className="starting-picklistgeneration">
+          <h1 className="gradient-text">
+            Efficient Dispatch Services for
+            <br />
+          </h1>
+          <h3 className="gradient-text">Seamless Operations</h3>
 
-    <br /></h1>
-    <h3 className="gradient-text">Seamless Operations</h3>
+          <div className="aboutpage-subtitle">
+            <h6 className="gradient-text-h6">
+              <img src={purvey_apora_black} alt="" style={{ height: "80px" }} />
+            </h6>
+          </div>
+        </div>
 
-    <div className='aboutpage-subtitle'>
-    <h6 className='gradient-text-h6'><img src={purvey_apora_black} alt="" style={{height:"80px"}}/></h6>
-    </div>
-    </div>
+        <div style={{ height: "20vh" }} className="mt-5">
+          <div>
+            <div class="container-chart2">
+              <h1 class="level-12 rectangle " onClick={handlePurveywms}>
+                Purvey
+              </h1>
+              <ol class="level-22-wrapper">
+                <li>
+                  <h6
+                    class="level-22 rectangle2"
+                    onClick={handleInbountreceipt}
+                  >
+                    Inbound Receipt
+                  </h6>
+                </li>
+                <li>
+                  <h6 class="level-22 rectangle2" onClick={handleCrossdocking}>
+                    {" "}
+                    Cross Docking
+                  </h6>
+                </li>
+                <li>
+                  <h6
+                    class="level-22 rectangle2 me-2"
+                    onClick={handleDeconsolidation}
+                  >
+                    Deconsolidation
+                  </h6>
+                </li>
+                <li>
+                  <h6 class="level-22 rectangle2" onClick={handleQualitycheck}>
+                    Quality Check
+                  </h6>
+                </li>
+                <li>
+                  <h6
+                    class="level-22 rectangle2"
+                    onClick={handleRepackingandputaway}
+                  >
+                    Repacking and Putaway
+                  </h6>
+                </li>
+                <li>
+                  <h6
+                    class="level-22 rectangle2"
+                    onClick={handlePickmanagement}
+                  >
+                    Pick Management
+                  </h6>
+                </li>
+                <li>
+                  <h6
+                    class="level-22 rectangle2 me-2  bg-success text-white"
+                    onClick={handleDispatch}
+                  >
+                    Dispatch
+                  </h6>
+                </li>
+                <li>
+                  <h6
+                    class="level-22 rectangle2"
+                    onClick={handleInventorymanagement}
+                  >
+                    {" "}
+                    Inventory management
+                  </h6>
+                </li>
+                <li>
+                  <h6
+                    class="level-22 rectangle2"
+                    onClick={handleAPIintegration}
+                  >
+                    {" "}
+                    Api Integration
+                  </h6>
+                </li>
+                <li>
+                  <h6
+                    class="level-22 rectangle2"
+                    onClick={handleIotintegration}
+                  >
+                    {" "}
+                    IOT Integration
+                  </h6>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div style={{height:"20vh"}} className='mt-5'>
-    <div>
-        <div class="container-chart2">
-  <h1 class="level-12 rectangle "   onClick={handlePurveywms}>Purvey</h1>
-  <ol class="level-22-wrapper">
-    <li>
-      <h6 class="level-22 rectangle2" onClick={handleInbountreceipt}>Inbount Receipt</h6>
-     
-    </li>
-    <li>
-      <h6 class="level-22 rectangle2" onClick={handleCrossdocking}> Cross Docking</h6>
-     
-    </li>
-      <li>
-      <h6 class="level-22 rectangle2 me-2" onClick={handleDeconsolidation}>Deconsolidation</h6>
-     
-    </li>
-    <li>
-      <h6 class="level-22 rectangle2" onClick={handleQualitycheck}>Quality Check</h6>
-     
-    </li>
-    <li>
-      <h6 class="level-22 rectangle2" onClick={handleRepackingandputaway}>Repacking and Putaway</h6>
-     
-    </li>
-    <li>
-      <h6 class="level-22 rectangle2" onClick={handlePickmanagement}>Pick Management</h6>
-     
-    </li>
-    <li>
-      <h6 class="level-22 rectangle2 me-2  bg-success text-white" onClick={handleDispatch} >Dispatch</h6>
-     
-    </li>
-    <li>
-      <h6 class="level-22 rectangle2" onClick={handleInventorymanagement}>  Inventory management</h6>
-     
-    </li>
-    <li>
-      <h6 class="level-22 rectangle2" onClick={handleAPIintegration}>  Api Integration</h6>
-     
-    </li>
-    <li>
-      <h6 class="level-22 rectangle2" onClick={handleIotintegration}>  IOT Integration</h6>
-     
-    </li>
-  </ol>
-</div>
-
-
-    </div>
- </div>
-
- </div>
-
-
-{/* 
+      {/* 
    <div className='firstdiv-multichannelintegration ' >
     <div className='multichannelintegration-image'>
         <img src={multichannelintegration} alt="" />
@@ -128,135 +167,186 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
           </p></div>
    </div> */}
 
-<div className='firstdiv-multichannelintegration ' >
-    <div className='multichannelintegration-image wrapper'>
-        <img src={multichannelintegration} alt="" className='image--cover'/>
-    </div>
-    <div className='multichannelintegration-content'>
-      <h2 >Dispatch</h2>
-        <p style={{textAlign:"justify",padding:"40px"}}> Quality Assurance process in our PURVEY Warehouse Management System (WMS) is a fully scalable and customizable function. We understand the critical importance of maintaining high-quality standards and ensuring accuracy in every shipment that leaves your warehouse. With our comprehensive Quality Assurance feature within PURVEY WMS, you can streamline your quality control process, minimize errors, and deliver superior products to your customers.
-        PURVEY WMS offers a standardized and configurable Quality Assurance process that aligns with your specific business requirements. You can define and implement consistent quality control procedures across all product categories, ensuring uniformity and adherence to quality standards.</p>
-    </div>
-   </div>
-
-
-
-
-
-
-
-
-
-
-<div className='seconddiv-multichannelintegration'>
-    <h1>Features</h1> 
-</div>
-<Container  className='seconddiv-orderprocessing-container'>
- 
-
-    <div className='valuedelivered-maindiv-orderprocessing' >
-
-  <div className='valuedelivered-firstdiv-orderprocessing'>
-    <img src={improveresouceutilisation} alt="" />
-    {/* <h6>Enhanced Efficiency</h6> */}
-    <p><b>Enhanced Efficiency</b> through AI-powered order synchronization leverages advanced algorithms to intelligently analyze order similarities and content item proximities within the warehouse. By identifying patterns, the system synchronizes multiple orders that share common items or are in close proximity. This synchronization reduces the number of picklists, enabling warehouse staff to complete orders more efficiently.</p>
-  </div>
-  <div className='valuedelivered-seconddiv-orderprocessing'>
-    <img src={efficiency} alt="" />
-    {/* <h6>Reduced Complexity</h6> */}
-    <p><b>Reduced Complexity</b> in traditional order picking processes often leads to numerous picklists, requiring warehouse staff to walk around multiple times for each list. AI-powered order synchronization simplifies this by consolidating related orders into a single picklist, allowing staff to manage tasks more effectively and focus on efficient order fulfillment.</p>
-  </div>
-  <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src={improvedorderaccuracy} alt="" />
-    {/* <h6>Increased Productivity</h6> */}
-    <p><b>Increased Productivity</b> is achieved by reducing the number of picklists through AI-powered order synchronization. Warehouse staff spend less time managing and switching between lists, which allows for a more streamlined process. This efficiency enables employees to work faster, fulfill orders promptly, and effectively meet customer demands in the warehouse</p>
-  </div>
-  <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src={improvedorderaccuracy} alt="" />
-    {/* <h6>Improved Resource Utilization</h6> */}
-    <p><b>Improved Resource Utilization</b> is achieved through AI-powered order synchronization, which considers the proximity of items within the warehouse. By synchronizing orders based on similar item locations, staff can navigate efficiently, minimizing travel time and maximizing the use of labor and equipment, ultimately leading to significant cost savings for the operation.</p>
-  </div>
-</div>
-</Container>
-
-
-
-<Container>
-<div class="image-container-multichannelintegration">
-  
-  <div class="overlay">
-    <p style={{fontFamily:"normal"}}>"Quality Assurance process in our advanced WMS, you can ensure superior product quality, minimize errors, and maintain customer satisfaction. By leveraging our standardized procedures, real-time tracking, and automated alerts, you can streamline your quality control process, reduce returns, and enhance your brand reputation. Choose our WMS to optimize your quality assurance operations and deliver excellence in every shipment."</p>
-  </div>
-</div>
-</Container>
-
-
-
-<div className='valuedelivered-section-aporafulfillment'> 
-  <div className='value-del-aporafulfillment'>
-    <h1 style={{fontSize:"30px",marginTop:"50px"}}>Value Delivered</h1>
-    </div>
-<div class="container-crossdocking">
-   
-    <div  className='row-crossdocking'>
-      
-        <div className="service-crossdocking rainbow-crossdocking">
-          
-            <h2 class="service_heading-crossdocking">Enhanced Product Quanlity</h2>
-            <p class="service_para-crossdocking">
-            Our Quality Assurance process enables you to maintain strict quality standards for every product leaving your warehouse. By identifying and rectifying any deviations or defects, you can deliver superior quality products to your customers, enhancing their satisfaction and loyalty.
-</p>           
+      <div className="firstdiv-multichannelintegration ">
+        <div className="multichannelintegration-image wrapper">
+          <img src={multichannelintegration} alt="" className="image--cover" />
         </div>
-        <div className="service-crossdocking rainbow-crossdocking">
-           
-            <h2 class="service_heading-crossdocking">Reduced Returns and complaints</h2>
-            <p class="service_para-crossdocking">
-            With accurate and comprehensive quality control measures in place, you can minimize returns and customer complaints due to substandard or defective products. This saves costs associated with returns processing and improves your overall customer experience.
+        <div className="multichannelintegration-content">
+          <p style={{ textAlign: "justify", padding: "40px" }}>
+            {" "}
+            Welcome to the Dispatch Management functionality in PURVEY, our advanced Warehouse Management System (WMS). We understand the importance of efficient order fulfilment and timely delivery to your customers.
+            With our comprehensive Dispatch Management feature, we aim to optimize the dispatch process, enhance visibility, and ensure accurate and swift shipment of goods. Utilizing state-of-the-art technology and advanced capabilities, PURVEY WMS guarantees seamless and efficient dispatch management for your warehouse operations.
+          </p>
+        </div>
+      </div>
+
+      <div className="seconddiv-multichannelintegration">
+        <h1>Features</h1>
+      </div>
+      <Container className="seconddiv-orderprocessing-container">
+        <div className="valuedelivered-maindiv-orderprocessing">
+          <div className="valuedelivered-firstdiv-orderprocessing">
+            <img src={improveresouceutilisation} alt="" />
+            {/* <h6>Enhanced Efficiency</h6> */}
+            <p>
+              <b>Order consolidation </b> in PURVEY WMS allows multiple orders
+              to be combined into a single shipment, optimizing packing and
+              cutting shipping costs. By efficiently grouping orders based on
+              predefined criteria, you can streamline the dispatch process and
+              boost productivity.
             </p>
-        </div>
-        <div className="service-crossdocking rainbow-crossdocking">
-           
-            <h2 class="service_heading-crossdocking">Complailance with Regulations and Standards</h2>
-            <p class="service_para-crossdocking">
-            Our WMS helps ensure compliance with industry regulations and quality standards. By implementing standardized quality assurance procedures, you can meet legal requirements, industry-specific guidelines, and customer expectations for product quality.
+          </div>
+          <div className="valuedelivered-seconddiv-orderprocessing">
+            <img src={efficiency} alt="" />
+            {/* <h6>Reduced Complexity</h6> */}
+            <p>
+              <b>Real-time Inventory Tracking </b> with our Dispatch Management
+              feature allows you to monitor available stock, allocate items for
+              dispatch, and ensure accurate order fulfillment, reducing
+              stockouts and delays.
             </p>
-        </div>
-       
-        
-
-</div>
-</div>
-<div class="container-crossdocking">
-   
-    <div  className='row-crossdocking'>
-      
-        <div className="service-crossdocking rainbow-crossdocking">
-          
-            <h2 class="service_heading-crossdocking">Increased Operational Efficiency</h2>
-            <p class="service_para-crossdocking">
-            Automation of the quality assurance process streamlines inspection procedures, and improves overall operational efficiency. This allows your team to focus on value-added tasks and optimize productivity.       </p>
-           
-        </div>
-        <div className="service-crossdocking rainbow-crossdocking">
-           
-            <h2 class="service_heading-crossdocking">Enhanced Bank Reputation</h2>
-            <p class="service_para-crossdocking">
-            By consistently delivering high-quality products, you can strengthen your brand reputation and differentiate yourself in the market. Positive customer experiences and a reputation for quality contribute to increased customer trust and loyalty.
+          </div>
+          <div className="valuedelivered-thirddiv-orderprocessing">
+            <img src={improvedorderaccuracy} alt="" />
+            {/* <h6>Increased Productivity</h6> */}
+            <p>
+              <b>Order Prioritization</b> in PURVEY WMS is driven by predefined
+              rules, customer preferences, and service level agreements,
+              ensuring that urgent or high-priority orders are dispatched
+              promptly, boosting customer satisfaction and loyalty.
             </p>
+          </div>
+          <div className="valuedelivered-thirddiv-orderprocessing">
+            <img src={improvedorderaccuracy} alt="" />
+            {/* <h6>Improved Resource Utilization</h6> */}
+            <p>
+              <b>Carrier Integration </b> in PURVEY WMS allows seamless
+              coordination and communication with various carriers. Effortlessly
+              generate shipping labels, track shipments, and manage
+              carrier-specific requirements, ensuring smooth collaboration and
+              on-time deliveries.
+            </p>
+          </div>
+          <div className="valuedelivered-seconddiv-orderprocessing">
+            <img src={efficiency} alt="" />
+            {/* <h6>Reduced Complexity</h6> */}
+            <p>
+              <b>Route optimization </b> in our Dispatch Management
+              functionality utilizes advanced algorithms to select the most
+              efficient shipping routes, minimizing transit time, reducing
+              transportation costs, and enhancing overall delivery efficiency.
+            </p>
+          </div>
+          <div className="valuedelivered-thirddiv-orderprocessing">
+            <img src={improvedorderaccuracy} alt="" />
+            {/* <h6>Increased Productivity</h6> */}
+            <p>
+              <b>Proof of Delivery</b>in PURVEY WMS is captured through
+              electronic signature or barcode scanning, providing confirmation
+              of successful deliveries and streamlining the reconciliation of
+              shipments.
+            </p>
+          </div>
+          <div className="valuedelivered-thirddiv-orderprocessing">
+            <img src={improvedorderaccuracy} alt="" />
+            {/* <h6>Improved Resource Utilization</h6> */}
+            <p>
+              <b>Reporting and Analytics</b> in our WMS offer in-depth insights
+              into order processing times, delivery performance, carrier
+              effectiveness, and overall dispatch efficiency, enabling
+              data-driven decision-making to optimize operations.
+            </p>
+          </div>
         </div>
-      
-       
-        
+      </Container>
 
-</div>
-</div>
-  </div>
+      <Container>
+        <div class="image-container-multichannelintegration">
+          <div class="overlay">
+            <p className="mt-3">
+              "Quality Assurance process in our advanced WMS, you can ensure
+              superior product quality, minimize errors, and maintain customer
+              satisfaction. By leveraging our standardized procedures, real-time
+              tracking, and automated alerts, you can streamline your quality
+              control process, reduce returns, and enhance your brand
+              reputation. Choose our WMS to optimize your quality assurance
+              operations and deliver excellence in every shipment."
+            </p>
+          </div>
+        </div>
+      </Container>
 
+      <div className="valuedelivered-section-inbountreceipt">
+        <div className="value-del-aporafulfillment">
+          <h1 style={{ fontSize: "30px", marginTop: "50px" }}>
+            Value Delivered
+          </h1>
+        </div>
+        <div class="container-inbountreceipt">
+          <div className="row-inbountreceipt">
+            <div className="service-inbountreceipt rainbow-inbountreceipt">
+              <h2 class="service_heading-inbountreceipt">
+                Enhanced Order Fulfilment
+              </h2>
+              <p class="service_para-inbountreceipt">
+                With our Dispatch Management feature, you can streamline your
+                order fulfilment process, reducing lead times and ensuring
+                accurate and on-time delivery. This enhances customer
+                satisfaction and strengthens your competitive advantage.
+              </p>
+            </div>
+            <div className="service-inbountreceipt rainbow-inbountreceipt">
+              <h2 class="service_heading-inbountreceipt">
+              Improved Inventory Control
+              </h2>
+              <p class="service_para-inbountreceipt">
+                Real-time inventory tracking and order allocation capabilities
+                in PURVEY WMS enable accurate stock management. You can
+                efficiently allocate items for dispatch, reducing stockouts and
+                optimizing inventory levels.
+              </p>
+            </div>
+            <div className="service-inbountreceipt rainbow-inbountreceipt">
+              <h2 class="service_heading-inbountreceipt">Cost Optimization</h2>
+              <p class="service_para-inbountreceipt">
+                By consolidating orders and optimizing shipping routes, our
+                Dispatch Management feature helps reduce transportation costs
+                and improve operational efficiency. This leads to significant
+                cost savings for your warehouse operations.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container-inbountreceipt">
+          <div className="row-inbountreceipt">
+            <div className="service-inbountreceipt rainbow-inbountreceipt">
+              <h2 class="service_heading-inbountreceipt">
+                Increased Operational Efficiency
+              </h2>
+              <p class="service_para-inbountreceipt">
+                Automation of labelling, documentation, and routing processes
+                minimizes manual errors, reduces administrative tasks, and
+                enhances overall operational efficiency. Your team can focus on
+                value-added activities, improving productivity.
+              </p>
+            </div>
+            <div className="service-inbountreceipt rainbow-inbountreceipt">
+              <h2 class="service_heading-inbountreceipt">
+                Customer Satsfaction and Loyalty
+              </h2>
+              <p class="service_para-inbountreceipt">
+                Swift and accurate dispatches result in satisfied customers who
+                receive their orders on time. This builds customer trust,
+                encourages repeat purchases, and enhances long-term loyalty.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<Footer/>
-
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default Dispatch
+export default Dispatch;

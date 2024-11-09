@@ -257,32 +257,35 @@ const handleApora=()=>{
     <div className='valuedelivered-maindiv-multiintegration'>
   <div className='valuedelivered-firstdiv-multiintegration'>
     <img src={improveresouceutilisation} alt="" />
-    <h6>Improved Resource Utilisation</h6>
-    <p>By integrating multiple channels into a unified pick management system, you can optimize your resources and reduce operational complexities.</p>
+    {/* <h6>Improved Resource Utilisation</h6> */}
+    <p style={{textAlign:"justify"}}> <b>Improved Resource Utilisation</b> is achieved by integrating multiple channels into a unified pick management system, allowing you to optimize resources and reduce operational complexities.</p>
   </div>
   <div className='valuedelivered-seconddiv-multiintegration'>
     <img src={efficiency} alt="" />
-    <h6>Real Time Visibility</h6>
-    <p>While orders across channels are simultaneously processed, the system provides real time visibility of status of orders individually across all channels.</p>
+    {/* <h6>Real Time Visibility</h6> */}
+    <p style={{textAlign:"justify"}}> <b>Real Time Visibility
+    </b> ensures that the status of orders across all channels is tracked individually, even as they are processed simultaneously</p>
   </div>
   <div className='valuedelivered-thirddiv-multiintegration'>
     <img src={improvedorderaccuracy} alt="" />
-    <h6>Improved Order Accuracy</h6>
-    <p>Our Bar code/ QR code/ RFID integrated system eliminate the risk of errors and inaccuracies in order fulfilment. The system automatically synchronizes order data from various channels, minimizing the chances of mismatched or duplicate orders.</p>
+    {/* <h6>Improved Order Accuracy</h6> */}
+    <p style={{textAlign:"justify"}}> <b>Improved Order Accuracy
+    </b>  is achieved with our barcode, QR code, and RFID integrated system, which eliminates errors and inaccuracies in order fulfillment. The system automatically synchronizes order data from various channels, minimizing the risk of mismatched or duplicate orders.</p>
   </div>
   
 </div>
 <br />
 <div className='valuedelivered-maindiv-multiintegration mt-5'>
   <div className='valuedelivered-fourthdiv-multiintegration'>
-    {/* <img src={scalabilityandflexibility} alt="" /> */}
-    <h6>Scalability & Flexibility</h6>
-    <p>As your business grows and expands into new sales channels, a multi-channel pick management system can adapt to your evolving needs. It provides the scalability to handle increasing order volumes and the flexibility to incorporate additional channels seamlessly. Whether you sell through online marketplaces, brick-and-mortar stores, or social media platforms, the system can consolidate and manage all orders efficiently.</p>
+  <img src={efficiency} alt="" />
+  {/* <h6>Scalability & Flexibility</h6> */}
+    <p style={{textAlign:"justify"}}>  <b>Scalability & Flexibility</b> are key features of our multi-channel pick management system, which adapts to your growing business needs. It handles increasing order volumes and seamlessly incorporates new sales channels, whether through online marketplaces, brick-and-mortar stores, or social media platforms, ensuring efficient order consolidation and management.</p>
   </div>
   <div className='valuedelivered-fifthdiv-multiintegration'>
     <img src={efficiency} alt="" />
-    <h6>Increased Efficiency</h6>
-    <p>The AI powered automation dynamically manages orders from different channels in one place. You can track order status, monitor assigned resources , their activity and monitor fulfilment progress, all from a single interface. This centralized approach simplifies order processing and minimizes the risk of errors or delays.</p>
+    {/* <h6>Increased Efficiency</h6> */}
+    <p style={{textAlign:"justify"}}> <b>Increased Efficiency
+    </b>  is achieved through AI-powered automation that dynamically manages orders from different channels in one place. You can track order status, monitor assigned resources and their activities, and oversee fulfillment progress, all from a single interface, simplifying order processing and minimizing errors or delays.</p>
   </div>
 </div>
 </Container>
@@ -300,9 +303,10 @@ const handleApora=()=>{
 
 
 
-<div className='resp-footer'>
-<Footer/>
-</div>
+
+    </div>
+    <div className='mt-3'>
+    <Footer/>
     </div>
     </>
   )

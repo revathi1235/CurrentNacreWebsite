@@ -115,3 +115,41 @@ margin-top: 36px;
 /* .contact-page-form form {
 padding: 20px 15px 0;
 } */
+
+
+
+.select-country{
+  width: 100px;
+  height: 50px;
+  background: #f9f9f9 none repeat scroll 0 0;
+  border: 1px solid #f9f9f9;
+}
+
+.country-dropdown .btn-primary{
+  width: 100px;
+  height: 60px;
+  color: #999999;
+  background: #f9f9f9 none repeat scroll 0 0;
+  border: 1px solid #f9f9f9;
+}
+
+.country-dropdown .btn-primary:hover{
+  width: 120px;
+  height: 50px;
+  color: #999999;
+  background: #f9f9f9 none repeat scroll 0 0;
+  border: 1px solid #f9f9f9;
+}
+
+.country-dropdown .dropdown-toggle::after {
+ content: none;
+}
+
+
+.country-dropdown .dropdown-menu {
+  max-height: 50vh; /* Limit the height of the dropdown */
+  overflow-y: auto; /* Enable vertical scrolling */
+  background-color: #f1f1f1; /* Dropdown menu background */
+  border-radius: 4px;
+  max-width: 200px;
+}

@@ -31,9 +31,15 @@ function CollapsibleExample() {
   const handlePurveywarehousemanagement = () => {
     navigate("/productwarehousemanagementsystem");
   };
+  const handleLastmiledelivery=()=>{
+    navigate('/deliverymanagementsystem')
+  }
   const handleBlogs = () => {
     navigate("blogs");
   };
+  const handleYardmanagement=()=>{
+    navigate('/yardmanagement')
+  }
   const [expanded, setExpanded] = useState(false);
 
   const handleToggle = () => setExpanded(!expanded);
@@ -85,14 +91,14 @@ function CollapsibleExample() {
             <NavDropdown.Item
              
               eventKey="4.2"
-             
+              onClick={() => { handleLastmiledelivery(); handleLinkClick(); }}
             >
-             Last Mile Delivery
+              Delivery Management System
             </NavDropdown.Item>
             <NavDropdown.Item
               
               eventKey="4.3"
-              onClick={() => { handlePurveywarehousemanagement(); handleLinkClick(); }}
+              onClick={() => { handleYardmanagement(); handleLinkClick(); }}
             >
              Yard Management
             </NavDropdown.Item>
@@ -101,7 +107,7 @@ function CollapsibleExample() {
             Services
           </Nav.Link>
           <Nav.Link onClick={() => { handleCasestudies(); handleLinkClick(); }}>
-            Case Studies
+          Articles
           </Nav.Link>
           <Nav.Link onClick={() => { handleBlogs(); handleLinkClick(); }}>
             Blogs
