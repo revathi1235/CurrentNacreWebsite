@@ -135,6 +135,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
     <div className='multichannelintegration-content'>
      
         <p style={{textAlign:"justify",padding:"40px"}}>In today's digital era, the Internet of Things (IoT) is revolutionizing the way warehouses operate, bringing increased automation, efficiency, and connectivity. By integrating IoT technologies into your WMS, you can unlock a wide range of benefits and transform your warehouse operations.</p>
+        <p style={{textAlign:"justify",padding:"40px"}}>As technology continues to evolve, businesses are seeking ways to enhance their operations, improve connectivity, and drive efficiency. API integration in PURVEY WMS allows seamless communication and data exchange between different systems, enabling you to unlock a wide range of benefits.</p>
     </div>
    </div>
 
@@ -147,43 +148,15 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
 
 
 
-<div className='seconddiv-multichannelintegration'>
-    <h1>Features</h1> 
-</div>
-<Container  className='seconddiv-orderprocessing-container'>
- 
 
-    <div className='valuedelivered-maindiv-orderprocessing' >
 
-  <div className='valuedelivered-firstdiv-orderprocessing'>
-    <img src={improveresouceutilisation} alt="" />
-    {/* <h6>Enhanced Efficiency</h6> */}
-    <p><b>Enhanced Efficiency</b> through AI-powered order synchronization leverages advanced algorithms to intelligently analyze order similarities and content item proximities within the warehouse. By identifying patterns, the system synchronizes multiple orders that share common items or are in close proximity. This synchronization reduces the number of picklists, enabling warehouse staff to complete orders more efficiently.</p>
-  </div>
-  <div className='valuedelivered-seconddiv-orderprocessing'>
-    <img src={efficiency} alt="" />
-    {/* <h6>Reduced Complexity</h6> */}
-    <p><b>Reduced Complexity</b> in traditional order picking processes often leads to numerous picklists, requiring warehouse staff to walk around multiple times for each list. AI-powered order synchronization simplifies this by consolidating related orders into a single picklist, allowing staff to manage tasks more effectively and focus on efficient order fulfillment.</p>
-  </div>
-  <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src={improvedorderaccuracy} alt="" />
-    {/* <h6>Increased Productivity</h6> */}
-    <p><b>Increased Productivity</b> is achieved by reducing the number of picklists through AI-powered order synchronization. Warehouse staff spend less time managing and switching between lists, which allows for a more streamlined process. This efficiency enables employees to work faster, fulfill orders promptly, and effectively meet customer demands in the warehouse</p>
-  </div>
-  <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src={improvedorderaccuracy} alt="" />
-    {/* <h6>Improved Resource Utilization</h6> */}
-    <p><b>Improved Resource Utilization</b> is achieved through AI-powered order synchronization, which considers the proximity of items within the warehouse. By synchronizing orders based on similar item locations, staff can navigate efficiently, minimizing travel time and maximizing the use of labor and equipment, ultimately leading to significant cost savings for the operation.</p>
-  </div>
-</div>
-</Container>
 
 
 <Container>
 <div class="image-container-multichannelintegration">
   
   <div class="overlay">
-    <p >This results in faster order processing, improved customer satisfaction, and increased operational efficiency. Embrace IoT integration to gain a competitive edge, streamline your operations, and deliver superior customer experiences.</p>
+    <p >IoT integration facilitates faster and more accurate order fulfilment processes. By leveraging IoT technologies such as wearable devices, warehouse workers can receive real-time instructions, reducing errors and improving picking accuracy. This results in faster order processing, improved customer satisfaction, and increased operational efficiency. </p>
   </div>
 </div>
 </Container>

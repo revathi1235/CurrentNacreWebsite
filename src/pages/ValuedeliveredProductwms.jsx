@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import './value.css'; // Make sure to add necessary styles in your CSS file
 
 const App = () => {

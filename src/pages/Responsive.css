@@ -856,10 +856,19 @@ margin-top: 20px;
     margin-top: 696px;
     margin-left: -54px;
 }
+.firstdiv-yardmanagement {
+  display: block;
+  width: 100%;
+  align-items: stretch;
+  margin-top: 696px;
+  margin-left: -54px;
+}
 .multichannelintegration-image img {
   width: auto;
-  height: 45vh;
+        height: 45vh;
+        object-fit: contain;
 }
+
 .multichannelintegration-content p{
 width: 350px;
 }
@@ -1270,3 +1279,104 @@ width: 350px;
     width: 404px;
   }
 }
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  #tree ul {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  #tree li {
+    padding: 10px 0 0 0;
+    font-size: 12px;
+    width: auto; /* Allow items to shrink */
+  }
+
+  #tree li span {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  #tree li::before, #tree li::after {
+    width: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #tree li span {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+  #tree li::after {
+    right: auto;
+    left: 50%;
+    height: 11px;
+    top: -6px;
+    border-left: 1px solid #020202;
+}
+#tree li::before, #tree li::after {
+  width: 0;
+  top: -6px;
+  height: 11px;
+}
+
+  #tree li {
+    padding: 5px 0;
+  }
+}
+
+/* ==========yard managmnent=-============= */
+@media (min-width: 768px) {
+  /* For medium screens (tablets and up) */
+  .yardmanagement-firstdiv {
+    flex-wrap: nowrap; /* Keep items in a row */
+  }
+
+  .yardmanagement-seconddiv {
+    width: 50%; /* Image takes 50% width */
+    max-width: 50%;
+  }
+
+  .yardmanagement-thirddiv {
+    width: 50%; /* Content takes 50% width */
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  /* For smaller screens (phones) */
+  .yardmanagement-firstdiv {
+    display: block;
+    height: 50vh;
+    width: 100%;
+  }
+
+  .yardmanagement-seconddiv img{
+    width: 90%; /* Take full width */
+  }
+.yardmanagment-content{
+  width:auto;
+
+}
+  .yardmanagement-thirddiv {
+    width: 100%; /* Take full width */
+    margin-top: 300px; /* Adjust padding for smaller screens */
+  }
+  .seconddiv-workforcemanagement-yardmanagement{
+    margin-top: 500px;
+  }
+  .deliverymanagement-system-seconddiv{
+    margin-top: 500px;
+  }
+  .common-font-family-heading{
+    font-size: 16px;
+  }
+ 
+} 

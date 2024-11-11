@@ -135,6 +135,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
     <div className='multichannelintegration-content'>
     
         <p style={{textAlign:"justify",padding:"40px"}}>As technology continues to evolve, businesses are seeking ways to enhance their operations, improve connectivity, and drive efficiency. API integration in PURVEY WMS allows seamless communication and data exchange between different systems, enabling you to unlock a wide range of benefits.</p>
+        <p style={{textAlign:"justify",padding:"40px"}}>API integration bridges the gap between your WMS and other systems, such as ERP, CRM, e-commerce platforms, or third-party logistics providers. This enables real-time data synchronization and eliminates manual data entry, ensuring accurate and up-to-date information across all integrated systems. With enhanced connectivity, you can streamline processes, reduce errors, and improve overall efficiency.</p>
     </div>
    </div>
 
@@ -147,36 +148,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
 
 
 
-<div className='seconddiv-multichannelintegration'>
-    <h1>Features</h1> 
-</div>
-<Container  className='seconddiv-orderprocessing-container'>
- 
 
-    <div className='valuedelivered-maindiv-orderprocessing' >
-
-  <div className='valuedelivered-firstdiv-orderprocessing'>
-    <img src={improveresouceutilisation} alt="" />
-    {/* <h6>Enhanced Efficiency</h6> */}
-    <p><b>Enhanced Efficiency</b> through AI-powered order synchronization leverages advanced algorithms to intelligently analyze order similarities and content item proximities within the warehouse. By identifying patterns, the system synchronizes multiple orders that share common items or are in close proximity. This synchronization reduces the number of picklists, enabling warehouse staff to complete orders more efficiently.</p>
-  </div>
-  <div className='valuedelivered-seconddiv-orderprocessing'>
-    <img src={efficiency} alt="" />
-    {/* <h6>Reduced Complexity</h6> */}
-    <p><b>Reduced Complexity</b> in traditional order picking processes often leads to numerous picklists, requiring warehouse staff to walk around multiple times for each list. AI-powered order synchronization simplifies this by consolidating related orders into a single picklist, allowing staff to manage tasks more effectively and focus on efficient order fulfillment.</p>
-  </div>
-  <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src={improvedorderaccuracy} alt="" />
-    {/* <h6>Increased Productivity</h6> */}
-    <p><b>Increased Productivity</b> is achieved by reducing the number of picklists through AI-powered order synchronization. Warehouse staff spend less time managing and switching between lists, which allows for a more streamlined process. This efficiency enables employees to work faster, fulfill orders promptly, and effectively meet customer demands in the warehouse</p>
-  </div>
-  <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src={improvedorderaccuracy} alt="" />
-    {/* <h6>Improved Resource Utilization</h6> */}
-    <p><b>Improved Resource Utilization</b> is achieved through AI-powered order synchronization, which considers the proximity of items within the warehouse. By synchronizing orders based on similar item locations, staff can navigate efficiently, minimizing travel time and maximizing the use of labor and equipment, ultimately leading to significant cost savings for the operation.</p>
-  </div>
-</div>
-</Container>
 
 
 
@@ -184,73 +156,14 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
 <div class="image-container-multichannelintegration">
   
   <div class="overlay">
-    <p className='mt-3'>"Quality Assurance process in our advanced WMS, you can ensure superior product quality, minimize errors, and maintain customer satisfaction. By leveraging our standardized procedures, real-time tracking, and automated alerts, you can streamline your quality control process, reduce returns, and enhance your brand reputation. Choose our WMS to optimize your quality assurance operations and deliver excellence in every shipment."</p>
+    <p className='mt-3'>"
+    API integration provides scalability and flexibility to adapt to your changing business needs. As your business grows or diversifies, you can easily integrate new systems or applications into your WMS using APIs. This flexibility allows you to expand your capabilities, integrate with new channels, and accommodate evolving business requirements without disrupting your existing operations."</p>
   </div>
 </div>
 </Container>
 
 
-
-<div className='valuedelivered-section-inbountreceipt'> 
-  <div className='value-del-aporafulfillment'>
-    <h1 style={{fontSize:"30px",marginTop:"50px"}}>Value Delivered</h1>
-    </div>
-<div class="container-inbountreceipt">
-   
-    <div  className='row-inbountreceipt'>
-      
-        <div className="service-inbountreceipt rainbow-inbountreceipt">
-          
-            <h2 class="service_heading-inbountreceipt">Enhanced Product Quanlity</h2>
-            <p class="service_para-inbountreceipt">
-            Our Quality Assurance process enables you to maintain strict quality standards for every product leaving your warehouse. By identifying and rectifying any deviations or defects, you can deliver superior quality products to your customers, enhancing their satisfaction and loyalty.
-</p>           
-        </div>
-        <div className="service-inbountreceipt rainbow-inbountreceipt">
-           
-            <h2 class="service_heading-inbountreceipt">Reduced Returns and complaints</h2>
-            <p class="service_para-inbountreceipt">
-            With accurate and comprehensive quality control measures in place, you can minimize returns and customer complaints due to substandard or defective products. This saves costs associated with returns processing and improves your overall customer experience.
-            </p>
-        </div>
-        <div className="service-inbountreceipt rainbow-inbountreceipt">
-           
-            <h2 class="service_heading-inbountreceipt">Complailance with Regulations and Standards</h2>
-            <p class="service_para-inbountreceipt">
-            Our WMS helps ensure compliance with industry regulations and quality standards. By implementing standardized quality assurance procedures, you can meet legal requirements, industry-specific guidelines, and customer expectations for product quality.
-            </p>
-        </div>
-       
-        
-
-</div>
-</div>
-<div class="container-inbountreceipt">
-   
-    <div  className='row-inbountreceipt'>
-      
-        <div className="service-inbountreceipt rainbow-inbountreceipt">
-          
-            <h2 class="service_heading-inbountreceipt">Increased Operational Efficiency</h2>
-            <p class="service_para-inbountreceipt">
-            Automation of the quality assurance process streamlines inspection procedures, and improves overall operational efficiency. This allows your team to focus on value-added tasks and optimize productivity.       </p>
-           
-        </div>
-        <div className="service-inbountreceipt rainbow-inbountreceipt">
-           
-            <h2 class="service_heading-inbountreceipt">Enhanced Bank Reputation</h2>
-            <p class="service_para-inbountreceipt">
-            By consistently delivering high-quality products, you can strengthen your brand reputation and differentiate yourself in the market. Positive customer experiences and a reputation for quality contribute to increased customer trust and loyalty.
-            </p>
-        </div>
-      
-       
-        
-
-</div>
-</div>
-  </div>
-
+z
 
 
 <Footer/>

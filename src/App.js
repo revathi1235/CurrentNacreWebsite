@@ -10,7 +10,7 @@ import { HashRouter,Routes,Route  } from 'react-router-dom';
 // import NavbarCommon from './pages/NavbarCommon';
 import Inbountreceipt from './pages/Inbountreceipt';
 // import CommonContact from './pages/CommonContact';
-import Navbar from './Newpages/Navbar'
+import Navbar from './CommonNavbar/Navbar'
 import AporaFulfillmentautomation from './pages/AporaFulfillmentautomation';
 import Services from './pages/Services';
 import Orderprocessing from './pages/OrderProcessing';

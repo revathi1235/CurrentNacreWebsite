@@ -186,7 +186,7 @@ const handlePurveywms=()=>{
 <div class="image-container-multichannelintegration">
   
   <div class="overlay">
-    <p >"Transform your warehouse into a well-oiled machine with our state-of-the-art Repacking & Put Away module. Experience the benefits of optimized storage space, efficient repacking processes, and increased operational productivity."</p>
+    <p >Transform your warehouse into a well-oiled machine with our state-of-the-art Repacking & Put Away module. Experience the benefits of optimized storage space, efficient repacking processes, and increased operational productivity.</p>
   </div>
 </div>
 </Container>

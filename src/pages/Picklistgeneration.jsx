@@ -4,6 +4,8 @@ import aporablack from '../Assets/apora_black.png'
 import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
 import Chart from './Chart'
+import { Helmet } from 'react-helmet';
+
 import efficiency from '../Assets/Efficiency.svg'
 import improvedorderaccuracy from '../Assets/improvedorderaccuracy.svg'
 import multibanner from '../Assets/multibanner.png'
@@ -127,6 +129,32 @@ const handleApora=()=>{
   return (
     <div data-aos="fade-up"
     data-aos-anchor-placement="center-center">
+
+
+
+
+
+
+
+
+
+<Helmet>
+        <title>AI-Powered Picklist Generation for Order Fulfillment</title>
+        <meta name="description" content="Optimize order fulfillment with AI-powered picklist generation. Enhance efficiency and accuracy in meeting customer demands with intelligent order processing." />
+        <meta name="keywords" content="Picklist Generation, AI-powered picklist, Order Fulfillment, Warehouse Efficiency, Inventory Management, Optimized Order Processing" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="AI-Powered Picklist Generation for Order Fulfillment" />
+        <meta property="og:description" content="Transform order fulfillment with AI-driven picklist generation. Efficient, accurate, and streamlined processes to meet customer demands." />
+        {/* <meta property="og:image" content={picklistImage} /> */}
+        <meta property="og:type" content="website" />
+      </Helmet> 
+
+
+
+
+
+
+
  <div style={{height:"40vh"}}>
  <div className='starting-picklistgeneration'>
     {/* <h1 className="gradient-text">AI-Powered Picklist Generation<br /></h1> */}
@@ -189,9 +217,11 @@ const handleApora=()=>{
 
 
  <div className='firstdiv-multichannelintegration'>
-    <div className='multichannelintegration-image wrapper'>
-        <img src={orderprocessing} alt=""  className='image--cover'/>
+ <div className="multichannelintegration-image">
+    <div className="image-wrapper-multi">
+        <img src="../Assets/picklistgeneration.png" alt="" />
     </div>
+</div>
     <div className='multichannelintegration-content'>
         <p style={{textAlign:"justify",padding:"40px"}}>With Order fulfilment, businesses face the challenge of optimizing their operations to meet customer demands efficiently and accurately. Manual processes for generating picklists can be time-consuming and prone to errors. With the advent of our AI-powered picklist generation, organizations can revolutionize their order fulfilment processes. <br /> <br /> Our AI powered picklist generation uses artificial intelligence to analyse a variety of data points, such as product location, inventory levels, and order priority. This data is then used to generate a picklist that is optimized for efficiency and accuracy.</p>    </div>
    </div>
@@ -210,22 +240,22 @@ const handleApora=()=>{
  
 <div className='valuedelivered-maindiv-orderprocessing'>
   <div className='valuedelivered-firstdiv-orderprocessing'>
-    <img src={improveresouceutilisation} alt="" />
+    <img src='../../Assets/accuracyandefficiency.webp' alt="" />
     {/* <h6>Accuracy and Efficiency</h6> */}
     <p><b>Accuracy and Efficiency</b> are enhanced through AI-powered order synchronization, which utilizes advanced algorithms to analyze order similarities and item proximities within the warehouse. By identifying patterns, the system synchronizes multiple orders with common items, reducing the number of picklists and enabling warehouse staff to fulfill orders more efficiently.</p>
   </div>
   <div className='valuedelivered-seconddiv-orderprocessing'>
-    <img src={efficiency} alt="efficiencyimage" />
+    <img src='../../Assets/intelligentorderanalysiss.jpeg' alt="efficiencyimage" />
     {/* <h6>Intelligent Order Analysis</h6> */}
     <p><b>Intelligent Order Analysis</b> is at the core of the AI-powered picklist generation system, which examines order data, including details, priority, and delivery deadlines. Utilizing machine learning algorithms, it understands order patterns, identifies common item combinations, and optimizes the sequencing of picks. This analysis ensures that picklists are generated with the utmost efficiency and accuracy.</p>
   </div>
   <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src={improvedorderaccuracy} alt="improvedorderaccuracy" />
+    <img src='../../Assets/warehouselayoutoptimization.webp' alt="improvedorderaccuracy" />
     {/* <h6>Warehouse Layout Optimization</h6> */}
     <p><b>Warehouse Layout Optimization </b>is crucial for effective order fulfillment, as it takes into account the physical arrangement of aisles, shelves, and storage locations. By understanding the proximity of items and their popularity, the system generates picklists that minimize travel time for warehouse staff, ensuring that orders are fulfilled quickly and efficiently.</p>
   </div>
   <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src={improvedorderaccuracy} alt="improvedorderaccuracy" />
+  <img src="../Assets/multi.png" alt="" />
     {/* <h6>Warehouse Layout Optimization</h6> */}
     <p><b>Integration with Warehouse Management Systems </b> allows the AI-powered picklist generation system to seamlessly enhance your workflow. It processes order data, generates optimized picklists, and updates pick statuses in real time, eliminating manual data entry and streamlining the entire process.</p>
   </div>
@@ -240,33 +270,55 @@ const handleApora=()=>{
       </div>
       <div className='row justify-content-center '>
         {/* Card 1 */}
-        <div className='col-md-4 col-sm-12 mb-4'>
+        {/* <div className='col-md-4 col-sm-12 mb-4'>
           <div className='card-orderprocessing' style={{background:"white"}}>
-            <h5 style={{color:"white",background:"#303097"}}>Enhanced Efficiency</h5>
+            <h5 style={{color:"white",background:"#303097"}}>Maximized Output</h5>
             <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
+              <img className='avatar-orderprocessing' src='../../Assets/maximized.webp' alt='Order Analysis' />
             </div>
             <div className='bio-orderprocessing'>
               <p style={{color:"black",fontSize:"14px"}}>AI-powered picklist generation automates the process of creating optimized picklists. By analysing order data, inventory levels, and other relevant factors, the system intelligently generates multiple orders synchronised picklists. This automation eliminates the time-consuming task of manually sorting through orders and increases the efficiency of order fulfilment.</p>
             </div>
           </div>
+        </div> */}
+          <div className='col-md-4 col-sm-12 mb-4'>
+          <div className='card-orderprocessing' style={{background:"white"}}>
+            <h5 style={{color:"white",background:"#303097"}}>Maximized Output</h5>
+            <div className='image-crop-orderprocessing'>
+            <img className='avatar-orderprocessing' src='../../Assets/max.jpg' alt='Order Analysis' />
+            </div>
+            <div className='bio-orderprocessing' >
+            <p style={{color:"black",fontSize:"14px"}}>AI-powered picklist generation automates the process of creating optimized picklists. By analysing order data, inventory levels, and other relevant factors, the system intelligently generates multiple orders synchronised picklists. This automation eliminates the time-consuming task of manually sorting through orders and increases the efficiency of order fulfilment.</p>
+            </div>
+          </div>
         </div>
 
         {/* Card 2 */}
-        <div className='col-md-4 col-sm-12 mb-4'>
+        {/* <div className='col-md-4 col-sm-12 mb-4'>
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Optimal Resource Utilization</h5>
             <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Inventory Management' />
+              <img className='avatar-orderprocessing' src='../../Assets/optimalresourceutilization.png' alt='Inventory Management' />
             </div>
             <div className='bio-orderprocessing'>
               <p style={{color:"black",fontSize:"14px"}}>Efficient resource allocation is crucial for streamlining order fulfilment. AI-powered picklist generation takes into account factors such as warehouse layout and staff availability to optimize the allocation of resources.</p>
             </div>
           </div>
+        </div> */}
+         <div className='col-md-4 col-sm-12 mb-4'>
+          <div className='card-orderprocessing' style={{background:"white"}}>
+          <h5 style={{color:"white",background:"#303097"}}>Optimal Resource Utilization</h5>
+            <div className='image-crop-orderprocessing'>
+            <img className='avatar-orderprocessing' src='../../Assets/optimized.webp' alt='Inventory Management' />
+            </div>
+            <div className='bio-orderprocessing' >
+            <p style={{color:"black",fontSize:"14px"}}>Efficient resource allocation is crucial for streamlining order fulfilment. AI-powered picklist generation takes into account factors such as warehouse layout and staff availability to optimize the allocation of resources.</p>
+            </div>
+          </div>
         </div>
 
         {/* Card 3 */}
-        <div className='col-md-4 col-sm-12 mb-4 '>
+        {/* <div className='col-md-4 col-sm-12 mb-4 '>
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Improved Accuracy</h5>
             <div className='image-crop-orderprocessing'>
@@ -276,8 +328,18 @@ const handleApora=()=>{
               <p style={{color:"black",fontSize:"14px"}}>Human errors in generating picklists can lead to mispicks, delays, and customer dissatisfaction. AI-powered picklist generation minimizes the risk of errors by using advanced algorithms to analyse order details and guide pick process with Barcode/ QR code/ RFID systems to ensure order accuracy and customer satisfaction.</p>
             </div>
           </div>
+        </div> */}
+          <div className='col-md-4 col-sm-12 mb-4'>
+          <div className='card-orderprocessing' style={{background:"white"}}>
+          <h5 style={{color:"white",background:"#303097"}}>Improved Accuracy</h5>
+            <div className='image-crop-orderprocessing'>
+            <img className='avatar-orderprocessing' src='../../Assets/improvedaccuracy.webp' alt='Inventory Management' />
+            </div>
+            <div className='bio-orderprocessing' >
+            <p style={{color:"black",fontSize:"14px"}}>Human errors in generating picklists can lead to mispicks, delays, and customer dissatisfaction. AI-powered picklist generation minimizes the risk of errors by using advanced algorithms to analyse order details and guide pick process with Barcode/ QR code/ RFID systems to ensure order accuracy and customer satisfaction.</p>
+            </div>
+          </div>
         </div>
-        
       </div>
     </div>
 

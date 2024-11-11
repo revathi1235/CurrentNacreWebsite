@@ -260,21 +260,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
         </div>
       </Container>
 
-      <Container>
-        <div class="image-container-multichannelintegration">
-          <div class="overlay">
-            <p className="mt-3">
-              "Quality Assurance process in our advanced WMS, you can ensure
-              superior product quality, minimize errors, and maintain customer
-              satisfaction. By leveraging our standardized procedures, real-time
-              tracking, and automated alerts, you can streamline your quality
-              control process, reduce returns, and enhance your brand
-              reputation. Choose our WMS to optimize your quality assurance
-              operations and deliver excellence in every shipment."
-            </p>
-          </div>
-        </div>
-      </Container>
+   
 
       <div className="valuedelivered-section-inbountreceipt">
         <div className="value-del-aporafulfillment">

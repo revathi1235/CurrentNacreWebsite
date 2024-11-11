@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import "./warehouse.css"; // Include your CSS styles here
-import aporablack from "../Assets/apora_black.png";
+// import aporablack from "../Assets/apora_black.png";
 import multichannelintegration from "../Assets/Multichannelintegration.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
 import purvey_apora_black from "../Assets/purvey_apora_black.png";
 import Chart2 from "./Chart2";
-import ValuedeliveredProductwms from './ValuedeliveredProductwms'
+// import ValuedeliveredProductwms from './ValuedeliveredProductwms'
 import {
   faEnvelope,
   faLocationDot,

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Row,Col } from 'react-bootstrap'
 import Cardflip from './Cardflip'
+import Footer from '../components/Footer'
 
 function Casestudies() {
   return (
@@ -53,6 +54,9 @@ function Casestudies() {
           </Col>
         </Row>
        </Container>
+
+
+       <Footer/>
     </div>
 
   )

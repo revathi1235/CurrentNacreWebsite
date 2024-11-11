@@ -188,49 +188,36 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
             <img src={improveresouceutilisation} alt="" />
             {/* <h6>Enhanced Efficiency</h6> */}
             <p>
-              <b>Enhanced Efficiency</b> through AI-powered order
-              synchronization leverages advanced algorithms to intelligently
-              analyze order similarities and content item proximities within the
-              warehouse. By identifying patterns, the system synchronizes
-              multiple orders that share common items or are in close proximity.
-              This synchronization reduces the number of picklists, enabling
-              warehouse staff to complete orders more efficiently.
+              <b>Efficient Data Capture for Accurate Inventory</b> With our WMS seamlessly integrating barcode and RFID technologies, you can efficiently capture data, quickly scan items, update inventory records, and minimize manual errors. This results in significantly improved inventory accuracy and streamlined processes.
             </p>
           </div>
           <div className="valuedelivered-seconddiv-orderprocessing">
             <img src={efficiency} alt="" />
             {/* <h6>Reduced Complexity</h6> */}
             <p>
-              <b>Reduced Complexity</b> in traditional order picking processes
-              often leads to numerous picklists, requiring warehouse staff to
-              walk around multiple times for each list. AI-powered order
-              synchronization simplifies this by consolidating related orders
-              into a single picklist, allowing staff to manage tasks more
-              effectively and focus on efficient order fulfillment.
+              <b>Inventory Segmentation for Efficient Organization
+              </b> With our Inventory Management feature, you can classify and segment your inventory based on criteria like product category, SKU, or demand. This approach enhances organization, optimizes storage, and accelerates item retrieval, driving improved operational efficiency.
             </p>
           </div>
           <div className="valuedelivered-thirddiv-orderprocessing">
             <img src={improvedorderaccuracy} alt="" />
             {/* <h6>Increased Productivity</h6> */}
             <p>
-              <b>Increased Productivity</b> is achieved by reducing the number
-              of picklists through AI-powered order synchronization. Warehouse
-              staff spend less time managing and switching between lists, which
-              allows for a more streamlined process. This efficiency enables
-              employees to work faster, fulfill orders promptly, and effectively
-              meet customer demands in the warehouse
+              <b>Automated Replenishment for Optimal Control</b> PURVEY WMS automates the replenishment process by setting reorder points and triggering alerts when stock levels drop below defined thresholds. This ensures timely replenishment, reduces stockouts, and helps maintain optimal inventory levels for efficient operations.
             </p>
           </div>
           <div className="valuedelivered-thirddiv-orderprocessing">
             <img src={improvedorderaccuracy} alt="" />
             {/* <h6>Improved Resource Utilization</h6> */}
             <p>
-              <b>Improved Resource Utilization</b> is achieved through
-              AI-powered order synchronization, which considers the proximity of
-              items within the warehouse. By synchronizing orders based on
-              similar item locations, staff can navigate efficiently, minimizing
-              travel time and maximizing the use of labor and equipment,
-              ultimately leading to significant cost savings for the operation.
+              <b>Batch & Lot Tracking: Compliance & Efficiency</b> Our WMS supports batch and lot tracking, allowing you to trace the movement and usage of specific batches or lots of items. This is particularly beneficial for industries with strict compliance requirements or products with expiration dates, ensuring regulatory compliance and minimizing wastage.
+            </p>
+          </div>
+          <div className="valuedelivered-thirddiv-orderprocessing">
+            <img src={improvedorderaccuracy} alt="" />
+            {/* <h6>Improved Resource Utilization</h6> */}
+            <p>
+              <b>Cycle Counting & Inventory Management Efficiency</b> Our Inventory Control feature includes cycle counting functionality, enabling you to conduct periodic stock counts without disrupting daily operations. This ensures ongoing accuracy and helps identify discrepancies for prompt resolution. Additionally, our WMS facilitates efficient management of physical inventory processes, minimizing errors and streamlining reconciliation.
             </p>
           </div>
         </div>
@@ -240,13 +227,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
         <div class="image-container-multichannelintegration">
           <div class="overlay">
             <p className="mt-3">
-              "Quality Assurance process in our advanced WMS, you can ensure
-              superior product quality, minimize errors, and maintain customer
-              satisfaction. By leveraging our standardized procedures, real-time
-              tracking, and automated alerts, you can streamline your quality
-              control process, reduce returns, and enhance your brand
-              reputation. Choose our WMS to optimize your quality assurance
-              operations and deliver excellence in every shipment."
+            With PURVEY WMS, you can streamline your inventory management, improve accuracy, and optimize operational efficiency. By leveraging real-time visibility, barcode and RFID integration, and automated replenishment, you can maintain optimal inventory levels, reduce stockouts, and enhance customer satisfaction. Choose our WMS to gain control over your inventory and drive success in your warehouse operations.
             </p>
           </div>
         </div>

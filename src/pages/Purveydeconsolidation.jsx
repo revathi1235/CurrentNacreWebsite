@@ -237,9 +237,7 @@ function Purveydeconsolidation() {
         <div class="image-container-multichannelintegration">
           <div class="overlay">
             <p>
-              "If you are looking for a way to improve your business's
-              efficiency and profitability, a cross-docking system is a valuable
-              tool that can help you achieve your goals."
+            With PURVEY WMS, you can streamline your inventory management, improve accuracy, and optimize operational efficiency. By leveraging real-time visibility, barcode and RFID integration, and automated replenishment, you can maintain optimal inventory levels, reduce stockouts, and enhance customer satisfaction. Choose our WMS to gain control over your inventory and drive success in your warehouse operations.
             </p>
           </div>
         </div>

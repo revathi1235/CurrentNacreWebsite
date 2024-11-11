@@ -3,6 +3,7 @@ import royalbluebg from '../Assets/royalbluebg.jpg'
 import aporablack from '../Assets/apora_black.png'
 import Card from 'react-bootstrap/Card';
 import { Helmet } from 'react-helmet';
+
 // import scalabilityandflexibility from '../Assets/scalabilityandflexibility.svg'
 import Nav from 'react-bootstrap/Nav';
 import efficiency from '../Assets/Efficiency.svg'
@@ -14,7 +15,7 @@ import { Container,Row,Col,Modal,Button } from 'react-bootstrap';
 import { useState } from 'react';
 import './Responsive.css'
 import Chart from './Chart'
-import multichannelintegration from '../Assets/Multichannelintegration.svg'
+
 import { useNavigate } from 'react-router-dom';
 import Footer from '../components/Footer';
 const items = [
@@ -219,9 +220,12 @@ const handleApora=()=>{
 
 
    <div className='firstdiv-multichannelintegration ' >
-    <div className='multichannelintegration-image wrapper'>
-        <img src={multichannelintegration} alt="" className='image--cover'/>
+   <div className="multichannelintegration-image">
+    <div className="image-wrapper-multi">
+        <img src="../Assets/multi.png" alt="" />
     </div>
+</div>
+
     <div className='multichannelintegration-content'>
         <p style={{textAlign:"justify",padding:"40px"}}>In today's competitive retail environment, businesses need to be able to offer their customers a seamless shopping experience across multiple channels. This means being able to take orders and fulfil them from any channel, whether it's online, in-store, or over the phone.
         Multi-channel integration is the key to providing this seamless experience. It allows businesses to connect their various sales channels to a single fulfilment system. This ensures that inventory levels are always up-to-date and that orders can be picked and packed quickly and efficiently.</p>
@@ -261,7 +265,7 @@ const handleApora=()=>{
     <p style={{textAlign:"justify"}}> <b>Improved Resource Utilisation</b> is achieved by integrating multiple channels into a unified pick management system, allowing you to optimize resources and reduce operational complexities.</p>
   </div>
   <div className='valuedelivered-seconddiv-multiintegration'>
-    <img src={efficiency} alt="" />
+    <img src='../../Assets/realtimevisibility.png' alt="" />
     {/* <h6>Real Time Visibility</h6> */}
     <p style={{textAlign:"justify"}}> <b>Real Time Visibility
     </b> ensures that the status of orders across all channels is tracked individually, even as they are processed simultaneously</p>
@@ -277,7 +281,7 @@ const handleApora=()=>{
 <br />
 <div className='valuedelivered-maindiv-multiintegration mt-5'>
   <div className='valuedelivered-fourthdiv-multiintegration'>
-  <img src={efficiency} alt="" />
+  <img src='../../Assets/scalabilityandflexibility.jpg' alt="" />
   {/* <h6>Scalability & Flexibility</h6> */}
     <p style={{textAlign:"justify"}}>  <b>Scalability & Flexibility</b> are key features of our multi-channel pick management system, which adapts to your growing business needs. It handles increasing order volumes and seamlessly incorporates new sales channels, whether through online marketplaces, brick-and-mortar stores, or social media platforms, ensuring efficient order consolidation and management.</p>
   </div>

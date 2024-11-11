@@ -1613,6 +1613,12 @@ display: none;
   align-items: stretch; /* Ensures both divs are equal height */
   margin-top: 130px;  
 }
+.firstdiv-yardmanagement {
+  display: flex;
+  width: 100%; /* Ensure it takes full width of the container */
+  align-items: stretch; /* Ensures both divs are equal height */
+ 
+}
 .multichannelintegration-content {
   flex: 1; /* Ensures equal width for both divs */
   height: 100%; /* Take full height of the parent */
@@ -1635,7 +1641,7 @@ display: none;
 .image--cover {
   width: 50%;
   height: auto;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 
   object-fit: cover;
   object-position: center right;
@@ -1655,13 +1661,28 @@ display: none;
     object-position: center ;
 }
 }
-.multichannelintegration-image img {
+.multichannelintegration-image   {
   width: 100%;
-  height:45vh;
+  height:auto;
   margin: 50px;
-  object-fit: cover;/* Ensures the image scales correctly without distortion */
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.image-wrapper-multi {
+  padding: 50px;            /* Adjust padding as needed */
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;    /* Ensures padding doesn’t affect width/height */
 }
 
+.image-wrapper-multi img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* Makes the image cover the container without distortion */
+  display: block;            /* Removes any extra spacing */
+}
 
 
 .seconddiv-multichannelintegration h1{
@@ -1863,18 +1884,21 @@ width: 100%;
       .image-crop-orderprocessing {
         display: block;
         position: relative;
-        background-color: #E6EBEE;
+        /* background-color: #E6EBEE; */
         width: 100%; /* Change width to 100% for responsive design */
         height: 150px;
-        margin: 0 auto;
+        /* margin: 0 auto; */
         margin-top: 0px;
         overflow: hidden;
-        box-shadow: 1px 1px 5px #4069E2;
+        text-align: center;
+        display: flex;
+        /* box-shadow: 1px 1px 5px #4069E2; */
       }
       
       .avatar-orderprocessing {
         display: inline;
-        height: 230px;
+        height: auto;
+      object-fit: scale-down;
         width: 100%;
       }
       
@@ -1973,6 +1997,15 @@ width: 100%;
     font-weight: 500;
     padding:  10px;
     }
+    .seconddiv-workforcemanagement-yardmanagement {
+      display: flex;
+      font-size: 30px;
+      justify-content: center;
+      text-align: center;
+      /* font-family: 'Good Times'; */
+      font-weight: 500;
+      padding:  10px;
+      }
     .seconddiv-content-workforcemanagement{
       padding: 40px;
       display: flex;
@@ -3882,4 +3915,146 @@ height: auto;
     color: black;
     font-family: bold;
   }
+}
+
+
+
+
+
+#tree {
+  display: block;
+  font-size: 0;
+  padding: 10px;
+}
+#tree ul {
+  display: flex;
+	transition: all 0.5s;
+  list-style-type: none;
+  white-space: nowrap;
+  padding: 0;
+}
+#tree li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0;
+  position: relative;
+  padding: 20px 5px 0 5px;
+	transition: all 0.5s;
+  text-align: center;
+  font-size: 0;
+  width: 100%;
+}
+#tree li ul {
+  margin-top: 20px;
+}
+
+#tree li ul::before{
+	content: '';
+	position: relative;
+  left: 50%;
+  bottom: 20px;
+	border-left: 3px solid black;
+	width: 0;
+  height: 20px;
+}
+
+#tree li span {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 14px 10px;
+  color: #666;
+  font-family: arial, verdana, tahoma;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: all 0.5s;
+  box-shadow: 2px 2px;
+  margin: auto;
+}
+
+#tree li::before, #tree li::after{
+	content: '';
+	position: absolute; 
+  top: 0;
+  right: 50%;
+	border-top: 3px solid #070606;
+	width: 50%;
+  height: 20px;
+}
+#tree li::after{
+	right: auto;
+  left: 50%;
+	border-left: 3px solid #050505;
+}
+
+#tree li:only-child::after, #tree li:only-child::before {
+	display: none;
+}
+
+#tree li:only-child{
+  padding-top: 0;
+}
+
+#tree li:first-child::before, #tree li:last-child::after{
+	border: 0 none;
+}
+
+#tree li:last-child::before{
+	border-right: 3px solid #030303;
+	border-radius: 0 5px 0 0;
+}
+#tree li:first-child::after{
+	border-radius: 5px 0 0 0;
+}
+
+#tree li span:hover, #tree li span:hover+ul li span {
+	background: #e6e6e6;
+	color: #000;
+	border-color: #a6a6a6;
+}
+
+#tree li span:hover+ul li::after, #tree li span:hover+ul li::before, #tree li span:hover+ul::before, #tree li span:hover+ul ul::before {
+	border-color: #a6a6a6;
+}
+.yard-heading-chart {
+  display: inline-block;
+  padding: 10px 20px; /* Add padding for spacing around the text */
+  font-size: 16px;
+  font-weight: bold;
+ 
+  background: linear-gradient(to bottom,green,blue); /* Gradient from blue to cyan */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  transition: background 0.3s ease; /* Smooth transition for background change */
+}
+
+.yard-heading-chart:hover {
+  background: linear-gradient(to bottom, green, blue); /* Reverse gradient on hover */
+}
+
+
+/* -------------yard management----------------- */
+.yardmanagement-firstdiv{
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+}
+.yardmanagement-seconddiv img{
+  height: 45vh;
+  width: 50%;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+.yardmanagement-thirddiv{
+  height: 50vh;
+  width: 50%;
+  position: absolute;
+  right: 0px;
+  padding: 40px 50px; 
+}
+.common-font-family-heading{
+  font-size:30px;
+    margin-top:50px;
+    font-family:'pirulen'
 }

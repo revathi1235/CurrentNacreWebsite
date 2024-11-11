@@ -6,7 +6,7 @@ import {Row,Col, Container} from 'react-bootstrap'
 const data = {
     'Put Away': {
       items: [
-        { name: 'Automated Put-Away List Generation: AI algorithms analyze incoming inventory and generate optimized put-away lists based on factors such as item size, weight, and demand, ensuring efficient placement and reducing manual planning time.', image: './Assets/pickbanner.jpg',description:'Regular put-away methods lead to several challenges, including inefficient space utilization, increased travel time, and poor inventory accuracy. They lack flexibility and increase the risk of errors, resulting in longer put-away times. Additionally, limited real-time data, compliance difficulties, scalability issues, and a lack of analytical insights hinder operational efficiency and responsiveness in warehouse management.' },
+        { name: "Automated <a href='/#/repackingandputaway' target='_blank' style={{ color: 'blue' }}> Put-Away  </a>: List Generation: AI algorithms analyze incoming inventory and generate optimized put-away lists based on factors such as item size, weight, and demand, ensuring efficient placement and reducing manual planning time.", image: './Assets/pickbanner.jpg',description:'Regular put-away methods lead to several challenges, including inefficient space utilization, increased travel time, and poor inventory accuracy. They lack flexibility and increase the risk of errors, resulting in longer put-away times. Additionally, limited real-time data, compliance difficulties, scalability issues, and a lack of analytical insights hinder operational efficiency and responsiveness in warehouse management.' },
         { name: 'Dynamic Storage Optimization: The system continuously assesses storage conditions and adjusts item locations in real-time to maximize space utilization, enhance accessibility, and adapt to changing inventory needs.', image: './Assets/eco.jpg' ,description:'Elevate your inventory management with cutting-edge dynamic storage optimization.'},
         { name: 'Resource Optimization: By analyzing worker availability, equipment, and storage locations, the AI optimizes resource allocation, ensuring that the right personnel and tools are deployed for efficient put-away operations.', image: './Assets/work4.jpg' ,description:"Unlock your potential by optimizing resources for smarter operations"},
         { name: 'Process Control and Monitoring: Automated monitoring tracks the progress of put-away tasks in real-time, providing actionable insights and alerts for any delays or inefficiencies, allowing for immediate corrective actions.', image: './Assets/eco.webp' ,description:'Transform your workflow with precise process control and continuous monitoring.'},
@@ -126,13 +126,9 @@ const data = {
             {selectedHeader && (
                     <div>
                         <ul className="block-list-deconsolidation mt-5">
-                            {items.map((item) => (
-                                <li
-                                    key={item.name}
-                                    >
-                                    {item.name}
-                                </li>
-                            ))}
+                        {items.map((item, index) => (
+              <li key={index} dangerouslySetInnerHTML={{ __html: item.name }} />
+            ))}
                         </ul>
                     </div>
                 )}

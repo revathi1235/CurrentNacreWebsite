@@ -11,7 +11,7 @@ import './Responsive.css'
 import Chart from './Chart';
 import Footer from '../components/Footer';
 const items = [
-  { id: 1, title: 'The Leading AI-Powered Fulfilment Automation System', imgSrc: '../Assets/cuttingedge.webp', description: 'Welcome to APORA, the AI-powered fulfilment automation system that optimizes operating costs and boosts efficiency exponentially. Our cutting-edge technology enables you to enjoy the benefits of reduced operational expenses and increased productivity, thanks to the exponential growth in efficiency. Say goodbye to order backlogs and experience a significant improvement in same-day deliveries.' },
+  { id: 1, title: 'The Leading AI-Powered Fulfilment Automation System', imgSrc: '../Assets/aipowered.jpg', description: 'Welcome to APORA, the AI-powered fulfilment automation system that optimizes operating costs and boosts efficiency exponentially. Our cutting-edge technology enables you to enjoy the benefits of reduced operational expenses and increased productivity, thanks to the exponential growth in efficiency. Say goodbye to order backlogs and experience a significant improvement in same-day deliveries.' },
   { id: 2, title: 'Hybrid Proprietary Methodology, Opti-Pick', imgSrc: 'image2.jpg', description: 'Unlike other fulfilment automation systems, APORA is not limited to e-commerce or B2B operations. We have developed a series of AI algorithms that implement our hybrid proprietary methodology, Opti-Pick. This ground-breaking approach has the potential to revolutionize Distribution Center activities, resulting in improved speed, efficiency, and ultimately generating more revenue for your business.' },
   { id: 3, title: 'Unlocking Fulfilment Automation Potential', imgSrc: 'image3.jpg', description: 'Embrace the future of fulfillment automation with APORA and unlock the true potential of your operations. Streamline your processes, maximize profitability, and deliver exceptional customer experiences with our state-of-the-art technology. With APORA, you can benefit from complete visibility and traceability of multiple packs that are associated with an order. Additionally, our advanced system enables order product and quantity-based carton size estimation and notification, allowing you to optimize packaging and shipping processes for increased efficiency. Contact us today to learn more about how APORA can transform your business.' },
 ];
@@ -32,32 +32,32 @@ function AporaFulfillmentautomation() {
     {
       title: "The Leading AI-Powered Fulfilment Automation System",
       body: "Welcome to APORA, the AI-powered fulfilment automation system that optimizes operating costs and boosts efficiency exponentially. Our cutting-edge technology enables you to enjoy the benefits of reduced operational expenses and increased productivity, thanks to the exponential growth in efficiency. Say goodbye to order backlogs and experience a significant improvement in same-day deliveries.",
-      image: "../Assets/work3.jpg" // Update as needed for each card
+      image: "../Assets/aipowered.jpg" // Update as needed for each card
     },
     {
       title: "Hybrid Proprietary Methodology, Opti-Pick",
       body: "Unlike other fulfilment automation systems, APORA is not limited to e-commerce or B2B operations. We have developed a series of AI algorithms that implement our hybrid proprietary methodology, Opti-Pick. This ground-breaking approach has the potential to revolutionize Distribution Center activities, resulting in improved speed, efficiency, and ultimately generating more revenue for your business..",
-      image: "../Assets/work4.jpg" // Replace with actual image path
+      image: "../Assets/optipick.webp" // Replace with actual image path
     },
     {
       title: "Unlocking Fulfilment Automation Potential",
       body: "Embrace the future of fulfillment automation with APORA and unlock the true potential of your operations. Streamline your processes, maximize profitability, and deliver exceptional customer experiences with our state-of-the-art technology. With APORA, you can benefit from complete visibility and traceability of multiple packs that are associated with an order. Additionally, our advanced system enables order product and quantity-based carton size estimation and notification, allowing you to optimize packaging and shipping processes for increased efficiency. Contact us today to learn more about how APORA can transform your business.",
-      image: "../Assets/integration.webp" // Replace with actual image path
+      image: "../Assets/fulfilmentautomation.png" // Replace with actual image path
     },
   ];
 
   const images = [
     {
-      default: '../Assets/eco.jpg',
-      hover: '../Assets/work2.webp',
+      default: '../Assets/aipowered.jpg',
+     
     },
     {
-      default: '../Assets/eco.jpg',
-      hover: '../Assets/work3.jpg',
+      default: '../Assets/optipick.webp',
+     
     },
     {
-      default: '../Assets/eco.jpg',
-      hover: '../Assets/work4.jpg',
+      default: '../Assets/fulfilmentautomation.png',
+     
     },
   ];
 
@@ -142,27 +142,26 @@ function AporaFulfillmentautomation() {
 
     
     <Container className='modal-popup-aporafulfillment mt-3'>
-      <Row className="justify-content-center">
-        {cardContents.map((content, index) => (
-          <Col lg={3} className="d-flex justify-content-center" key={index}>
-            <Card style={{ width: '18rem' }} className="card" onClick={() => handleShow(index)}>
-              <Card.Img
-                variant="top"
-                src={images[index].default}
-                onMouseEnter={(e) => {
-                  e.currentTarget.src = images[index].hover;
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.src = images[index].default;
-                }}
-              />
-              <Card.Body>
-                <Card.Text>{content.title}</Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
+        <Row className="justify-content-center">
+          {cardContents.map((content, index) => (
+            <Col lg={3} className="d-flex justify-content-center" key={index}>
+              <Card style={{ width: '18rem' }} className="card" onClick={() => handleShow(index)}>
+                <Card.Img
+                  variant="top"
+                  src={images[index].default}
+                
+                  style={{
+                    height: '170px',  // Set a fixed height for images
+                    objectFit: 'cover', // Ensure images cover the area without distortion
+                  }}
+                />
+                <Card.Body>
+                  <Card.Text>{content.title}</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
 
       {/* Modal Component */}
       <Modal
@@ -182,7 +181,7 @@ function AporaFulfillmentautomation() {
           alt="" 
           style={{ 
             width: "100%", 
-            height: "50vh", 
+            height: "auto", 
             display: "block", 
             border: "5px solid #fff", // Add a white border
             borderRadius: "8px", // Optional: for rounded corners

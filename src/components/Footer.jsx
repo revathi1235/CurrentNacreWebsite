@@ -91,9 +91,8 @@ function Footer() {
                 <div class="footer-widget">
                   <div class="footer-logo">
                     <a href="/index">
-                      <im
-                        g
-                        src="./Assets/ns black transparent.png"
+                      <img
+                        src="../Assets/ns black transparent.png"
                         class="img-fluid"
                         alt="logo"
                       />

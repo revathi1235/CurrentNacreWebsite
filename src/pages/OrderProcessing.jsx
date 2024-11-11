@@ -2,6 +2,8 @@ import React from 'react'
 import royalbluebg from '../Assets/royalbluebg.jpg'
 import aporablack from '../Assets/apora_black.png'
 import Card from 'react-bootstrap/Card';
+import { Helmet } from 'react-helmet';
+
 import Nav from 'react-bootstrap/Nav';
 import Chart from './Chart';
 import efficiency from '../Assets/Efficiency.svg'
@@ -109,6 +111,48 @@ function Orderprocessing() {
   return (
     <div data-aos="fade-up"
     data-aos-anchor-placement="center-center">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Helmet>
+        <title>Order Processing & AI-Powered Synchronization</title>
+        <meta name="description" content="Enhance your warehouse efficiency with AI-powered order synchronization. Optimize same-day delivery and streamline inventory with reduced picklists." />
+        <meta name="keywords" content="Order Processing, AI-powered synchronization, Warehouse efficiency, Same-day delivery, Inventory management, Just-in-time inventory" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Order Processing & AI-Powered Synchronization" />
+        <meta property="og:description" content="Revolutionize warehouse operations with AI-powered order synchronization for faster same-day delivery and streamlined inventory." />
+        <meta property="og:image" content={orderprocessing} />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  <div style={{height:"40vh"}}>
  <div className='starting-picklistgeneration'>
     <h1 className="gradient-text">Enhance Multi-Channel Order Processing Efficiency. <br /></h1>
@@ -170,9 +214,11 @@ function Orderprocessing() {
 
 
  <div className='firstdiv-multichannelintegration'>
-    <div className='multichannelintegration-image wrapper'>
-        <img src={orderprocessing} alt=""  className='image--cover'/>
+ <div className="multichannelintegration-image">
+    <div className="image-wrapper-multi">
+        <img src="../Assets/orderprocessing.webp" alt="" />
     </div>
+</div>
     <div className='multichannelintegration-content'>
         <p style={{textAlign:"justify",padding:"40px"}}>Same day delivery is increasingly becoming normal expectation of customers. With capital scarcity Brick and mortar business are also keen to achieve just-in-time inventory efficiency. In the bustling world of warehouse operations, streamlining processes to maximize efficiency is a top priority. Traditional order picking methods often result in a large number of picklists, leading to increased complexity and reduced productivity. However, with the power of AI-powered order synchronization, organizations can revolutionize their warehouse operations. <br /> <br /> Our AI-powered order synchronization, showcases how it optimizes efficiency and effectively reduces the number of picklists, which results in significant reduction of walk around time and increase same day deliveries.</p>    </div>
    </div>
@@ -191,7 +237,7 @@ function Orderprocessing() {
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Intelligent Order Analysis</h5>
             <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
+              <img className='avatar-orderprocessing' src='../Assets/intelligentorderanalysis.jpeg' alt='Order Analysis' />
             </div>
             <div className='bio-orderprocessing' >
               <p style={{color:"black"}}>The AI-powered order synchronization system utilizes advanced algorithms to analyse order similarities and content item proximities within the warehouse. By understanding the relationships between orders and item locations, the system intelligently synchronizes orders to minimize the number of picklists required.</p>
@@ -204,7 +250,7 @@ function Orderprocessing() {
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Real-Time Data Integration</h5>
             <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Inventory Management' />
+              <img className='avatar-orderprocessing' src='../Assets/realtimedataintegration.webp' alt='Inventory Management' />
             </div>
             <div className='bio-orderprocessing'>
               <p style={{color:"black"}}>The system seamlessly integrates with existing warehouse management systems, to receive real-time data on order details, item locations, and availability. This integration ensures accurate and up-to-date information, enabling the system to make informed decisions for order synchronization.</p>
@@ -217,7 +263,7 @@ function Orderprocessing() {
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097",fontSize:"18px"}}>Customizable Synchronization Rules</h5>
             <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Real-Time Analytics' />
+              <img className='avatar-orderprocessing' src='../Assets/synchronization.png' alt='Real-Time Analytics' />
             </div>
             <div className='bio-orderprocessing'>
               <p style={{color:"black"}}>The AI-powered order synchronization system considers criteria such as item similarity, item proximity, or order priorities to tailor the synchronization process to their unique needs.</p>
@@ -239,25 +285,33 @@ function Orderprocessing() {
     <div className='valuedelivered-maindiv-orderprocessing' >
 
   <div className='valuedelivered-firstdiv-orderprocessing'>
-    <img src={improveresouceutilisation} alt="" />
+    <img src='../../Assets/eff.jpg' alt="" />
     {/* <h6>Enhanced Efficiency</h6> */}
     <p><b>Enhanced Efficiency</b> through AI-powered order synchronization leverages advanced algorithms to intelligently analyze order similarities and content item proximities within the warehouse. By identifying patterns, the system synchronizes multiple orders that share common items or are in close proximity. This synchronization reduces the number of picklists, enabling warehouse staff to complete orders more efficiently.</p>
   </div>
   <div className='valuedelivered-seconddiv-orderprocessing'>
-    <img src={efficiency} alt="" />
+    <img src='../../Assets/reducedcomplexity.jpg' alt="" />
     {/* <h6>Reduced Complexity</h6> */}
     <p><b>Reduced Complexity</b> in traditional order picking processes often leads to numerous picklists, requiring warehouse staff to walk around multiple times for each list. AI-powered order synchronization simplifies this by consolidating related orders into a single picklist, allowing staff to manage tasks more effectively and focus on efficient order fulfillment.</p>
   </div>
+  
   <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src={improvedorderaccuracy} alt="" />
+    <img src='../../Assets/crowdedwarehouse.webp' alt="" />
     {/* <h6>Increased Productivity</h6> */}
     <p><b>Increased Productivity</b> is achieved by reducing the number of picklists through AI-powered order synchronization. Warehouse staff spend less time managing and switching between lists, which allows for a more streamlined process. This efficiency enables employees to work faster, fulfill orders promptly, and effectively meet customer demands in the warehouse</p>
   </div>
-  <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src={improvedorderaccuracy} alt="" />
-    {/* <h6>Improved Resource Utilization</h6> */}
+
+
+
+
+  <div className='valuedelivered-firstdiv-orderprocessing'>
+  <img src='../../Assets/improvedresourceutilization.jpg' alt="" />
+  {/* <h6>Enhanced Efficiency</h6> */}
     <p><b>Improved Resource Utilization</b> is achieved through AI-powered order synchronization, which considers the proximity of items within the warehouse. By synchronizing orders based on similar item locations, staff can navigate efficiently, minimizing travel time and maximizing the use of labor and equipment, ultimately leading to significant cost savings for the operation.</p>
   </div>
+
+
+
 </div>
 </Container>
 
@@ -268,7 +322,7 @@ function Orderprocessing() {
 
 
 
-<div className='resp-footer'>
+<div className='resp-footer mt-3'>
 <Footer/>
 </div>
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import purvey_apora_black from "../Assets/purvey_apora_black.png";
-import Chart2 from "./Chart2";
+// import Chart2 from "./Chart2";
 import multichannelintegration from "../Assets/work3.jpg";
 import improveresouceutilisation from "../Assets/Improveresourceutilisation.svg";
 import efficiency from "../Assets/Efficiency.svg";
