@@ -9,6 +9,7 @@ import efficiency from '../Assets/Efficiency.svg'
 import improvedorderaccuracy from '../Assets/improvedorderaccuracy.svg'
 import { useNavigate } from "react-router-dom";
 import Footer from '../components/Footer'
+import { Helmet } from 'react-helmet';
 
 function Crossdocking() {
   const navigate=useNavigate()
@@ -47,6 +48,18 @@ const handlePurveywms=()=>{
 }
   return (
     <div>
+      <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Efficient order fulfillment is critical to success in today's fast-paced business environment. Cross-docking reduces cycle times by sorting and consolidating goods for direct outbound shipping, improving customer satisfaction." />
+        <meta name="keywords" content="order fulfillment, cross-docking, efficient shipping, logistics, customer satisfaction, order processing, cycle time reduction" />
+        <meta name="author" content="Your Company Name" />
+        <meta property="og:title" content="Efficient Order Fulfillment with Cross-Docking" />
+        <meta property="og:description" content="Improve order fulfillment efficiency and customer satisfaction with cross-docking. Sort and consolidate goods for immediate outbound shipping, reducing cycle times and improving business competitiveness." />
+        <meta property="og:image" content="https://example.com/your-image.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com/order-fulfillment" />
+        <title>Order Fulfillment & Cross-Docking Process</title>
+      </Helmet>
       <div style={{height:"40vh"}}>
  <div className='starting-picklistgeneration'>
     <h1 className="gradient-text">Maximize Efficiency with Our Cross Docking Services
@@ -54,7 +67,7 @@ const handlePurveywms=()=>{
     {/* <h3 className="gradient-text">Across All Touchpoints.</h3> */}
 
     <div className='aboutpage-subtitle'>
-    <h6 className='gradient-text-h6'><img src={purvey_apora_black} alt="" style={{height:"80px"}}/></h6>
+    <h6 className='gradient-text-h6'><img src={purvey_apora_black} alt="purvey apora black" style={{height:"80px"}}/></h6>
     </div>
     </div>
 
@@ -126,9 +139,11 @@ const handlePurveywms=()=>{
     </div>
    </div> */}
 <div className='firstdiv-multichannelintegration ' >
-    <div className='multichannelintegration-image wrapper'>
-        <img src={multichannelintegration} alt="" className='image--cover'/>
+<div className="multichannelintegration-image">
+    <div className="image-wrapper-multi">
+        <img src="../Assets/crossdock.jpg" alt="cross docking image" />
     </div>
+</div>
     <div className='multichannelintegration-content'>
     
         <p style={{textAlign:"justify",padding:"40px"}}>In today's fast-paced business environment, efficient order fulfilment is critical to success. Customers expect their orders to be processed and delivered quickly and accurately, and businesses that cannot meet these expectations risk losing customers to competitors.
@@ -155,22 +170,22 @@ const handlePurveywms=()=>{
     <div className='valuedelivered-maindiv-orderprocessing' >
 
   <div className='valuedelivered-firstdiv-orderprocessing'>
-    <img src={improveresouceutilisation} alt="" />
+    <img src='../../Assets/autopocessing.jpg' alt="autp processing image" />
     {/* <h6>Enhanced Efficiency</h6> */}
     <p><b>Automated Processing</b>  with the PURVEY WMS cross-docking function streamlines the entire process—from sorting and consolidation to outbound shipping—eliminating manual intervention and significantly reducing processing time.</p>
   </div>
   <div className='valuedelivered-seconddiv-orderprocessing'>
-    <img src={efficiency} alt="" />
+    <img src='../../Assets/mobile.jpeg' alt="mole image" />
     {/* <h6>Reduced Complexity</h6> */}
     <p><b>Hybrid Web & Mobile App Solutions</b> in the PURVEY WMS cross-docking function offer real-time visibility into all cross-docked orders, enabling businesses to track shipments, monitor progress, and receive instant notifications on key order fulfillment milestones.</p>
   </div>
   <div className='valuedelivered-thirddiv-orderprocessing'> 
-    <img src={improvedorderaccuracy} alt="" />
+    <img src='../../Assets/qcontrol.jpg' alt="qcontrol image" />
     {/* <h6>Increased Productivity</h6> */}
     <p><b>Built-in Quality Control </b> checks within the PURVEY WMS cross-docking function ensure the accuracy and integrity of goods being processed. Any discrepancies or issues are promptly flagged for resolution, minimizing errors and enhancing customer satisfaction.</p>
   </div>
   <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src={improvedorderaccuracy} alt="" />
+    <img src='../../Assets/decmaking.jpg' alt="decision making image" />
     {/* <h6>Improved Resource Utilization</h6> */}
     <p><b>Data-Driven Decision Making</b> is enabled by the PURVEY WMS cross-docking function, offering insights into order processing times, dock utilization, carrier performance, and overall efficiency. These insights help identify improvement areas and enhance order fulfillment efficiency.</p>
   </div>

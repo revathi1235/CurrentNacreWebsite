@@ -7,14 +7,20 @@ import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
 import purvey_apora_black from "../Assets/purvey_apora_black.png";
 import Chart2 from "./Chart2";
 // import ValuedeliveredProductwms from './ValuedeliveredProductwms'
+import { Helmet } from 'react-helmet';
+
 import {
   faEnvelope,
+  faUpLong,
   faLocationDot,
   faPhone,
   faShare,
 } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 const Productwarehousemanagementsystem = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   useEffect(() => {
     const handleScroll = () => {
       const pinSpacer = document.querySelector(".pin-spacer");
@@ -101,6 +107,19 @@ const Productwarehousemanagementsystem = () => {
   return (
     <>
       <div>
+
+      <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Purvey WMS offers a comprehensive, scalable, and flexible warehouse management solution tailored to your business needs. Enhance your productivity, reduce errors, and drive profitability." />
+        <meta name="keywords" content="warehouse management system, WMS software, scalable WMS, warehouse operations, logistics, warehouse productivity" />
+        <meta name="author" content="Purvey WMS" />
+        <meta property="og:title" content="Purvey WMS - Comprehensive Warehouse Management Solution" />
+        <meta property="og:description" content="Streamline your warehouse operations with Purvey WMS. Our flexible and scalable software reduces errors, increases productivity, and boosts profitability for businesses of all sizes." />
+        <meta property="og:image" content="https://example.com/your-image.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com/purvey-wms" />
+        <title>Purvey WMS - Warehouse Management System</title>
+      </Helmet>
         <div className="starting-picklistgeneration">
           <h1 className="gradient-text">
             Purvey warehouse management system <br />
@@ -109,7 +128,7 @@ const Productwarehousemanagementsystem = () => {
 
           <div className="aboutpage-subtitle">
             <h6 className="gradient-text-h6">
-            <img src={purvey_apora_black} alt="" style={{ height: "80px" }} />
+            <img src={purvey_apora_black} alt="purvey_apora_black image" style={{ height: "80px" }} />
             </h6>
           </div>
         </div>
@@ -128,11 +147,12 @@ const Productwarehousemanagementsystem = () => {
 {/* <ValuedeliveredProductwms/> */}
 
  <div className='firstdiv-multichannelintegration ' >
-    <div className='multichannelintegration-image wrapper'>
-        <img src={multichannelintegration} alt="" className='image--cover'/>
+ <div className="multichannelintegration-image">
+    <div className="image-wrapper-multi">
+        <img src="../Assets/productwms.jpg" alt="productwms image" />
     </div>
+</div>
     <div className='multichannelintegration-content'>
-      {/* <h2 >Purvey OMS- Order Management System</h2> */}
         <p style={{textAlign:"justify",padding:"40px"}}>Our WMS is designed to provide a comprehensive solution for all your warehouse management needs. Whether you operate a small-scale facility or a large distribution centre, our scalable and flexible software can be tailored to meet your specific requirements. With Purvey WMS, you can streamline your operations, reduce errors, and enhance productivity, ultimately driving your business towards greater profitability.</p>
     </div>
    </div>
@@ -380,6 +400,23 @@ const Productwarehousemanagementsystem = () => {
             </div>
           </div>
         </footer>
+        <button 
+        onClick={scrollToTop} 
+        style={{
+          position: 'fixed',
+          bottom: '20px',
+          right: '40px',
+          padding: '10px 15px',
+          backgroundColor: 'blue',
+          color: 'white',
+          border: 'none',
+          borderRadius: '50%',
+          cursor: 'pointer',
+          fontSize: '16px',
+        }}
+      >
+        <FontAwesomeIcon icon={faUpLong}/>
+      </button>
       </div>
     </>
   );

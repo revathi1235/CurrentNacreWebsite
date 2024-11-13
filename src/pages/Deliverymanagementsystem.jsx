@@ -2,6 +2,8 @@ import React from "react";
 import work4 from '../Assets/work4.jpg'
 import { Container,Row,Col
  } from "react-bootstrap";
+ import { Helmet } from 'react-helmet';
+
  import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
  import { faSquare } from "@fortawesome/free-solid-svg-icons";
  import { Card } from "react-bootstrap";
@@ -9,6 +11,18 @@ import Footer from "../components/Footer";
 function Deliverymanagementsystem() {
   return (
     <div>
+      <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Optimize your routes for better logistics and transportation efficiency." />
+        <meta name="keywords" content="logistics, route optimization, transportation, cost reduction, smart algorithms" />
+        <meta name="author" content="Your Company Name" />
+        <meta property="og:title" content="Route Optimization for Logistics" />
+        <meta property="og:description" content="Find the most efficient routes to reduce costs and delays with our advanced route optimization algorithms." />
+        <meta property="og:image" content="https://example.com/your-image.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com/route-optimization" />
+        <title>Route Optimization for Logistics</title>
+      </Helmet>
       <div className="starting-picklistgeneration  ">
         <h1 className="gradient-text"> Delivery Management System</h1>
 
@@ -18,20 +32,20 @@ function Deliverymanagementsystem() {
 
 
 
-      <div className="yardmanagement-firstdiv">
-  <div className="yardmanagement-seconddiv">
-    <img src={work4} alt="" className="image--cover" />
-  </div>
-  <div className="yardmanagement-thirddiv">
-    <div className="col-12 d-flex flex-column align-items-center">
-      <p className="yardmanagment-content text-justify p-5">
-      Route optimization is a critical component in logistics and transportation, where the goal is to find the most efficient routes for vehicles to reduce costs and delays. By leveraging smart algorithms, businesses can optimize routes by considering various factors like traffic conditions, delivery priorities, and proximity.
-      </p>
+        <div className="yardmanagement-firstdiv">
+    <div className="yardmanagement-seconddiv">
+      <img src='../../Assets/deliverywms.jpg' alt="delivery wms image" />
+    </div>
+    <div className="yardmanagement-thirddiv">
+      <div className="col-12 d-flex flex-column align-items-center">
+        <p className="yardmanagment-content text-justify p-5">
+        Route optimization is a critical component in logistics and transportation, where the goal is to find the most efficient routes for vehicles to reduce costs and delays. By leveraging smart algorithms, businesses can optimize routes by considering various factors like traffic conditions, delivery priorities, and proximity.
+        </p>
 
-      
+        
+      </div>
     </div>
   </div>
-</div>
 
 
 

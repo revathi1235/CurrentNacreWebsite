@@ -8,6 +8,7 @@ import efficiency from '../Assets/Efficiency.svg'
 import improvedorderaccuracy from '../Assets/improvedorderaccuracy.svg'
 import { useNavigate } from "react-router-dom";
 import Footer from '../components/Footer'
+import { Helmet } from 'react-helmet';
 
 function APIintegration() {
   const navigate=useNavigate()
@@ -46,6 +47,18 @@ const handlePurveywms=()=>{
 }
   return (
     <div>
+       <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Unlock the benefits of seamless communication and data exchange with API integration in Purvey WMS. Connect your warehouse management system with ERP, CRM, e-commerce platforms, and third-party logistics providers for real-time data synchronization and enhanced efficiency." />
+        <meta name="keywords" content="API integration, warehouse management system, WMS, real-time data synchronization, ERP integration, CRM integration, e-commerce platforms, third-party logistics" />
+        <meta name="author" content="Purvey WMS" />
+        <meta property="og:title" content="API Integration in PURVEY Warehouse Management System" />
+        <meta property="og:description" content="Enhance connectivity and improve operational efficiency with API integration in Purvey WMS. Streamline your warehouse processes by integrating with ERP, CRM, and other systems for real-time data exchange." />
+        <meta property="og:image" content="https://example.com/your-image.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com/api-integration" />
+        <title>API Integration in PURVEY WMS</title>
+      </Helmet>
       <div style={{height:"40vh"}}>
  <div className='starting-picklistgeneration'>
     <h1 className="gradient-text mt-3">Seamless API Integration for 
@@ -54,7 +67,7 @@ const handlePurveywms=()=>{
     <h3 className="gradient-text">Enhanced Connectivity and Performance</h3>
 
     <div className='aboutpage-subtitle'>
-    <h6 className='gradient-text-h6'><img src={purvey_apora_black} alt="" style={{height:"80px"}}/></h6>
+    <h6 className='gradient-text-h6'><img src={purvey_apora_black} alt="purvey apora black image" style={{height:"80px"}}/></h6>
     </div>
     </div>
 
@@ -129,9 +142,11 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
    </div> */}
 
 <div className='firstdiv-multichannelintegration ' >
-    <div className='multichannelintegration-image wrapper'>
-        <img src={multichannelintegration} alt="" className='image--cover'/>
+<div className="multichannelintegration-image">
+    <div className="image-wrapper-multi">
+        <img src="../Assets/apiint.jpg" alt="main image for apiintegration" />
     </div>
+</div>
     <div className='multichannelintegration-content'>
     
         <p style={{textAlign:"justify",padding:"40px"}}>As technology continues to evolve, businesses are seeking ways to enhance their operations, improve connectivity, and drive efficiency. API integration in PURVEY WMS allows seamless communication and data exchange between different systems, enabling you to unlock a wide range of benefits.</p>

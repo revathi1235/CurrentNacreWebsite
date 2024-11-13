@@ -4,9 +4,31 @@ import Footer from "../components/Footer";
 import { Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { Helmet } from "react-helmet";
 function Blogs() {
   return (
     <div>
+     <Helmet>
+     <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Discover how AI is revolutionizing the logistics industry"/>
+<meta name="keywords" content="The Future of AI in Logistics, article, blog, content, news"/>
+<meta name="author" content="Your Company Name"/>
+
+<meta property="og:title" content="The Future of AI in Logistics"/>
+<meta property="og:description" content="Discover how AI is revolutionizing the logistics industry"/>
+<meta property="og:image" content="https://example.com/images/future-ai-logistics.jpg"/>
+<meta property="og:url" content="https://example.com/articles/future-of-ai-in-logistics"/>
+<meta property="og:type" content="article"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="The Future of AI in Logistics"/>
+<meta name="twitter:description" content="Discover how AI is revolutionizing the logistics industry"/>
+<meta name="twitter:image" content="https://example.com/images/future-ai-logistics.jpg"/>
+
+<title>The Future of AI in Logistics</title>
+
+     </Helmet>
       <div className="starting-picklistgeneration">
         {/* <h1 className="gradient-text">Blogs
     <br /></h1> */}

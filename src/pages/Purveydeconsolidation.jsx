@@ -8,6 +8,7 @@ import efficiency from "../Assets/Efficiency.svg";
 import improvedorderaccuracy from "../Assets/improvedorderaccuracy.svg";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
+import { Helmet } from 'react-helmet';
 
 function Purveydeconsolidation() {
   const navigate = useNavigate();
@@ -46,6 +47,18 @@ function Purveydeconsolidation() {
   };
   return (
     <div>
+       <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Purvey WMS's Deconsolidation Module streamlines the process of breaking down consolidated shipments. It optimizes sorting, labeling, and allocation, reducing processing time and ensuring accurate distribution to destinations or storage locations." />
+        <meta name="keywords" content="deconsolidation, warehouse management system, WMS, sorting, labeling, shipment processing, inventory management, logistics, efficient operations" />
+        <meta name="author" content="Purvey WMS" />
+        <meta property="og:title" content="Deconsolidation Module - Purvey Warehouse Management System" />
+        <meta property="og:description" content="Streamline your deconsolidation process with Purvey WMS. Optimize sorting, labeling, and allocation of items for accurate and efficient distribution. Reduce processing time and improve warehouse operations." />
+        <meta property="og:image" content="https://example.com/your-image.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com/deconsolidation-module" />
+        <title>Deconsolidation Module - Purvey WMS</title>
+      </Helmet>
       <div style={{ height: "40vh" }}>
         <div className="starting-picklistgeneration">
           <h2 className="gradient-text">
@@ -56,7 +69,7 @@ function Purveydeconsolidation() {
 
           <div className="aboutpage-subtitle">
             <h6 className="gradient-text-h6">
-              <img src={purvey_apora_black} alt="" style={{ height: "80px" }} />
+              <img src={purvey_apora_black} alt="purvey_apora_black image" style={{ height: "80px" }} />
             </h6>
           </div>
         </div>
@@ -163,9 +176,11 @@ function Purveydeconsolidation() {
    </div> */}
 
       <div className="firstdiv-multichannelintegration ">
-        <div className="multichannelintegration-image wrapper">
-          <img src={multichannelintegration} alt="" className="image--cover" />
-        </div>
+      <div className="multichannelintegration-image">
+    <div className="image-wrapper-multi">
+        <img src="../Assets/deconsol.jpg" alt="deconsol image" />
+    </div>
+</div>
         <div className="multichannelintegration-content">
           <p style={{ textAlign: "justify", padding: "40px" }}>
             Purvey WMS's Deconsolidation Module, is an essential component of
@@ -190,28 +205,28 @@ function Purveydeconsolidation() {
       <Container className="seconddiv-orderprocessing-container">
         <div className="valuedelivered-maindiv-orderprocessing">
           <div className="valuedelivered-firstdiv-orderprocessing">
-            <img src={improveresouceutilisation} alt="" />
+            <img src='../../Assets/indvitem.webp' alt="indvitem image" />
             {/* <h6>Enhanced Efficiency</h6> */}
             <p>
               <b>Sorting and Allocating Individual Items</b>  is made easy with our Deconsolidation Module, which organizes items based on predefined rules or criteria such as SKU, destination, or order number. This ensures accurate placement for seamless distribution or storage.
             </p>
           </div>
           <div className="valuedelivered-seconddiv-orderprocessing">
-            <img src={efficiency} alt="" />
+            <img src='../../Assets/realtimealo.jpg' alt="realtimealo image" />
             {/* <h6>Reduced Complexity</h6> */}
             <p>
               <b>Real-Time Verification and Quality Checks</b>  with Purvey WMS ensure accuracy on deconsolidated items, reducing discrepancies and upholding high standards of product quality and integrity.
             </p>
           </div>
           <div className="valuedelivered-thirddiv-orderprocessing">
-            <img src={improvedorderaccuracy} alt="" />
+            <img src='../../Assets/barcode.jpg' alt="barcode image" />
             {/* <h6>Increased Productivity</h6> */}
             <p>
               <b>Generation of Labels or Barcodes</b>  through the Deconsolidation Module ensures proper identification, traceability, and seamless tracking of deconsolidated items throughout the warehouse or supply chain.
             </p>
           </div>
           <div className="valuedelivered-thirddiv-orderprocessing">
-            <img src={improvedorderaccuracy} alt="" />
+            <img src='../../Assets/approdest.jpg' alt=" image" />
             {/* <h6>Improved Resource Utilization</h6> */}
             <p>
               <b>Appropriate Destination or Storage Location</b> is achieved through
@@ -223,7 +238,7 @@ function Purveydeconsolidation() {
             </p>
           </div>
           <div className="valuedelivered-thirddiv-orderprocessing">
-            <img src={improvedorderaccuracy} alt="" />
+            <img src='../../Assets/documents.jpg' alt="documents image" />
             {/* <h6>Improved Resource Utilization</h6> */}
             <p>
               <b>Generates Detailed Documentation

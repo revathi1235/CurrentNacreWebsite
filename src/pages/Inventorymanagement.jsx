@@ -8,6 +8,7 @@ import efficiency from "../Assets/Efficiency.svg";
 import improvedorderaccuracy from "../Assets/improvedorderaccuracy.svg";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
+import { Helmet } from 'react-helmet';
 
 function Inventorymanagement() {
   const navigate = useNavigate();
@@ -46,6 +47,18 @@ function Inventorymanagement() {
   };
   return (
     <div>
+      <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Purvey WMS provides real-time inventory visibility, allowing you to monitor stock levels, track movement, and make informed decisions. Ensure accurate stock management and minimize stockouts with detailed item location and status tracking." />
+        <meta name="keywords" content="real-time inventory, warehouse management system, WMS, stock management, inventory tracking, stock levels, minimize stockouts" />
+        <meta name="author" content="Purvey WMS" />
+        <meta property="og:title" content="Real-Time Inventory Visibility - PURVEY Warehouse Management System" />
+        <meta property="og:description" content="Gain real-time visibility into your inventory with Purvey WMS. Track stock levels, monitor movement, and make data-driven decisions to ensure accurate stock management and avoid stockouts." />
+        <meta property="og:image" content="https://example.com/your-image.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com/real-time-inventory" />
+        <title>Real-Time Inventory Visibility - PURVEY WMS</title>
+      </Helmet>
       <div style={{ height: "40vh" }}>
         <div className="starting-picklistgeneration">
           <h1 className="gradient-text">
@@ -58,7 +71,7 @@ function Inventorymanagement() {
 
           <div className="aboutpage-subtitle">
             <h6 className="gradient-text-h6">
-              <img src={purvey_apora_black} alt="" style={{ height: "80px" }} />
+              <img src={purvey_apora_black} alt="purvey_apora_black image" style={{ height: "80px" }} />
             </h6>
           </div>
         </div>
@@ -165,9 +178,11 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
           </p></div>
    </div> */}
       <div className="firstdiv-multichannelintegration ">
-        <div className="multichannelintegration-image wrapper">
-          <img src={multichannelintegration} alt="" className="image--cover" />
-        </div>
+      <div className="multichannelintegration-image">
+    <div className="image-wrapper-multi">
+        <img src="../Assets/invmanage.jpg" alt="invmanage image" />
+    </div>
+</div>
         <div className="multichannelintegration-content">
           <p style={{ textAlign: "justify", padding: "40px" }}>
             PURVEY WMS provides real-time visibility into your inventory,
@@ -185,14 +200,14 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
       <Container className="seconddiv-orderprocessing-container">
         <div className="valuedelivered-maindiv-orderprocessing">
           <div className="valuedelivered-firstdiv-orderprocessing">
-            <img src={improveresouceutilisation} alt="" />
+            <img src='../../Assets/accinv.jpg' alt="accinv" />
             {/* <h6>Enhanced Efficiency</h6> */}
             <p>
               <b>Efficient Data Capture for Accurate Inventory</b> With our WMS seamlessly integrating barcode and RFID technologies, you can efficiently capture data, quickly scan items, update inventory records, and minimize manual errors. This results in significantly improved inventory accuracy and streamlined processes.
             </p>
           </div>
           <div className="valuedelivered-seconddiv-orderprocessing">
-            <img src={efficiency} alt="" />
+            <img src='../../Assets/invseg.webp' alt="invseg image" />
             {/* <h6>Reduced Complexity</h6> */}
             <p>
               <b>Inventory Segmentation for Efficient Organization
@@ -200,21 +215,21 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
             </p>
           </div>
           <div className="valuedelivered-thirddiv-orderprocessing">
-            <img src={improvedorderaccuracy} alt="" />
+            <img src='../../Assets/autoreply.png' alt="autoreply image" />
             {/* <h6>Increased Productivity</h6> */}
             <p>
               <b>Automated Replenishment for Optimal Control</b> PURVEY WMS automates the replenishment process by setting reorder points and triggering alerts when stock levels drop below defined thresholds. This ensures timely replenishment, reduces stockouts, and helps maintain optimal inventory levels for efficient operations.
             </p>
           </div>
           <div className="valuedelivered-thirddiv-orderprocessing">
-            <img src={improvedorderaccuracy} alt="" />
+            <img src='../../Assets/lottrack.jpg' alt="lottrack image" />
             {/* <h6>Improved Resource Utilization</h6> */}
             <p>
               <b>Batch & Lot Tracking: Compliance & Efficiency</b> Our WMS supports batch and lot tracking, allowing you to trace the movement and usage of specific batches or lots of items. This is particularly beneficial for industries with strict compliance requirements or products with expiration dates, ensuring regulatory compliance and minimizing wastage.
             </p>
           </div>
           <div className="valuedelivered-thirddiv-orderprocessing">
-            <img src={improvedorderaccuracy} alt="" />
+            <img src='../../Assets/cyclecount.jpg' alt="cyclecount image" />
             {/* <h6>Improved Resource Utilization</h6> */}
             <p>
               <b>Cycle Counting & Inventory Management Efficiency</b> Our Inventory Control feature includes cycle counting functionality, enabling you to conduct periodic stock counts without disrupting daily operations. This ensures ongoing accuracy and helps identify discrepancies for prompt resolution. Additionally, our WMS facilitates efficient management of physical inventory processes, minimizing errors and streamlining reconciliation.
@@ -267,7 +282,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
             </div>
             <div className="service-inbountreceipt rainbow-inbountreceipt">
               <h2 class="service_heading-inbountreceipt">
-                Complailance with Regulations and Standards
+              Compliance with Regulations and Standards
               </h2>
               <p class="service_para-inbountreceipt">
                 Our WMS helps ensure compliance with industry regulations and

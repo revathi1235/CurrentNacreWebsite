@@ -89,7 +89,7 @@ const handlePurveywms=()=>{
 
           <div className="aboutpage-subtitle">
             <h6 className="gradient-text-h6">
-              <img src={purvey_apora_black} alt="" style={{ height: "80px" }} />
+              <img src={purvey_apora_black} alt="purvey apora black image" style={{ height: "80px" }} />
             </h6>
           </div>
         </div>
@@ -146,9 +146,11 @@ const handlePurveywms=()=>{
       </div>
 
       <div className="firstdiv-multichannelintegration ">
-      <div className='multichannelintegration-image wrapper'>
-        <img src={multichannelintegration} alt="" className='image--cover'/>
+      <div className="multichannelintegration-image">
+    <div className="image-wrapper-multi">
+        <img src="../Assets/inbountreceipt.jpg" alt="inbount receipt image" />
     </div>
+</div>
         <div className="multichannelintegration-content">
           <p style={{ textAlign: "justify", padding: "40px" }}>
           
@@ -175,21 +177,21 @@ const handlePurveywms=()=>{
       <Container fluid>
         <div className="valuedelivered-maindiv-inbountreceipt">
           <div className="valuedelivered-firstdiv-inbountreceipt">
-            <img src={improveresouceutilisation} alt="" />
+            <img src='../../Assets/seamlessintegration.webp' alt="seamless integration image" />
             {/* <h6>Seamless integration with supplier systems</h6> */}
             <p style={{ fontSize:"15px"}}>
            <b> Seamless Integration with Supplier Systems</b> enables PURVEY WMS to automate the exchange of information like purchase orders, advance shipment notifications, and invoices. This connectivity promotes smooth communication and strengthens supply chain collaboration.
             </p>
           </div>
           <div className="valuedelivered-seconddiv-inbountreceipt">
-            <img src={efficiency} alt="" />
+            <img src='../../Assets/tracking.jpg' alt="tracking image" />
            
             <p style={{ fontSize:"15px"}}>
              <b>Real-Time Tracking and Visibility </b>into inbound shipments through PURVEY WMS provide detailed insights into arrival times, quantities, and product specifics, enabling you to plan and allocate resources effectively for optimized warehouse operations
             </p>
           </div>
           <div className="valuedelivered-thirddiv-inbountreceipt">
-            <img src={improvedorderaccuracy} alt="" />
+            <img src='../../Assets/qcontrol.jpg' alt="qc control image" />
             <p style={{ fontSize:"15px"}}>
            <b> Quality Control Checks</b>  are built into the Inbound Receipt function of PURVEY WMS, ensuring that goods are inspected upon receipt for quantity accuracy, damage, and compliance with specified standards. Any discrepancies or issues are promptly flagged for resolution.
             </p>
@@ -198,21 +200,21 @@ const handlePurveywms=()=>{
         <br />
         <div className="valuedelivered-secondmaindiv-inbountreceipt">
           <div className="valuedelivered-firstdiv-inbountreceipt">
-            <img src={improveresouceutilisation} alt="" />
+            <img src='../../Assets/compliancedocumentation.jpg' alt="compliance doc image" />
           
             <p style={{ fontSize:"15px"}}>
             <b>Compliance Documentation</b> is ensured through the Inbound Receipt function in PURVEY WMS, where receipts, supplier information, product specifications, and certificates are automatically generated and readily accessible for audits.
             </p>
           </div>
           <div className="valuedelivered-seconddiv-inbountreceipt">
-            <img src={efficiency} alt="" />
+            <img src={efficiency} alt="efficiency image" />
             
             <p style={{ fontSize:"15px"}}>
             <b>Streamlined Return Processes</b> in our WMS handle discrepancies, damaged goods, or rejections efficiently. The system captures all relevant details, including return reasons and resolutions, enabling prompt coordination with suppliers and minimizing supply chain disruptions
             </p>
           </div>
           <div className="valuedelivered-thirddiv-inbountreceipt">
-            <img src={improvedorderaccuracy} alt="" />
+            <img src={improvedorderaccuracy} alt="improvedorderaccuracy image" />
           
             <p style={{ fontSize:"15px"}}>
            <b> Gain Valuable Insights</b> into inbound shipments, supplier performance, receipt accuracy, and product quality, empowering data-driven decision-making.

@@ -8,6 +8,7 @@ import efficiency from '../Assets/Efficiency.svg'
 import improvedorderaccuracy from '../Assets/improvedorderaccuracy.svg'
 import { useNavigate } from "react-router-dom";
 import Footer from '../components/Footer'
+import { Helmet } from 'react-helmet';
 
 function Pickmanagement() {
   const navigate=useNavigate()
@@ -46,6 +47,18 @@ const handlePurveywms=()=>{
 }
   return (
     <div>
+      <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Purvey WMS offers efficient and reliable discrete picking solutions to optimize warehouse operations. Our technology enhances productivity, accuracy, and streamlines the picking process to address common warehouse challenges." />
+        <meta name="keywords" content="discrete picking, warehouse management system, WMS, productivity, accuracy, warehouse operations, error-free picking, technology solutions" />
+        <meta name="author" content="Purvey WMS" />
+        <meta property="og:title" content="Discrete Picking Solutions - PURVEY Warehouse Management System" />
+        <meta property="og:description" content="Streamline your warehouse operations with Purvey WMS’s discrete picking solutions. Improve picking accuracy, boost productivity, and ensure error-free operations with cutting-edge technology." />
+        <meta property="og:image" content="https://example.com/your-image.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com/discrete-picking" />
+        <title>Discrete Picking Solutions - PURVEY WMS</title>
+      </Helmet>
       <div style={{height:"40vh"}}>
  <div className='starting-picklistgeneration'>
     <h1 className="gradient-text">Transform your picking processes with 
@@ -54,7 +67,7 @@ const handlePurveywms=()=>{
     <h3 className="gradient-text">our optimized strategies</h3>
 
     <div className='aboutpage-subtitle'>
-    <h6 className='gradient-text-h6'><img src={purvey_apora_black} alt="" style={{height:"80px"}}/></h6>
+    <h6 className='gradient-text-h6'><img src={purvey_apora_black} alt="purvey_apora_black image" style={{height:"80px"}}/></h6>
     </div>
     </div>
 
@@ -128,9 +141,11 @@ const handlePurveywms=()=>{
    </div> */}
 
 <div className='firstdiv-multichannelintegration ' >
-    <div className='multichannelintegration-image wrapper'>
-        <img src={multichannelintegration} alt="" className='image--cover'/>
+<div className="multichannelintegration-image">
+    <div className="image-wrapper-multi">
+        <img src="../Assets/pickmanage.jpg" alt="pickmanage image" />
     </div>
+</div>
     <div className='multichannelintegration-content'>
       
         <p style={{textAlign:"justify",padding:"40px"}}>  We have a deep understanding of the challenges faced by warehouses in discrete picking operations.
@@ -156,18 +171,18 @@ const handlePurveywms=()=>{
     <div className='valuedelivered-maindiv-orderprocessing' >
 
   <div className='valuedelivered-firstdiv-orderprocessing'>
-    <img src={improveresouceutilisation} alt="" />
+    <img src='../../Assets/orderallo.jpg' alt="orderallo image" />
     {/* <h6>Enhanced Efficiency</h6> */}
     <p><b>Advanced Order Allocation</b>  in PURVEY's discrete picking module uses sophisticated algorithms to assign orders to the most suitable pickers. Picklists are generated based on factors like location, optimized pick sequencing, priority, and picker availability, ensuring optimal resource utilization and minimizing travel time. This results in faster order fulfillment and enhanced operational efficiency.</p>
   </div>
   <div className='valuedelivered-seconddiv-orderprocessing'>
-    <img src={efficiency} alt="" />
+    <img src='../../Assets/analyticrep.jpg' alt="analyticrep image" />
     {/* <h6>Reduced Complexity</h6> */}
     <p><b>Performance Analytics and Reporting
     </b>  in our WMS allow you to monitor key metrics such as picking rates, accuracy levels, picker efficiency, and order fulfillment times. These insights help identify areas for improvement, optimize processes, and enable data-driven decisions to enhance warehouse operations. Our dashboards offer valuable visibility into your picking operations, supporting performance tracking and driving continuous improvement.</p>
   </div>
   <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src={improvedorderaccuracy} alt="" />
+    <img src='../../Assets/barcode.jpg' alt="barcode image" />
     {/* <h6>Increased Productivity</h6> */}
     <p><b> Barcode and RFID Integration</b>  in our WMS ensures efficient and accurate item identification during the picking process. These technologies provide real-time inventory visibility, reduce picking errors, and enhance overall inventory accuracy, allowing you to track and manage inventory effectively, minimize stockouts, and improve order fulfillment rates.</p>
   </div>

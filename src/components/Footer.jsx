@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faSquareInstagram ,} from "@fortawesome/free-brands-svg-icons";
 
 import {
   faDownLong,
@@ -94,7 +94,7 @@ function Footer() {
                       <img
                         src="../Assets/ns black transparent.png"
                         class="img-fluid"
-                        alt="logo"
+                        alt="logo image"
                       />
                     </a>
                   </div>
@@ -132,29 +132,25 @@ function Footer() {
                   </div>
                   <ul>
                     <li>
-                      <a href="/home">Home</a>
+                      <a href="/">Home</a>
                     </li>
+                   
                     <li>
-                      <a href="/aboutus">about</a>
-                    </li>
-                    <li>
-                      <a href="/services">services</a>
+                      <a href="/#/services">services</a>
                     </li>
                     {/* <li><a href="#">portfolio</a></li> */}
+                   
                     <li>
-                      <a href="/contact">Contact</a>
+                      <a href="/#/aboutus">About us</a>
                     </li>
-                    <li>
-                      <a href="/abutus">About us</a>
-                    </li>
-                    <li>
+                    {/* <li>
                       <a href="/ourproducts">Our Products</a>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                       <a href="/expertteam">Expert Team</a>
-                    </li>
+                    </li> */}
                     <li>
-                      <a href="/contactus">Contact us</a>
+                      <a href="/#/contactus">Contact us</a>
                     </li>
                     {/* <li><a href="#">Latest News</a></li> */}
                   </ul>
@@ -193,7 +189,7 @@ function Footer() {
        
       </footer>
       <button 
-        onClick={scrollToBottom} 
+        onClick={scrollToTop} 
         style={{
           position: 'fixed',
           bottom: '20px',
@@ -207,7 +203,7 @@ function Footer() {
           fontSize: '16px',
         }}
       >
-        <FontAwesomeIcon icon={faDownLong}/>
+        <FontAwesomeIcon icon={faUpLong}/>
       </button> 
     
     </div>

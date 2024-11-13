@@ -13,7 +13,7 @@ import improveresouceutilisation from '../Assets/Improveresourceutilisation.svg'
 // import Chart  from './Chart';
 import { Container} from 'react-bootstrap';
 import { useState } from 'react';
-import orderprocessing from '../Assets/orderprocessing.svg'
+
 import './Responsive.css'
 // import multichannelintegration from '../Assets/Multichannelintegration.svg'
 import { useNavigate } from 'react-router-dom';
@@ -191,9 +191,11 @@ function Picksequencing() {
 
 
  <div className='firstdiv-multichannelintegration'>
-    <div className='multichannelintegration-image wrapper'>
-        <img src={orderprocessing} alt=""  className='image--cover'/>
+ <div className="multichannelintegration-image">
+    <div className="image-wrapper-multi">
+        <img src="../../Assets/picseq.jpg" alt="" />
     </div>
+</div>
     <div className='multichannelintegration-content'>
         <p style={{textAlign:"justify",padding:"40px"}}>Optimizing order fulfilment processes is crucial to meet customer demands efficiently. Traditional pick routing methods often rely on manual decision-making, which can be time-consuming and prone to errors. However, with the advent of AI-powered pick routing systems integrated into Warehouse Management Systems (WMS), organizations can revolutionize their operations.
         Our AI-powered pick routing system is a game-changer for organizations seeking to optimize order fulfilment and enhance overall warehouse productivity. By harnessing the power of artificial intelligence, businesses can intelligently determine the most efficient picking routes, reduce errors and adapt to real-time changes. With enhanced efficiency, improved accuracy and real-time adaptability, organizations can streamline their warehouse operations and deliver exceptional customer experiences.</p>    </div>
@@ -213,7 +215,7 @@ function Picksequencing() {
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Intelligent Route  Optimization</h5>
             <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
+              <img className='avatar-orderprocessing' src='../../Assets/intelligentorderanalysis.jpeg' alt='Order Analysis' />
             </div>
             <div className='bio-orderprocessing'>
               <p style={{color:"black",fontSize:"14px"}}>The AI-powered pick routing system utilizes advanced algorithms to analyse order details, item locations, and warehouse layout. It derives the most efficient routes for picking based on factors such as item proximity , location sequence and order priorities. This  optimization minimizes travel time and maximizes picking efficiency.</p>
@@ -226,7 +228,7 @@ function Picksequencing() {
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Real-Time Inventory Visibility</h5>
             <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Inventory Management' />
+              <img className='avatar-orderprocessing' src='../../Assets/realtimevisibility.png' alt='Inventory Management' />
             </div>
             <div className='bio-orderprocessing'>
               <p style={{color:"black",fontSize:"14px"}}>The pick sequencing system integrates with the Warehouse Management System to access real-time inventory data. It considers inventory availability, item locations, and stock levels when determining optimal picking routes. This ensures accurate and up-to-date information for efficient order fulfilment.</p>
@@ -239,7 +241,7 @@ function Picksequencing() {
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Effective Resource Utilization</h5>
             <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Real-Time Analytics' />
+              <img className='avatar-orderprocessing' src='../../Assets/resutilization.jpg' alt='Real-Time Analytics' />
             </div>
             <div className='bio-orderprocessing'>
               <p style={{color:"black",fontSize:"14px"}}>The AI-powered pick sequencing system analyzes items across daily orders to assess each picker's activity level in their assigned zone. By strategically assigning picklists based on item volume and workload, it minimizes unnecessary walking, enhancing productivity and ensuring efficient order fulfillment.</p>
@@ -260,17 +262,17 @@ function Picksequencing() {
 
     <div className='valuedelivered-maindiv-orderprocessing'>
   <div className='valuedelivered-firstdiv-orderprocessing'>
-    <img src={improveresouceutilisation} alt="" />
+    <img src={improveresouceutilisation} alt="improveresouceutilisation image" />
     {/* <h6>Improved Resource Utilisation</h6> */}
-    <p><b>Enhanced Efficiency</b> is achieved through AI-powered pick routing, which utilizes advanced algorithms to analyze various factors such as order details, inventory availability, item locations, and employee workloads. By considering these elements, the system intelligently determines the most efficient route for picking orders, minimizing travel time, reducing congestion, and improving overall warehouse efficiency.</p>
+    <p><b>Speed-boosted Results</b> is achieved through AI-powered pick routing, which utilizes advanced algorithms to analyze various factors such as order details, inventory availability, item locations, and employee workloads. By considering these elements, the system intelligently determines the most efficient route for picking orders, minimizing travel time, reducing congestion, and improving overall warehouse efficiency.</p>
   </div>
   <div className='valuedelivered-seconddiv-orderprocessing'>
-    <img src={efficiency} alt="" />
+    <img src={efficiency} alt="efficiency image" />
     {/* <h6>Real Time Visibility</h6> */}
     <p><b>Real-Time Adaptability</b> is a key feature of AI-powered pick routing systems, which continuously monitor and analyze data within the warehouse environment. This capability allows the system to adjust to changing conditions, such as products stored in multiple locations and stocks comprised of various batches or lots. As a result, picking routes are dynamically optimized for efficiency and responsiveness.</p>
   </div>
   <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src={improvedorderaccuracy} alt="" />
+    <img src={improvedorderaccuracy} alt="improvedorderaccuracy image" />
     {/* <h6>Improved Order Accuracy</h6> */}
     <p><b>Error Reduction</b> is a significant benefit of AI-powered pick routing, which eliminates the susceptibility to manual decision-making errors, such as selecting incorrect routes or overlooking optimal paths. By leveraging intelligent algorithms that make data-driven decisions, the system reduces the likelihood of picking mistakes, improves order accuracy, and enhances customer satisfaction.</p>
   </div>

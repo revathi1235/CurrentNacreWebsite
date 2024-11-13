@@ -16,6 +16,7 @@ import multichannelintegration from '../Assets/Multichannelintegration.svg'
 import { useNavigate } from 'react-router-dom';
 import Chart  from './Chart';
 import Footer from '../components/Footer';
+import { Helmet } from 'react-helmet';
 
 const items = [
   { id: 1, title: 'The Leading AI-Powered Fulfilment Automation System', imgSrc: '../Assets/cuttingedge.webp', description: 'Welcome to APORA, the AI-powered fulfilment automation system that optimizes operating costs and boosts efficiency exponentially. Our cutting-edge technology enables you to enjoy the benefits of reduced operational expenses and increased productivity, thanks to the exponential growth in efficiency. Say goodbye to order backlogs and experience a significant improvement in same-day deliveries.' },
@@ -117,6 +118,18 @@ function Ecommerceintegration() {
   return (
     <div data-aos="fade-up"
     data-aos-anchor-placement="center-center">
+        <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Revolutionize your e-commerce order fulfillment with API-based integrations. Seamlessly connect online stores with warehouse systems for real-time order synchronization, inventory management, tracking, and improved processing efficiency." />
+        <meta name="keywords" content="e-commerce API integration, order fulfillment, inventory management, real-time synchronization, warehouse integration, order tracking, API for e-commerce, order accuracy, operational efficiency, seamless integration" />
+        <meta name="author" content="Your Company Name" />
+        <meta property="og:title" content="API-Based E-Commerce Integration for Efficient Order Fulfillment" />
+        <meta property="og:description" content="Streamline your e-commerce order fulfillment with API-based integrations. Real-time synchronization, inventory management, and order tracking improve operational efficiency and customer satisfaction." />
+        <meta property="og:image" content="https://example.com/your-image.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com/api-ecommerce-integration" />
+        <title>API-Based E-Commerce Integration for Efficient Order Fulfillment</title>
+      </Helmet>
  <div style={{height:"40vh"}}>
  <div className='starting-picklistgeneration'>
     <h1 className="gradient-text">Boost Same-Day Delivery with Multi-Order Fulfillment.
@@ -124,7 +137,7 @@ function Ecommerceintegration() {
     {/* <h3 className="gradient-text">Enhanced E-Commerce Performance</h3> */}
 
     <div className='aboutpage-subtitle'>
-    <h6 className='gradient-text-h6'><img src={aporablack} alt="" style={{height:"80px"}}/></h6>
+    <h6 className='gradient-text-h6'><img src={aporablack} alt="apora black image" style={{height:"80px"}}/></h6>
     </div>
     </div>
 
@@ -179,9 +192,11 @@ function Ecommerceintegration() {
 
 
  <div className='firstdiv-multichannelintegration'>
-    <div className='multichannelintegration-image wrapper'>
-        <img src={orderprocessing} alt=""  className='image--cover'/>
+ <div className="multichannelintegration-image">
+    <div className="image-wrapper-multi">
+        <img src="../../Assets/ecomint.jpg" alt="ecomint image" />
     </div>
+</div>
     <div className='multichannelintegration-content'>
         <p style={{textAlign:"justify",padding:"40px"}}>In e-commerce, efficient order fulfilment is essential to meet customer expectations and drive business growth.
         API-based e-commerce portals integrations revolutionize order fulfilment by seamlessly connecting online stores with the warehouse fulfilment system. Real-time order synchronization, inventory management, order tracking, and streamlined processing are just a few of the benefits provided by these integrations. With seamless data exchange, order consolidation, customization options, and scalability, businesses can enhance their operational efficiency, improve order accuracy, and deliver exceptional customer experiences.</p>    </div>
@@ -201,7 +216,7 @@ function Ecommerceintegration() {
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Real-Time Data Exchange</h5>
             <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
+              <img className='avatar-orderprocessing' src='../../Assets/realtimedataexchange.jpg' alt='Order Analysis' />
             </div>
             <div className='bio-orderprocessing' >
               <p style={{color:"black",fontSize:"14px"}}>The API-based integration system enables real-time data exchange between e-commerce portals and the warehouse fulfilment system. It utilizes secure and reliable APIs to transfer order information, inventory updates, and tracking details, ensuring accurate and up-to-date data throughout the order fulfilment process.</p>
@@ -216,7 +231,7 @@ function Ecommerceintegration() {
 
 </h5>
             <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
+              <img className='avatar-orderprocessing' src='../../Assets/consolidation-warehousing.jpg' alt='Order Analysis' />
             </div>
             <div className='bio-orderprocessing' >
               <p style={{color:"black",fontSize:"14 px"}}>The integration system consolidates orders from different e-commerce platforms into a centralized order management system. It gathers orders from various channels, merges them into a single interface, and transfers them to the warehouse system for processing. This consolidation simplifies order management, reduces complexity, and improves operational efficiency.</p>
@@ -229,7 +244,7 @@ function Ecommerceintegration() {
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Customization and Flexibility</h5>
             <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
+              <img className='avatar-orderprocessing' src='../../Assets/customization.jpg' alt='Order Analysis' />
             </div>
             <div className='bio-orderprocessing' >
               <p style={{color:"black",fontSize:"14px"}}>API-based integrations offer customization options to align with specific business requirements. The system allows businesses to configure workflows, define order processing rules, and implement business logic tailored to their needs. This flexibility ensures a seamless integration that adapts to unique fulfilment processes and maximizes operational efficiency.
@@ -254,18 +269,18 @@ function Ecommerceintegration() {
 
     <div className='valuedelivered-maindiv-orderprocessing'>
   <div className='valuedelivered-firstdiv-orderprocessing'>
-    <img src={improveresouceutilisation} alt="" />
+    <img src='../../Assets/optimized.webp' alt="optimized image" />
     {/* <h6>Improved Resource Utilisation</h6> */}
     <p> <b>Real-Time Order Sync</b> is enabled through API-based integrations, ensuring seamless synchronization between e-commerce portals and the warehouse fulfillment system. As soon as a customer places an order, the integration instantly transfers the details to the warehouse, eliminating delays, reducing manual data entry, and providing up-to-date information for efficient processing.</p>
   </div>
   <div className='valuedelivered-seconddiv-orderprocessing'>
-    <img src={efficiency} alt="" />
+    <img src='../../Assets/ordervarify.jpg' alt="order varify image" />
     {/* <h6>Real Time Visibility</h6> */}
     <p> <b>Order Tracking and Notifications
     </b>  are streamlined through API-based integrations, which automatically update shipment statuses and tracking numbers on the e-commerce portal. Customers can easily access real-time tracking information, while automated notifications, including order confirmations, shipping updates, and delivery alerts, improve transparency and communication.</p>
   </div>
   <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src={improvedorderaccuracy} alt="" />
+    <img src='../../Assets/orderprocessing.webp' alt="order processing image" />
     {/* <h6>Improved Order Accuracy</h6> */}
     <p> <b>Streamlined Order Processing
     </b> is achieved through API-based integrations, which automatically transfer order details—including product information, quantities, customer data, and shipping preferences—from e-commerce platforms to the warehouse fulfilment system. This eliminates manual intervention, reduces errors, and accelerates fulfilment times.</p>

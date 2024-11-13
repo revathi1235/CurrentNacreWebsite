@@ -798,7 +798,7 @@ display: none;
     padding: 0; /* Reset default padding */
     margin: 0; /* Reset default margin */
     list-style-type: none; /* Remove default list styling */
-    cursor: pointer;
+    cursor: default;
   }
   
   .block-list-deconsolidation li {
@@ -1620,11 +1620,12 @@ display: none;
  
 }
 .multichannelintegration-content {
-  flex: 1; /* Ensures equal width for both divs */
   height: 100%; /* Take full height of the parent */
   position: relative; /* For positioning the shadow */
-  padding: 50px ;
   margin-top: 30px;
+  flex: 1 1 100%; /* Make content take full width on small screens */
+  padding: 20px;
+  text-align: justify;
 }
 .multichannelintegration-image, 
 .multichannelintegration-content {
@@ -4040,12 +4041,14 @@ height: auto;
   position: relative;
 }
 .yardmanagement-seconddiv img{
-  height: 45vh;
+  height: 40vh;
   width: 50%;
   position: absolute;
   top: 30px;
+ margin: 20px;
   left: 20px;
 }
+
 .yardmanagement-thirddiv{
   height: 50vh;
   width: 50%;
@@ -4057,4 +4060,11 @@ height: auto;
   font-size:30px;
     margin-top:50px;
     font-family:'pirulen'
+}
+
+
+.valuedeliverd-productwms {
+   /* Adjust this value to your desired line width */
+  word-wrap: break-word;
+  white-space: normal; /* Ensures text will wrap within max-width */
 }

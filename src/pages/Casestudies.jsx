@@ -2,10 +2,12 @@ import React from 'react'
 import { Container, Row,Col } from 'react-bootstrap'
 import Cardflip from './Cardflip'
 import Footer from '../components/Footer'
+import { Helmet } from 'react-helmet';
 
 function Casestudies() {
   return (
     <div>
+       
          <div className='starting-picklistgeneration'>
     {/* <h1 className="gradient-text">Blogs
     <br /></h1> */}
@@ -19,8 +21,10 @@ function Casestudies() {
        <Container >
         <Row>
           <Col lg={5}>
-                 <iframe className='article-one'  src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7218860272906588161" height="828" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                <Container>
+                   <iframe className='article-one'  src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7218860272906588161" height="828" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 
+                </Container>
           </Col>
           <Col lg={2}></Col>
           <Col lg={5}>

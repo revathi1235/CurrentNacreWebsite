@@ -9,6 +9,7 @@ import multibanner from '../Assets/multibanner.png'
 import improveresouceutilisation from '../Assets/Improveresourceutilisation.svg'
 import ListGroup from 'react-bootstrap/ListGroup';
 import Chart  from './Chart';
+import { Helmet } from 'react-helmet';
 
 import { Container,Row,Col,Modal,Button } from 'react-bootstrap';
 import { useState } from 'react';
@@ -117,6 +118,18 @@ function Pickandshipping    () {
   return (
     <div data-aos="fade-up"
     data-aos-anchor-placement="center-center">
+       <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Leverage AI-powered package optimization to enhance efficiency, reduce costs, and meet sustainability goals. Optimize packaging configurations and minimize material wastage with intelligent algorithms." />
+        <meta name="keywords" content="AI-powered package optimization, sustainable packaging, cost-saving packaging solutions, intelligent packaging algorithms, fulfillment efficiency, material wastage reduction, warehouse management system integration" />
+        <meta name="author" content="Your Company Name" />
+        <meta property="og:title" content="AI-Powered Package Optimization for Sustainable Fulfillment" />
+        <meta property="og:description" content="Achieve cost savings, reduce material wastage, and streamline fulfillment operations with AI-powered packaging solutions that prioritize sustainability." />
+        <meta property="og:image" content="https://example.com/your-image.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com/ai-powered-package-optimization" />
+        <title>AI-Powered Package Optimization for Sustainable Fulfillment</title>
+      </Helmet>
  <div style={{height:"40vh"}}>
  <div className='starting-picklistgeneration'>
     <h1 className="gradient-text">AI  Driven Pick Consolidation & Packing
@@ -178,9 +191,11 @@ function Pickandshipping    () {
 
 
  <div className='firstdiv-multichannelintegration'>
-    <div className='multichannelintegration-image wrapper'>
-        <img src={orderprocessing} alt=""  className='image--cover'/>
+ <div className="multichannelintegration-image">
+    <div className="image-wrapper-multi">
+        <img src="../Assets/packageandshipping.jpeg" alt="" />
     </div>
+</div>
     <div className='multichannelintegration-content'>
         <p style={{textAlign:"justify",padding:"40px"}}>AI-powered package optimization is an essential solution for organizations striving to enhance efficiency, reduce costs, and improve customer satisfaction. With sustainability being the keyword around the globe, fulfilment processes need additional focus on ensuring the sustainability goals are met. Sustainability is also increasingly becoming a key decision factor based on which customers decide to do business with organizations. <br /> <br />By leveraging the power of artificial intelligence, businesses can optimize packaging configurations, minimize material wastage, and achieve cost savings.
         With intelligent packaging algorithms, real-time recommendations, and integration with warehouse management systems, organizations can streamline their packaging operations and deliver orders in an efficient and sustainable manner.</p>    </div>
@@ -200,7 +215,7 @@ function Pickandshipping    () {
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Order Package Tracking</h5>
             <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
+              <img className='avatar-orderprocessing' src='../../Assets/packageandshipping.jpeg' alt='Order Analysis' />
             </div>
             <div className='bio-orderprocessing' >
               <p style={{color:"black",fontSize:"14px"}}>Within the realm of zone-based picking processes, a practice requires the creation of multiple packages for a single order. The system diligently identifies each of these packages that are destined to arrive at the packing station, taking into account all items contained within the orders. By meticulously considering the composition of these packages, the system accurately determines the total volume of items that collectively form the entirety of the order.
@@ -217,7 +232,7 @@ function Pickandshipping    () {
 
 </h5>
             <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
+              <img className='avatar-orderprocessing' src='../../Assets/intelligentalgorithm.jpg' alt='Order Analysis' />
             </div>
             <div className='bio-orderprocessing' >
               <p style={{color:"black",fontSize:"14 px"}}>The AI-powered package optimization system utilizes advanced algorithms to analyse order dimensions and packaging constraints. By considering these factors, the system generates optimized packaging solutions that maximize space utilization and minimize material wastage. This intelligent approach results in efficient packaging configurations.
@@ -232,7 +247,7 @@ function Pickandshipping    () {
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Real-Time Packaging Recommendations</h5>
             <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../Assets/work2.webp' alt='Order Analysis' />
+              <img className='avatar-orderprocessing' src='../../Assets/packagerecommendation.jpg' alt='Order Analysis' />
             </div>
             <div className='bio-orderprocessing' >
               <p style={{color:"black",fontSize:"14px"}}>The system provides real-time recommendations to warehouse staff on the most suitable packaging options for each order. It considers variables such as fragility, weight, and compatibility to ensure that items are packaged securely and efficiently. These recommendations guide warehouse staff in making informed packaging decisions.
@@ -254,17 +269,17 @@ function Pickandshipping    () {
 
     <div className='valuedelivered-maindiv-orderprocessing'>
   <div className='valuedelivered-firstdiv-orderprocessing'>
-    <img src={improveresouceutilisation} alt="" />
+    <img src='../../Assets/eff.jpg' alt="eff image" />
     {/* <h6>Enhanced Eficiency</h6> */}
-    <p><b>Enhanced Efficiency</b> is achieved through AI-powered package optimization, which automates the determination of the most suitable packaging options for orders. By analyzing order dimensions, weights, and other relevant factors, the system intelligently selects the optimal packaging size and arrangement. This automation streamlines the packaging process, reduces wasted space, and improves overall operational efficiency.</p>
+    <p><b>Power-Packed Performance</b> is achieved through AI-powered package optimization, which automates the determination of the most suitable packaging options for orders. By analyzing order dimensions, weights, and other relevant factors, the system intelligently selects the optimal packaging size and arrangement. This automation streamlines the packaging process, reduces wasted space, and improves overall operational efficiency.</p>
   </div>
   <div className='valuedelivered-seconddiv-orderprocessing'>
-    <img src={efficiency} alt="" />
+    <img src='../../Assets/costsavings.jpg' alt="costsavings image" />
     {/* <h6>Cost Savings</h6> */}
     <p><b>Cost Savings</b> are achieved through AI-powered package optimization, which addresses inefficient packaging practices that lead to unnecessary material usage and increased shipping costs. By precisely calculating the dimensions and weight requirements for each order, the system minimizes waste. Optimizing packaging size enables businesses to reduce excessive material use and potentially lower shipping expenses.</p>
   </div>
   <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src={improvedorderaccuracy} alt="" />
+    <img src='../../Assets/impsus.jpg' alt="impsus image" />
     {/* <h6>Improved Sustainability</h6> */}
     <p><b>Improved Sustainability</b> is a significant benefit of AI-powered package optimization, as businesses increasingly seek ways to reduce their carbon footprint. This technology plays a vital role by minimizing material waste and optimizing the use of packaging resources. By adopting sustainable packaging practices, organizations can enhance their brand image and contribute to a greener future.</p>
   </div>

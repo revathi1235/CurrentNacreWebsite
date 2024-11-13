@@ -8,6 +8,7 @@ import efficiency from "../Assets/Efficiency.svg";
 import improvedorderaccuracy from "../Assets/improvedorderaccuracy.svg";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
+import { Helmet } from 'react-helmet';
 
 function Qualitycheck() {
   const navigate = useNavigate();
@@ -46,6 +47,18 @@ function Qualitycheck() {
   };
   return (
     <div>
+        <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="The Quality Assurance process in PURVEY WMS is a scalable and customizable function, ensuring accuracy and high standards in every shipment. Streamline quality control, minimize errors, and deliver superior products to your customers." />
+        <meta name="keywords" content="quality assurance, warehouse management system, WMS, quality control, inventory management, error reduction, customizable process, shipment accuracy" />
+        <meta name="author" content="Purvey WMS" />
+        <meta property="og:title" content="Quality Assurance Process - PURVEY Warehouse Management System" />
+        <meta property="og:description" content="Streamline your quality assurance with PURVEY WMS. Define and implement consistent quality control procedures to ensure accuracy, minimize errors, and maintain high-quality standards for every shipment." />
+        <meta property="og:image" content="https://example.com/your-image.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com/quality-assurance" />
+        <title>Quality Assurance Process - PURVEY WMS</title>
+      </Helmet>
       <div style={{ height: "40vh" }}>
         <div className="starting-picklistgeneration">
           <h1 className="gradient-text">
@@ -167,9 +180,11 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
    </div> */}
 
       <div className="firstdiv-multichannelintegration ">
-        <div className="multichannelintegration-image wrapper">
-          <img src={multichannelintegration} alt="" className="image--cover" />
-        </div>
+      <div className="multichannelintegration-image">
+    <div className="image-wrapper-multi">
+        <img src="../Assets/qcheck.png" alt="" />
+    </div>
+</div>
         <div className="multichannelintegration-content">
           
           <p style={{ textAlign: "justify", padding: "40px" }}>
@@ -194,14 +209,14 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
       <Container className="seconddiv-orderprocessing-container">
         <div className="valuedelivered-maindiv-orderprocessing">
           <div className="valuedelivered-firstdiv-orderprocessing">
-            <img src={improveresouceutilisation} alt="" />
+            <img src='../../Assets/inspection.png' alt="" />
             {/* <h6>Enhanced Efficiency</h6> */}
             <p>
               <b>Detailed Inspection Criteria</b> can be defined through the Quality Assurance feature, covering aspects like physical attributes, functional tests, packaging checks, and more. This ensures each item undergoes a thorough inspection before shipping, guaranteeing top quality and customer satisfaction.
             </p>
           </div>
           <div className="valuedelivered-seconddiv-orderprocessing">
-            <img src={efficiency} alt="" />
+            <img src='../../Assets/realtimevisibility.png' alt="" />
             {/* <h6>Reduced Complexity</h6> */}
             <p>
               <b>Real-Time Visibility into the Quality Status
@@ -209,14 +224,14 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
             </p>
           </div>
           <div className="valuedelivered-thirddiv-orderprocessing">
-            <img src={improvedorderaccuracy} alt="" />
+            <img src='../../Assets/errdetect.jpg' alt="" />
             {/* <h6>Increased Productivity</h6> */}
             <p>
               <b>Generates Automated Quality Alerts</b>  with PURVEY WMS whenever deviations or non-conformances are detected during inspections, enabling timely corrective actions to prevent shipping defective products and uphold your reputation for superior quality.
             </p>
           </div>
           <div className="valuedelivered-thirddiv-orderprocessing">
-            <img src={improvedorderaccuracy} alt="" />
+            <img src='../../Assets/integration.webp' alt="" />
             {/* <h6>Improved Resource Utilization</h6> */}
             <p>
               <b>Seamless Integration

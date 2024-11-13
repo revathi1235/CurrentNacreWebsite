@@ -8,6 +8,7 @@ import efficiency from '../Assets/Efficiency.svg'
 import improvedorderaccuracy from '../Assets/improvedorderaccuracy.svg'
 import { useNavigate } from "react-router-dom";
 import Footer from '../components/Footer'
+import { Helmet } from 'react-helmet';
 
 function IOTintegration() {
   const navigate=useNavigate()
@@ -46,6 +47,18 @@ const handlePurveywms=()=>{
 }
   return (
     <div>
+       <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Discover how IoT and API integration in Purvey WMS enhance warehouse operations, enabling automation, real-time data exchange, and connectivity for improved efficiency and accuracy." />
+        <meta name="keywords" content="IoT, API integration, warehouse management system, WMS, real-time data exchange, automation, efficiency, connectivity" />
+        <meta name="author" content="Purvey WMS" />
+        <meta property="og:title" content="IoT and API Integration in PURVEY WMS" />
+        <meta property="og:description" content="Enhance your warehouse operations with IoT and API integration in Purvey WMS, driving automation, real-time data synchronization, and improved efficiency across your supply chain." />
+        <meta property="og:image" content="https://example.com/your-image.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com/iot-api-integration" />
+        <title>IoT and API Integration in PURVEY WMS</title>
+      </Helmet>
       <div style={{height:"40vh"}}>
  <div className='starting-picklistgeneration'>
     <h1 className="gradient-text mt-3">Unlock the Future of Connectivity 
@@ -54,7 +67,7 @@ const handlePurveywms=()=>{
     <h3 className="gradient-text">with IoT Integration</h3>
 
     <div className='aboutpage-subtitle'>
-    <h6 className='gradient-text-h6'><img src={purvey_apora_black} alt="" style={{height:"80px"}}/></h6>
+    <h6 className='gradient-text-h6'><img src={purvey_apora_black} alt="purvey_apora_black image" style={{height:"80px"}}/></h6>
     </div>
     </div>
 
@@ -129,9 +142,11 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
    </div> */}
 
 <div className='firstdiv-multichannelintegration ' >
-    <div className='multichannelintegration-image wrapper'>
-        <img src={multichannelintegration} alt="" className='image--cover'/>
+<div className="multichannelintegration-image">
+    <div className="image-wrapper-multi">
+        <img src="../Assets/iotint.jpg" alt="iotint image" />
     </div>
+</div>
     <div className='multichannelintegration-content'>
      
         <p style={{textAlign:"justify",padding:"40px"}}>In today's digital era, the Internet of Things (IoT) is revolutionizing the way warehouses operate, bringing increased automation, efficiency, and connectivity. By integrating IoT technologies into your WMS, you can unlock a wide range of benefits and transform your warehouse operations.</p>
@@ -140,19 +155,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
    </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<Container>
+<Container className='mb-4'>
 <div class="image-container-multichannelintegration">
   
   <div class="overlay">
@@ -162,66 +165,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
 </Container>
 
 
-
-<div className='valuedelivered-section-inbountreceipt'> 
-  <div className='value-del-aporafulfillment'>
-    <h1 style={{fontSize:"30px",marginTop:"50px"}}>Value Delivered</h1>
-    </div>
-<div class="container-inbountreceipt">
    
-    <div  className='row-inbountreceipt'>
-      
-        <div className="service-inbountreceipt rainbow-inbountreceipt">
-          
-            <h2 class="service_heading-inbountreceipt">Enhanced Product Quanlity</h2>
-            <p class="service_para-inbountreceipt">
-            Our Quality Assurance process enables you to maintain strict quality standards for every product leaving your warehouse. By identifying and rectifying any deviations or defects, you can deliver superior quality products to your customers, enhancing their satisfaction and loyalty.
-</p>           
-        </div>
-        <div className="service-inbountreceipt rainbow-inbountreceipt">
-           
-            <h2 class="service_heading-inbountreceipt">Reduced Returns and complaints</h2>
-            <p class="service_para-inbountreceipt">
-            With accurate and comprehensive quality control measures in place, you can minimize returns and customer complaints due to substandard or defective products. This saves costs associated with returns processing and improves your overall customer experience.
-            </p>
-        </div>
-        <div className="service-inbountreceipt rainbow-inbountreceipt">
-           
-            <h2 class="service_heading-inbountreceipt">Complailance with Regulations and Standards</h2>
-            <p class="service_para-inbountreceipt">
-            Our WMS helps ensure compliance with industry regulations and quality standards. By implementing standardized quality assurance procedures, you can meet legal requirements, industry-specific guidelines, and customer expectations for product quality.
-            </p>
-        </div>
-       
-        
-
-</div>
-</div>
-<div class="container-inbountreceipt">
-   
-    <div  className='row-inbountreceipt'>
-      
-        <div className="service-inbountreceipt rainbow-inbountreceipt">
-          
-            <h2 class="service_heading-inbountreceipt">Increased Operational Efficiency</h2>
-            <p class="service_para-inbountreceipt">
-            Automation of the quality assurance process streamlines inspection procedures, and improves overall operational efficiency. This allows your team to focus on value-added tasks and optimize productivity.       </p>
-           
-        </div>
-        <div className="service-inbountreceipt rainbow-inbountreceipt">
-           
-            <h2 class="service_heading-inbountreceipt">Enhanced Bank Reputation</h2>
-            <p class="service_para-inbountreceipt">
-            By consistently delivering high-quality products, you can strengthen your brand reputation and differentiate yourself in the market. Positive customer experiences and a reputation for quality contribute to increased customer trust and loyalty.
-            </p>
-        </div>
-      
-       
-        
-
-</div>
-</div>
-  </div>
 
 
 <Footer/>

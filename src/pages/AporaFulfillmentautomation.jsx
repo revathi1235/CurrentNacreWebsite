@@ -10,6 +10,8 @@ import { useState,useEffect} from 'react';
 import './Responsive.css'
 import Chart from './Chart';
 import Footer from '../components/Footer';
+import { Helmet } from 'react-helmet';
+
 const items = [
   { id: 1, title: 'The Leading AI-Powered Fulfilment Automation System', imgSrc: '../Assets/aipowered.jpg', description: 'Welcome to APORA, the AI-powered fulfilment automation system that optimizes operating costs and boosts efficiency exponentially. Our cutting-edge technology enables you to enjoy the benefits of reduced operational expenses and increased productivity, thanks to the exponential growth in efficiency. Say goodbye to order backlogs and experience a significant improvement in same-day deliveries.' },
   { id: 2, title: 'Hybrid Proprietary Methodology, Opti-Pick', imgSrc: 'image2.jpg', description: 'Unlike other fulfilment automation systems, APORA is not limited to e-commerce or B2B operations. We have developed a series of AI algorithms that implement our hybrid proprietary methodology, Opti-Pick. This ground-breaking approach has the potential to revolutionize Distribution Center activities, resulting in improved speed, efficiency, and ultimately generating more revenue for your business.' },
@@ -108,13 +110,25 @@ function AporaFulfillmentautomation() {
   return (
     <div data-aos="fade-up"
     data-aos-anchor-placement="center-center">
+         <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Unlock the potential of fulfillment automation with APORA's AI-powered system, Opti-Pick, reducing errors and boosting efficiency in warehouse operations." />
+        <meta name="keywords" content="AI-powered fulfillment, warehouse automation, Opti-Pick, SwiftShip, IoT-driven validation, precision picking, order fulfillment, e-commerce, logistics" />
+        <meta name="author" content="APORA Technologies" />
+        <meta property="og:title" content="AI-Powered Fulfillment Automation with APORA" />
+        <meta property="og:description" content="Discover how APORA's advanced AI-powered fulfillment system and Opti-Pick algorithm optimize warehouse efficiency, boost productivity, and deliver superior customer satisfaction." />
+        <meta property="og:image" content="https://example.com/your-image.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com/ai-powered-fulfillment" />
+        <title>AI-Powered Fulfillment Automation System by APORA</title>
+      </Helmet>
  <div style={{height:"90vh"}}>
  <div className='starting-picklistgeneration  '>
     <h1 className="gradient-text">Bring In One Of Its Kind <br /></h1>
     <h3 className="gradient-text">Solution</h3>
 
     <div className='aboutpage-subtitle'>
-    <h6 className='gradient-text-h6'><img src={aporablack} alt="" style={{height:"80px"}}/></h6>
+    <h6 className='gradient-text-h6'><img src={aporablack} alt="apora black image" style={{height:"80px"}}/></h6>
     </div>
     </div>
 
@@ -178,7 +192,7 @@ function AporaFulfillmentautomation() {
       <Modal.Body style={{ padding: 0, position: 'relative' }}>
         <img 
           src={modalContent.image} 
-          alt="" 
+          alt="modal image aporafulfillment" 
           style={{ 
             width: "100%", 
             height: "auto", 

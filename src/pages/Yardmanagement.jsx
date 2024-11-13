@@ -3,6 +3,8 @@ import work4 from '../Assets/work4.jpg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquare } from "@fortawesome/free-solid-svg-icons";
 import { Container,Row,Col } from "react-bootstrap";
+import { Helmet } from 'react-helmet';
+
 import { Card } from "react-bootstrap";
 function Yardmanagement() {
     // const [isvisibleone, setIsvisibleone] = useState(true);
@@ -28,6 +30,18 @@ function Yardmanagement() {
     // };
   return (
     <div>
+        <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Effective yard management is critical to warehouse operations. Ensure the correct placement and labeling of aisles, racks, and totes to avoid operational inefficiencies and financial losses." />
+        <meta name="keywords" content="yard management, warehouse operations, warehouse efficiency, operational safety, item placement, logistics" />
+        <meta name="author" content="Your Company Name" />
+        <meta property="og:title" content="Effective Yard Management for Warehouse Operations" />
+        <meta property="og:description" content="Ensure proper yard management with clear zone definitions, labeling of aisles, racks, and totes to prevent misplacement, expiry, and operational inefficiencies in warehouses." />
+        <meta property="og:image" content="https://example.com/your-image.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com/yard-management" />
+        <title>Yard Management for Warehouse Efficiency</title>
+      </Helmet>
       <div className="starting-picklistgeneration  ">
         <h1 className="gradient-text">Yard Management</h1>
         <div className="button-container ms-4"></div>
@@ -70,7 +84,7 @@ function Yardmanagement() {
 
 <div className="yardmanagement-firstdiv">
   <div className="yardmanagement-seconddiv">
-    <img src={work4} alt="" className="image--cover" />
+    <img src='../../Assets/yardmanagement.jpg' alt=""  />
   </div>
   <div className="yardmanagement-thirddiv">
     <div className="col-12 d-flex flex-column align-items-center">

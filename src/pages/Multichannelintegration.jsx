@@ -167,7 +167,7 @@ const handleApora=()=>{
     {/* <h3 className="gradient-text">Across All Touchpoints.</h3> */}
 
     <div className='aboutpage-subtitle'>
-    <h6 className='gradient-text-h6'><img src={aporablack} alt="" style={{height:"80px"}}/></h6>
+    <h6 className='gradient-text-h6'><img src={aporablack} alt="aporablack image" style={{height:"80px"}}/></h6>
     </div>
     </div>
 
@@ -222,7 +222,7 @@ const handleApora=()=>{
    <div className='firstdiv-multichannelintegration ' >
    <div className="multichannelintegration-image">
     <div className="image-wrapper-multi">
-        <img src="../Assets/multi.png" alt="" />
+        <img src="../Assets/multi.png" alt="multi image" />
     </div>
 </div>
 
@@ -260,18 +260,18 @@ const handleApora=()=>{
 
     <div className='valuedelivered-maindiv-multiintegration'>
   <div className='valuedelivered-firstdiv-multiintegration'>
-    <img src={improveresouceutilisation} alt="" />
+    <img src={improveresouceutilisation} alt="improveresouceutilisation images" />
     {/* <h6>Improved Resource Utilisation</h6> */}
     <p style={{textAlign:"justify"}}> <b>Improved Resource Utilisation</b> is achieved by integrating multiple channels into a unified pick management system, allowing you to optimize resources and reduce operational complexities.</p>
   </div>
   <div className='valuedelivered-seconddiv-multiintegration'>
-    <img src='../../Assets/realtimevisibility.png' alt="" />
+    <img src='../../Assets/realtimevisibility.png' alt="realtimevisibility image" />
     {/* <h6>Real Time Visibility</h6> */}
     <p style={{textAlign:"justify"}}> <b>Real Time Visibility
     </b> ensures that the status of orders across all channels is tracked individually, even as they are processed simultaneously</p>
   </div>
   <div className='valuedelivered-thirddiv-multiintegration'>
-    <img src={improvedorderaccuracy} alt="" />
+    <img src={improvedorderaccuracy} alt="improvedorderaccuracy image" />
     {/* <h6>Improved Order Accuracy</h6> */}
     <p style={{textAlign:"justify"}}> <b>Improved Order Accuracy
     </b>  is achieved with our barcode, QR code, and RFID integrated system, which eliminates errors and inaccuracies in order fulfillment. The system automatically synchronizes order data from various channels, minimizing the risk of mismatched or duplicate orders.</p>
@@ -281,12 +281,12 @@ const handleApora=()=>{
 <br />
 <div className='valuedelivered-maindiv-multiintegration mt-5'>
   <div className='valuedelivered-fourthdiv-multiintegration'>
-  <img src='../../Assets/scalabilityandflexibility.jpg' alt="" />
+  <img src='../../Assets/scalabilityandflexibility.jpg' alt="scalabilityandflexibility image" />
   {/* <h6>Scalability & Flexibility</h6> */}
     <p style={{textAlign:"justify"}}>  <b>Scalability & Flexibility</b> are key features of our multi-channel pick management system, which adapts to your growing business needs. It handles increasing order volumes and seamlessly incorporates new sales channels, whether through online marketplaces, brick-and-mortar stores, or social media platforms, ensuring efficient order consolidation and management.</p>
   </div>
   <div className='valuedelivered-fifthdiv-multiintegration'>
-    <img src={efficiency} alt="" />
+    <img src={efficiency} alt="efficiency image" />
     {/* <h6>Increased Efficiency</h6> */}
     <p style={{textAlign:"justify"}}> <b>Increased Efficiency
     </b>  is achieved through AI-powered automation that dynamically manages orders from different channels in one place. You can track order status, monitor assigned resources and their activities, and oversee fulfillment progress, all from a single interface, simplifying order processing and minimizing errors or delays.</p>

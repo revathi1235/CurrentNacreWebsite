@@ -869,8 +869,10 @@ margin-top: 20px;
         object-fit: contain;
 }
 
-.multichannelintegration-content p{
-width: 350px;
+.multichannelintegration-content p {
+  width: 390px;
+  margin-left: 10px;
+  padding: 100px;
 }
 
 }
@@ -1342,7 +1344,7 @@ width: 350px;
   .yardmanagement-seconddiv {
     width: 50%; /* Image takes 50% width */
     max-width: 50%;
-  }
+  } 
 
   .yardmanagement-thirddiv {
     width: 50%; /* Content takes 50% width */
@@ -1358,8 +1360,10 @@ width: 350px;
     width: 100%;
   }
 
-  .yardmanagement-seconddiv img{
-    width: 90%; /* Take full width */
+  .yardmanagement-seconddiv img {
+    height: 30vh; /* Adjust height to be smaller on medium-sized screens */
+    width: 80%; /* Increase the width to 80% on medium screens */
+    left: 5%; /* Center the image horizontally */
   }
 .yardmanagment-content{
   width:auto;

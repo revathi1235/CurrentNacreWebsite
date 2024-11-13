@@ -162,7 +162,7 @@ const handleApora=()=>{
    </h3>
 
     <div className='aboutpage-subtitle'>
-    <h6 className='gradient-text-h6'><img src={aporablack} alt="" style={{height:"80px"}}/></h6>
+    <h6 className='gradient-text-h6'><img src={aporablack} alt="aporablack image" style={{height:"80px"}}/></h6>
     </div>
     </div>
 
@@ -219,7 +219,7 @@ const handleApora=()=>{
  <div className='firstdiv-multichannelintegration'>
  <div className="multichannelintegration-image">
     <div className="image-wrapper-multi">
-        <img src="../Assets/picklistgeneration.png" alt="" />
+        <img src="../Assets/picklistgeneration.png" alt="picklistgeneration image" />
     </div>
 </div>
     <div className='multichannelintegration-content'>
@@ -240,7 +240,7 @@ const handleApora=()=>{
  
 <div className='valuedelivered-maindiv-orderprocessing'>
   <div className='valuedelivered-firstdiv-orderprocessing'>
-    <img src='../../Assets/accuracyandefficiency.webp' alt="" />
+    <img src='../../Assets/accuracyandefficiency.webp' alt="accuracyandefficiency image" />
     {/* <h6>Accuracy and Efficiency</h6> */}
     <p><b>Accuracy and Efficiency</b> are enhanced through AI-powered order synchronization, which utilizes advanced algorithms to analyze order similarities and item proximities within the warehouse. By identifying patterns, the system synchronizes multiple orders with common items, reducing the number of picklists and enabling warehouse staff to fulfill orders more efficiently.</p>
   </div>
@@ -255,7 +255,7 @@ const handleApora=()=>{
     <p><b>Warehouse Layout Optimization </b>is crucial for effective order fulfillment, as it takes into account the physical arrangement of aisles, shelves, and storage locations. By understanding the proximity of items and their popularity, the system generates picklists that minimize travel time for warehouse staff, ensuring that orders are fulfilled quickly and efficiently.</p>
   </div>
   <div className='valuedelivered-thirddiv-orderprocessing'>
-  <img src="../Assets/multi.png" alt="" />
+  <img src="../Assets/multi.png" alt="multi image" />
     {/* <h6>Warehouse Layout Optimization</h6> */}
     <p><b>Integration with Warehouse Management Systems </b> allows the AI-powered picklist generation system to seamlessly enhance your workflow. It processes order data, generates optimized picklists, and updates pick statuses in real time, eliminating manual data entry and streamlining the entire process.</p>
   </div>

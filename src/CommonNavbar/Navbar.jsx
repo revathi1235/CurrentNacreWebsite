@@ -59,7 +59,7 @@ function CollapsibleExample() {
           src="./Assets/ns black transparent.png"
           width="100"
           height="50"
-          alt=""
+          alt="ns black image"
         />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="ms-auto" />

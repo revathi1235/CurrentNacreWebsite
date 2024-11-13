@@ -8,6 +8,7 @@ import efficiency from "../Assets/Efficiency.svg";
 import improvedorderaccuracy from "../Assets/improvedorderaccuracy.svg";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
+import { Helmet } from 'react-helmet';
 
 function Dispatch() {
   const navigate = useNavigate();
@@ -46,6 +47,18 @@ function Dispatch() {
   };
   return (
     <div>
+        <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Optimize your dispatch process with Purvey WMS. Our Dispatch Management functionality enhances order fulfilment, ensures timely deliveries, and guarantees efficient and accurate shipment of goods using state-of-the-art technology." />
+        <meta name="keywords" content="dispatch management, warehouse management system, WMS, order fulfilment, shipment, timely delivery, warehouse operations, efficient dispatch" />
+        <meta name="author" content="Purvey WMS" />
+        <meta property="og:title" content="Dispatch Management - PURVEY Warehouse Management System" />
+        <meta property="og:description" content="Streamline your dispatch process with Purvey WMS’s Dispatch Management functionality. Improve order fulfilment accuracy and ensure timely, efficient deliveries with advanced technology and capabilities." />
+        <meta property="og:image" content="https://example.com/your-image.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com/dispatch-management" />
+        <title>Dispatch Management - PURVEY WMS</title>
+      </Helmet>
       <div style={{ height: "40vh" }}>
         <div className="starting-picklistgeneration">
           <h1 className="gradient-text">
@@ -56,7 +69,7 @@ function Dispatch() {
 
           <div className="aboutpage-subtitle">
             <h6 className="gradient-text-h6">
-              <img src={purvey_apora_black} alt="" style={{ height: "80px" }} />
+              <img src={purvey_apora_black} alt="purvey apora image" style={{ height: "80px" }} />
             </h6>
           </div>
         </div>
@@ -168,9 +181,11 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
    </div> */}
 
       <div className="firstdiv-multichannelintegration ">
-        <div className="multichannelintegration-image wrapper">
-          <img src={multichannelintegration} alt="" className="image--cover" />
-        </div>
+      <div className="multichannelintegration-image">
+    <div className="image-wrapper-multi">
+        <img src="../Assets/dispach.jpg" alt="dispatch image" />
+    </div>
+</div>
         <div className="multichannelintegration-content">
           <p style={{ textAlign: "justify", padding: "40px" }}>
             {" "}
@@ -186,7 +201,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
       <Container className="seconddiv-orderprocessing-container">
         <div className="valuedelivered-maindiv-orderprocessing">
           <div className="valuedelivered-firstdiv-orderprocessing">
-            <img src={improveresouceutilisation} alt="" />
+            <img src='../../Assets/orderconsol.jpg' alt="order consolidation image" />
             {/* <h6>Enhanced Efficiency</h6> */}
             <p>
               <b>Order consolidation </b> in PURVEY WMS allows multiple orders
@@ -197,7 +212,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
             </p>
           </div>
           <div className="valuedelivered-seconddiv-orderprocessing">
-            <img src={efficiency} alt="" />
+            <img src='../../Assets/orderprocessing.webp' alt="order processing image" />
             {/* <h6>Reduced Complexity</h6> */}
             <p>
               <b>Real-time Inventory Tracking </b> with our Dispatch Management
@@ -207,7 +222,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
             </p>
           </div>
           <div className="valuedelivered-thirddiv-orderprocessing">
-            <img src={improvedorderaccuracy} alt="" />
+            <img src='../../Assets/orderallo.jpg' alt="order allocation image" />
             {/* <h6>Increased Productivity</h6> */}
             <p>
               <b>Order Prioritization</b> in PURVEY WMS is driven by predefined
@@ -217,7 +232,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
             </p>
           </div>
           <div className="valuedelivered-thirddiv-orderprocessing">
-            <img src={improvedorderaccuracy} alt="" />
+            <img src={improvedorderaccuracy} alt="improved accuracy image" />
             {/* <h6>Improved Resource Utilization</h6> */}
             <p>
               <b>Carrier Integration </b> in PURVEY WMS allows seamless
@@ -228,7 +243,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
             </p>
           </div>
           <div className="valuedelivered-seconddiv-orderprocessing">
-            <img src={efficiency} alt="" />
+            <img src='../../Assets/routeopti.jpg' alt="route optimization image" />
             {/* <h6>Reduced Complexity</h6> */}
             <p>
               <b>Route optimization </b> in our Dispatch Management
@@ -238,17 +253,17 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
             </p>
           </div>
           <div className="valuedelivered-thirddiv-orderprocessing">
-            <img src={improvedorderaccuracy} alt="" />
+            <img src='../../Assets/proofdelivery.webp' alt="proof delivery image" />
             {/* <h6>Increased Productivity</h6> */}
             <p>
-              <b>Proof of Delivery</b>in PURVEY WMS is captured through
+              <b>Proof of Delivery</b> in PURVEY WMS is captured through
               electronic signature or barcode scanning, providing confirmation
               of successful deliveries and streamlining the reconciliation of
               shipments.
             </p>
           </div>
           <div className="valuedelivered-thirddiv-orderprocessing">
-            <img src={improvedorderaccuracy} alt="" />
+            <img src='../../Assets/repa.jpg' alt="repacking iamge" />
             {/* <h6>Improved Resource Utilization</h6> */}
             <p>
               <b>Reporting and Analytics</b> in our WMS offer in-depth insights
