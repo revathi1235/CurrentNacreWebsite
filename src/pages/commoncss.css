@@ -1622,10 +1622,12 @@ display: none;
 .multichannelintegration-content {
   height: 100%; /* Take full height of the parent */
   position: relative; /* For positioning the shadow */
-  margin-top: 30px;
+  margin-top: 80px;
   flex: 1 1 100%; /* Make content take full width on small screens */
   padding: 20px;
-  text-align: justify;
+  width: 30px;
+  /* text-align: justify; */
+
 }
 .multichannelintegration-image, 
 .multichannelintegration-content {
@@ -1706,7 +1708,7 @@ padding:  10px;
 .valuedelivered-maindiv-multiintegration {
   display: flex;
   justify-content: center; /* centers horizontally */
-  align-items: center; /* centers vertically */
+  
   height: 60vh;
   margin: 10px;
   width: 100%;
@@ -1717,7 +1719,7 @@ padding:  10px;
 .valuedelivered-firstdiv-multiintegration,
 .valuedelivered-seconddiv-multiintegration,
 .valuedelivered-thirddiv-multiintegration {
-  height: 65vh;
+  height: 35vh;
   width: 30%;
   padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1780,14 +1782,14 @@ width: 100%;
       height: 60vh;
       margin: 10px;
       width: 100%;
-      margin-top: 40px;
+      margin-top: 10px;
       position: relative;
       text-align: center;
     }
     
     .valuedelivered-fourthdiv-multiintegration,
     .valuedelivered-fifthdiv-multiintegration {
-      height: 75vh;
+      height: 43vh;
       width: 30%;
       padding: 20px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1827,13 +1829,14 @@ width: 100%;
 
       .image-container-multichannelintegration {
         position: relative;
-      
-        margin-top: 100px;
+        padding: 20px;
+        margin-top: 0px;
         width: 100%; /* Adjust as needed */
         height: 20vh; /* Adjust as needed */
-        background-image: url('../Assets/cuttingedge.webp'); /* Replace with your image URL */
-        background-size: cover; /* Cover the entire container */
+        box-shadow: -2px 6px 6px 10px rgb(0, 238, 255); 
+                background-size: cover; /* Cover the entire container */
         background-position: center; /* Center the image */
+        border-radius: 10px;
       }
       
       .overlay {
@@ -1842,13 +1845,14 @@ width: 100%;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+        border-radius: 10px;
+        
         display: flex;
         padding: 30px;
-        font-family: 'Good times';
+        /* font-family: 'Good times'; */
         justify-content: center;
         align-items: center;
-        color: white; /* Text color */
+        color: rgb(7, 7, 7); /* Text color */
         font-size: 18px; /* Font size */
       }
       @media(max-width:768px){
@@ -1863,7 +1867,8 @@ width: 100%;
 
       .card-orderprocessing {
         background-color: #393B45;
-        height: 470px;
+        /* height: 470px; */
+        height: 415px;
         width: 100%; /* Change width to 100% for responsive design */
         margin: 10vh auto;
         border-radius: 25px;
@@ -1898,22 +1903,27 @@ width: 100%;
       
       .avatar-orderprocessing {
         display: inline;
-        height: auto;
+        height: 121px;
       object-fit: scale-down;
         width: 100%;
       }
       
-      .bio-orderprocessing {
+      /* .bio-orderprocessing {
         display: block;
         margin: 10px auto;
         width: 280px;
         height: 25vh;
-      }
-      
+      } */
+      .bio-orderprocessing {
+        display: block;
+        margin: 16px auto;
+        width: 380px;
+        height: 20vh;
+    }
       .bio-orderprocessing p {
         color: #E6EBEE;
-        font-weight: lighter;
-        font-size: 14px;
+        font-weight: normal;
+        font-size: 15px;
         text-align: justify;
       }
       
@@ -1940,47 +1950,66 @@ width: 100%;
   
   
   .valuedelivered-maindiv-orderprocessing {
-    display: flex;         /* Use Flexbox */
-    flex-direction: column; /* Arrange items in a column */
+   
     gap: 20px;            /* Space between each section */
+    margin-left: 90px;
   }
   
-  .valuedelivered-firstdiv-orderprocessing,
-  .valuedelivered-seconddiv-orderprocessing,
+  .valuedelivered-firstdiv-orderprocessing
+  /* .valuedelivered-seconddiv-orderprocessing,
   .valuedelivered-thirddiv-orderprocessing,
-  .valuedelivered-fourthdiv-orderprocessing {
+  .valuedelivered-fourthdiv-orderprocessing  */
+  {
     display: flex;         /* Use Flexbox for each item */
     align-items: center; 
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 0 10px;
-    width: 80%;
-    margin-left: 130px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+    width: 50%;
+    /* height: 75vh; */
+    /* margin-left: 130px; */
+    /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);  */
     border-radius: 5px;  /* Center items vertically */
+    transform: scale(1.05);
+    box-shadow: 15px 15px 15px rgba(14, 241, 6, 0.2);
+
   }
-  
-  .valuedelivered-firstdiv-orderprocessing img,
+  .valuedelivered-seconddiv-orderprocessing{
+           /* Use Flexbox for each item */
+    align-items: center; 
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 10px;
+    width: 50%;
+   margin-top: 20px;
+    margin-left: 500px;
+    /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1) ;*/
+    border-radius: 5px; 
+    transform: scale(1.05);
+    box-shadow: 15px 15px 15px  rgba(14, 241, 6, 0.2);
+
+  }
+  /* .valuedelivered-firstdiv-orderprocessing img,
   .valuedelivered-seconddiv-orderprocessing img,
   .valuedelivered-thirddiv-orderprocessing img,
   .valuedelivered-fourthdiv-orderprocessing img {
-    width: 50vh;         /* Set a specific width for images */
-    height: auto;         /* Maintain aspect ratio */
-    margin-right: 20px;   /* Space between image and text */
-    /* Optional: adds rounded corners */
-  }
+    width: 50vh;       
+    height: auto;         
+    margin-right: 20px;   
+   
+  } */
   
   .content {
     max-width: 600px;     /* Limit content width */
   }
   
 
-  .valuedelivered-firstdiv-orderprocessing:hover,
+  /* .valuedelivered-firstdiv-orderprocessing:hover,
   .valuedelivered-seconddiv-orderprocessing:hover,
   .valuedelivered-thirddiv-orderprocessing:hover {
-    transform: scale(1.05); /* Slightly enlarges the div */
-    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
-  }
+    transform: scale(1.05); 
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); 
+  } */
 
 
 
@@ -4067,4 +4096,105 @@ height: auto;
    /* Adjust this value to your desired line width */
   word-wrap: break-word;
   white-space: normal; /* Ensures text will wrap within max-width */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.multi-main {
+  display: flex;
+  height: 100%;
+  max-width: 90%; /* Adjust as needed to control the width of the main container */
+  margin: 0 auto; /* Centers the main container horizontally */
+  padding: 10px; /* Adds padding inside the main container */
+  align-items: center; /* Vertically center the content */
+  gap: 10px; /* Optional: Adds spacing between the image and content */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+.multi-img-div,
+.multi-content {
+  flex: 1; /* Each div takes up equal width */
+  height: 100%; /* Makes height fill the main container */
+  padding: 5px;
+}
+.multi-content p{
+  font-size: 25px;
+padding: 25px;
+  text-align: justify;
+}
+.multi-img-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image scales nicely within its container */
+  transform: scale(1.05);
+  box-shadow: 15px 15px 15px  rgba(0, 0, 0, 0.2);
+}
+
+
+.bg-img-multi {
+  background:linear-gradient(to bottom, blue,green);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  background-position: center; /* Ensure the background is centered */
+  width: 95vw; /* Set width to 100% of the viewport width */
+     /* Set height to 100% of the viewport height */
+  display: flex; /* Allows for the layout of child elements */
+  flex-direction: column; /* Stack child elements vertically */
+  justify-content: center; /* Vertically center the content */
+  padding: 20px; /* Optional: Adds padding to the container */
+  margin: 30px;
+}
+.seconddiv-multichannelintegration h1{
+  font-family: 'Good Times';
+  color: white;
+}
+
+
+
+
+
+
+
+.overlay-content-one{
+
+    position:absolute;
+    top:20%;
+    
+    color:black;
+   
+    padding:20px;
+    border-radius:8px;
+    max-width:30%;
+}
+.overlay-content-two{
+
+    position: absolute;
+    top:20%;
+    right:3%;
+    color:black;
+   
+    padding:20px;
+    border-radius:8px;
+    max-width:30%;
 }

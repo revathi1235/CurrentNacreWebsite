@@ -110,7 +110,7 @@
     content: "";
     position: absolute;
     bottom: 100%;
-    left: 50%;
+    left: 49%;
     transform: translateX(-50%);
     width: 2px;
     height: 20px;

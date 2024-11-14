@@ -117,7 +117,7 @@ ol {
   cursor: pointer;
   text-align: center;
   width: 90%;
-  margin: 0 auto 40px;
+  margin: 0 auto 22px;
   background: transparent;
   
 }
@@ -175,7 +175,7 @@ ol {
   content: "";
   position: absolute;
   bottom: 100%;
-  left: 53%;
+  left: 54.2%;
   transform: translateX(-50%);
   width: 2px;
   height: 20px;
@@ -187,7 +187,7 @@ ol {
   }
 
   .level-2 {
-      width: auto; /* Allow full width on mobile */
+      width: 185px; /* Allow full width on mobile */
       font-size: 14px; /* Adjust font size for better readability */
   }
 }

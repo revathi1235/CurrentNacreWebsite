@@ -42,7 +42,7 @@ function Footer() {
                           icon={faLocationDot}
                           style={{ color: "black" }}
                         />{" "}
-                        Malambuzha Rd,
+                        Malampuzha Rd,
                         <br />
                         Olavakkode,
                         <br />

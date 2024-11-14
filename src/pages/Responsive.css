@@ -998,9 +998,11 @@ margin-top: 20px;
       padding: 10px;         /* Reduce padding for smaller screens */
       flex-direction: column; /* Stack image and text vertically on mobile */
       align-items: center;     /* Center items in the column layout */
-      height: 75vh;           /* Allow content to dictate height */
+      height: 35vh;           /* Allow content to dictate height */
   }
-
+  .mobileview{
+  height: 15vh;
+  }
   .valuedelivered-firstdiv-multiintegration img,
   .valuedelivered-seconddiv-multiintegration img,
   .valuedelivered-thirddiv-multiintegration img,
@@ -1384,3 +1386,64 @@ margin-top: 20px;
   }
  
 } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .multi-main {
+    height: 40vh; /* Adjust height for smaller screens */
+    padding: 8px;
+    gap: 8px;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg-img-multi {
+      padding: 15px;
+      margin: 10px;
+      margin-right: 10px;
+  }
+  .seconddiv-content-multichannelintegration p{
+    height: 620px;
+    
+  }
+}
+/* Responsive adjustments for mobile devices */
+@media (max-width: 480px) {
+  
+  .multi-main {
+    flex-direction: column; /* Stack image and content vertically */
+    height: auto; /* Allow the container to adjust to content */
+    padding: 5px;
+    gap: 5px;
+    margin-top: 370px;
+  }
+
+  .multi-img-div,
+  .multi-content {
+    height: auto; /* Allow divs to adjust to content height */
+    width: 100%; /* Full width for each item in stacked layout */
+  }
+
+  .multi-img-div img {
+    height: 200px; /* Set a fixed height for the image on smaller screens */
+    width: 100%; /* Ensure it scales to the container width */
+    object-fit: cover;
+  }
+}

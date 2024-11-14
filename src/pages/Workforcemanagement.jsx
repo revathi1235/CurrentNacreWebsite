@@ -4,7 +4,8 @@ import efficiency from "../Assets/Efficiency.svg";
 import improvedorderaccuracy from "../Assets/improvedorderaccuracy.svg";
 import improveresouceutilisation from "../Assets/Improveresourceutilisation.svg";
 import { Helmet } from 'react-helmet';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuoteLeft,faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import { Container } from "react-bootstrap";
 // import { useState } from "react";
 import orderprocessing from "../Assets/orderprocessing.svg";
@@ -196,7 +197,7 @@ function Workforcemanagement() {
  </div>
       </div>
 
-      <div className="firstdiv-multichannelintegration">
+      {/* <div className="firstdiv-multichannelintegration">
       <div className="multichannelintegration-image">
     <div className="image-wrapper-multi">
         <img src="../Assets/workforcemanagement.webp" alt="" />
@@ -208,41 +209,63 @@ function Workforcemanagement() {
           Upon arrival, goods are quickly scanned and recorded in the system, AI-powered workforce optimization is a game-changer for organizations striving for efficiency and productivity in warehouse picking processes. By harnessing the power of artificial intelligence, businesses can optimize task allocation, maximize workforce productivity, and minimize errors. With intelligent task allocation, real-time performance monitoring, and machine learning algorithms, organizations can unlock the full potential of their workforce and meet customer demands effectively.
           </p>{" "}
         </div>
-      </div>
+      </div> */}
+<div style={{height:'30vh'}} className='mob-multi-space'></div>
+ <div className='multi-main'>
+ <div className='multi-content'>
+  <p style={{fontSize:'16.8px'}}>  <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/>  In the dynamic world of warehousing and order fulfilment, optimizing workforce productivity is a constant challenge. Optimizing your workforce is crucial for achieving operational excellence and maintaining a competitive edge. Workforce optimization involves strategically managing your human resources, empowering them with the right tools and technologies. With AI-powered workforce optimization, organizations can revolutionize their warehouse picking processes.
+  Upon arrival, goods are quickly scanned and recorded in the system, AI-powered workforce optimization is a game-changer for organizations striving for efficiency and productivity in warehouse picking processes. By harnessing the power of artificial intelligence, businesses can optimize task allocation, maximize workforce productivity, and minimize errors. With intelligent task allocation, real-time performance monitoring, and machine learning algorithms, organizations can unlock the full potential of their workforce and meet customer demands effectively.<FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
+</div>
+{/* <div className='multi-img-div'>
+<img src="../Assets/workforcemanagement.webp" alt="workforce management" />
 
+</div> */}
+
+</div>
       <div className="seconddiv-workforcemanagement">
         <h1>Features</h1>
       </div>
       <Container fluid className="seconddiv-workforcemanagement-container">
+
+     <div style={{marginLeft:'80px',display:'flex'}}>
+     <div className='valuedelivered-firstdiv-multiintegration' style={{height:'46vh'}}>
+    {/* <img src={improveresouceutilisation} alt="improveresouceutilisation images" /> */}
+    <img src='../../Assets/intelligent taskallocation.jpeg' alt="" style={{height:'50px',width:'auto',textAlign:'center',display:'flex',justifyContent:'center'}}/>
+    {/* <h6>Improved Resource Utilisation</h6> */}
+    <p > <span className='fs-4'>Intelligent Task Allocation</span> is achieved through the AI-powered workforce optimization system, which assigns picking tasks based on factors like employee availability, location, and workload. By considering individual capabilities and workload distribution, the system ensures tasks are optimally allocated, resulting in efficient, balanced workloads across the workforce</p>
+  </div>
+
+
+  <div className='valuedelivered-firstdiv-multiintegration' style={{height:'46vh'}}>
+    {/* <img src={improveresouceutilisation} alt="improveresouceutilisation images" /> */}
+    <img src='../../Assets/monitoring.jpg' alt="" style={{height:'50px',width:'auto',textAlign:'center',display:'flex',justifyContent:'center'}}/>
+    {/* <h6>Improved Resource Utilisation</h6> */}
+    <p > <span className='fs-4'>Real Time Performance Monitoring</span> drive AI-powered workforce optimization by analyzing and identifying storage patterns, enabling effective resource assignment in key areas of the warehouse to enhance picking efficiency.</p>
+  </div>
+
+  <div className='valuedelivered-firstdiv-multiintegration' style={{height:'46vh'}}>
+    {/* <img src={improveresouceutilisation} alt="improveresouceutilisation images" /> */}
+    <img src='../../Assets/machinelearning.png' alt="" style={{height:'50px',width:'auto',textAlign:'center',display:'flex',justifyContent:'center'}}/>
+    {/* <h6>Improved Resource Utilisation</h6> */}
+    <p > <span className='fs-4'>Machine Learning Algorithms</span> AI-powered workforce optimization utilizes machine learning algorithms to analyse and identify storage patterns and effectively assign resources in required areas of warehouse to bring efficiency in picking processes.</p>
+  </div>
+
+
+  
+     </div>
         <div className="valuedelivered-maindiv-workforcemanagement">
-          <div className="valuedelivered-firstdiv-workforcemanagement">
-            <img src='../../Assets/intelligenttaskallocation.png' alt="" />
-            {/* <h6>Intelligent Task Allocation</h6> */}
-            <p>
-           <b> Intelligent Task Allocation</b> is achieved through the AI-powered workforce optimization system, which assigns picking tasks based on factors like employee availability, location, and workload. By considering individual capabilities and workload distribution, the system ensures tasks are optimally allocated, resulting in efficient, balanced workloads across the workforce.
-            </p>
-          </div>
-          <div className="valuedelivered-seconddiv-workforcemanagement">
+         
+          {/* <div className="valuedelivered-seconddiv-workforcemanagement">
             <img src='../../Assets/intelligentorderanalysis.jpeg' alt="" />
-            {/* <h6>Real Time Performance Monitoring</h6> */}
             <p>
              <b>Real Time Performance Monitoring</b> drive AI-powered workforce optimization by analyzing and identifying storage patterns, enabling effective resource assignment in key areas of the warehouse to enhance picking efficiency.
             </p>
-          </div>
-          <div className="valuedelivered-thirddiv-workforcemanagement">
-            <img src='../../Assets/machine.png' alt="" />
-            {/* <h6>Machine Learning Algorithms</h6> */}
-            <p> <b>Machine Learning Algorithms </b>
-              AI-powered workforce optimization utilizes machine learning
-              algorithms to analyse and identify storage patterns and
-              effectively assign resources in required areas of warehouse to
-              bring efficiency in picking processes.
-            </p>
-          </div>
-          <div className="valuedelivered-thirddiv-workforcemanagement">
-            <img src='../../Assets/multipleordersynchronisation.png' alt="" />
+          </div> */}
+         
+          <div className="valuedelivered-thirddiv-workforcemanagement mt-3">
+            <img src='../../Assets/ordersync.png' alt="" style={{height:'20vh'}}/>
             <h6></h6>
-            <p> <b>Multiple Order Synchronisation</b> greatly helps maintain a lean resource pool while enhancing efficiency by optimizing walk-around time for warehouse staff.
+            <p><span className='fs-4'>Multiple Order Synchronisation</span>  greatly helps maintain a lean resource pool while enhancing efficiency by optimizing walk-around time for warehouse staff.
               
             </p>
           </div>
@@ -258,11 +281,14 @@ function Workforcemanagement() {
           <div className="col-md-4 col-sm-12 mb-4">
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Accelerated Efficiency</h5>
-            <div className='image-crop-orderprocessing'>
+            {/* <div className='image-crop-orderprocessing'>
               <img className='avatar-orderprocessing' src='../../Assets/acceleratedefficiency.jpg' alt='Order Analysis' />
-            </div>
-            <div className='bio-orderprocessing' >
-              <p style={{color:"black",fontSize:"14px"}}>AI-powered workforce optimization leverages advanced algorithms to intelligently allocate tasks and resources. By analysing real-time data such as order volumes, item locations, and employee performance, the system optimizes the assignment of picking tasks to the workforce. This automation streamlines the picking process, reduces travel time, and increases overall efficiency.</p>
+            </div> */}
+            {/* <div className='bio-orderprocessing' >
+              <p style={{color:"black",fontSize:"18px"}}>AI-powered workforce optimization leverages advanced algorithms to intelligently allocate tasks and resources. By analysing real-time data such as order volumes, item locations, and employee performance, the system optimizes the assignment of picking tasks to the workforce. This automation streamlines the picking process, reduces travel time, and increases overall efficiency.</p>
+            </div> */}
+              <div className='bio-orderprocessing' >
+              <p style={{color:"black",fontSize:"18px"}}>AI-powered workforce optimization leverages advanced algorithms to intelligently allocate tasks and resources. By analysing real-time data such as order volumes, item locations, and employee performance, the system optimizes the assignment of picking tasks to the workforce. This automation streamlines the picking process, reduces travel time, and increases overall efficiency.</p>
             </div>
           </div>
           </div>
@@ -273,11 +299,11 @@ function Workforcemanagement() {
             <h5 style={{color:"white",background:"#303097"}}>Improved Productivity
 
 </h5>
-            <div className='image-crop-orderprocessing'>
+            {/* <div className='image-crop-orderprocessing'>
               <img className='avatar-orderprocessing' src='../../Assets/impeff.jpg' alt='Order Analysis' />
-            </div>
+            </div> */}
             <div className='bio-orderprocessing' >
-              <p style={{color:"black",fontSize:"14 px"}}>With AI-powered workforce optimization, organizations can unlock the full potential of their workforce. The system takes into account employee skills, experience, and availability to allocate tasks that align with individual strengths. By matching the right employees with the right tasks, productivity is maximized, and employees are empowered to perform at their best.</p>
+              <p style={{color:"black",fontSize:"18px"}}>With AI-powered workforce optimization, organizations can unlock the full potential of their workforce. The system takes into account employee skills, experience, and availability to allocate tasks that align with individual strengths. By matching the right employees with the right tasks, productivity is maximized, and employees are empowered to perform at their best.</p>
             </div>
           </div>
           </div>
@@ -286,11 +312,11 @@ function Workforcemanagement() {
           <div className="col-md-4 col-sm-12 mb-4">
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Adaptive Planning</h5>
-            <div className='image-crop-orderprocessing'>
+            {/* <div className='image-crop-orderprocessing'>
               <img className='avatar-orderprocessing' src='../../Assets/adaptiveplanning.jpg' alt='Order Analysis' />
-            </div>
+            </div> */}
             <div className='bio-orderprocessing' >
-              <p style={{color:"black",fontSize:"14px"}}>The dynamic nature of warehousing requires flexible planning and resource allocation. AI-powered workforce optimization adapts to changing circumstances by continuously analysing data and adjusting workforce assignments accordingly. Whether it's a sudden increase in order volumes or a change in order priorities, the system optimizes workforce planning to meet shifting demands effectively
+              <p style={{color:"black",fontSize:"18px"}}>The dynamic nature of warehousing requires flexible planning and resource allocation. AI-powered workforce optimization adapts to changing circumstances by continuously analysing data and adjusting workforce assignments accordingly. Whether it's a sudden increase in order volumes or a change in order priorities, the system optimizes workforce planning to meet shifting demands effectively
 
 </p>
             </div>

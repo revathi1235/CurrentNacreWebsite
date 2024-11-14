@@ -149,7 +149,7 @@ function AporaFulfillmentautomation() {
     <div style={{height:"50vh"}}>
 
 
-    <div className='d-flex justify-content-center mt-3'>
+    <div className='d-flex justify-content-center mt-3' >
         <h2 className='gradient-text-APORA'> APORA</h2>
     </div>
 

@@ -6,6 +6,8 @@ import Nav from 'react-bootstrap/Nav';
 import Chart  from './Chart';
 import { Helmet } from 'react-helmet';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuoteLeft,faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import efficiency from '../Assets/Efficiency.svg'
 import improvedorderaccuracy from '../Assets/improvedorderaccuracy.svg'
 import multibanner from '../Assets/multibanner.png'
@@ -190,7 +192,7 @@ const handleApora=()=>{
 
 
 
- <div className='firstdiv-multichannelintegration'>
+ {/* <div className='firstdiv-multichannelintegration'>
  <div className="multichannelintegration-image">
     <div className="image-wrapper-multi">
         <img src="../../Assets/fulfilmentautomation.png" alt="fulfillment automation image" />
@@ -198,8 +200,17 @@ const handleApora=()=>{
 </div>
     <div className='multichannelintegration-content'>
         <p style={{textAlign:"justify",padding:"40px"}}>AI-powered fulfilment validation is a game-changer for organizations aiming to enhance accuracy, efficiency, and customer satisfaction in their warehouse picking process. By harnessing the power of artificial intelligence, businesses can automate order verification, item inspection, packaging, and labelling checks. With enhanced accuracy, improved efficiency, real-time error detection, and data-driven insights, organizations can streamline their warehouse operations and deliver accurate and seamless order fulfilment experiences.</p>    </div>
-   </div>
+   </div> */}
+<div style={{height:'30vh'}} className='mob-multi-space'></div>
+ <div className='multi-main'>
+<div className='multi-img-div'>
+<img src="../../Assets/fulfilmentautomation.png" alt="fulfillment automation image" />
 
+</div>
+<div className='multi-content'>
+  <p >  <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/> AI-powered fulfilment validation is a game-changer for organizations aiming to enhance accuracy, efficiency, and customer satisfaction in their warehouse picking process. By harnessing the power of artificial intelligence, businesses can automate order verification, item inspection, packaging, and labelling checks. With enhanced accuracy, improved efficiency, real-time error detection, and data-driven insights, organizations can streamline their warehouse operations and deliver accurate and seamless order fulfilment experiences.<FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
+</div>
+</div>
 
 
 
@@ -212,11 +223,11 @@ const handleApora=()=>{
           <div className="col-md-4 col-sm-12 mb-4">
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Intelligent Order Verification</h5>
-            <div className='image-crop-orderprocessing'>
+            {/* <div className='image-crop-orderprocessing'>
               <img className='avatar-orderprocessing' src='../../Assets/ordervarify.jpg' alt='Order Analysis' />
-            </div>
+            </div> */}
             <div className='bio-orderprocessing' >
-              <p style={{color:"black",fontSize:"14px"}}>The AI-powered fulfilment validation system intelligently verifies order details, such as items ordered and quantities. The process in available throughout the order picking zone level packing and shipping stages. It compares this information with the actual picked items, ensuring accuracy and completeness. Any discrepancies or mismatches are flagged for review, enabling prompt resolution.</p>
+              <p style={{color:"black",fontSize:"18px"}}>The AI-powered fulfilment validation system intelligently verifies order details, such as items ordered and quantities. The process in available throughout the order picking zone level packing and shipping stages. It compares this information with the actual picked items, ensuring accuracy and completeness. Any discrepancies or mismatches are flagged for review, enabling prompt resolution.</p>
             </div>
           </div>
           </div>
@@ -227,11 +238,11 @@ const handleApora=()=>{
             <h5 style={{color:"white",background:"#303097"}}>Automated Item Inspection
 
 </h5>
-            <div className='image-crop-orderprocessing'>
+            {/* <div className='image-crop-orderprocessing'>
               <img className='avatar-orderprocessing' src='../../Assets/autoinsp.jpg' alt='Order Analysis' />
-            </div>
+            </div> */}
             <div className='bio-orderprocessing' >
-              <p style={{color:"black",fontSize:"14 px"}}>The system automates the inspection process by leveraging Bar code/ QR code or RFID systems that keep track of item attributes and specifications at each stage of the warehouse activity. It verifies the quantity and packaging of each item, minimizing the risk of shipping damaged or incorrect products.</p>
+              <p style={{color:"black",fontSize:"18px"}}>The system automates the inspection process by leveraging Bar code/ QR code or RFID systems that keep track of item attributes and specifications at each stage of the warehouse activity. It verifies the quantity and packaging of each item, minimizing the risk of shipping damaged or incorrect products.</p>
             </div>
           </div>
           </div>
@@ -241,11 +252,11 @@ const handleApora=()=>{
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Packaging and Labelling Compliance
             </h5>
-            <div className='image-crop-orderprocessing'>
+            {/* <div className='image-crop-orderprocessing'>
               <img className='avatar-orderprocessing' src='../../Assets/labelling.jpg' alt='Order Analysis' />
-            </div>
+            </div> */}
             <div className='bio-orderprocessing' >
-              <p style={{color:"black",fontSize:"14px"}}>AI-powered fulfilment validation automatically generates the packaging and labelling to meet the required standards. The system verifies that the items transferred to shipping boxes are in conformance with the related customer orders. It also confirms that the labels contain accurate customer information, shipping details, and other information.
+              <p style={{color:"black",fontSize:"18px"}}>AI-powered fulfilment validation automatically generates the packaging and labelling to meet the required standards. The system verifies that the items transferred to shipping boxes are in conformance with the related customer orders. It also confirms that the labels contain accurate customer information, shipping details, and other information.
 
 </p>
             </div>
@@ -259,27 +270,76 @@ const handleApora=()=>{
     <div className='seconddiv-orderprocessing'>
     <h1>Value Delivered</h1>
 </div>
-<Container fluid className='seconddiv-orderprocessing-container'>
- 
 
-    <div className='valuedelivered-maindiv-orderprocessing'>
-  <div className='valuedelivered-firstdiv-orderprocessing'>
-    <img src='../../Assets/enhAcc.jpg' alt="" />
-    {/* <h6>Improved Resource Utilisation</h6> */}
-    <p><b>Enhanced Accuracy</b> is achieved through AI-powered fulfillment validation, which leverages advanced algorithms to analyze order details and compare them against the actual picked items. By automating the validation process, the system minimizes the risk of human errors and discrepancies, ensuring that the correct items are included in each order and reducing the likelihood of incorrect or incomplete shipments.</p>
-  </div>
-  <div className='valuedelivered-seconddiv-orderprocessing'>
-    <img src={efficiency} alt="" />
-    {/* <h6>Real Time Visibility</h6> */}
-    <p><b>Improved Efficiency</b> is achieved through AI-powered fulfillment validation, which streamlines processes by automating various checks, including order verification, item validation, packaging, and labeling. Unlike manual fulfillment validation processes that involve extensive checks and inspections, this automation saves time, increases efficiency, and allows warehouse staff to focus on other critical tasks.</p>
-  </div>
-  <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src='../../Assets/errdetect.jpg' alt="" />
-    {/* <h6>Improved Order Accuracy</h6> */}
-    <p><b>Real-Time Error Detection</b> is a key feature of the AI-powered fulfillment validation system, which continuously analyzes data such as order details, item specifications, and packaging requirements. It detects errors or discrepancies in real-time and alerts warehouse staff, enabling them to quickly rectify issues before the order is shipped. This proactive approach minimizes delays, reduces the likelihood of customer complaints, and improves overall operational efficiency.</p>
-  </div>
+
+
+
+
+
+
+
+<Container className='mt-4'>
+  <Row className='ms-5'>
  
-</div>
+    <Col lg={3}>
+    <Card style={{ 
+    width: '18rem', 
+    background: 'linear-gradient(to bottom, blue, green)', 
+    borderRadius: '10px' ,
+    color:'white',
+    marginLeft:'20px',
+    height:'400px'
+  }}>
+      <Card.Body>
+        <Card.Title>Enhanced Accuracy</Card.Title>
+        {/* <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle> */}
+        <Card.Text>
+        is achieved through AI-powered fulfillment validation, which leverages advanced algorithms to analyze order details and compare them against the actual picked items. By automating the validation process, the system minimizes the risk of human errors and discrepancies, ensuring that the correct items are included in each order and reducing the likelihood of incorrect or incomplete shipments.
+        </Card.Text>
+        
+      </Card.Body>
+    </Card>
+    </Col>
+    <Col lg={1}></Col>  
+    <Col lg={3}>
+    <Card style={{ 
+    width: '18rem', 
+    background: 'linear-gradient(to bottom, blue, green)', 
+    borderRadius: '10px' ,
+    color:'white',
+    height:'400px'
+  }}>
+      <Card.Body>
+        <Card.Title>Improved Efficiency</Card.Title>
+        {/* <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle> */}
+        <Card.Text>
+        is achieved through AI-powered fulfillment validation, which streamlines processes by automating various checks, including order verification, item validation, packaging, and labeling. Unlike manual fulfillment validation processes that involve extensive checks and inspections, this automation saves time, increases efficiency, and allows warehouse staff to focus on other critical tasks.
+        </Card.Text>
+       
+      </Card.Body>
+    </Card>
+    </Col>
+    <Col lg={1}></Col>
+    <Col lg={3} >
+    <Card style={{ 
+    width: '18rem', 
+    background: 'linear-gradient(to bottom, blue, green)', 
+    borderRadius: '10px' ,
+    color:'white',
+    height:'400px'
+  }}>
+      <Card.Body>
+        <Card.Title>Real-Time Error Detection </Card.Title>
+        {/* <Card.Subtitle className="mb-2 text-muted">Real-Time Error Detection </Card.Subtitle> */}
+        <Card.Text>
+        is a key feature of the AI-powered fulfillment validation system, which continuously analyzes data such as order details, item specifications, and packaging requirements. It detects errors or discrepancies in real-time and alerts warehouse staff, enabling them to quickly rectify issues before the order is shipped. This proactive approach minimizes delays, reduces the likelihood of customer complaints, and improves overall operational efficiency.
+        </Card.Text>
+        
+      </Card.Body>
+    </Card>
+    </Col>
+  </Row>
+  
 </Container>
 
 
@@ -287,8 +347,34 @@ const handleApora=()=>{
 
 
 
+{/* 
+<Container fluid className='seconddiv-orderprocessing-container'>
+ 
 
-<div className='resp-footer'>
+    <div className='valuedelivered-maindiv-orderprocessing'>
+  <div className='valuedelivered-firstdiv-orderprocessing'>
+    <img src='../../Assets/enhAcc.jpg' alt="" />
+    <p><b>Enhanced Accuracy</b> is achieved through AI-powered fulfillment validation, which leverages advanced algorithms to analyze order details and compare them against the actual picked items. By automating the validation process, the system minimizes the risk of human errors and discrepancies, ensuring that the correct items are included in each order and reducing the likelihood of incorrect or incomplete shipments.</p>
+  </div>
+  <div className='valuedelivered-seconddiv-orderprocessing'>
+    <img src={efficiency} alt="" />
+    <p><b>Improved Efficiency</b> is achieved through AI-powered fulfillment validation, which streamlines processes by automating various checks, including order verification, item validation, packaging, and labeling. Unlike manual fulfillment validation processes that involve extensive checks and inspections, this automation saves time, increases efficiency, and allows warehouse staff to focus on other critical tasks.</p>
+  </div>
+  <div className='valuedelivered-thirddiv-orderprocessing'>
+    <img src='../../Assets/errdetect.jpg' alt="" />
+    <p><b>Real-Time Error Detection</b> is a key feature of the AI-powered fulfillment validation system, which continuously analyzes data such as order details, item specifications, and packaging requirements. It detects errors or discrepancies in real-time and alerts warehouse staff, enabling them to quickly rectify issues before the order is shipped. This proactive approach minimizes delays, reduces the likelihood of customer complaints, and improves overall operational efficiency.</p>
+  </div>
+ 
+</div>
+</Container> */}
+
+
+
+
+
+
+
+<div className='resp-footer mt-5'>
   <Footer/>
 </div>
 

@@ -5,7 +5,8 @@ import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
 import Chart from './Chart'
 import { Helmet } from 'react-helmet';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuoteLeft,faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import efficiency from '../Assets/Efficiency.svg'
 import improvedorderaccuracy from '../Assets/improvedorderaccuracy.svg'
 import multibanner from '../Assets/multibanner.png'
@@ -216,7 +217,7 @@ const handleApora=()=>{
 
 
 
- <div className='firstdiv-multichannelintegration'>
+ {/* <div className='firstdiv-multichannelintegration'>
  <div className="multichannelintegration-image">
     <div className="image-wrapper-multi">
         <img src="../Assets/picklistgeneration.png" alt="picklistgeneration image" />
@@ -224,63 +225,94 @@ const handleApora=()=>{
 </div>
     <div className='multichannelintegration-content'>
         <p style={{textAlign:"justify",padding:"40px"}}>With Order fulfilment, businesses face the challenge of optimizing their operations to meet customer demands efficiently and accurately. Manual processes for generating picklists can be time-consuming and prone to errors. With the advent of our AI-powered picklist generation, organizations can revolutionize their order fulfilment processes. <br /> <br /> Our AI powered picklist generation uses artificial intelligence to analyse a variety of data points, such as product location, inventory levels, and order priority. This data is then used to generate a picklist that is optimized for efficiency and accuracy.</p>    </div>
-   </div>
+   </div> */}
 
 
+<div style={{height:'30vh'}} className='mob-multi-space'></div>
+ <div className='multi-main'>
+<div className='multi-img-div'>
+<img src="../Assets/picklistgeneration.png" alt="picklistgeneration image" />
 
+</div>
+<div className='multi-content'>
+  <p >  <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/> With Order fulfilment, businesses face the challenge of optimizing their operations to meet customer demands efficiently and accurately. Manual processes for generating picklists can be time-consuming and prone to errors. With the advent of our AI-powered picklist generation, organizations can revolutionize their order fulfilment processes.Our AI powered picklist generation uses artificial intelligence to analyse a variety of data points, such as product location, inventory levels, and order priority. This data is then used to generate a picklist that is optimized for efficiency and accuracy.<FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
+</div>
+</div>
 
 
   
 
 
-    <div className='seconddiv-orderprocessing' data-aos="fade-up">
+    <div className='seconddiv-orderprocessing mt-5' >
     <h1>Features</h1>
 </div>
-<Container fluid className='seconddiv-orderprocessing-container' data-aos="fade-up" >
+
+
+
+
+<Container  className='seconddiv-orderprocessing-container mt-3'>
  
-<div className='valuedelivered-maindiv-orderprocessing'>
+
+    <div className='valuedelivered-maindiv-orderprocessing' >
+
   <div className='valuedelivered-firstdiv-orderprocessing'>
-    <img src='../../Assets/accuracyandefficiency.webp' alt="accuracyandefficiency image" />
-    {/* <h6>Accuracy and Efficiency</h6> */}
-    <p><b>Accuracy and Efficiency</b> are enhanced through AI-powered order synchronization, which utilizes advanced algorithms to analyze order similarities and item proximities within the warehouse. By identifying patterns, the system synchronizes multiple orders with common items, reducing the number of picklists and enabling warehouse staff to fulfill orders more efficiently.</p>
+    {/* <img src='../../Assets/eff.jpg' alt="eff image" /> */}
+    {/* <h6>Enhanced Efficiency</h6> */}
+    <p><span  className='fs-3'>Accuracy and Efficiency</span> are enhanced through AI-powered order synchronization, which utilizes advanced algorithms to analyze order similarities and item proximities within the warehouse. By identifying patterns, the system synchronizes multiple orders with common items, reducing the number of picklists and enabling warehouse staff to fulfill orders more efficiently.</p>
   </div>
+
+
+
+
+
+
+
+
+
   <div className='valuedelivered-seconddiv-orderprocessing'>
-    <img src='../../Assets/intelligentorderanalysiss.jpeg' alt="efficiencyimage" />
-    {/* <h6>Intelligent Order Analysis</h6> */}
-    <p><b>Intelligent Order Analysis</b> is at the core of the AI-powered picklist generation system, which examines order data, including details, priority, and delivery deadlines. Utilizing machine learning algorithms, it understands order patterns, identifies common item combinations, and optimizes the sequencing of picks. This analysis ensures that picklists are generated with the utmost efficiency and accuracy.</p>
+    {/* <img src='../../Assets/eff.jpg' alt="eff image" /> */}
+    {/* <h6>Enhanced Efficiency</h6> */}
+    <p><span className='fs-3'>Intelligent Order Analysis</span> is at the core of the AI-powered picklist generation system, which examines order data, including details, priority, and delivery deadlines. Utilizing machine learning algorithms, it understands order patterns, identifies common item combinations, and optimizes the sequencing of picks. This analysis ensures that picklists are generated with the utmost efficiency and accuracy.</p>
   </div>
-  <div className='valuedelivered-thirddiv-orderprocessing'>
-    <img src='../../Assets/warehouselayoutoptimization.webp' alt="improvedorderaccuracy" />
-    {/* <h6>Warehouse Layout Optimization</h6> */}
-    <p><b>Warehouse Layout Optimization </b>is crucial for effective order fulfillment, as it takes into account the physical arrangement of aisles, shelves, and storage locations. By understanding the proximity of items and their popularity, the system generates picklists that minimize travel time for warehouse staff, ensuring that orders are fulfilled quickly and efficiently.</p>
+
+  <div className='valuedelivered-firstdiv-orderprocessing mt-3'>
+    {/* <img src='../../Assets/eff.jpg' alt="eff image" /> */}
+    {/* <h6>Enhanced Efficiency</h6> */}
+    <p><span className='fs-3'>Warehouse Layout Optimization</span> is crucial for effective order fulfillment, as it takes into account the physical arrangement of aisles, shelves, and storage locations. By understanding the proximity of items and their popularity, the system generates picklists that minimize travel time for warehouse staff, ensuring that orders are fulfilled quickly and efficiently.</p>
   </div>
-  <div className='valuedelivered-thirddiv-orderprocessing'>
-  <img src="../Assets/multi.png" alt="multi image" />
-    {/* <h6>Warehouse Layout Optimization</h6> */}
-    <p><b>Integration with Warehouse Management Systems </b> allows the AI-powered picklist generation system to seamlessly enhance your workflow. It processes order data, generates optimized picklists, and updates pick statuses in real time, eliminating manual data entry and streamlining the entire process.</p>
+{/* 
+  <div className='valuedelivered-seconddiv-orderprocessing'>
+    <img src='../../Assets/reducedcomplexity.jpg' alt="reducedcomplexity image" />
+    <p><b>Reduced Complexity</b> in traditional order picking processes often leads to numerous picklists, requiring warehouse staff to walk around multiple times for each list. AI-powered order synchronization simplifies this by consolidating related orders into a single picklist, allowing staff to manage tasks more effectively and focus on efficient order fulfillment.</p>
+  </div> */}
+  
+    {/* <div className='valuedelivered-thirddiv-orderprocessing'>
+      <img src='../../Assets/crowdedwarehouse.webp' alt="crowdedwarehouse image" />
+  
+      <p><b>Increased Productivity</b> is achieved by reducing the number of picklists through AI-powered order synchronization. Warehouse staff spend less time managing and switching between lists, which allows for a more streamlined process. This efficiency enables employees to work faster, fulfill orders promptly, and effectively meet customer demands in the warehouse</p>
+    </div> */}
+
+
+<div className='valuedelivered-seconddiv-orderprocessing'>
+    {/* <img src='../../Assets/eff.jpg' alt="eff image" /> */}
+    {/* <h6>Enhanced Efficiency</h6> */}
+    <p><span className='fs-3'>Integration with Warehouse Management Systems </span> allows the AI-powered picklist generation system to seamlessly enhance your workflow. It processes order data, generates optimized picklists, and updates pick statuses in real time, eliminating manual data entry and streamlining the entire process.</p>
   </div>
+
+ 
+
+
+
 </div>
-   
 </Container>
 
 
 <div className='container mt-5' data-aos="fade-up"   >
       <div className='d-flex justify-content-center'>
-        <h2  style={{marginTop:"100px",fontSize:"30px"}}>Value Delivered</h2>
+        <h2  style={{marginTop:"10px",fontSize:"30px"}}>Value Delivered</h2>
       </div>
       <div className='row justify-content-center '>
-        {/* Card 1 */}
-        {/* <div className='col-md-4 col-sm-12 mb-4'>
-          <div className='card-orderprocessing' style={{background:"white"}}>
-            <h5 style={{color:"white",background:"#303097"}}>Maximized Output</h5>
-            <div className='image-crop-orderprocessing'>
-              <img className='avatar-orderprocessing' src='../../Assets/maximized.webp' alt='Order Analysis' />
-            </div>
-            <div className='bio-orderprocessing'>
-              <p style={{color:"black",fontSize:"14px"}}>AI-powered picklist generation automates the process of creating optimized picklists. By analysing order data, inventory levels, and other relevant factors, the system intelligently generates multiple orders synchronised picklists. This automation eliminates the time-consuming task of manually sorting through orders and increases the efficiency of order fulfilment.</p>
-            </div>
-          </div>
-        </div> */}
+     
           <div className='col-md-4 col-sm-12 mb-4'>
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Maximized Output</h5>

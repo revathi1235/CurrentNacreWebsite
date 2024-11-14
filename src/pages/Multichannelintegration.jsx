@@ -18,6 +18,8 @@ import Chart from './Chart'
 
 import { useNavigate } from 'react-router-dom';
 import Footer from '../components/Footer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 const items = [
   { id: 1, title: 'The Leading AI-Powered Fulfilment Automation System', imgSrc: '../Assets/cuttingedge.webp', description: 'Welcome to APORA, the AI-powered fulfilment automation system that optimizes operating costs and boosts efficiency exponentially. Our cutting-edge technology enables you to enjoy the benefits of reduced operational expenses and increased productivity, thanks to the exponential growth in efficiency. Say goodbye to order backlogs and experience a significant improvement in same-day deliveries.' },
   { id: 2, title: 'Hybrid Proprietary Methodology, Opti-Pick', imgSrc: 'image2.jpg', description: 'Unlike other fulfilment automation systems, APORA is not limited to e-commerce or B2B operations. We have developed a series of AI algorithms that implement our hybrid proprietary methodology, Opti-Pick. This ground-breaking approach has the potential to revolutionize Distribution Center activities, resulting in improved speed, efficiency, and ultimately generating more revenue for your business.' },
@@ -216,10 +218,64 @@ const handleApora=()=>{
  </div>
 
  </div>
+<div style={{height:'30vh'}} className='mob-multi-space'></div>
+<div className="multi-main" style={{ position: 'relative', width: '100%', height: 'auto' }}>
+  <div className="multi-img-div">
+    <img src="../Assets/newmultiimage.jpeg" alt="multi image" style={{ width: '100%', height: 'auto' }} />
+  </div>
+  <div className="overlay-content-one" style={{
+      position: 'absolute',
+      top: '20%',
+      
+      color: 'black',
+      // backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      padding: '20px',
+      borderRadius: '8px',
+      maxWidth: '30%'
+  }}>
+    <p>  <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/> In today's competitive retail environment, businesses need to be able to offer their customers a seamless shopping experience across multiple channels. This means being able to take orders and fulfil them from any channel, whether it's online, in-store, or over the phone.
+    Multi-channel integration is the key to providing this seamless experience. It allows businesses to connect their various sales channels to a single fulfilment system. This ensures that inventory levels are always up-to-date and that orders can be picked and packed quickly and  efficiently.<FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
+   
+  </div>
+  <div className="overlay-content" style={{
+      position: 'absolute',
+      top: '20%',
+      right:'3%',
+      color: 'black',
+      // backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      padding: '20px',
+      borderRadius: '8px',
+      maxWidth: '30%'
+  }}>
+   <p style={{marginTop:'30px', fontFamily: 'Montserrat-Bold', fontSize: '33px', color: 'black', textAlign: 'center', lineHeight: '1.6' }}>
+  <FontAwesomeIcon 
+    icon={faQuoteLeft} 
+    style={{ color: 'blue', fontSize: '30px', marginRight: '10px' }} 
+  />
+  Multi-channel integration is the key to providing this seamless experience.
+  <FontAwesomeIcon 
+    icon={faQuoteRight} 
+    style={{ color: 'blue', fontSize: '30px', marginLeft: '10px' }} 
+  />
+</p>
 
+   
+  </div>
+</div>
 
+ {/* <div className='multi-main'>
+<div className='multi-img-div'>
+<img src="../Assets/newmultiimage.jpeg" alt="multi image" />
 
-   <div className='firstdiv-multichannelintegration ' >
+</div> */}
+{/* <div className='multi-content'>
+  <p>  <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/> In today's competitive retail environment, businesses need to be able to offer their customers a seamless shopping experience across multiple channels. This means being able to take orders and fulfil them from any channel, whether it's online, in-store, or over the phone.
+  Multi-channel integration is the key to providing this seamless experience. It allows businesses to connect their various sales channels to a single fulfilment system. This ensures that inventory levels are always up-to-date and that orders can be picked and packed quickly and  efficiently.<FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
+</div> */}
+{/* </div> */}
+<div style={{height:'10vh'}} className='mob-multi-space'></div>
+
+   {/* <div className='firstdiv-multichannelintegration ' >
    <div className="multichannelintegration-image">
     <div className="image-wrapper-multi">
         <img src="../Assets/multi.png" alt="multi image" />
@@ -227,22 +283,33 @@ const handleApora=()=>{
 </div>
 
     <div className='multichannelintegration-content'>
-        <p style={{textAlign:"justify",padding:"40px"}}>In today's competitive retail environment, businesses need to be able to offer their customers a seamless shopping experience across multiple channels. This means being able to take orders and fulfil them from any channel, whether it's online, in-store, or over the phone.
+        <p >In today's competitive retail environment, businesses need to be able to offer their customers a seamless shopping experience across multiple channels. This means being able to take orders and fulfil them from any channel, whether it's online, in-store, or over the phone.
         Multi-channel integration is the key to providing this seamless experience. It allows businesses to connect their various sales channels to a single fulfilment system. This ensures that inventory levels are always up-to-date and that orders can be picked and packed quickly and efficiently.</p>
     </div>
-   </div>
+     
+   </div> */}
+
+{/* <div class="container-multi">
+<div class="image-wrapper">
+<img src="../Assets/multi.png" alt="Description of Image" class="left-image-multi"/>
+</div>
+        <div class="text-content-multi">
+            <h1>Your Title Here</h1>
+            <p>This is where your text content goes. You can add more paragraphs, lists, or any other HTML elements as needed.</p>
+        </div>
+    </div> */}
 
 
 
 
-
-
+<div className='bg-img-multi'>
 <div className='seconddiv-multichannelintegration'>
-    <h1>Efficiency And Accuracy</h1>
+    <h1 >Efficiency And Accuracy</h1>
 </div>
 <div className='seconddiv-content-multichannelintegration'>
-    <p>Perfect order fulfilment is crucial for maintaining a competitive edge. The key to success lies in implementing a robust multichannel integration in order fulfilment system, which streamlines operations and enhances customer satisfaction. The unique features of our system, demonstrates how it can revolutionize your order fulfilment process.
+    <p style={{color:'white'}}>Perfect order fulfilment is crucial for maintaining a competitive edge. The key to success lies in implementing a robust multichannel integration in order fulfilment system, which streamlines operations and enhances customer satisfaction. The unique features of our system, demonstrates how it can revolutionize your order fulfilment process.
     The multichannel integration in our fulfilment management system is a game-changer for organizations aiming to enhance operational efficiency. By streamlining order fulfilment across multiple sales channels, you unlock new levels of accuracy, scalability, and flexibility. With real-time inventory visibility and centralized order management, you can meet customer demands effectively while optimizing your resources.</p>
+</div>
 </div>
  
 
@@ -251,45 +318,45 @@ const handleApora=()=>{
 
 
 
+    <h1 style={{textAlign:'center',fontFamily:'Good Times'}}>Value Delivered</h1>
 
-<div className='seconddiv-multichannelintegration'>
-    <h1>Value Delivered</h1>
-</div>
+
+
 <Container fluid>
  
 
-    <div className='valuedelivered-maindiv-multiintegration'>
+    <div className='valuedelivered-maindiv-multiintegration mt-5'>
   <div className='valuedelivered-firstdiv-multiintegration'>
-    <img src={improveresouceutilisation} alt="improveresouceutilisation images" />
+    {/* <img src={improveresouceutilisation} alt="improveresouceutilisation images" /> */}
     {/* <h6>Improved Resource Utilisation</h6> */}
-    <p style={{textAlign:"justify"}}> <b>Improved Resource Utilisation</b> is achieved by integrating multiple channels into a unified pick management system, allowing you to optimize resources and reduce operational complexities.</p>
+    <p style={{textAlign:"justify"}}> <span className='fs-4'>Improved Resource Utilisation</span> is achieved by integrating multiple channels into a unified pick management system, allowing you to optimize resources and reduce operational complexities.</p>
   </div>
   <div className='valuedelivered-seconddiv-multiintegration'>
-    <img src='../../Assets/realtimevisibility.png' alt="realtimevisibility image" />
+    {/* <img src='../../Assets/realtimevisibility.png' alt="realtimevisibility image" /> */}
     {/* <h6>Real Time Visibility</h6> */}
-    <p style={{textAlign:"justify"}}> <b>Real Time Visibility
-    </b> ensures that the status of orders across all channels is tracked individually, even as they are processed simultaneously</p>
+    <p style={{textAlign:"justify"}}> <span className='fs-4'>Real Time Visibility
+    </span> ensures that the status of orders across all channels is tracked individually, even as they are processed simultaneously</p>
   </div>
   <div className='valuedelivered-thirddiv-multiintegration'>
-    <img src={improvedorderaccuracy} alt="improvedorderaccuracy image" />
+    {/* <img src={improvedorderaccuracy} alt="improvedorderaccuracy image" /> */}
     {/* <h6>Improved Order Accuracy</h6> */}
-    <p style={{textAlign:"justify"}}> <b>Improved Order Accuracy
-    </b>  is achieved with our barcode, QR code, and RFID integrated system, which eliminates errors and inaccuracies in order fulfillment. The system automatically synchronizes order data from various channels, minimizing the risk of mismatched or duplicate orders.</p>
+    <p style={{textAlign:"justify"}}> <span className='fs-4'>Improved Order Accuracy
+    </span>  is achieved with our barcode, QR code, and RFID integrated system, which eliminates errors and inaccuracies in order fulfillment. The system automatically synchronizes order data from various channels, minimizing the risk of mismatched or duplicate orders.</p>
   </div>
   
 </div>
-<br />
-<div className='valuedelivered-maindiv-multiintegration mt-5'>
+<div className='mobileview'></div>
+<div className='valuedelivered-maindiv-multiintegration multi-sec-div' style={{marginTop:"-100px"}}>
   <div className='valuedelivered-fourthdiv-multiintegration'>
-  <img src='../../Assets/scalabilityandflexibility.jpg' alt="scalabilityandflexibility image" />
+  {/* <img src='../../Assets/scalabilityandflexibility.jpg' alt="scalabilityandflexibility image" /> */}
   {/* <h6>Scalability & Flexibility</h6> */}
-    <p style={{textAlign:"justify"}}>  <b>Scalability & Flexibility</b> are key features of our multi-channel pick management system, which adapts to your growing business needs. It handles increasing order volumes and seamlessly incorporates new sales channels, whether through online marketplaces, brick-and-mortar stores, or social media platforms, ensuring efficient order consolidation and management.</p>
+    <p style={{textAlign:"justify"}}>  <span className='fs-4'>Scalability & Flexibility</span> are key features of our multi-channel pick management system, which adapts to your growing business needs. It handles increasing order volumes and seamlessly incorporates new sales channels, whether through online marketplaces, brick-and-mortar stores, or social media platforms, ensuring efficient order consolidation and management.</p>
   </div>
   <div className='valuedelivered-fifthdiv-multiintegration'>
-    <img src={efficiency} alt="efficiency image" />
+    {/* <img src={efficiency} alt="efficiency image" /> */}
     {/* <h6>Increased Efficiency</h6> */}
-    <p style={{textAlign:"justify"}}> <b>Increased Efficiency
-    </b>  is achieved through AI-powered automation that dynamically manages orders from different channels in one place. You can track order status, monitor assigned resources and their activities, and oversee fulfillment progress, all from a single interface, simplifying order processing and minimizing errors or delays.</p>
+    <p style={{textAlign:"justify"}}> <span className='fs-4'>Increased Efficiency
+    </span>  is achieved through AI-powered automation that dynamically manages orders from different channels in one place. You can track order status, monitor assigned resources and their activities, and oversee fulfillment progress, all from a single interface, simplifying order processing and minimizing errors or delays.</p>
   </div>
 </div>
 </Container>
@@ -300,7 +367,7 @@ const handleApora=()=>{
 <div class="image-container-multichannelintegration">
   
   <div class="overlay">
-    <p>"If you are looking for a way to improve your business's efficiency and profitability, a Multi - Channel Integration system is a valuable tool that can help you achieve your goals."</p>
+    <p className='fs-2 px-3'>"If you are looking for a way to improve your business's efficiency and profitability, a Multi - Channel Integration system is a valuable tool that can help you achieve your goals."</p>
   </div>
 </div>
 </Container>
@@ -309,7 +376,7 @@ const handleApora=()=>{
 
 
     </div>
-    <div className='mt-3'>
+    <div className='mt-5'>
     <Footer/>
     </div>
     </>

@@ -13,18 +13,18 @@ import Footer from "../components/Footer";
 import { Dropdown, DropdownButton } from "react-bootstrap";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
-import { toast, ToastContainer } from "react-toastify";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function Contactus() {
   const baseUrl = process.env.REACT_APP_API_URL;
 
-  console.log(baseUrl);
+
 
   const [capValue, setCapvalue] = useState(null);
 
   const keycaptcha = process.env.REACT_APP_SITE_KEY;
 
-  console.log("printing key", keycaptcha);
+
 
   const recaptcha = useRef();
 
@@ -125,7 +125,7 @@ function Contactus() {
       toast.error('Please verify the reCAPTCHA!')
       return;
     } 
-    console.log('print form data',formData);
+    // console.log('print form data',formData);
     
     if (
       !formData.name ||
@@ -161,7 +161,7 @@ function Contactus() {
       industry: formData.industry,
       "g-recaptcha-response": captchaValue,
     };
-    console.log("request data", requestData);
+    // console.log("request data", requestData);
 
     // try {
       const response = await fetch(`${baseUrl}`, {
@@ -172,11 +172,34 @@ function Contactus() {
         body: JSON.stringify(requestData),
       });
 
-      if (response.ok) {
+      if (response.ok ) {
         const result = await response.json();
-        console.log("result", result);
+        // console.log("result", result);
+        // toast.success(result.message);
+      //  if(result.status=0){
+      //   toast.error(result.message)
+      //  }else if(result.status=1){
+      //   toast.error(result.message)
+      //  }else if(result.status=2){
+      //   toast.error(result.message)
+      //  }else if(result.status=3){
+      //   toast.error(result.message)
+      //  }else if(result.status=4){
+      //   toast.success(result.message)
+      //  }else if(result.status=5){
+      //   toast.error(result.message)
+      //  }else if(result.status=6){
+      //   toast.error(result.message)
+      //  }else if(result.status=7){
+      //   toast.error(result.message)
+      //  }
 
-        toast.success("Form submitted successfully!");
+      if ([0, 1, 2, 3, 6, 7].includes(result.status)) {
+        toast.error(result.message);
+      } else {
+        toast.success(result.message);
+      }
+      
         setFormData({
           name: "",
           company: "",
@@ -211,9 +234,10 @@ function Contactus() {
   };
   return (
     <div className="contact-section mt-2">
-      <ToastContainer/>
-   
+  
+  <ToastContainer />
       <section class="contact-page-sec">
+      
         <div class="container">
           <div class="row">
             <div class="col-md-4">
@@ -229,7 +253,7 @@ function Contactus() {
                         icon={faLocationDot}
                         style={{ color: "white" }}
                       />{" "}
-                      Malambuzha Rd, Olavakkode,
+                      Malampuzha Rd, Olavakkode,
                       <br />
                       Palakkad Kerala 678002
                     </span>
@@ -297,7 +321,7 @@ function Contactus() {
               <div class="contact-page-form">
                 <h2>Get in Touch</h2>
                 {/* ===========================contact form=============== */}
-                <form onSubmit={handleSubmit} action="https://www.mcptesting.nacresys.com/PHP/contact-1.php"  method="post">
+                <form onSubmit={handleSubmit}   method="post">
                   <div class="row">
                     <div class="col-md-6 col-sm-6 col-xs-12">
                       <div class="single-input-field">
@@ -580,7 +604,7 @@ function Contactus() {
                     </div>
                     <div class="single-input-fieldsbtn">
                       <input
-                        disabled={!capValue}
+                       
                         type="submit"
                         value="Send Now"
                       />
@@ -607,7 +631,7 @@ function Contactus() {
           </div>
         </div>
       </section>
-
+   
       <Footer />
     </div>
   );
