@@ -210,7 +210,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
 
 
 
-      <Container className="seconddiv-orderprocessing-container">
+      {/* <Container className="seconddiv-orderprocessing-container">
         <div className="valuedelivered-maindiv-orderprocessing">
           <div className="valuedelivered-firstdiv-orderprocessing">
             <img src='../../Assets/accinv.jpg' alt="accinv" />
@@ -244,8 +244,36 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
             </p>
           </div>
         </div>
-      </Container>
+      </Container> */}
 
+<div className="container-inv mt-4">
+            <div className="row-inv">
+                {/* Column 1 */}
+                <div className="col-md-4 d-flex justify-content-center align-items-center hover-column-inv">
+                  <h1 className="hide-text">Efficient Data Capture for Accurate Inventory</h1>
+                    <div className="hover-content-inv">
+                        {/* <h4>Column 1</h4> */}
+                        <p> With our WMS seamlessly integrating barcode and RFID technologies, you can efficiently capture data, quickly scan items, update inventory records, and minimize manual errors. This results in significantly improved inventory accuracy and streamlined processes.</p>
+                    </div>
+                </div>
+
+                {/* Column 2 */}
+                <div className="col-md-4 d-flex justify-content-center align-items-center hover-column-inv">
+                    <div className="hover-content-inv">
+                        <h4>Column 2</h4>
+                        <p>This is the content for column 2. It becomes visible on hover.</p>
+                    </div>
+                </div>
+
+                {/* Column 3 */}
+                <div className="col-md-4 d-flex justify-content-center align-items-center hover-column-inv">
+                    <div className="hover-content-inv">
+                        <h4>Column 3</h4>
+                        <p>This is the content for column 3. It becomes visible on hover.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 {/* <Container>
 <div className="valuedelivered-maindiv-orderprocessing">

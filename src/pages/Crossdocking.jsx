@@ -1,5 +1,6 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Container,Row,Col } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 import purvey_apora_black from '../Assets/purvey_apora_black.png'
 import Chart2 from './Chart2'
 import multichannelintegration from '../Assets/work3.jpg'
@@ -10,6 +11,9 @@ import improvedorderaccuracy from '../Assets/improvedorderaccuracy.svg'
 import { useNavigate } from "react-router-dom";
 import Footer from '../components/Footer'
 import { Helmet } from 'react-helmet';
+import { height } from '@fortawesome/free-brands-svg-icons/faLinkedin'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuoteLeft,faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 
 function Crossdocking() {
   const navigate=useNavigate()
@@ -138,10 +142,10 @@ const handlePurveywms=()=>{
           One way to improve order fulfilment efficiency is to use a cross-docking system. Cross-docking is a process in which incoming goods are sorted and consolidated directly for outbound shipping, without being placed in long-term storage. This can significantly reduce order fulfilment cycle times and improve customer satisfaction.</p>
     </div>
    </div> */}
-<div className='firstdiv-multichannelintegration ' >
+{/* <div className='firstdiv-multichannelintegration ' >
 <div className="multichannelintegration-image">
     <div className="image-wrapper-multi">
-        <img src="../Assets/crossdock.jpg" alt="cross docking image" />
+        <img src="../Assets/picksequence.jpg" alt="cross docking image" />
     </div>
 </div>
     <div className='multichannelintegration-content'>
@@ -149,51 +153,110 @@ const handlePurveywms=()=>{
         <p style={{textAlign:"justify",padding:"40px"}}>In today's fast-paced business environment, efficient order fulfilment is critical to success. Customers expect their orders to be processed and delivered quickly and accurately, and businesses that cannot meet these expectations risk losing customers to competitors.
         One way to improve order fulfilment efficiency is to use a cross-docking system. Cross-docking is a process in which incoming goods are sorted and consolidated directly for outbound shipping, without being placed in long-term storage. This can significantly reduce order fulfilment cycle times and improve customer satisfaction.</p>
     </div>
-   </div>
+   </div> */}
 
+<div style={{height:'30vh'}} className='mob-multi-space'></div>
+<div className='multi-main'>
+<div className='multi-img-div'>
+<img src="../Assets/picksequence.jpg" alt="cross docking image" />
 
-
-
-
-
-
-
-
-
-
-<div className='seconddiv-multichannelintegration'>
-    <h1>Features</h1>
 </div>
-<Container  className='seconddiv-orderprocessing-container'>
+<div className='multi-content'>
+  <p className='fs-5'>  <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/> In today's fast-paced business environment, efficient order fulfilment is critical to success. Customers expect their orders to be processed and delivered quickly and accurately, and businesses that cannot meet these expectations risk losing customers to competitors.One way to improve order fulfilment efficiency is to use a cross-docking system. Cross-docking is a process in which incoming goods are sorted and consolidated directly for outbound shipping, without being placed in long-term storage. This can significantly reduce order fulfilment cycle times and improve customer satisfaction.<FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
+</div>
+</div>
+
+<div style={{height:'10vh'}} className='mob-multi-space'></div>
+
+
+
+
+
+
+
+{/* <Container  className='seconddiv-orderprocessing-container'>
  
 
     <div className='valuedelivered-maindiv-orderprocessing' >
 
   <div className='valuedelivered-firstdiv-orderprocessing'>
     <img src='../../Assets/autopocessing.jpg' alt="autp processing image" />
-    {/* <h6>Enhanced Efficiency</h6> */}
     <p><b>Automated Processing</b>  with the PURVEY WMS cross-docking function streamlines the entire process—from sorting and consolidation to outbound shipping—eliminating manual intervention and significantly reducing processing time.</p>
   </div>
   <div className='valuedelivered-seconddiv-orderprocessing'>
     <img src='../../Assets/mobile.jpeg' alt="mole image" />
-    {/* <h6>Reduced Complexity</h6> */}
     <p><b>Hybrid Web & Mobile App Solutions</b> in the PURVEY WMS cross-docking function offer real-time visibility into all cross-docked orders, enabling businesses to track shipments, monitor progress, and receive instant notifications on key order fulfillment milestones.</p>
   </div>
   <div className='valuedelivered-thirddiv-orderprocessing'> 
     <img src='../../Assets/qcontrol.jpg' alt="qcontrol image" />
-    {/* <h6>Increased Productivity</h6> */}
     <p><b>Built-in Quality Control </b> checks within the PURVEY WMS cross-docking function ensure the accuracy and integrity of goods being processed. Any discrepancies or issues are promptly flagged for resolution, minimizing errors and enhancing customer satisfaction.</p>
   </div>
   <div className='valuedelivered-thirddiv-orderprocessing'>
     <img src='../../Assets/decmaking.jpg' alt="decision making image" />
-    {/* <h6>Improved Resource Utilization</h6> */}
     <p><b>Data-Driven Decision Making</b> is enabled by the PURVEY WMS cross-docking function, offering insights into order processing times, dock utilization, carrier performance, and overall efficiency. These insights help identify improvement areas and enhance order fulfillment efficiency.</p>
   </div>
 </div>
+</Container> */}
+<Container>
+
+  <Row>
+    <Col lg={3}>
+    <Card style={{ width: '24rem' }} className='card-crossdocking'>
+      {/* <Card.Img variant="top" src='../../Assets/seamlessintegration.webp' /> */}
+      <Card.Body>
+        <Card.Title>Real-Time Tracking and Visibility </Card.Title>
+        <Card.Text style={{textAlign:'justify'}}>
+        into inbound shipments through PURVEY WMS provide detailed insights into arrival times, quantities, and product specifics, enabling you to plan and allocate resources effectively for optimized warehouse operations
+        </Card.Text>
+      </Card.Body>
+    </Card>
+    </Col>
+    <Col lg={5}></Col>
+    <Col lg={3}>
+    <Card style={{ width: '24rem' }} className='card-crossdocking'>
+      {/* <Card.Img variant="top" src='../../Assets/seamlessintegration.webp' /> */}
+      <Card.Body>
+        <Card.Title>Automated Processing </Card.Title>
+        <Card.Text style={{textAlign:'justify'}}>
+        with the PURVEY WMS cross-docking function streamlines the entire process—from sorting and consolidation to outbound shipping—eliminating manual intervention and significantly reducing processing time.
+        </Card.Text>
+      </Card.Body>
+    </Card>
+    </Col>
+  </Row>
+  <Row>
+    <Col lg={4}></Col>
+    <Col lg={4}>
+    <h1 className="features-header">Features</h1>
+    </Col>
+  </Row>
+  <Row>
+    <Col lg={3}>
+    <Card style={{ width: '24rem' }} className='card-crossdocking'>
+      {/* <Card.Img variant="top" src='../../Assets/seamlessintegration.webp' /> */}
+      <Card.Body>
+        <Card.Title>Hybrid Web & Mobile App Solutions </Card.Title>
+        <Card.Text style={{textAlign:'justify'}}>
+        in the PURVEY WMS cross-docking function offer real-time visibility into all cross-docked orders, enabling businesses to track shipments, monitor progress, and receive instant notifications on key order fulfillment milestones.
+        </Card.Text>
+      </Card.Body>
+    </Card>
+    </Col>
+    <Col lg={5}></Col>
+    <Col lg={3}>
+    <Card style={{ width: '24rem' }} className='card-crossdocking'>
+      {/* <Card.Img variant="top" src='../../Assets/seamlessintegration.webp' /> */}
+      <Card.Body>
+        <Card.Title>Built-in Quality Control </Card.Title>
+        <Card.Text style={{textAlign:'justify'}}>
+        checks within the PURVEY WMS cross-docking function ensure the accuracy and integrity of goods being processed. Any discrepancies or issues are promptly flagged for resolution, minimizing errors and enhancing customer satisfaction.
+        </Card.Text>
+      </Card.Body>
+    </Card>
+    </Col>
+  </Row>
 </Container>
-
-
-
+<div style={{height:'10vh'}}></div>
 <Container>
 <div class="image-container-multichannelintegration">
   

@@ -10,6 +10,9 @@ import improvedorderaccuracy from '../Assets/improvedorderaccuracy.svg'
 import { useNavigate } from "react-router-dom";
 import Footer from '../components/Footer'
 import { Helmet } from 'react-helmet';
+import {Row,Col,Card } from 'react-bootstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faQuoteLeft,faQuoteRight } from '@fortawesome/free-solid-svg-icons'
 
 
 function Repackingandputaway() {
@@ -142,7 +145,7 @@ const handlePurveywms=()=>{
           Our Repacking & Put Away module simplifies the repacking process by providing intuitive tools to manage and track repackaged items. Seamlessly break down or combine products, update packaging information, and maintain accurate inventory records. This ensures precision in order fulfilment and inventory management.            </p></div>
    </div> */}
 
-<div className='firstdiv-multichannelintegration ' >
+{/* <div className='firstdiv-multichannelintegration ' >
 <div className="multichannelintegration-image">
     <div className="image-wrapper-multi">
         <img src="../Assets/repa.jpg" alt="" />
@@ -153,49 +156,127 @@ const handlePurveywms=()=>{
         <p style={{textAlign:"justify",padding:"40px"}}> Our cutting-edge PURVEY Warehouse Management System introduces a powerful Repacking & Put Away module designed to optimize your warehouse operations. With our advanced features and user-friendly interface, you can revolutionize your repacking and storage processes for enhanced efficiency and productivity.
         Our Repacking & Put Away module simplifies the repacking process by providing intuitive tools to manage and track repackaged items. Seamlessly break down or combine products, update packaging information, and maintain accurate inventory records. This ensures precision in order fulfilment and inventory management.    </p>
     </div>
-   </div>
+   </div> */}
 
 
+<div style={{height:'30vh'}} className='mob-multi-space'></div>
+<div className='multi-main'>
+<div className='multi-img-div'>
 
-
-
-
-
-
-
-
-<div className='seconddiv-multichannelintegration'>
-    <h1>Features</h1>
+<p className='fs-5'> <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/> Our cutting-edge PURVEY Warehouse Management System introduces a powerful Repacking & Put Away module designed to optimize your warehouse operations. With our advanced features and user-friendly interface, you can revolutionize your repacking and storage processes for enhanced efficiency and productivity.
+Our Repacking & Put Away module simplifies the repacking process by providing intuitive tools to manage and track repackaged items. Seamlessly break down or combine products, update packaging information, and maintain accurate inventory records. This ensures precision in order fulfilment and inventory management. <FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
 </div>
-<Container  className='seconddiv-orderprocessing-container'>
+<div className='multi-content'>
+<img src="../Assets/repa.jpg" alt="" />
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div className="container" >
+<div style={{height:'10vh'}}>
+</div>
+<h1 style={{textAlign:'center',fontFamily:'good Times'}}>Features</h1>
+<div style={{height:'3vh'}}>
+</div>
+    <Row className='py-5'>
+        <Col md={5} className='total-div-repackputaway'>  {/* Added text-center here */}
+        <img src="../Assets/Repackingputaway.jpg"  />
+
+        </Col>
+        <Col md={6} className="cards-column">
+            <Row className="justify-content-center d-block">
+                <Col md={12} className="mb-4">
+                    <Card style={{ width: '40rem' ,borderTop:'4px solid green'}}>
+                        <Card.Body>
+                            <Card.Title>Streamlining Operations and Maximizing Storage Capacity</Card.Title>
+                            <Card.Text>
+                            our WMS software’s Repacking & Put Away module uses intelligent algorithms to assign the optimal storage location for repacked items. This reduces wasted space and minimizes retrieval times, enhancing overall warehouse efficiency.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col md={12} className="mb-4">
+                    <Card style={{ width: '40rem',borderTop:'4px solid green' }}>
+                        <Card.Body>
+                            <Card.Title>Organized Storage & Tracking Efficiency </Card.Title>
+                            <Card.Text>
+                            are at your fingertips with our comprehensive location management capabilities. Define and manage location hierarchies, assign dedicated storage areas for repacked items, and easily monitor the availability and capacity of each location, eliminating time wasted on searching for misplaced items.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col md={12} className="mb-4">
+                    <Card style={{ width: '40rem',borderTop:'4px solid green' }}>
+                        <Card.Body>
+                            <Card.Title>Intelligent Put-Away Strategies </Card.Title>
+                            <Card.Text>
+                            are tailored to your specific needs with our software. Whether it’s random put-away, zone-based storage, or dynamic slotting, our module seamlessly applies these strategies to enhance operational efficiency and ensure the optimal method for your warehouse.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col md={12} className="mb-4">
+                    <Card style={{ width: '40rem',borderTop:'4px solid green' }}>
+                        <Card.Body>
+                            <Card.Title>Comprehensive Tasks Assignment </Card.Title>
+                            <Card.Text>
+                            is made easy with our Repacking & Put Away module, which generates detailed tasks displayed on handheld devices or management terminals. These tasks specify the repacked items and their designated storage locations, ensuring accuracy and boosting productivity for warehouse operators.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
+        </Col>
+    </Row>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* <Container  className='seconddiv-orderprocessing-container'>
  
 
     <div className='valuedelivered-maindiv-orderprocessing' >
 
   <div className='valuedelivered-firstdiv-orderprocessing'>
     <img src='../../Assets/storagecapacity.jpg' alt="" />
-    {/* <h6>Enhanced Efficiency</h6> */}
     <p><b>Streamlining Operations and Maximizing Storage Capacity</b>  our WMS software’s Repacking & Put Away module uses intelligent algorithms to assign the optimal storage location for repacked items. This reduces wasted space and minimizes retrieval times, enhancing overall warehouse efficiency.</p>
   </div>
   <div className='valuedelivered-seconddiv-orderprocessing'>
     <img src='../../Assets/scalabilityandflexibility.jpg' alt="" />
-    {/* <h6>Reduced Complexity</h6> */}
     <p><b>Organized Storage & Tracking Efficiency</b> are at your fingertips with our comprehensive location management capabilities. Define and manage location hierarchies, assign dedicated storage areas for repacked items, and easily monitor the availability and capacity of each location, eliminating time wasted on searching for misplaced items.</p>
   </div>
   <div className='valuedelivered-thirddiv-orderprocessing'>
     <img src='../../Assets/putaway.jpg' alt="" />
-    {/* <h6>Increased Productivity</h6> */}
     <p><b> Intelligent Put-Away Strategies
     </b> are tailored to your specific needs with our software. Whether it’s random put-away, zone-based storage, or dynamic slotting, our module seamlessly applies these strategies to enhance operational efficiency and ensure the optimal method for your warehouse.</p>
   </div>
   <div className='valuedelivered-thirddiv-orderprocessing'>
     <img src='../../Assets/assignment.jpg' alt="" />
-    {/* <h6>Improved Resource Utilization</h6> */}
     <p><b>Comprehensive Tasks Assignment
     </b> is made easy with our Repacking & Put Away module, which generates detailed tasks displayed on handheld devices or management terminals. These tasks specify the repacked items and their designated storage locations, ensuring accuracy and boosting productivity for warehouse operators.</p>
   </div>
 </div>
-</Container>
+</Container> */}
 
 
 <Container >

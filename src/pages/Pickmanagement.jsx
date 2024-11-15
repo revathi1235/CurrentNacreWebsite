@@ -9,6 +9,8 @@ import improvedorderaccuracy from '../Assets/improvedorderaccuracy.svg'
 import { useNavigate } from "react-router-dom";
 import Footer from '../components/Footer'
 import { Helmet } from 'react-helmet';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faQuoteLeft,faQuoteRight } from '@fortawesome/free-solid-svg-icons'
 
 function Pickmanagement() {
   const navigate=useNavigate()
@@ -140,7 +142,7 @@ const handlePurveywms=()=>{
           Our solutions are designed to address these challenges and deliver measurable results. We stay updated with the latest industry trends and technologies to ensure that our clients receive the most advanced and effective solutions. PURVEY provides an efficient and reliable solutions for discrete picking within warehouse management systems (WMS). Our cutting-edge technology and expertise in this field ensure that your warehouse operations are optimized, resulting in increased productivity and accuracy. we understand the importance of streamlined and error-free picking processes in a warehouse.          </p></div>
    </div> */}
 
-<div className='firstdiv-multichannelintegration ' >
+{/* <div className='firstdiv-multichannelintegration ' >
 <div className="multichannelintegration-image">
     <div className="image-wrapper-multi">
         <img src="../Assets/pickmanage.jpg" alt="pickmanage image" />
@@ -148,49 +150,104 @@ const handlePurveywms=()=>{
 </div>
     <div className='multichannelintegration-content'>
       
-        <p style={{textAlign:"justify",padding:"40px"}}>  We have a deep understanding of the challenges faced by warehouses in discrete picking operations.
-        Our solutions are designed to address these challenges and deliver measurable results. We stay updated with the latest industry trends and technologies to ensure that our clients receive the most advanced and effective solutions. PURVEY provides an efficient and reliable solutions for discrete picking within warehouse management systems (WMS). Our cutting-edge technology and expertise in this field ensure that your warehouse operations are optimized, resulting in increased productivity and accuracy. we understand the importance of streamlined and error-free picking processes in a warehouse.   </p>
+        <p style={{textAlign:"justify",padding:"40px"}}>   We have a deep understanding of the challenges faced by warehouses in discrete picking operations.
+          Our solutions are designed to address these challenges and deliver measurable results. We stay updated with the latest industry trends and technologies to ensure that our clients receive the most advanced and effective solutions. PURVEY provides an efficient and reliable solutions for discrete picking within warehouse management systems (WMS). Our cutting-edge technology and expertise in this field ensure that your warehouse operations are optimized, resulting in increased productivity and accuracy. we understand the importance of streamlined and error-free picking processes in a warehouse.   </p>
     </div>
-   </div>
+   </div> */}
 
 
+<div style={{height:'30vh'}} className='mob-multi-space'></div>
+<div className='multi-main'>
+<div className='multi-img-div'>
+<img src="../Assets/pickmanage.jpg" alt="pickmanage image" />
 
-
-
-
-
-
-
-
-<div className='seconddiv-multichannelintegration'>
-    <h1>Features</h1> 
 </div>
-<Container  className='seconddiv-orderprocessing-container'>
+<div className='multi-content'>
+<p className='fs-5'> <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/> We have a deep understanding of the challenges faced by warehouses in discrete picking operations.
+Our solutions are designed to address these challenges and deliver measurable results. We stay updated with the latest industry trends and technologies to ensure that our clients receive the most advanced and effective solutions. PURVEY provides an efficient and reliable solutions for discrete picking within warehouse management systems (WMS). Our cutting-edge technology and expertise in this field ensure that your warehouse operations are optimized, resulting in increased productivity and accuracy. we understand the importance of streamlined and error-free picking processes in a warehouse. <FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
+</div>
+</div>
+
+
+
+
+
+
+<div style={{height:'3vh'}}></div>
+{/* <Container  className='seconddiv-orderprocessing-container'>
  
 
     <div className='valuedelivered-maindiv-orderprocessing' >
 
   <div className='valuedelivered-firstdiv-orderprocessing'>
     <img src='../../Assets/orderallo.jpg' alt="orderallo image" />
-    {/* <h6>Enhanced Efficiency</h6> */}
     <p><b>Advanced Order Allocation</b>  in PURVEY's discrete picking module uses sophisticated algorithms to assign orders to the most suitable pickers. Picklists are generated based on factors like location, optimized pick sequencing, priority, and picker availability, ensuring optimal resource utilization and minimizing travel time. This results in faster order fulfillment and enhanced operational efficiency.</p>
   </div>
   <div className='valuedelivered-seconddiv-orderprocessing'>
     <img src='../../Assets/analyticrep.jpg' alt="analyticrep image" />
-    {/* <h6>Reduced Complexity</h6> */}
     <p><b>Performance Analytics and Reporting
     </b>  in our WMS allow you to monitor key metrics such as picking rates, accuracy levels, picker efficiency, and order fulfillment times. These insights help identify areas for improvement, optimize processes, and enable data-driven decisions to enhance warehouse operations. Our dashboards offer valuable visibility into your picking operations, supporting performance tracking and driving continuous improvement.</p>
   </div>
   <div className='valuedelivered-thirddiv-orderprocessing'>
     <img src='../../Assets/barcode.jpg' alt="barcode image" />
-    {/* <h6>Increased Productivity</h6> */}
     <p><b> Barcode and RFID Integration</b>  in our WMS ensures efficient and accurate item identification during the picking process. These technologies provide real-time inventory visibility, reduce picking errors, and enhance overall inventory accuracy, allowing you to track and manage inventory effectively, minimize stockouts, and improve order fulfillment rates.</p>
   </div>
  
 </div>
+</Container> */}
+
+
+<Container  className='seconddiv-orderprocessing-container mt-3'>
+    <h1 style={{textAlign:'center',fontFamily:'Good Times'}}>Features</h1> 
+<div style={{height:'3vh'}}></div>
+
+    <div className='valuedelivered-maindiv-orderprocessing' >
+
+  <div className='valuedelivered-firstdiv-orderprocessing'>
+    {/* <img src='../../Assets/eff.jpg' alt="eff image" /> */}
+    {/* <h6>Enhanced Efficiency</h6> */}
+    <p><span  className='fs-3'>Advanced Order Allocation</span> in PURVEY's discrete picking module uses sophisticated algorithms to assign orders to the most suitable pickers. Picklists are generated based on factors like location, optimized pick sequencing, priority, and picker availability, ensuring optimal resource utilization and minimizing travel time. This results in faster order fulfillment and enhanced operational efficiency.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div className='valuedelivered-seconddiv-orderprocessing'>
+    {/* <img src='../../Assets/eff.jpg' alt="eff image" /> */}
+    {/* <h6>Enhanced Efficiency</h6> */}
+    <p><span className='fs-3'>Performance Analytics and Reporting</span> in our WMS allow you to monitor key metrics such as picking rates, accuracy levels, picker efficiency, and order fulfillment times. These insights help identify areas for improvement, optimize processes, and enable data-driven decisions to enhance warehouse operations. Our dashboards offer valuable visibility into your picking operations, supporting performance tracking and driving continuous improvement.</p>
+  </div>
+
+  <div className='valuedelivered-firstdiv-orderprocessing mt-3'>
+    {/* <img src='../../Assets/eff.jpg' alt="eff image" /> */}
+    {/* <h6>Enhanced Efficiency</h6> */}
+    <p><span className='fs-3'>Barcode and RFID Integration</span> in our WMS ensures efficient and accurate item identification during the picking process. These technologies provide real-time inventory visibility, reduce picking errors, and enhance overall inventory accuracy, allowing you to track and manage inventory effectively, minimize stockouts, and improve order fulfillment rates.</p>
+  </div>
+{/* 
+  <div className='valuedelivered-seconddiv-orderprocessing'>
+    <img src='../../Assets/reducedcomplexity.jpg' alt="reducedcomplexity image" />
+    <p><b>Reduced Complexity</b> in traditional order picking processes often leads to numerous picklists, requiring warehouse staff to walk around multiple times for each list. AI-powered order synchronization simplifies this by consolidating related orders into a single picklist, allowing staff to manage tasks more effectively and focus on efficient order fulfillment.</p>
+  </div> */}
+  
+    {/* <div className='valuedelivered-thirddiv-orderprocessing'>
+      <img src='../../Assets/crowdedwarehouse.webp' alt="crowdedwarehouse image" />
+  
+      <p><b>Increased Productivity</b> is achieved by reducing the number of picklists through AI-powered order synchronization. Warehouse staff spend less time managing and switching between lists, which allows for a more streamlined process. This efficiency enables employees to work faster, fulfill orders promptly, and effectively meet customer demands in the warehouse</p>
+    </div> */}
+
+
+
+ 
+
+
+
+</div>
 </Container>
-
-
 
 
 

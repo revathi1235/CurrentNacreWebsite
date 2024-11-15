@@ -230,7 +230,7 @@ function Orderprocessing() {
   <p style={{fontSize:'19.5px'}}>  <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/> Same day delivery is increasingly becoming normal expectation of customers. With capital scarcity Brick and mortar business are also keen to achieve just-in-time inventory efficiency. In the bustling world of warehouse operations, streamlining processes to maximize efficiency is a top priority. Traditional order picking methods often result in a large number of picklists, leading to increased complexity and reduced productivity. However, with the power of AI-powered order synchronization, organizations can revolutionize their warehouse operations. Our AI-powered order synchronization, showcases how it optimizes efficiency and effectively reduces the number of picklists, which results in significant reduction of walk around time and increase same day deliveries<FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
 </div>
 <div className='multi-img-div'>
-<img src="../Assets/orderprocessing.webp" alt="orderprocessing image" />
+<img src="../Assets/order-processing-workflow.png" alt="orderprocessing image" />
 
 </div>
 </div>
@@ -243,7 +243,7 @@ function Orderprocessing() {
         <h2 style={{fontSize:"30px"}}>Features</h2>
       </div>
       <div className='row justify-content-center '>
-        {/* Card 1 */}
+       
         <div className='col-md-4 col-sm-12 mb-4'>
           <div className='card-orderprocessing' style={{background:"white"}}>
             <div style={{color:"white",background:"#303097",padding:'20px',textAlign:'center',borderRadius:'10px'}} className='fs-3'>Intelligent Order Analysis</div>

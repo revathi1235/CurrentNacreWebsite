@@ -1,15 +1,19 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import purvey_apora_black from "../Assets/purvey_apora_black.png";
 // import Chart2 from "./Chart2";
 import multichannelintegration from "../Assets/work3.jpg";
 import improveresouceutilisation from "../Assets/Improveresourceutilisation.svg";
 import efficiency from "../Assets/Efficiency.svg";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
 import improvedorderaccuracy from "../Assets/improvedorderaccuracy.svg";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 import { Helmet } from 'react-helmet';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuoteLeft,faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 function Qualitycheck() {
   const navigate = useNavigate();
   const handleInbountreceipt = () => {
@@ -179,7 +183,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
           </p></div>
    </div> */}
 
-      <div className="firstdiv-multichannelintegration ">
+      {/* <div className="firstdiv-multichannelintegration ">
       <div className="multichannelintegration-image">
     <div className="image-wrapper-multi">
         <img src="../Assets/qcheck.png" alt="" />
@@ -201,23 +205,188 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
             categories, ensuring uniformity and adherence to quality standards.
           </p>
         </div>
-      </div>
+      </div> */}
 
-      <div className="seconddiv-multichannelintegration">
+
+
+
+
+<div style={{height:'30vh'}} className='mob-multi-space'></div>
+<div className="multi-main mob-multi-main" style={{ position: 'relative', width: '100%', height: 'auto' }}>
+  <div className="multi-img-div">
+    <img src="../Assets/qa-qa-check.jpg" alt="multi image" style={{ width: '100%', height: 'auto' }} />
+  </div>
+  <div className="overlay-content-one" style={{
+      position: 'absolute',
+      top: '-5%',
+      
+      color: 'black',
+      // backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      padding: '20px',
+      borderRadius: '8px',
+      maxWidth: '46%'
+  }}>
+      <p className='content-top-multi'><FontAwesomeIcon 
+    icon={faQuoteLeft} 
+    className='font-icon-multi-right'
+  />Delivering Excellence, Building Trust – Strengthen your brand and stand out in the market with consistently high-quality products<FontAwesomeIcon 
+    icon={faQuoteRight} 
+    className='font-icon-multi-right'
+  />
+</p>
+    
+   
+  </div>
+  <div className="overlay-content-p" style={{
+      position: 'absolute',
+      top: '3%',
+      right:'3%',
+      color: 'black',
+      // backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      padding: '20px',
+      borderRadius: '8px',
+      maxWidth: '30%'
+  }}>
+ 
+
+ <p className="fs-5" style={{textAlign:'justify'}}>  <FontAwesomeIcon icon={faQuoteLeft} className='font-icon-multi'/> Quality Assurance process in our PURVEY Warehouse Management System
+            (WMS) is a fully scalable and customizable function. We understand
+            the critical importance of maintaining high-quality standards and
+            ensuring accuracy in every shipment that leaves your warehouse. With
+            our comprehensive Quality Assurance feature within PURVEY WMS, you
+            can streamline your quality control process, minimize errors, and
+            deliver superior products to your customers. PURVEY WMS offers a
+            standardized and configurable Quality Assurance process that aligns
+            with your specific business requirements. You can define and
+            implement consistent quality control procedures across all product
+            categories, ensuring uniformity and adherence to quality standards.<FontAwesomeIcon icon={faQuoteRight} className='font-icon-multi'/></p>
+  </div>
+</div>
+
+<div style={{height:'10vh'}}></div>
+<div className="full-height-grey-div">
+<h1 style={{textAlign:'center',fontFamily:'Good Times',padding:'10px'}}>Features</h1>
+<Container className="mt-5">
+  <Row><Col lg={1}></Col>
+    <Col lg={3}>
+    <Card style={{ width: '30rem',borderTop:'5px solid green' }}>
+      {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+      <Card.Body style={{height:'200px'}}>
+        <Card.Title>Detailed Inspection Criteria </Card.Title>
+        <Card.Text>
+        Can be defined through the Quality Assurance feature, covering aspects like physical attributes, functional tests, packaging checks, and more. This ensures each item undergoes a thorough inspection before shipping, guaranteeing top quality and customer satisfaction.
+        </Card.Text>
+        {/* <Button variant="primary">Go somewhere</Button> */}
+      </Card.Body>
+    </Card>
+    </Col>
+    <Col lg={3}></Col>
+    <Col lg={3}>
+    <Card style={{ width: '30rem',borderTop:'5px solid green' }}>
+      {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+      <Card.Body style={{height:'200px'}}>
+        <Card.Title>Seamless Integration</Card.Title>
+        <Card.Text>
+        with various testing equipment, such as scales, scanners, and measuring devices, is provided by our Quality Assurance module. This ensures accurate measurements, efficient data capture during inspections, and reduces manual errors while improving overall efficiency.
+        </Card.Text>
+        {/* <Button variant="primary">Go somewhere</Button> */}
+      </Card.Body>
+    </Card>
+    </Col>
+   
+  </Row>
+  <Row className="mt-5">
+    <Col lg={1}></Col>
+    <Col lg={3}>
+    <Card style={{ width: '30rem' ,borderTop:'5px solid green'}}>
+      {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+      <Card.Body style={{height:'200px'}}>
+        <Card.Title>Generates Automated Quality Alerts </Card.Title>
+        <Card.Text>
+        with PURVEY WMS whenever deviations or non-conformances are detected during inspections, enabling timely corrective actions to prevent shipping defective products and uphold your reputation for superior quality.
+
+
+        </Card.Text>
+        {/* <Button variant="primary">Go somewhere</Button> */}
+      </Card.Body>
+    </Card>
+    </Col>
+    <Col lg={3}></Col>
+    <Col lg={3}>
+    <Card style={{ width: '30rem' ,borderTop:'5px solid green'}}>
+      {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
+      <Card.Body style={{height:'200px'}}>
+        <Card.Title>Real-Time Visibility into the Quality Status</Card.Title>
+        <Card.Text>
+        Of your inventory is enabled with PURVEY WMS. Track and monitor quality checkpoints, identify potential issues, and take proactive actions to resolve them, ensuring only compliant, high-quality products are dispatched.
+
+
+        </Card.Text>
+        {/* <Button variant="primary">Go somewhere</Button> */}
+      </Card.Body>
+    </Card>
+    </Col>
+  </Row>
+</Container>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <div className="seconddiv-multichannelintegration">
         <h1>Features</h1>
       </div>
       <Container className="seconddiv-orderprocessing-container">
         <div className="valuedelivered-maindiv-orderprocessing">
           <div className="valuedelivered-firstdiv-orderprocessing">
             <img src='../../Assets/inspection.png' alt="" />
-            {/* <h6>Enhanced Efficiency</h6> */}
             <p>
               <b>Detailed Inspection Criteria</b> can be defined through the Quality Assurance feature, covering aspects like physical attributes, functional tests, packaging checks, and more. This ensures each item undergoes a thorough inspection before shipping, guaranteeing top quality and customer satisfaction.
             </p>
           </div>
           <div className="valuedelivered-seconddiv-orderprocessing">
             <img src='../../Assets/realtimevisibility.png' alt="" />
-            {/* <h6>Reduced Complexity</h6> */}
             <p>
               <b>Real-Time Visibility into the Quality Status
               </b> of your inventory is enabled with PURVEY WMS. Track and monitor quality checkpoints, identify potential issues, and take proactive actions to resolve them, ensuring only compliant, high-quality products are dispatched.
@@ -225,22 +394,20 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
           </div>
           <div className="valuedelivered-thirddiv-orderprocessing">
             <img src='../../Assets/errdetect.jpg' alt="" />
-            {/* <h6>Increased Productivity</h6> */}
             <p>
               <b>Generates Automated Quality Alerts</b>  with PURVEY WMS whenever deviations or non-conformances are detected during inspections, enabling timely corrective actions to prevent shipping defective products and uphold your reputation for superior quality.
             </p>
           </div>
           <div className="valuedelivered-thirddiv-orderprocessing">
             <img src='../../Assets/integration.webp' alt="" />
-            {/* <h6>Improved Resource Utilization</h6> */}
             <p>
               <b>Seamless Integration
               </b>  with various testing equipment, such as scales, scanners, and measuring devices, is provided by our Quality Assurance module. This ensures accurate measurements, efficient data capture during inspections, and reduces manual errors while improving overall efficiency.
             </p>
           </div>
         </div>
-      </Container>
-
+      </Container> */}
+<div style={{height:'10vh'}}></div>
       <Container>
         <div class="image-container-multichannelintegration">
           <div class="overlay">

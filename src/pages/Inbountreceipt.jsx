@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row,Col } from "react-bootstrap";
 import purvey_apora_black from "../Assets/purvey_apora_black.png";
 import Chart2 from "./Chart2";
 import multichannelintegration from "../Assets/work3.jpg";
@@ -8,6 +8,8 @@ import improveresouceutilisation from "../Assets/Improveresourceutilisation.svg"
 import efficiency from "../Assets/Efficiency.svg";
 import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import improvedorderaccuracy from "../Assets/improvedorderaccuracy.svg";
 import Footer from "../components/Footer";
 function Inbountreceipt() {
@@ -145,10 +147,10 @@ const handlePurveywms=()=>{
     </div>
       </div>
 
-      <div className="firstdiv-multichannelintegration ">
+      {/* <div className="firstdiv-multichannelintegration ">
       <div className="multichannelintegration-image">
     <div className="image-wrapper-multi">
-        <img src="../Assets/inbountreceipt.jpg" alt="inbount receipt image" />
+        <img src="../Assets/inbrec.jpg" alt="inbount receipt image" />
     </div>
 </div>
         <div className="multichannelintegration-content">
@@ -161,7 +163,25 @@ const handlePurveywms=()=>{
             real-time visibility.
           </p>
         </div>
-      </div>
+      </div> */}
+
+
+<div style={{height:'30vh'}} className='mob-multi-space'></div>
+ <div className='multi-main'>
+
+<div className='multi-content'>
+  <p style={{fontSize:'19.5px'}}>   The Inbound Receipt process in PURVEY Warehouse Management System
+            (WMS) is designed to eliminate manual errors and reduce processing
+            time. Upon arrival, goods are quickly scanned and recorded in the
+            system, ensuring timely updates to inventory levels and enabling
+            real-time visibility.</p>
+</div>
+<div className='multi-img-div-inbount'>
+<img src="../Assets/inbrec.jpg" alt="inbount receipt image" />
+
+</div>
+</div>
+
 
       {/* <div className='seconddiv-multichannelintegration'>
     <h1>Efficiency And Accuracy</h1>
@@ -171,58 +191,99 @@ const handlePurveywms=()=>{
     The multichannel integration in our fulfilment management system is a game-changer for organizations aiming to enhance operational efficiency. By streamlining order fulfilment across multiple sales channels, you unlock new levels of accuracy, scalability, and flexibility. With real-time inventory visibility and centralized order management, you can meet customer demands effectively while optimizing your resources.</p>
 </div> */}
 
-      <div className="seconddiv-multichannelintegration">
-        <h1>Features</h1>
-      </div>
+      
       <Container fluid>
-        <div className="valuedelivered-maindiv-inbountreceipt">
-          <div className="valuedelivered-firstdiv-inbountreceipt">
-            <img src='../../Assets/seamlessintegration.webp' alt="seamless integration image" />
-            {/* <h6>Seamless integration with supplier systems</h6> */}
-            <p style={{ fontSize:"15px"}}>
-           <b> Seamless Integration with Supplier Systems</b> enables PURVEY WMS to automate the exchange of information like purchase orders, advance shipment notifications, and invoices. This connectivity promotes smooth communication and strengthens supply chain collaboration.
-            </p>
-          </div>
-          <div className="valuedelivered-seconddiv-inbountreceipt">
-            <img src='../../Assets/tracking.jpg' alt="tracking image" />
-           
-            <p style={{ fontSize:"15px"}}>
-             <b>Real-Time Tracking and Visibility </b>into inbound shipments through PURVEY WMS provide detailed insights into arrival times, quantities, and product specifics, enabling you to plan and allocate resources effectively for optimized warehouse operations
-            </p>
-          </div>
-          <div className="valuedelivered-thirddiv-inbountreceipt">
-            <img src='../../Assets/qcontrol.jpg' alt="qc control image" />
-            <p style={{ fontSize:"15px"}}>
-           <b> Quality Control Checks</b>  are built into the Inbound Receipt function of PURVEY WMS, ensuring that goods are inspected upon receipt for quantity accuracy, damage, and compliance with specified standards. Any discrepancies or issues are promptly flagged for resolution.
-            </p>
-          </div>
-        </div>
-        <br />
-        <div className="valuedelivered-secondmaindiv-inbountreceipt">
-          <div className="valuedelivered-firstdiv-inbountreceipt">
-            <img src='../../Assets/compliancedocumentation.jpg' alt="compliance doc image" />
-          
-            <p style={{ fontSize:"15px"}}>
-            <b>Compliance Documentation</b> is ensured through the Inbound Receipt function in PURVEY WMS, where receipts, supplier information, product specifications, and certificates are automatically generated and readily accessible for audits.
-            </p>
-          </div>
-          <div className="valuedelivered-seconddiv-inbountreceipt">
-            <img src={efficiency} alt="efficiency image" />
-            
-            <p style={{ fontSize:"15px"}}>
-            <b>Streamlined Return Processes</b> in our WMS handle discrepancies, damaged goods, or rejections efficiently. The system captures all relevant details, including return reasons and resolutions, enabling prompt coordination with suppliers and minimizing supply chain disruptions
-            </p>
-          </div>
-          <div className="valuedelivered-thirddiv-inbountreceipt">
-            <img src={improvedorderaccuracy} alt="improvedorderaccuracy image" />
-          
-            <p style={{ fontSize:"15px"}}>
-           <b> Gain Valuable Insights</b> into inbound shipments, supplier performance, receipt accuracy, and product quality, empowering data-driven decision-making.
-            </p>
-          </div>
-        </div>
-      </Container>
+      <div className="seconddiv-multichannelintegration">
+        <h1 style={{color:'black'}}>Features</h1>
+      </div>
 
+<div  style={{height:'10vh'}}></div>
+
+      <Container >
+            <Row>
+              <Col lg={1}></Col>
+              <Col lg={2}>
+              <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src='../../Assets/seamlessintegration.webp' />
+      <Card.Body>
+        <Card.Title>Seamless Integration with Supplier Systems</Card.Title>
+        <Card.Text style={{textAlign:'justify'}}>
+       Enables PURVEY WMS to automate the exchange of information like purchase orders, advance shipment notifications, and invoices. This connectivity promotes smooth communication and strengthens supply chain collaboration.
+        </Card.Text>
+      </Card.Body>
+    </Card>
+              </Col>
+              <Col lg={1}></Col>
+              <Col lg={2}>
+              <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top"  src='../../Assets/realtimevisibility.png' />
+      
+      <Card.Body>
+        <Card.Title>Real-Time Tracking and Visibility </Card.Title>
+        <Card.Text style={{textAlign:'justify'}}>
+        into inbound shipments through PURVEY WMS provide detailed insights into arrival times, quantities, and product specifics, enabling you to plan and allocate resources effectively for optimized warehouse operations
+        </Card.Text>
+      </Card.Body>
+    </Card>
+              </Col>
+              <Col lg={1}></Col>
+              <Col lg={2}>
+              <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top"   src='../../Assets/errdetect.jpg' style={{height:'170px'}}/>
+     
+      <Card.Body>
+        <Card.Title>Quality Control Checks</Card.Title>
+        <Card.Text style={{textAlign:'justify'}}>
+        are built into the Inbound Receipt function of PURVEY WMS, ensuring that goods are inspected upon receipt for quantity accuracy, damage, and compliance with specified standards. Any discrepancies or issues are promptly flagged for resolution. </Card.Text>
+      </Card.Body>
+    </Card>
+              </Col>
+            </Row>
+            <Row className="mt-5">
+              <Col lg={1}>
+              </Col>
+              <Col lg={2}>
+              <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src='../../Assets/compliancedocumentation.jpg' />
+      <Card.Body>
+        <Card.Title>Compliance Documentation</Card.Title>
+        <Card.Text style={{textAlign:'justify'}}>
+       Ensured through the Inbound Receipt function in PURVEY WMS, where receipts, supplier information, product specifications, and certificates are automatically generated and readily accessible for audits.
+        </Card.Text>
+      </Card.Body>
+    </Card>
+              </Col>
+              <Col lg={1}>
+              </Col>
+              <Col lg={2}>
+              <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src='../../Assets/compliancedocumentation.jpg' />
+      <Card.Body style={{height:'230px'}}>
+        <Card.Title>Streamlined Return Processes </Card.Title>
+        <Card.Text style={{textAlign:'justify'}}>
+        in our WMS handle discrepancies, damaged goods, or rejections efficiently.  Enabling prompt coordination with suppliers and minimizing supply chain disruptions </Card.Text>
+      </Card.Body>
+    </Card>
+              </Col>
+              <Col lg={1}>
+              </Col>
+              <Col lg={2}>
+              <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src='../../Assets/compliancedocumentation.jpg' />
+      <Card.Body style={{height:'230px'}}>
+        <Card.Title>Gain Valuable Insights</Card.Title>
+        <Card.Text style={{textAlign:'justify'}}>
+        into inbound shipments, supplier performance, receipt accuracy, and product quality, empowering data-driven decision-making. </Card.Text>
+      </Card.Body>
+    </Card>
+              </Col>
+            </Row>
+            
+          
+    </Container>
+       
+      </Container>
+<div style={{height:'10vh'}}></div>
       <Container>
         <div class="image-container-multichannelintegration">
           <div class="overlay">

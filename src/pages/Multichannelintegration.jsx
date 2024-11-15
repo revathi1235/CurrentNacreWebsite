@@ -219,7 +219,7 @@ const handleApora=()=>{
 
  </div>
 <div style={{height:'30vh'}} className='mob-multi-space'></div>
-<div className="multi-main" style={{ position: 'relative', width: '100%', height: 'auto' }}>
+<div className="multi-main mob-multi-main" style={{ position: 'relative', width: '100%', height: 'auto' }}>
   <div className="multi-img-div">
     <img src="../Assets/newmultiimage.jpeg" alt="multi image" style={{ width: '100%', height: 'auto' }} />
   </div>
@@ -233,11 +233,11 @@ const handleApora=()=>{
       borderRadius: '8px',
       maxWidth: '30%'
   }}>
-    <p>  <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/> In today's competitive retail environment, businesses need to be able to offer their customers a seamless shopping experience across multiple channels. This means being able to take orders and fulfil them from any channel, whether it's online, in-store, or over the phone.
-    Multi-channel integration is the key to providing this seamless experience. It allows businesses to connect their various sales channels to a single fulfilment system. This ensures that inventory levels are always up-to-date and that orders can be picked and packed quickly and  efficiently.<FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
+    <p>  <FontAwesomeIcon icon={faQuoteLeft} className='font-icon-multi'/> In today's competitive retail environment, businesses need to be able to offer their customers a seamless shopping experience across multiple channels. This means being able to take orders and fulfil them from any channel, whether it's online, in-store, or over the phone.
+    Multi-channel integration is the key to providing this seamless experience. It allows businesses to connect their various sales channels to a single fulfilment system. This ensures that inventory levels are always up-to-date and that orders can be picked and packed quickly and  efficiently.<FontAwesomeIcon icon={faQuoteRight} className='font-icon-multi'/></p>
    
   </div>
-  <div className="overlay-content" style={{
+  <div className="overlay-content-p" style={{
       position: 'absolute',
       top: '20%',
       right:'3%',
@@ -247,15 +247,15 @@ const handleApora=()=>{
       borderRadius: '8px',
       maxWidth: '30%'
   }}>
-   <p style={{marginTop:'30px', fontFamily: 'Montserrat-Bold', fontSize: '33px', color: 'black', textAlign: 'center', lineHeight: '1.6' }}>
+   <p className='content-top-multi'>
   <FontAwesomeIcon 
     icon={faQuoteLeft} 
-    style={{ color: 'blue', fontSize: '30px', marginRight: '10px' }} 
+    className='font-icon-multi-right'
   />
-  Multi-channel integration is the key to providing this seamless experience.
+ Multi-channel integration is the key to providing this seamless experience.
   <FontAwesomeIcon 
     icon={faQuoteRight} 
-    style={{ color: 'blue', fontSize: '30px', marginLeft: '10px' }} 
+    className='font-icon-multi-right'
   />
 </p>
 
@@ -326,9 +326,13 @@ const handleApora=()=>{
  
 
     <div className='valuedelivered-maindiv-multiintegration mt-5'>
-  <div className='valuedelivered-firstdiv-multiintegration'>
-    {/* <img src={improveresouceutilisation} alt="improveresouceutilisation images" /> */}
-    {/* <h6>Improved Resource Utilisation</h6> */}
+  {/* <div className='valuedelivered-firstdiv-multiintegration'>
+    
+    <p style={{textAlign:"justify"}}> <span className='fs-4'>Improved Resource Utilisation</span> is achieved by integrating multiple channels into a unified pick management system, allowing you to optimize resources and reduce operational complexities.</p>
+  </div> */}
+   <div className='valuedelivered-seconddiv-multiintegration'>
+    {/* <img src='../../Assets/realtimevisibility.png' alt="realtimevisibility image" /> */}
+    {/* <h6>Real Time Visibility</h6> */}
     <p style={{textAlign:"justify"}}> <span className='fs-4'>Improved Resource Utilisation</span> is achieved by integrating multiple channels into a unified pick management system, allowing you to optimize resources and reduce operational complexities.</p>
   </div>
   <div className='valuedelivered-seconddiv-multiintegration'>
@@ -367,7 +371,7 @@ const handleApora=()=>{
 <div class="image-container-multichannelintegration">
   
   <div class="overlay">
-    <p className='fs-2 px-3'>"If you are looking for a way to improve your business's efficiency and profitability, a Multi - Channel Integration system is a valuable tool that can help you achieve your goals."</p>
+    <p className='overlay-p-multi  '>"If you are looking for a way to improve your business's efficiency and profitability, a Multi - Channel Integration system is a valuable tool that can help you achieve your goals."</p>
   </div>
 </div>
 </Container>

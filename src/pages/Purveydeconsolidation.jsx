@@ -8,6 +8,8 @@ import efficiency from "../Assets/Efficiency.svg";
 import improvedorderaccuracy from "../Assets/improvedorderaccuracy.svg";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuoteLeft,faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { Helmet } from 'react-helmet';
 
 function Purveydeconsolidation() {
@@ -175,7 +177,7 @@ function Purveydeconsolidation() {
           </p></div>
    </div> */}
 
-      <div className="firstdiv-multichannelintegration ">
+      {/* <div className="firstdiv-multichannelintegration ">
       <div className="multichannelintegration-image">
     <div className="image-wrapper-multi">
         <img src="../Assets/deconsol.jpg" alt="deconsol image" />
@@ -197,37 +199,56 @@ function Purveydeconsolidation() {
             ready for further processing.
           </p>
         </div>
-      </div>
+      </div> */}
+
+
+
+<div style={{height:'30vh'}} className='mob-multi-space'></div>
+<div className='multi-main'>
+<div className='multi-img-div'>
+<img src="../Assets/deconsol.jpg" alt="deconsol image" />
+</div>
+<div className='multi-content'>
+  <p className='fs-5'>  <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/> Purvey WMS's Deconsolidation Module, is an essential component of
+            our advanced Warehouse Management System. Designed to streamline the
+            process of breaking down consolidated shipments, our module enables
+            efficient sorting, labelling, and allocation of individual items or
+            smaller units. With Purvey WMS, you can optimize your
+            deconsolidation operations, reduce processing time, and ensure
+            accurate distribution to their respective destinations or storage
+            locations. 
+            Purvey WMS simplifies the unpacking and unloading process of
+            consolidated shipments. The software provides clear guidance to
+            warehouse staff, ensuring that items are efficiently unpacked and
+            ready for further processing. <FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
+</div>
+</div>
 
       <div className="seconddiv-multichannelintegration">
         <h1>Features</h1>
       </div>
-      <Container className="seconddiv-orderprocessing-container">
+      {/* <Container className="seconddiv-orderprocessing-container">
         <div className="valuedelivered-maindiv-orderprocessing">
           <div className="valuedelivered-firstdiv-orderprocessing">
             <img src='../../Assets/indvitem.webp' alt="indvitem image" />
-            {/* <h6>Enhanced Efficiency</h6> */}
             <p>
               <b>Sorting and Allocating Individual Items</b>  is made easy with our Deconsolidation Module, which organizes items based on predefined rules or criteria such as SKU, destination, or order number. This ensures accurate placement for seamless distribution or storage.
             </p>
           </div>
           <div className="valuedelivered-seconddiv-orderprocessing">
             <img src='../../Assets/realtimealo.jpg' alt="realtimealo image" />
-            {/* <h6>Reduced Complexity</h6> */}
             <p>
               <b>Real-Time Verification and Quality Checks</b>  with Purvey WMS ensure accuracy on deconsolidated items, reducing discrepancies and upholding high standards of product quality and integrity.
             </p>
           </div>
           <div className="valuedelivered-thirddiv-orderprocessing">
             <img src='../../Assets/barcode.jpg' alt="barcode image" />
-            {/* <h6>Increased Productivity</h6> */}
             <p>
               <b>Generation of Labels or Barcodes</b>  through the Deconsolidation Module ensures proper identification, traceability, and seamless tracking of deconsolidated items throughout the warehouse or supply chain.
             </p>
           </div>
           <div className="valuedelivered-thirddiv-orderprocessing">
             <img src='../../Assets/approdest.jpg' alt=" image" />
-            {/* <h6>Improved Resource Utilization</h6> */}
             <p>
               <b>Appropriate Destination or Storage Location</b> is achieved through
               AI-powered order synchronization, which considers the proximity of
@@ -239,14 +260,13 @@ function Purveydeconsolidation() {
           </div>
           <div className="valuedelivered-thirddiv-orderprocessing">
             <img src='../../Assets/documents.jpg' alt="documents image" />
-            {/* <h6>Improved Resource Utilization</h6> */}
             <p>
               <b>Generates Detailed Documentation
               </b>  and reports through our Deconsolidation Module, capturing records of received items, destination assignments, discrepancies, and other relevant data for audit purposes and performance analysis.
             </p>
           </div>  
         </div>
-      </Container>
+      </Container> */}
 
       <Container>
         <div class="image-container-multichannelintegration">
