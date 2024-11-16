@@ -115,6 +115,9 @@ function Pickandshipping    () {
     navigate('/aporafulfillmentautomation')
   }
   
+        const handleRequestdemo=()=>{
+            navigate('/contactus')
+        }
 // ==================================================================
   return (
     <div data-aos="fade-up"
@@ -331,8 +334,13 @@ function Pickandshipping    () {
 </Container>
 
 
-
-
+<div style={{height:'4vh'}}></div>
+<div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+<button className="custom-btn btn-5">
+            <span onClick={handleRequestdemo}>Request Demo</span>
+          </button>
+</div>
+<div style={{height:'4vh'}}></div>
 
 <div className='resp-footer'>
   <Footer/>

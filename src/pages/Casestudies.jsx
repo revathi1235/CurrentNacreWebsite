@@ -3,8 +3,13 @@ import { Container, Row,Col } from 'react-bootstrap'
 import Cardflip from './Cardflip'
 import Footer from '../components/Footer'
 import { Helmet } from 'react-helmet';
+import { useNavigate } from 'react-router-dom';
 
 function Casestudies() {
+  const navigate=useNavigate()
+        const handleRequestdemo=()=>{
+            navigate('/contactus')
+        }
   return (
     <div>
        
@@ -59,7 +64,12 @@ function Casestudies() {
         </Row>
        </Container>
 
-
+       <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+<button className="custom-btn btn-5">
+            <span onClick={handleRequestdemo}>Request Demo</span>
+          </button>
+</div>
+<div style={{height:'4vh'}}></div>
        <Footer/>
     </div>
 

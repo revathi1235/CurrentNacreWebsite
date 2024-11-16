@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import purvey_apora_black from "../Assets/purvey_apora_black.png";
 import Chart2 from "./Chart2";
 import multichannelintegration from "../Assets/work3.jpg";
@@ -9,7 +9,8 @@ import improvedorderaccuracy from "../Assets/improvedorderaccuracy.svg";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer";
 import { Helmet } from 'react-helmet';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuoteLeft,faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 function Inventorymanagement() {
   const navigate = useNavigate();
   const handleInbountreceipt = () => {
@@ -45,6 +46,11 @@ function Inventorymanagement() {
   const handlePurveywms = () => {
     navigate("/productwarehousemanagementsystem");
   };
+
+ 
+        const handleRequestdemo=()=>{
+            navigate('/contactus')
+        }
   return (
     <div>
       <Helmet>
@@ -177,7 +183,7 @@ function Inventorymanagement() {
 PURVEY WMS offers a standardized and configurable Quality Assurance process that aligns with your specific business requirements. You can define and implement consistent quality control procedures across all product categories, ensuring uniformity and adherence to quality standards.
           </p></div>
    </div> */}
-      <div className="firstdiv-multichannelintegration ">
+      {/* <div className="firstdiv-multichannelintegration ">
       <div className="multichannelintegration-image">
     <div className="image-wrapper-multi">
         <img src="../Assets/invmanage.jpg" alt="invmanage image" />
@@ -192,12 +198,22 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
             minimizing stockouts.
           </p>
         </div>
-      </div>
+      </div> */}
+<div style={{height:'30vh'}} className='mob-multi-space'></div>
+<div className='multi-main'>
+<div className='multi-img-div'>
+<img src="../Assets/invmanage.jpg" alt="invmanage image" />
 
-      <div className="seconddiv-multichannelintegration">
-        <h1>Features</h1>
-      </div>
-
+</div>
+<div className='multi-content'>
+<p className='fs-5'> <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/> PURVEY WMS provides real-time visibility into your inventory,
+            allowing you to monitor stock levels, track movement, and make
+            informed decisions. You can easily view the quantity, location, and
+            status of each item, ensuring accurate stock management and
+            minimizing stockouts. <FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
+</div>
+</div>
+   
 {/* <div style={{height:"40vh",border:"1px solid blue",width:'90%',margin:'30px auto'}}>
 <div style={{}}>
 <img src='../../Assets/accinv.jpg' alt="accinv" />
@@ -246,34 +262,58 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
         </div>
       </Container> */}
 
-<div className="container-inv mt-4">
-            <div className="row-inv">
-                {/* Column 1 */}
-                <div className="col-md-4 d-flex justify-content-center align-items-center hover-column-inv">
-                  <h1 className="hide-text">Efficient Data Capture for Accurate Inventory</h1>
-                    <div className="hover-content-inv">
-                        {/* <h4>Column 1</h4> */}
-                        <p> With our WMS seamlessly integrating barcode and RFID technologies, you can efficiently capture data, quickly scan items, update inventory records, and minimize manual errors. This results in significantly improved inventory accuracy and streamlined processes.</p>
-                    </div>
-                </div>
 
-                {/* Column 2 */}
-                <div className="col-md-4 d-flex justify-content-center align-items-center hover-column-inv">
-                    <div className="hover-content-inv">
-                        <h4>Column 2</h4>
-                        <p>This is the content for column 2. It becomes visible on hover.</p>
-                    </div>
-                </div>
-
-                {/* Column 3 */}
-                <div className="col-md-4 d-flex justify-content-center align-items-center hover-column-inv">
-                    <div className="hover-content-inv">
-                        <h4>Column 3</h4>
-                        <p>This is the content for column 3. It becomes visible on hover.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      
+<div style={{height:'10vh'}} className='mob-multi-space'></div>
+<h1 style={{fontFamily:"Good Times",textAlign:'center'}}>Features</h1>
+<div style={{height:"5vh"}}></div>
+<Container>
+  <Row>
+ 
+    <Col lg={3} className="ms-5">
+    <div class="cardBox">
+  <div class="card-box-new">
+    <h2>Efficient Data Capture for Accurate Inventory</h2>
+    
+    <div class="content-new-box" >
+      {/* <h3>How's it goin Fam ?</h3> */}
+      <p>With our WMS seamlessly integrating barcode and RFID technologies, you can efficiently capture data, quickly scan items, update inventory records, and minimize manual errors. This results in significantly improved inventory accuracy and streamlined processes.</p>
+    </div>
+  </div>
+  
+</div>
+    </Col>
+    <Col lg={1}></Col>
+    <Col lg={3}>
+    <div class="cardBox">
+  <div class="card-box-new">
+    <h2>Inventory Segmentation for Efficient Organization</h2>
+    
+    <div class="content-new-box" >
+      {/* <h3>How's it goin Fam ?</h3> */}
+      <p> With our Inventory Management feature, you can classify and segment your inventory based on criteria like product category, SKU, or demand. This approach enhances organization, optimizes storage, and accelerates item retrieval, driving improved operational efficiency.</p>
+    </div>
+  </div>
+  
+</div>
+    </Col>
+    <Col lg={1}></Col>  
+    <Col lg={3}>
+    <div class="cardBox">
+  <div class="card-box-new">
+    <h2>Automated Replenishment for Optimal Control</h2>
+    
+    <div class="content-new-box" >
+      {/* <h3>How's it goin Fam ?</h3> */}
+      <p>PURVEY WMS automates the replenishment process by setting reorder points and triggering alerts when stock levels drop below defined thresholds. This ensures timely replenishment, reduces stockouts, and helps maintain optimal inventory levels for efficient operations.</p>
+    </div>
+  </div>
+  
+</div>
+    </Col>
+  </Row>
+</Container>
+<div style={{height:"5vh"}}></div>
 
 {/* <Container>
 <div className="valuedelivered-maindiv-orderprocessing">
@@ -370,7 +410,13 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
           </div>
         </div>
       </div>
-
+      <div style={{height:'4vh'}}></div>
+      <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+<button className="custom-btn btn-5">
+            <span onClick={handleRequestdemo}>Request Demo</span>
+          </button>
+</div>
+<div style={{height:'4vh'}}></div>
       <Footer />
     </div>
   );

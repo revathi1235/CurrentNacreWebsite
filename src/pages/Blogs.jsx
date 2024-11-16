@@ -5,7 +5,13 @@ import { Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Helmet } from "react-helmet";
+import { useNavigate } from 'react-router-dom';
+
 function Blogs() {
+  const navigate=useNavigate()
+        const handleRequestdemo=()=>{
+            navigate('/contactus')
+        }
   return (
     <div>
      <Helmet>
@@ -278,7 +284,12 @@ function Blogs() {
           </Container>
     
      
-
+          <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+<button className="custom-btn btn-5">
+            <span onClick={handleRequestdemo}>Request Demo</span>
+          </button>
+</div>
+<div style={{height:'4vh'}}></div>
       <Footer />
     </div>
   );

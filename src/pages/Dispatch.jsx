@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Container } from "react-bootstrap";
 import purvey_apora_black from "../Assets/purvey_apora_black.png";
 import Chart2 from "./Chart2";
@@ -7,6 +7,8 @@ import improveresouceutilisation from "../Assets/Improveresourceutilisation.svg"
 import efficiency from "../Assets/Efficiency.svg";
 import improvedorderaccuracy from "../Assets/improvedorderaccuracy.svg";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuoteRight,faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../components/Footer";
 import { Helmet } from 'react-helmet';
 
@@ -45,6 +47,26 @@ function Dispatch() {
   const handlePurveywms = () => {
     navigate("/productwarehousemanagementsystem");
   };
+
+
+
+
+
+
+
+
+
+
+  const [activeTab, setActiveTab] = useState("home");
+
+  const handleChange = (e) => {
+    setActiveTab(e.target.id);
+  };
+
+
+        const handleRequestdemo=()=>{
+            navigate('/contactus')
+        }
   return (
     <div>
         <Helmet>
@@ -180,7 +202,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
           </p></div>
    </div> */}
 
-      <div className="firstdiv-multichannelintegration ">
+      {/* <div className="firstdiv-multichannelintegration ">
       <div className="multichannelintegration-image">
     <div className="image-wrapper-multi">
         <img src="../Assets/dispach.jpg" alt="dispatch image" />
@@ -193,7 +215,45 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
             With our comprehensive Dispatch Management feature, we aim to optimize the dispatch process, enhance visibility, and ensure accurate and swift shipment of goods. Utilizing state-of-the-art technology and advanced capabilities, PURVEY WMS guarantees seamless and efficient dispatch management for your warehouse operations.
           </p>
         </div>
-      </div>
+      </div> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style={{height:'30vh'}} className='mob-multi-space'></div>
+<div className='multi-main'>
+<div className='multi-img-div'>
+<img src="../Assets/dispach.jpg" alt="dispatch image" />
+
+</div>
+<div className='multi-content'>
+<p className='fs-5'> <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/>  Welcome to the Dispatch Management functionality in PURVEY, our advanced Warehouse Management System (WMS). We understand the importance of efficient order fulfilment and timely delivery to your customers.
+With our comprehensive Dispatch Management feature, we aim to optimize the dispatch process, enhance visibility, and ensure accurate and swift shipment of goods. Utilizing state-of-the-art technology and advanced capabilities, PURVEY WMS guarantees seamless and efficient dispatch management for your warehouse operations. <FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <div className="seconddiv-multichannelintegration">
         <h1>Features</h1>
@@ -270,99 +330,132 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
 
 
 <h1 style={{textAlign:'center',fontFamily:'Good Times'}}>Features</h1>
-<div class="container-new-col">
+<div className="container-new-col">
+      <div className="container-new">
+        <div className="content-input">
+          {/* Radio Inputs */}
+          <input
+            type="radio"
+            name="slider"
+            id="home"
+            checked={activeTab === "home"}
+            onChange={handleChange}
+          />
+          <input
+            type="radio"
+            name="slider"
+            id="blog"
+            checked={activeTab === "blog"}
+            onChange={handleChange}
+          />
+          <input
+            type="radio"
+            name="slider"
+            id="help"
+            checked={activeTab === "help"}
+            onChange={handleChange}
+          />
+          <input
+            type="radio"
+            name="slider"
+            id="code"
+            checked={activeTab === "code"}
+            onChange={handleChange}
+          />
+          <input
+            type="radio"
+            name="slider"
+            id="about"
+            checked={activeTab === "about"}
+            onChange={handleChange}
+          />
+          <input
+            type="radio"
+            name="slider"
+            id="nn"
+            checked={activeTab === "nn"}
+            onChange={handleChange}
+          />
+          <input
+            type="radio"
+            name="slider"
+            id="mm"
+            checked={activeTab === "mm"}
+            onChange={handleChange}
+          />
 
-        <div class="container-new">
+          {/* Labels */}
+          <div className="list-disp">
+            <label htmlFor="home" className="home">
+              <span>Order Consolidation</span>
+            </label>
+            <label htmlFor="blog" className="blog">
+              <span>Real-time Inventory Tracking</span>
+            </label>
 
-        <div class="content-input">
-            <input type="radio" name="slider" checked id="home"/>
-            <input type="radio" name="slider" id="blog"/>
-            <input type="radio" name="slider" id="help"/>
-            <input type="radio" name="slider" id="code"/>
-            <input type="radio" name="slider" id="about"/>
-            <input type="radio" name="slider" id="nn" />
-            <input type="radio" name="slider" id="mm" />
-            <div class="list">
-                <label for="home" class="home">
-                    <span> Order consolidation</span>
-                </label>
-                <label for="blog" class="blog">
-                    <span>Real-time Inventory Tracking</span>
-                </label>
-                <label for="help" class="help">
-                    <span>Order Prioritization</span>
-                </label>
-                <label for="code" class="code">
-                    <span>Carrier Integration</span>
-                </label>
-                <label for="about" class="about">
-                    <span>Route optimization</span>
-                </label>
-                <label for="nn" class="nn">
-                    <span> Proof of Delivery</span>
-                </label>
-                <label for="mm" class="mm">
-                    <span>Reporting and Analytics</span>
-                </label>
-                <div class="slider"></div>
-            </div>
+            <label htmlFor="help" className="help">
+              <span>Order Prioritization</span>
+            </label>
 
-            <div class="text-content">
-                <div class="home text">
-                    {/* <div class="title">Home Content</div> */}
-                    <p className='fs-4'>in PURVEY WMS allows multiple orders
-              to be combined into a single shipment, optimizing packing and
-              cutting shipping costs. By efficiently grouping orders based on
-              predefined criteria, you can streamline the dispatch process and
-              boost productivity.</p>
-                </div>
-                <div class="blog text">
-                    {/* <div class="title">Blog Content</div> */}
-                    <p className='fs-4'> with our Dispatch Management
-              feature allows you to monitor available stock, allocate items for
-              dispatch, and ensure accurate order fulfillment, reducing
-              stockouts and delays. </p>
-                </div>
-                <div class="help text">
-                    {/* <div class="title">Help</div> */}
-                    <p className='fs-4'> in PURVEY WMS is driven by predefined
-              rules, customer preferences, and service level agreements,
-              ensuring that urgent or high-priority orders are dispatched
-              promptly, boosting customer satisfaction and loyalty.</p>
-                </div>
-                <div class="code text">
-                    {/* <div class="title">Code</div> */}
-                    <p className='fs-4'>in PURVEY WMS allows seamless
-              coordination and communication with various carriers. Effortlessly
-              generate shipping labels, track shipments, and manage
-              carrier-specific requirements, ensuring smooth collaboration and
-              on-time deliveries.</p>
-                </div>
-                <div class="about text">
-                    {/* <div class="title">About</div> */}
-                    <p className='fs-4'> in our Dispatch Management
-              functionality utilizes advanced algorithms to select the most
-              efficient shipping routes, minimizing transit time, reducing
-              transportation costs, and enhancing overall delivery efficiency.</p>
-                </div>
-                <div class="nn text">
-                    {/* <div class="title">About</div> */}
-                    <p className='fs-4'> in PURVEY WMS is captured through
-              electronic signature or barcode scanning, providing confirmation
-              of successful deliveries and streamlining the reconciliation of
-              shipments.</p>
-                </div>
-                <div class="mm text">
-                    {/* <div class="title">About</div> */}
-                    <p className='fs-4'> in our WMS offer in-depth insights
-              into order processing times, delivery performance, carrier
-              effectiveness, and overall dispatch efficiency, enabling
-              data-driven decision-making to optimize operations.</p>
-                </div>
-            </div>
+            <label htmlFor="code" className="code">
+              <span>Carrier Integration</span>
+            </label>
+            <label htmlFor="about" className="about">
+              <span>Route Optimization</span>
+            </label>
+            <label htmlFor="nn" className="nn">
+              <span>Proof of Delivery</span>
+            </label>
+            <label htmlFor="mm" className="mm">
+              <span>Reporting and Analytics</span>
+            </label>
+            <div
+              className="slider"
+              style={{ top: `${["home", "blog", "help", "code", "about", "nn", "mm"].indexOf(activeTab) * 60}px` }}
+            ></div>
+          </div>
+
+         
+          <div className="text-disp-content">
+            {activeTab === "home" && (
+              <p className="fs-4">
+               In PURVEY WMS allows multiple orders to be combined into a single shipment, optimizing packing and cutting shipping costs. By efficiently grouping orders based on predefined criteria, you can streamline the dispatch process and boost productivity.
+              </p>
+            )}
+            {activeTab === "blog" && (
+              <p className="fs-4">
+              With our Dispatch Management feature allows you to monitor available stock, allocate items for dispatch, and ensure accurate order fulfillment, reducing stockouts and delays.
+              </p>
+            )}
+            {activeTab === "help" && (
+              <p className="fs-4">
+                In PURVEY WMS is driven by predefined rules, customer preferences, and service level agreements, ensuring that urgent or high-priority orders are dispatched promptly, boosting customer satisfaction and loyalty.
+              </p>
+            )}
+            {activeTab === "code" && (
+              <p className="fs-4">
+                In PURVEY WMS allows seamless coordination and communication with various carriers. Effortlessly generate shipping labels, track shipments, and manage carrier-specific requirements, ensuring smooth collaboration and on-time deliveries.
+              </p>
+            )}
+            {activeTab === "about" && (
+              <p className="fs-4">
+                In our Dispatch Management functionality utilizes advanced algorithms to select the most efficient shipping routes, minimizing transit time, reducing transportation costs, and enhancing overall delivery efficiency.
+              </p>
+            )}
+            {activeTab === "nn" && (
+              <p className="fs-4">
+                In PURVEY WMS is captured through electronic signature or barcode scanning, providing confirmation of successful deliveries and streamlining the reconciliation of shipments.
+              </p>
+            )}
+            {activeTab === "mm" && (
+              <p className="fs-4">
+               In our WMS offer in-depth insights into order processing times, delivery performance, carrier effectiveness, and overall dispatch efficiency, enabling data-driven decision-making to optimize operations.
+              </p>
+            )}
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
 
 
@@ -455,6 +548,17 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
         </div>
       </div>
 
+
+
+
+
+      <div style={{height:'4vh'}}></div>
+      <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+<button className="custom-btn btn-5">
+            <span onClick={handleRequestdemo}>Request Demo</span>
+          </button>
+</div>
+<div style={{height:'4vh'}}></div>
       <Footer />
     </div>
   );

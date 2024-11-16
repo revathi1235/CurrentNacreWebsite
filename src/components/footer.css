@@ -143,11 +143,11 @@ ul {
   font-size: 22px;
   transform: rotate(-6deg);
 }
-.copyright-area{
+/* .copyright-area{
   background: #202020;
   padding: 5px 0;
  
-}
+} */
 .copyright-text p {
   margin: 0;
   font-size: 14px;

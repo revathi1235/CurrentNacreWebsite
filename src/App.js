@@ -37,6 +37,7 @@ import Blogs from './pages/Blogs';
 import LastmileDelivery from './pages/Deliverymanagementsystem';
 import Yardmanagement from './pages/Yardmanagement';
 import Deliverymanagementsystem from './pages/Deliverymanagementsystem';
+import Oncloud from './pages/Oncloud';
 
 function App() {
   return (
@@ -76,6 +77,9 @@ function App() {
     <Route path='/blogs' element={<Blogs/>}/>
     <Route path='/deliverymanagementsystem' element={<Deliverymanagementsystem/>}/>
     <Route path='/yardmanagement' element={<Yardmanagement/>}/>
+     
+     <Route path='/oncloud' element={<Oncloud/>}/>
+     
      {/* <Route path='/deconsolidation' element={<Deconsolidation/>}/>
    
     <Route path='/contactus' element={<CommonContact/>}/>

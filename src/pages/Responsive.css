@@ -1551,4 +1551,7 @@ margin-left: -200px;
 .card-orderprocessing{
   height: 380px;
 }
+.mob-footer{
+  margin-top: -400px;
+}
 }

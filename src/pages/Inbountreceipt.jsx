@@ -48,6 +48,11 @@ const handleIotintegration=()=>{
 const handlePurveywms=()=>{
   navigate('/productwarehousemanagementsystem')
 }
+
+
+        const handleRequestdemo=()=>{
+            navigate('/contactus')
+        }
   return (
     <div>
       <Helmet>
@@ -257,8 +262,8 @@ const handlePurveywms=()=>{
               </Col>
               <Col lg={2}>
               <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src='../../Assets/compliancedocumentation.jpg' />
-      <Card.Body style={{height:'230px'}}>
+      <Card.Img variant="top" src='../../Assets/barcode.jpg' style={{height:'170px'}}/>
+      <Card.Body >
         <Card.Title>Streamlined Return Processes </Card.Title>
         <Card.Text style={{textAlign:'justify'}}>
         in our WMS handle discrepancies, damaged goods, or rejections efficiently.  Enabling prompt coordination with suppliers and minimizing supply chain disruptions </Card.Text>
@@ -347,6 +352,15 @@ const handlePurveywms=()=>{
           </div>
         </div>
       </div>
+
+      <div style={{height:'4vh'}}></div>
+      <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+<button className="custom-btn btn-5">
+            <span onClick={handleRequestdemo}>Request Demo</span>
+          </button>
+</div>
+<div style={{height:'4vh'}}></div>
+
       <Footer/>
     </div>
   );

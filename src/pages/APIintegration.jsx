@@ -8,6 +8,8 @@ import efficiency from '../Assets/Efficiency.svg'
 import improvedorderaccuracy from '../Assets/improvedorderaccuracy.svg'
 import { useNavigate } from "react-router-dom";
 import Footer from '../components/Footer'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faQuoteRight,faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
 import { Helmet } from 'react-helmet';
 
 function APIintegration() {
@@ -45,6 +47,10 @@ const handleIotintegration=()=>{
 const handlePurveywms=()=>{
   navigate('/productwarehousemanagementsystem')
 }
+
+        const handleRequestdemo=()=>{
+            navigate('/contactus')
+        }
   return (
     <div>
        <Helmet>
@@ -141,7 +147,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
           </p></div>
    </div> */}
 
-<div className='firstdiv-multichannelintegration ' >
+{/* <div className='firstdiv-multichannelintegration ' >
 <div className="multichannelintegration-image">
     <div className="image-wrapper-multi">
         <img src="../Assets/apiint.jpg" alt="main image for apiintegration" />
@@ -153,6 +159,19 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
         <p style={{textAlign:"justify",padding:"40px"}}>API integration bridges the gap between your WMS and other systems, such as ERP, CRM, e-commerce platforms, or third-party logistics providers. This enables real-time data synchronization and eliminates manual data entry, ensuring accurate and up-to-date information across all integrated systems. With enhanced connectivity, you can streamline processes, reduce errors, and improve overall efficiency.</p>
     </div>
    </div>
+ */}
+
+
+<div style={{height:'30vh'}} className='mob-multi-space'></div>
+<div className='multi-main'>
+<div className='multi-img-div'>
+<img src="../Assets/machine.png" alt="pickmanage image" />
+
+</div>
+<div className='multi-content'>
+<p className='fs-5'> <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/> As technology continues to evolve, businesses are seeking ways to enhance their operations, improve connectivity, and drive efficiency. API integration in PURVEY WMS allows seamless communication and data exchange between different systems, enabling you to unlock a wide range of benefits.API integration bridges the gap between your WMS and other systems, such as ERP, CRM, e-commerce platforms, or third-party logistics providers. This enables real-time data synchronization and eliminates manual data entry, ensuring accurate and up-to-date information across all integrated systems. With enhanced connectivity, you can streamline processes, reduce errors, and improve overall efficiency. <FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
+</div>
+</div>
 
 
 
@@ -160,11 +179,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
 
 
 
-
-
-
-
-
+<div style={{height:'10vh'}} className='mob-multi-space'></div>
 
 
 <Container>
@@ -177,9 +192,13 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
 </div>
 </Container>
 
-
-z
-
+<div style={{height:'10vh'}} className='mob-multi-space'></div>
+<div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+<button className="custom-btn btn-5">
+            <span onClick={handleRequestdemo}>Request Demo</span>
+          </button>
+</div>
+<div style={{height:'4vh'}}></div>
 
 <Footer/>
     </div>

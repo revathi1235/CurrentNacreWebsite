@@ -7,6 +7,8 @@ import improveresouceutilisation from '../Assets/Improveresourceutilisation.svg'
 import efficiency from '../Assets/Efficiency.svg'
 import improvedorderaccuracy from '../Assets/improvedorderaccuracy.svg'
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faQuoteRight,faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
 import Footer from '../components/Footer'
 import { Helmet } from 'react-helmet';
 
@@ -45,6 +47,10 @@ const handleIotintegration=()=>{
 const handlePurveywms=()=>{
   navigate('/productwarehousemanagementsystem')
 }
+
+        const handleRequestdemo=()=>{
+            navigate('/contactus')
+        }
   return (
     <div>
        <Helmet>
@@ -141,7 +147,7 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
           </p></div>
    </div> */}
 
-<div className='firstdiv-multichannelintegration ' >
+{/* <div className='firstdiv-multichannelintegration ' >
 <div className="multichannelintegration-image">
     <div className="image-wrapper-multi">
         <img src="../Assets/iotint.jpg" alt="iotint image" />
@@ -152,9 +158,23 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
         <p style={{textAlign:"justify",padding:"40px"}}>In today's digital era, the Internet of Things (IoT) is revolutionizing the way warehouses operate, bringing increased automation, efficiency, and connectivity. By integrating IoT technologies into your WMS, you can unlock a wide range of benefits and transform your warehouse operations.</p>
         <p style={{textAlign:"justify",padding:"40px"}}>As technology continues to evolve, businesses are seeking ways to enhance their operations, improve connectivity, and drive efficiency. API integration in PURVEY WMS allows seamless communication and data exchange between different systems, enabling you to unlock a wide range of benefits.</p>
     </div>
-   </div>
+   </div> */}
 
 
+<div style={{height:'30vh'}} className='mob-multi-space'></div>
+<div className='multi-main'>
+<div className='multi-img-div'>
+<img src="../Assets/iotint.jpg" alt="iotint image" />
+
+</div>
+<div className='multi-content'>
+<p className='fs-5'> <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/> In today's digital era, the Internet of Things (IoT) is revolutionizing the way warehouses operate, bringing increased automation, efficiency, and connectivity. By integrating IoT technologies into your WMS, you can unlock a wide range of benefits and transform your warehouse operations. <FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
+<p className='fs-5'> <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/> As technology continues to evolve, businesses are seeking ways to enhance their operations, improve connectivity, and drive efficiency. API integration in PURVEY WMS allows seamless communication and data exchange between different systems, enabling you to unlock a wide range of benefits. <FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
+</div>
+</div>
+
+
+<div style={{height:'10vh'}} className='mob-multi-space'></div>
 <Container className='mb-4'>
 <div class="image-container-multichannelintegration">
   
@@ -166,7 +186,13 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
 
 
    
-
+<div style={{height:'10vh'}} className='mob-multi-space'></div> 
+<div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+<button className="custom-btn btn-5">
+            <span onClick={handleRequestdemo}>Request Demo</span>
+          </button>
+</div>
+<div style={{height:'4vh'}}></div>
 
 <Footer/>
 

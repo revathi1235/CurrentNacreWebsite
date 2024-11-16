@@ -72,6 +72,14 @@ function CollapsibleExample() {
             About Us
           </Nav.Link>
           <NavDropdown title="Warehouse Management" id="nav-dropdown">
+
+          <NavDropdown.Item
+                eventKey="4.2"
+              
+              onClick={() => { handlePurveywarehousemanagement(); handleLinkClick(); }}
+            >
+              PURVEY  Warehouse Management System
+            </NavDropdown.Item>
             <NavDropdown.Item
               
               eventKey="4.1"
@@ -80,13 +88,7 @@ function CollapsibleExample() {
               APORA Omni Channel Fulfillment Automation
             </NavDropdown.Item>
            
-            <NavDropdown.Item
-                eventKey="4.2"
-              
-              onClick={() => { handlePurveywarehousemanagement(); handleLinkClick(); }}
-            >
-              PURVEY 3PL Warehouse Management System
-            </NavDropdown.Item>
+          
             
             <NavDropdown.Item
              
@@ -118,9 +120,9 @@ function CollapsibleExample() {
           <button className="custom-btn btn-5" onClick={() => { handleContactus(); handleLinkClick(); }}>
             <span>Contact Us</span>
           </button>
-          <button className="custom-btn btn-5">
+          {/* <button className="custom-btn btn-5">
             <span>Request Demo</span>
-          </button>
+          </button> */}
         </Nav>
       </Navbar.Collapse>
     </Container>

@@ -6,15 +6,72 @@ import './newdesigndemo.css'
 import Deconsolidation from './Deconsolidation'
 import AporaHomepage from './AporaHomepage'
 import IndustriesServe from './IndustriesServe'
-
+import Landingpage from './Landingpage'
 import Cardflip from './Cardflip'
+import Dummydemo from './Dummydemo';
+
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
+import purvey_apora_black from "../Assets/purvey_apora_black.png";
+import Chart2 from "./Chart2";
+import { faQuoteRight,faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+// import ValuedeliveredProductwms from './ValuedeliveredProductwms'
+import { useNavigate } from "react-router-dom";
+import {
+  faEnvelope,
+  faUpLong,
+  faLocationDot,
+  faPhone,
+  faShare,
+} from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 
 
 
 
 function Content() {
 
-
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const pinSpacer = document.querySelector(".pin-spacer");
+      const windowHeight = window.innerHeight;
+      const windowBottom = window.scrollY + windowHeight;
+  
+      if (pinSpacer) {
+        const pinSpacerTop = pinSpacer.getBoundingClientRect().top + window.scrollY;
+        const pinSpacerBottom = pinSpacerTop + pinSpacer.offsetHeight;
+  
+        if (pinSpacerTop < windowBottom && pinSpacerBottom > window.scrollY) {
+          pinSpacer.classList.add("is-sticky");
+        } else {
+          pinSpacer.classList.remove("is-sticky");
+        }
+      }
+  
+      // Remove the scroll-based visibility logic for 'fade-in' and 'is-inview' classes
+      const whatWeDoWraps = document.querySelectorAll(".WhatWeDo_whatWeDoWrap");
+  
+      // Make sure all text is visible, no need for scroll-triggered visibility changes
+      whatWeDoWraps.forEach((wrap) => {
+        wrap.classList.add("is-inview"); // Make sure all sections are visible on page load
+        wrap.querySelector(".WhatWeDo_whatWeDoCotentList").style.transform = "translateY(0)";
+      });
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+  
+    // Trigger scroll event on load
+    handleScroll();
+  
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
 
 
 
@@ -98,7 +155,8 @@ function Content() {
         <meta name="twitter:description" content="Discover Apora, an AI-powered fulfillment automation system designed to save costs and improve efficiency in warehouse management." />
         <meta name="twitter:image" content="../Assets/Banner picture1.png" />
       </Helmet>
-        <Container className='first-content'>
+     <Dummydemo/>
+        <Container >
       {/* <Row className='primary-heading' >
         <Col lg={1}></Col>
         <Col lg={7} className="text-lg-start text-center px-5 ">
@@ -118,18 +176,229 @@ function Content() {
      
       
       </Row> */}
-      <Cardflip/>
+      {/* <Cardflip/> */}
+   
     </Container>
     <Deconsolidation/>
     <AporaHomepage/>
     <IndustriesServe/>
 
 
+    <div style={{ marginTop: "100px" }} className='mob-footer'>
+        <footer class="footer-section">
+          <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+              <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="footer-widget-heading">
+                      <h3>Find Us</h3>
 
-<div className='mt-5'>
-  
-<Footer/>
-</div>
+                      <span style={{ color: "black" }}>
+                        <FontAwesomeIcon
+                          icon={faLocationDot}
+                          style={{ color: "black" }}
+                        />{" "}
+                        Malambuzha Rd,
+                    
+                        <br />
+                        Palakkad Kerala <br />
+                        678002
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                    <i class="fas fa-phone"></i>
+                    <div class="footer-widget-heading">
+                      <h3>Call us</h3>
+                      <span style={{ color: "black" }}>
+                        {" "}
+                        <FontAwesomeIcon
+                          icon={faPhone}
+                          style={{ color: "black" }}
+                        />{" "}
+                       <a href="tel:+91 7736742072" className="text-black"> +91 7736742072</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                    <i class="far fa-envelope-open"></i>
+                    <div class="footer-widget-heading">
+                      <h3>Mail us</h3>
+                      <span style={{ color: "black" }}>
+                        <FontAwesomeIcon
+                          icon={faEnvelope}
+                          style={{ color: "black" }}
+                        />{" "}
+                       <a href="mailto:info@nacresys.com" className="text-black">info@nacresys.com</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-content pt-5 ">
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                  <div class="footer-widget">
+                    <div class="footer-logo">
+                      <a href="/index">
+                        <im
+                          g
+                          src="./Assets/ns black transparent.png"
+                          class="img-fluid"
+                          alt="logo"
+                        />
+                      </a>
+                    </div>
+                    <div class="footer-text">
+                      <p>
+                        A decade old software development company continuously
+                        focused in delivering higher levels of automation
+                        leveraging new and upcoming technologies such as AI and
+                        internet of things. We build solutions which are
+                        scalable and can integrate seamlessly with other
+                        software solutions that exist.
+                      </p>
+                    </div>
+                    <div class="footer-social-icon">
+                      <span>Follow us</span>
+                      <a href="https://www.facebook.com/NacreSystem">
+                        {" "}
+                        <FontAwesomeIcon icon={faFacebook} />{" "}
+                        <i class="fab fa-facebook-f facebook-bg"></i>
+                      </a>
+                      <a href="https://www.instagram.com/nacresystem/">
+                        {" "}
+                        <FontAwesomeIcon icon={faSquareInstagram} />{" "}
+                        <i class="fab fa-facebook-f facebook-bg"></i>
+                      </a>
+                      <a href="/https://www.linkedin.com/company/13752108/admin/dashboard/">
+                        <FontAwesomeIcon icon={faLinkedin} />{" "}
+                        <i class="fab fa-twitter twitter-bg"></i>
+                      </a>
+                      <a href="/google">
+                        <i class="fab fa-google-plus-g google-bg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                <div class="footer-widget ">
+                  <div class="footer-widget-heading ms-1">
+                    <h3>Useful Links</h3>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="/">Home</a>
+                    </li>
+                   
+                    <li>
+                      <a href="/#/services">services</a>
+                    </li>
+                    {/* <li><a href="#">portfolio</a></li> */}
+                   
+                    <li>
+                      <a href="/#/aboutus">About us</a>
+                    </li>
+                    <li>
+                      <a href="/casestudies">Articles</a>
+                    </li>
+                    <li>
+                      <a href="/blogs">Blogs</a>
+                    </li>
+                    <li>
+                      <a href="/#/contactus">Contact us</a>
+                    </li>
+                    {/* <li><a href="#">Latest News</a></li> */}
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                <div class="footer-widget ">
+                  <div class="footer-widget-heading ms-1">
+                    <h3>Useful Links</h3>
+                  </div>
+                  <ul>
+                    <li>
+                      <a href="/#/productwarehousemanagementsystem">Product Warehouse Management System</a>
+                    </li>
+                   
+                    <li>
+                      <a href="/#/services">services</a>
+                    </li>
+                    {/* <li><a href="#">portfolio</a></li> */}
+                   
+                    <li>
+                      <a href="/#/aboutus">About us</a>
+                    </li>
+                    <li>
+                      <a href="/casestudies">Articles</a>
+                    </li>
+                    <li>
+                      <a href="/blogs">Blogs</a>
+                    </li>
+                    <li>
+                      <a href="/#/contactus">Contact us</a>
+                    </li>
+                    {/* <li><a href="#">Latest News</a></li> */}
+                  </ul>
+                </div>
+              </div>
+                {/* <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                  <div class="footer-widget">
+                    <div class="footer-widget-heading">
+                      <h3>Subscribe</h3>
+                    </div>
+                    <div class="footer-text mb-25">
+                      <p>
+                        Don’t miss to subscribe to our new feeds, kindly fill
+                        the form below.
+                      </p>
+                    </div>
+                    <div class="subscribe-form">
+                      <form action="#">
+                        <input type="text" placeholder="Email Address" />
+                        <button>
+                          <FontAwesomeIcon
+                            icon={faShare}
+                            style={{ color: "white" }}
+                          />
+                        </button>
+                      </form>
+                    </div>
+                    <p className="text-black mt-3">2011 © Nacre System All rights reserved.</p>
+                  </div>
+                </div> */}
+              </div>
+            </div>
+          </div>
+       
+        </footer>
+        <button 
+        onClick={scrollToTop} 
+        style={{
+          position: 'fixed',
+          bottom: '20px',
+          right: '40px',
+          padding: '10px 15px',
+          backgroundColor: 'blue',
+          color: 'white',
+          border: 'none',
+          borderRadius: '50%',
+          cursor: 'pointer',
+          fontSize: '16px',
+        }}
+      >
+        <FontAwesomeIcon icon={faUpLong}/>
+      </button>
+      </div>
+
     </div>
   )
 }

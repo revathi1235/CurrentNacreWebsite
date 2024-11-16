@@ -49,6 +49,10 @@ function Qualitycheck() {
   const handlePurveywms = () => {
     navigate("/productwarehousemanagementsystem");
   };
+
+        const handleRequestdemo=()=>{
+            navigate('/contactus')
+        }
   return (
     <div>
         <Helmet>
@@ -497,7 +501,13 @@ PURVEY WMS offers a standardized and configurable Quality Assurance process that
           </div>
         </div>
       </div>
-
+      <div style={{height:'4vh'}}></div>
+      <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+<button className="custom-btn btn-5">
+            <span onClick={handleRequestdemo}>Request Demo</span>
+          </button>
+</div>
+<div style={{height:'4vh'}}></div>
       <Footer />
     </div>
   );

@@ -8,6 +8,7 @@ function IndustriesServe() {
     { id: 1, title: "FMCG" },
     { id: 2, title: "APPAREL" },
     { id: 3, title: "PHARMA" },
+    { id:4,   title:"F&B"}
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,7 +22,7 @@ function IndustriesServe() {
   }, [items.length]);
 
   return (
-    <div style={{ height: "55vh" }} className="IndustriesServe-page">
+    <div  className="IndustriesServe-page">
       <h2 className="IndustriesServe-heading" style={{fontFamily:"pirulen"}}>Industries We Serve</h2>
     
 

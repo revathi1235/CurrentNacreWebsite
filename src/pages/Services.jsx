@@ -5,6 +5,7 @@ import "./commoncss.css";
 import { Row,Col, Container } from "react-bootstrap";
 // import aporablack from '../Assets/apora_black.png'
 import { Helmet } from 'react-helmet';
+import { useNavigate } from 'react-router-dom';
 
 import bluebgservicepage from "../Assets/bluebgservicepage.svg.jpg";
 import Timeline from "./Timeline";
@@ -50,7 +51,10 @@ function Services() {
 
 
 
-
+  const navigate=useNavigate()
+  const handleRequestdemo=()=>{
+      navigate('/contactus')
+  }
 
   const scrollExptrainingRef = () => {
     if (expservicesRef.current) {
@@ -104,9 +108,14 @@ function Services() {
 
 
 
+      <div style={{height:'4vh'}}></div>
 
-
-
+      <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+<button className="custom-btn btn-5">
+            <span onClick={handleRequestdemo}>Request Demo</span>
+          </button>
+</div>
+<div style={{height:'4vh'}}></div>
 
 <div className="mt-4">
 <Footer/>

@@ -4,7 +4,12 @@
     import { Helmet } from 'react-helmet';
     import './Responsive.css'
 import Footer from '../components/Footer';
+import { useNavigate } from 'react-router-dom';
     function AboutUs() {
+        const navigate=useNavigate()
+        const handleRequestdemo=()=>{
+            navigate('/contactus')
+        }
     return (
         <div>
          <Helmet>
@@ -70,7 +75,12 @@ import Footer from '../components/Footer';
             </Col>
         </Row>
     </Container>
-
+<div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+<button className="custom-btn btn-5">
+            <span onClick={handleRequestdemo}>Request Demo</span>
+          </button>
+</div>
+<div style={{height:'4vh'}}></div>
 <Footer/>
             </div>
     )

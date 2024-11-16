@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareInstagram ,} from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faSquareInstagram ,} from "@fortawesome/free-brands-svg-icons";
 
 import {
   faDownLong,
@@ -43,8 +43,7 @@ function Footer() {
                           style={{ color: "black" }}
                         />{" "}
                         Malampuzha Rd,
-                        <br />
-                        Olavakkode,
+                       
                         <br />
                         Palakkad Kerala <br />
                         678002
@@ -57,13 +56,13 @@ function Footer() {
                   <i class="fas fa-phone"></i>
                   <div class="footer-widget-heading">
                     <h3>Call us</h3>
-                    <span style={{ color: "black" }}>
+                    <span style={{ color: "black" }} >
                       {" "}
                       <FontAwesomeIcon
                         icon={faPhone}
                         style={{ color: "black" }}
                       />{" "}
-                      +91 7736742072
+                    <a href="tel: +91 7736742072" className="text-black"> +91 7736742072</a> 
                     </span>
                   </div>
                 </div>
@@ -78,7 +77,7 @@ function Footer() {
                         icon={faEnvelope}
                         style={{ color: "black" }}
                       />{" "}
-                      info@nacresys.com
+                    <a href="mailto:info@nacresys.com" className="text-black">info@nacresys.com</a>  
                     </span>
                   </div>
                 </div>
@@ -110,12 +109,17 @@ function Footer() {
                   </div>
                   <div class="footer-social-icon">
                     <span>Follow us</span>
-                    <a href="/facebook">
+                    <a href="https://www.instagram.com/nacresystem/">
                       {" "}
                       <FontAwesomeIcon icon={faSquareInstagram} />{" "}
                       <i class="fab fa-facebook-f facebook-bg"></i>
                     </a>
-                    <a href="/twitter">
+                    <a href="/https://www.facebook.com/NacreSystem">
+                      {" "}
+                      <FontAwesomeIcon icon={faFacebook} />{" "}
+                      <i class="fab fa-facebook-f facebook-bg"></i>
+                    </a>
+                    <a href="/https://www.linkedin.com/company/13752108/admin/dashboard/">
                       <FontAwesomeIcon icon={faLinkedin} />{" "}
                       <i class="fab fa-twitter twitter-bg"></i>
                     </a>
@@ -136,7 +140,7 @@ function Footer() {
                     </li>
                    
                     <li>
-                      <a href="/#/services">services</a>
+                      <a href="/services">services</a>
                     </li>
                     {/* <li><a href="#">portfolio</a></li> */}
                    
@@ -156,33 +160,31 @@ function Footer() {
                   </ul>
                 </div>
               </div>
-              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                <div class="footer-widget">
-                  <div class="footer-widget-heading">
-                    <h3>Subscribe</h3>
+                {/* <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                  <div class="footer-widget">
+                    <div class="footer-widget-heading">
+                      <h3>Subscribe</h3>
+                    </div>
+                    <div class="footer-text mb-25">
+                      <p>
+                        Don’t miss to subscribe to our new feeds, kindly fill the
+                        form below.
+                      </p>
+                    </div>
+                    <div class="subscribe-form">
+                      <form action="#">
+                        <input type="text" placeholder="Email Address" />
+                        <button>
+                          <FontAwesomeIcon
+                            icon={faShare}
+                            style={{ color: "white" }}
+                          />
+                        </button>
+                      </form>
+                      <p className="text-black mt-3">2011 © Nacre System All rights reserved.</p>
+                    </div>
                   </div>
-                  <div class="footer-text mb-25">
-                    <p>
-                      Don’t miss to subscribe to our new feeds, kindly fill the
-                      form below.
-                    </p>
-                  </div>
-                  <div class="subscribe-form">
-                    <form action="#">
-                      <input type="text" placeholder="Email Address" />
-                      <button>
-                        <FontAwesomeIcon
-                          icon={faShare}
-                          style={{ color: "white" }}
-                        />
-                      </button>
-                    </form>
-                    <div class="copyright-text" >
-                  <p className="text-black mt-3">2011 © Nacre System All rights reserved.</p>
-                </div>
-                  </div>
-                </div>
-              </div>
+                </div> */}
             </div>
           </div>
         </div>

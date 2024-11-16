@@ -3,12 +3,17 @@ import work4 from '../Assets/work4.jpg'
 import { Container,Row,Col
  } from "react-bootstrap";
  import { Helmet } from 'react-helmet';
+ import { useNavigate } from 'react-router-dom';
 
  import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
- import { faSquare } from "@fortawesome/free-solid-svg-icons";
+ import { faSquare ,faQuoteLeft,faQuoteRight} from "@fortawesome/free-solid-svg-icons";
  import { Card } from "react-bootstrap";
 import Footer from "../components/Footer";
 function Deliverymanagementsystem() {
+  const navigate=useNavigate()
+        const handleRequestdemo=()=>{
+            navigate('/contactus')
+        }
   return (
     <div>
       <Helmet>
@@ -32,7 +37,7 @@ function Deliverymanagementsystem() {
 
 
 
-        <div className="yardmanagement-firstdiv">
+        {/* <div className="yardmanagement-firstdiv">
     <div className="yardmanagement-seconddiv">
       <img src='../../Assets/deliverywms.jpg' alt="delivery wms image" />
     </div>
@@ -45,11 +50,22 @@ function Deliverymanagementsystem() {
         
       </div>
     </div>
-  </div>
+  </div> */}
+
+<div style={{height:'5vh'}} className='mob-multi-space'></div>
+ <div className='multi-main'>
+<div className='multi-img-div'>
+<img src="../../Assets/del.jpeg" alt="" />
+
+</div>
+<div className='multi-content'>
+  <p style={{fontSize:'23px'}}>  <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/> Route optimization is a critical component in logistics and transportation, where the goal is to find the most efficient routes for vehicles to reduce costs and delays. By leveraging smart algorithms, businesses can optimize routes by considering various factors like traffic conditions, delivery priorities, and proximity.
+  <FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
+</div>
+</div>
 
 
-
-
+<div style={{height:'5vh'}} className='mob-multi-space'></div>
 
 
 
@@ -387,7 +403,12 @@ function Deliverymanagementsystem() {
 
 
 
-
+  <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+<button className="custom-btn btn-5">
+            <span onClick={handleRequestdemo}>Request Demo</span>
+          </button>
+</div>
+<div style={{height:'4vh'}}></div>
 
 
 

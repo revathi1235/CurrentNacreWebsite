@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import work4 from '../Assets/work4.jpg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquare } from "@fortawesome/free-solid-svg-icons";
+import { faSquare,faQuoteLeft,faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import { Container,Row,Col } from "react-bootstrap";
 import { Helmet } from 'react-helmet';
+import { useNavigate } from 'react-router-dom';
 
 import { Card } from "react-bootstrap";
+import Footer from "../components/Footer";
 function Yardmanagement() {
     // const [isvisibleone, setIsvisibleone] = useState(true);
     // const [isvisibletwo, setIsvisibletwo] = useState(false);
@@ -28,6 +30,12 @@ function Yardmanagement() {
     //   setIsvisibletwo(false);
     //   setIsvisiblethree(true);
     // };
+
+
+    const navigate=useNavigate()
+        const handleRequestdemo=()=>{
+            navigate('/contactus')
+        }
   return (
     <div>
         <Helmet>
@@ -82,7 +90,7 @@ function Yardmanagement() {
         </div>
       )} */}
 
-<div className="yardmanagement-firstdiv">
+{/* <div className="yardmanagement-firstdiv">
   <div className="yardmanagement-seconddiv">
     <img src='../../Assets/yardmanagement.jpg' alt=""  />
   </div>
@@ -111,9 +119,48 @@ function Yardmanagement() {
       </div>
     </div>
   </div>
+</div> */}
+
+<div style={{height:'3vh'}} className='mob-multi-space'></div>
+ <div className='multi-main'>
+<div className='multi-img-div'>
+<img src="../../Assets/yard.jpeg" alt="" />
+
 </div>
-
-
+<div className='multi-content'>
+  <p style={{fontSize:'18.3px'}}>   Effective yard management is critical to warehouse operations. Without clear zone definitions, and proper labeling of aisles, racks, and totes, warehouses face numerous challenges, including:
+<div style={{height:'4vh'}}></div>
+  <span >
+          <FontAwesomeIcon icon={faSquare} /> Misplacement of items
+        </span>
+        <br />
+        <span className="mb-2">
+          <FontAwesomeIcon icon={faSquare} /> Increased risk of item expiry
+        </span>
+        <br />
+        <span className="mb-2">
+          <FontAwesomeIcon icon={faSquare} /> Operational inefficiencies
+        </span>
+        <br />
+        <span className="mb-2">
+          <FontAwesomeIcon icon={faSquare} /> Safety hazards
+        </span>
+        <br />
+        <span className="mb-2">
+          <FontAwesomeIcon icon={faSquare} /> Financial losses
+        </span>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</p>
+</div>
+</div>
 
 
 
@@ -461,6 +508,14 @@ function Yardmanagement() {
           </div>
         </div>
   </div>
+
+  <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+<button className="custom-btn btn-5">
+            <span onClick={handleRequestdemo}>Request Demo</span>
+          </button>
+</div>
+<div style={{height:'4vh'}}></div>
+  <Footer/>
     </div>
   );
 }

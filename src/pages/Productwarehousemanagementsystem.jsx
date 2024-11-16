@@ -3,12 +3,13 @@ import "./warehouse.css"; // Include your CSS styles here
 // import aporablack from "../Assets/apora_black.png";
 import multichannelintegration from "../Assets/Multichannelintegration.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
 import purvey_apora_black from "../Assets/purvey_apora_black.png";
 import Chart2 from "./Chart2";
+import { faQuoteRight,faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 // import ValuedeliveredProductwms from './ValuedeliveredProductwms'
 import { Helmet } from 'react-helmet';
-
+import { useNavigate } from "react-router-dom";
 import {
   faEnvelope,
   faUpLong,
@@ -26,84 +27,45 @@ const Productwarehousemanagementsystem = () => {
       const pinSpacer = document.querySelector(".pin-spacer");
       const windowHeight = window.innerHeight;
       const windowBottom = window.scrollY + windowHeight;
-
+  
       if (pinSpacer) {
-        const pinSpacerTop =
-          pinSpacer.getBoundingClientRect().top + window.scrollY;
+        const pinSpacerTop = pinSpacer.getBoundingClientRect().top + window.scrollY;
         const pinSpacerBottom = pinSpacerTop + pinSpacer.offsetHeight;
-
+  
         if (pinSpacerTop < windowBottom && pinSpacerBottom > window.scrollY) {
           pinSpacer.classList.add("is-sticky");
         } else {
           pinSpacer.classList.remove("is-sticky");
         }
       }
-
-      // Add 'is-inview' class when scrolled down 200px
-      const scrollPosition = window.scrollY;
+  
+      // Remove the scroll-based visibility logic for 'fade-in' and 'is-inview' classes
       const whatWeDoWraps = document.querySelectorAll(".WhatWeDo_whatWeDoWrap");
-
+  
+      // Make sure all text is visible, no need for scroll-triggered visibility changes
       whatWeDoWraps.forEach((wrap) => {
-        const elemTop = wrap.getBoundingClientRect().top + window.scrollY;
-        if (scrollPosition > elemTop - 200) {
-          wrap.classList.add("is-inview");
-        } else {
-          wrap.classList.remove("is-inview");
-        }
-      });
-
-      // Adjust transform of '.WhatWeDo_scrollElement' dynamically
-      const inviewWrap = document.querySelector(
-        ".WhatWeDo_whatWeDoWrap.is-inview"
-      );
-      const scrollElement = document.getElementById("scrollElement");
-      const whatWeDoContainer = document.getElementById("whatWeDoContainer");
-
-      if (inviewWrap && scrollElement && whatWeDoContainer) {
-        const inviewTop =
-          inviewWrap.getBoundingClientRect().top + window.scrollY;
-        let inviewScroll = scrollPosition - inviewTop + 150;
-        const containerHeight = whatWeDoContainer.offsetHeight;
-        inviewScroll = Math.min(containerHeight, Math.max(0, inviewScroll));
-        scrollElement.style.transform = `translateY(${inviewScroll}px)`;
-      } else if (scrollElement) {
-        scrollElement.style.transform = "translateY(0)";
-      }
-
-      // Section reveal on scroll for .WhatWeDo_whatWeDoCotentList
-      whatWeDoWraps.forEach((wrap) => {
-        const sectionTop = wrap.getBoundingClientRect().top + window.scrollY;
-        const sectionBottom = sectionTop + wrap.offsetHeight;
-        const parallaxOffset = (window.scrollY - sectionTop) * 0.2;
-
-        if (
-          scrollPosition + windowHeight / 2 > sectionTop &&
-          scrollPosition < sectionBottom
-        ) {
-          wrap
-            .querySelector(".WhatWeDo_whatWeDoCotentList")
-            .classList.add("fade-in");
-          wrap.querySelector(
-            ".WhatWeDo_whatWeDoCotentList"
-          ).style.transform = `translateY(${parallaxOffset}px)`;
-        } else {
-          wrap
-            .querySelector(".WhatWeDo_whatWeDoCotentList")
-            .classList.remove("fade-in");
-        }
+        wrap.classList.add("is-inview"); // Make sure all sections are visible on page load
+        wrap.querySelector(".WhatWeDo_whatWeDoCotentList").style.transform = "translateY(0)";
       });
     };
-
+  
     window.addEventListener("scroll", handleScroll);
-
+  
     // Trigger scroll event on load
     handleScroll();
-
+  
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  
 
+
+ 
+  const navigate=useNavigate()
+  const handleRequestdemo=()=>{
+      navigate('/contactus')
+  }
   return (
     <>
       <div>
@@ -146,7 +108,7 @@ const Productwarehousemanagementsystem = () => {
 
 {/* <ValuedeliveredProductwms/> */}
 
- <div className='firstdiv-multichannelintegration ' >
+ {/* <div className='firstdiv-multichannelintegration ' >
  <div className="multichannelintegration-image">
     <div className="image-wrapper-multi">
         <img src="../Assets/productwms.jpg" alt="productwms image" />
@@ -155,7 +117,41 @@ const Productwarehousemanagementsystem = () => {
     <div className='multichannelintegration-content'>
         <p style={{textAlign:"justify",padding:"40px"}}>Our WMS is designed to provide a comprehensive solution for all your warehouse management needs. Whether you operate a small-scale facility or a large distribution centre, our scalable and flexible software can be tailored to meet your specific requirements. With Purvey WMS, you can streamline your operations, reduce errors, and enhance productivity, ultimately driving your business towards greater profitability.</p>
     </div>
-   </div>
+   </div> */}
+
+
+
+
+
+
+
+
+
+<div style={{height:'30vh'}} className='mob-multi-space'></div>
+<div className='multi-main'>
+<div className='multi-img-div'>
+<img src="../Assets/productwms.jpg" alt="productwms image" />
+
+</div>
+<div className='multi-content'>
+<p className='fs-5'> <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/> Our WMS is designed to provide a comprehensive solution for all your warehouse management needs. Whether you operate a small-scale facility or a large distribution centre, our scalable and flexible software can be tailored to meet your specific requirements. With Purvey WMS, you can streamline your operations, reduce errors, and enhance productivity, ultimately driving your business towards greater profitability.<FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <div className="container-service">
           {/* <div className="OurFormula_sectionHeading">Our Formula</div> */}
@@ -171,90 +167,76 @@ const Productwarehousemanagementsystem = () => {
               Value Delivered
             </p>
           </div>
-          <div
-            className="WhatWeDo_whatWeDoContainer page-container"
-            id="whatWeDoContainer"
-          >
-            <div className="WhatWeDo_sectionHeading">What We Do</div>
-            <div
-              className="WhatWeDo_whatWeDoWrapContainer"
-              id="whatWeDoContainer"
-            >
-              <div
-                className="pin-spacer"
-                style={{
-                  width: "3px",
-                  height: "100px",
-                  position: "absolute",
-                  zIndex: 999,
-                }}
-              >
-                <div
-                  className="WhatWeDo_scrollElement"
-                  id="scrollElement"
-                  style={{ width: "3px", height: "100px" }}
-                ></div>
-              </div>
-              {[...Array(13)].map((_, i) => {
-                const titles = [
-                  "Inventory Control",
-                  "Order Management",
-                  "Warehouse Optimization",
-                  "Integration Capabilities",
-                  "Reporting and Analytics",
-                  "Mobile Functionality",
-                  "Scallability and Flexibility",
-                  "3PL Compatability",
-                  "Cost Savings",
-                  "Customer Satisfaction",
-                  "Regulatory Compailance",
-                  "Streamlined Workflows",
-                  "Return to Investment",
-                ];
-                const descriptions = [
-                  "Maintain accurate and real-time visibility of inventory levels, reducing stockouts and overstock situations.",
-                  "Efficiently process and fulfil orders, improving order accuracy and minimizing delays.",
-                  "Optimize warehouse space utilization, reducing travel time and improving picking and replenishment processes.",
-                  "Seamlessly integrate with other business systems, such as ERP and CRM, for streamlined data flow and enhanced collaboration.",
-                  "Gain valuable insights into warehouse performance through comprehensive reports and analytics, enabling data-driven decision-making.",
-                  "Empower employees with mobile capabilities for tasks like receiving, picking, and shipping, improving efficiency and accuracy.",
-                  "Adapt the WMS to accommodate increased order volumes, additional warehouse locations, and evolving business needs.",
-                  "Seamlessly collaborate with third-party logistics providers, enhancing coordination and ensuring smooth operations.",
-                  "Increase operational efficiency, reduce errors, and minimize labour costs through optimized processes and automation.",
-                  "Improve order accuracy, reduce lead times, and enhance overall service levels, leading to higher customer satisfaction.",
-                  "Ensure adherence to industry regulations and standards through enhanced traceability and reporting capabilities.",
-                  "Automate manual tasks and streamline workflows, reducing human error and improving productivity.",
-                  "Achieve a positive return on investment by optimizing operations, reducing costs, and improving overall efficiency.",
-                ];
+          <div class="container-pwms">
+  <div class="item-pwms">
+    <div class="title-pwms">Inventory Control</div>
+    <div class="description-pwms">Maintain accurate and real-time visibility of inventory levels, reducing stockouts and overstock situations.</div>
+  </div>
+  <div class="item-pwms">
+    <div class="title-pwms">Order Management</div>
+    <div class="description-pwms">Efficiently process and fulfil orders, improving order accuracy and minimizing delays.</div>
+  </div>
+  <div class="item-pwms">
+    <div class="title-pwms">Warehouse Optimization</div>
+    <div class="description-pwms">Optimize warehouse space utilization, reducing travel time and improving picking and replenishment processes.</div>
+  </div>
+  <div class="item-pwms">
+    <div class="title-pwms">Integration Capabilities</div>
+    <div class="description-pwms">Seamlessly integrate with other business systems, such as ERP and CRM, for streamlined data flow and enhanced collaboration.</div>
+  </div>
+  <div class="item-pwms">
+    <div class="title-pwms">Reporting and Analytics </div>
+    <div class="description-pwms">Gain valuable insights into warehouse performance through comprehensive reports and analytics, enabling data-driven decision-making.</div>
+  </div>
+  <div class="item-pwms">
+    <div class="title-pwms">Mobile Functionality</div>
+    <div class="description-pwms">Empower employees with mobile capabilities for tasks like receiving, picking, and shipping, improving efficiency and accuracy.</div>
+  </div>
+  <div class="item-pwms">
+    <div class="title-pwms">Scalability and Flexibility</div>
+    <div class="description-pwms">Adapt the WMS to accommodate increased order volumes, additional warehouse locations, and evolving business needs.</div>
+  </div>
+  <div class="item-pwms">
+    <div class="title-pwms">3PL Compatability</div>
+    <div class="description-pwms">Seamlessly collaborate with third-party logistics providers, enhancing coordination and ensuring smooth operations.</div>
+  </div>
+  <div class="item-pwms">
+    <div class="title-pwms">Cost Savings</div>
+    <div class="description-pwms">Increase operational efficiency, reduce errors, and minimize labour costs through optimized processes and automation.</div>
+  </div>
+  <div class="item-pwms">
+    <div class="title-pwms">Customer Satisfaction</div>
+    <div class="description-pwms">Improve order accuracy, reduce lead times, and enhance overall service levels, leading to higher customer satisfaction.</div>
+  </div>
+  <div class="item-pwms">
+    <div class="title-pwms">Regulatory Compliance</div>
+    <div class="description-pwms">Ensure adherence to industry regulations and standards through enhanced traceability and reporting capabilities.</div>
+  </div>
+  <div class="item-pwms">
+    <div class="title-pwms">Streamlined Workflows</div>
+    <div class="description-pwms">Automate manual tasks and streamline workflows, reducing human error and improving productivity.</div>
+  </div>
+  <div class="item-pwms">
+    <div class="title-pwms">Return on Investment</div>
+    <div class="description-pwms">Achieve a positive return on investment by optimizing operations, reducing costs, and improving overall efficiency.</div>
+  </div>
+</div>
 
-                return (
-                  <div  style={{overflow:"hidden"}}
-                    key={i}
-                    className="WhatWeDo_whatWeDoWrap isScrollView"
-                    data-scroll={true}
-                    data-scroll-repeat={true}
-                    data-scroll-offset="50%, 50%"
-                  >
-                    <h3>{titles[i]}</h3>
-                    <div className="WhatWeDo_whatWeDoCotentList">
-                      <div className="WhatWeDo_boxContent">
-                        <ul>
-                          <li>
-                            <p className="valuedeliverd-productwms">{descriptions[i]}</p>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+
+
+
+<div style={{height:'4vh'}}></div>
+<div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+<button className="custom-btn btn-5">
+            <span onClick={handleRequestdemo}>Request Demo</span>
+          </button>
+</div>
+<div style={{height:'4vh'}}></div>
 
           <div style={{ height: "10vh" }}></div>
         </div>
       </div>
-      <div style={{ marginTop: "2100px" }}>
+      <div className="desk-mob-pwms">
         <footer class="footer-section">
           <div class="container">
             <div class="footer-cta pt-5 pb-5">
@@ -271,8 +253,7 @@ const Productwarehousemanagementsystem = () => {
                           style={{ color: "black" }}
                         />{" "}
                         Malambuzha Rd,
-                        <br />
-                        Olavakkode,
+                      
                         <br />
                         Palakkad Kerala <br />
                         678002
@@ -291,7 +272,7 @@ const Productwarehousemanagementsystem = () => {
                           icon={faPhone}
                           style={{ color: "black" }}
                         />{" "}
-                        +91 7736742072
+                       <a href="tel:+91 7736742072" className="text-black"> +91 7736742072</a>
                       </span>
                     </div>
                   </div>
@@ -306,7 +287,7 @@ const Productwarehousemanagementsystem = () => {
                           icon={faEnvelope}
                           style={{ color: "black" }}
                         />{" "}
-                        info@nacresys.com
+                       <a href="mailto:info@nacresys.com" className="text-black">info@nacresys.com</a>
                       </span>
                     </div>
                   </div>
@@ -339,12 +320,17 @@ const Productwarehousemanagementsystem = () => {
                     </div>
                     <div class="footer-social-icon">
                       <span>Follow us</span>
-                      <a href="/facebook">
+                      <a href="https://www.facebook.com/NacreSystem">
+                        {" "}
+                        <FontAwesomeIcon icon={faFacebook} />{" "}
+                        <i class="fab fa-facebook-f facebook-bg"></i>
+                      </a>
+                      <a href="https://www.instagram.com/nacresystem/">
                         {" "}
                         <FontAwesomeIcon icon={faSquareInstagram} />{" "}
                         <i class="fab fa-facebook-f facebook-bg"></i>
                       </a>
-                      <a href="/twitter">
+                      <a href="/https://www.linkedin.com/company/13752108/admin/dashboard/">
                         <FontAwesomeIcon icon={faLinkedin} />{" "}
                         <i class="fab fa-twitter twitter-bg"></i>
                       </a>
@@ -355,50 +341,41 @@ const Productwarehousemanagementsystem = () => {
                   </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                  <div class="footer-widget ">
-                    <div class="footer-widget-heading ms-1">
-                      <h3>Useful Links</h3>
-                    </div>
+                <div class="footer-widget ">
+                  <div class="footer-widget-heading ms-1">
+                    <h3>Useful Links</h3>
                   </div>
+                  <ul>
+                    <li>
+                      <a href="/">Home</a>
+                    </li>
+                   
+                    <li>
+                      <a href="/#/services">services</a>
+                    </li>
+                    {/* <li><a href="#">portfolio</a></li> */}
+                   
+                    <li>
+                      <a href="/#/aboutus">About us</a>
+                    </li>
+                    {/* <li>
+                      <a href="/ourproducts">Our Products</a>
+                    </li> */}
+                    {/* <li>
+                      <a href="/expertteam">Expert Team</a>
+                    </li> */}
+                    <li>
+                      <a href="/#/contactus">Contact us</a>
+                    </li>
+                    {/* <li><a href="#">Latest News</a></li> */}
+                  </ul>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                  <div class="footer-widget">
-                    <div class="footer-widget-heading">
-                      <h3>Subscribe</h3>
-                    </div>
-                    <div class="footer-text mb-25">
-                      <p>
-                        Don’t miss to subscribe to our new feeds, kindly fill
-                        the form below.
-                      </p>
-                    </div>
-                    <div class="subscribe-form">
-                      <form action="#">
-                        <input type="text" placeholder="Email Address" />
-                        <button>
-                          <FontAwesomeIcon
-                            icon={faShare}
-                            style={{ color: "white" }}
-                          />
-                        </button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
+              </div>
+                
               </div>
             </div>
           </div>
-          <div class="copyright-area">
-            <div class="container">
-              <div class="row">
-                <div class="col-xl-12 col-lg-12 text-center">
-                  <div class="copyright-text">
-                    <p>2011 © Nacre System All rights reserved.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      
         </footer>
         <button 
         onClick={scrollToTop} 

@@ -50,6 +50,10 @@ const handleIotintegration=()=>{
 const handlePurveywms=()=>{
   navigate('/productwarehousemanagementsystem')
 }
+
+        const handleRequestdemo=()=>{
+            navigate('/contactus')
+        }
   return (
     <div>
        <Helmet>
@@ -161,13 +165,15 @@ const handlePurveywms=()=>{
 
 <div style={{height:'30vh'}} className='mob-multi-space'></div>
 <div className='multi-main'>
-<div className='multi-img-div'>
+<div className='multi-content'>
 
 <p className='fs-5'> <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/> Our cutting-edge PURVEY Warehouse Management System introduces a powerful Repacking & Put Away module designed to optimize your warehouse operations. With our advanced features and user-friendly interface, you can revolutionize your repacking and storage processes for enhanced efficiency and productivity.
 Our Repacking & Put Away module simplifies the repacking process by providing intuitive tools to manage and track repackaged items. Seamlessly break down or combine products, update packaging information, and maintain accurate inventory records. This ensures precision in order fulfilment and inventory management. <FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
 </div>
-<div className='multi-content'>
+
+<div className='multi-img-div'>
 <img src="../Assets/repa.jpg" alt="" />
+
 </div>
 </div>
 
@@ -186,7 +192,11 @@ Our Repacking & Put Away module simplifies the repacking process by providing in
 </div>
     <Row className='py-5'>
         <Col md={5} className='total-div-repackputaway'>  {/* Added text-center here */}
-        <img src="../Assets/Repackingputaway.jpg"  />
+        
+        <img src="../Assets/Repackingputaway.jpg" style={{  transform: "scale(1.05)",
+  boxShadow: "15px 15px 15px  rgba(0, 0, 0, 0.2)"}}/>
+       
+       
 
         </Col>
         <Col md={6} className="cards-column">
@@ -343,7 +353,13 @@ Our Repacking & Put Away module simplifies the repacking process by providing in
         </div>
   </div>
 
-
+  <div style={{height:'4vh'}}></div>
+  <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+<button className="custom-btn btn-5">
+            <span onClick={handleRequestdemo}>Request Demo</span>
+          </button>
+</div>
+<div style={{height:'4vh'}}></div>
 <Footer/>
 
     </div>

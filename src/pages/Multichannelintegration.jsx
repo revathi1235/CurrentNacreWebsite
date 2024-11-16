@@ -80,7 +80,10 @@ function Multichannelintegration() {
 
 
 
-
+ 
+  const handleRequestdemo=()=>{
+      navigate('/contactus')
+  }
 
   const [activeTab, setActiveTab] = useState(''); // Set default active tab
 
@@ -375,8 +378,13 @@ const handleApora=()=>{
   </div>
 </div>
 </Container>
+<div style={{height:'4vh'}}></div>    
 
-
+<div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+<button className="custom-btn btn-5">
+            <span onClick={handleRequestdemo}>Request Demo</span>
+          </button>
+</div>
 
 
     </div>
