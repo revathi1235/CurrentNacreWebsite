@@ -17,7 +17,7 @@ import { faQuoteLeft,faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 function Qualitycheck() {
   const navigate = useNavigate();
   const handleInbountreceipt = () => {
-    navigate("/inbountreceipt");
+    navigate("/inboundreceipt");
   };
   const handleCrossdocking = () => {
     navigate("/crossdocking");
@@ -56,16 +56,8 @@ function Qualitycheck() {
   return (
     <div>
         <Helmet>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="The Quality Assurance process in PURVEY WMS is a scalable and customizable function, ensuring accuracy and high standards in every shipment. Streamline quality control, minimize errors, and deliver superior products to your customers." />
-        <meta name="keywords" content="quality assurance, warehouse management system, WMS, quality control, inventory management, error reduction, customizable process, shipment accuracy" />
-        <meta name="author" content="Purvey WMS" />
-        <meta property="og:title" content="Quality Assurance Process - PURVEY Warehouse Management System" />
-        <meta property="og:description" content="Streamline your quality assurance with PURVEY WMS. Define and implement consistent quality control procedures to ensure accuracy, minimize errors, and maintain high-quality standards for every shipment." />
-        <meta property="og:image" content="https://example.com/your-image.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com/quality-assurance" />
-        <title>Quality Assurance Process - PURVEY WMS</title>
+        <title>Warehouse Management: Putaway, Yard & Delivery Efficiency | Quality Check</title> 
+       <meta name="description" content="Optimize warehouse operations with advanced inventory, putaway, fulfillment automation, and yard management to enhance efficiency and customer satisfaction." />
       </Helmet>
       <div style={{ height: "40vh" }}>
         <div className="starting-picklistgeneration">

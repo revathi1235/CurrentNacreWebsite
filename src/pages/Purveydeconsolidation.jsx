@@ -15,7 +15,7 @@ import { Helmet } from 'react-helmet';
 function Purveydeconsolidation() {
   const navigate = useNavigate();
   const handleInbountreceipt = () => {
-    navigate("/inbountreceipt");
+    navigate("/inboundreceipt");
   };
   const handleCrossdocking = () => {
     navigate("/crossdocking");
@@ -51,19 +51,24 @@ function Purveydeconsolidation() {
         const handleRequestdemo=()=>{
             navigate('/contactus')
         }
+        const structuredData = {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "Nacre System",
+          "url": "https://www.nacresys.com/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.nacresys.com/#/purveydeconsolidation{inventory}",
+          }
+        };
   return (
     <div>
        <Helmet>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Purvey WMS's Deconsolidation Module streamlines the process of breaking down consolidated shipments. It optimizes sorting, labeling, and allocation, reducing processing time and ensuring accurate distribution to destinations or storage locations." />
-        <meta name="keywords" content="deconsolidation, warehouse management system, WMS, sorting, labeling, shipment processing, inventory management, logistics, efficient operations" />
-        <meta name="author" content="Purvey WMS" />
-        <meta property="og:title" content="Deconsolidation Module - Purvey Warehouse Management System" />
-        <meta property="og:description" content="Streamline your deconsolidation process with Purvey WMS. Optimize sorting, labeling, and allocation of items for accurate and efficient distribution. Reduce processing time and improve warehouse operations." />
-        <meta property="og:image" content="https://example.com/your-image.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com/deconsolidation-module" />
-        <title>Deconsolidation Module - Purvey WMS</title>
+       <title>Warehouse Management: Putaway, Yard & Delivery Efficiency | Deconsolidation page</title>
+        <meta name="description" content="Optimize warehouse operations with advanced inventory, putaway, fulfillment automation, and yard management to enhance efficiency and customer satisfaction." />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
       </Helmet>
       <div style={{ height: "40vh" }}>
         <div className="starting-picklistgeneration">

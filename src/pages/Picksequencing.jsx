@@ -125,15 +125,9 @@ function Picksequencing() {
     <div data-aos="fade-up"
     data-aos-anchor-placement="center-center">
        <Helmet>
-        <title>AI-Powered Pick Sequencing for Optimized Order Fulfillment</title>
-        <meta name="description" content="Revolutionize order fulfillment with AI-powered pick sequencing. Achieve efficient routing, reduced errors, and real-time adaptability in warehouse operations." />
-        <meta name="keywords" content="Pick Sequencing, AI-powered pick routing, Warehouse Management Systems, Order Fulfillment Optimization, Real-time Adaptability, Warehouse Productivity" />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="AI-Powered Pick Sequencing for Optimized Order Fulfillment" />
-        <meta property="og:description" content="Transform warehouse productivity with AI-driven pick sequencing. Streamline operations and enhance customer experiences with efficient routing and reduced errors." />
-        
-        <meta property="og:type" content="website" />
-      </Helmet>
+        <title>Warehouse Management: Putaway, Yard & Delivery Efficiency | pick sequencing page</title>
+        <meta name="description" content="Optimize warehouse operations with advanced inventory, putaway, fulfillment automation, and yard management to enhance efficiency and customer satisfaction." />
+        </Helmet>
  <div style={{height:"40vh"}}>
  <div className='starting-picksequencing'>
     <h1 className="gradient-text">Boost efficiency with pick sequencing</h1>
@@ -207,7 +201,7 @@ function Picksequencing() {
 <div style={{height:'30vh'}} className='mob-multi-space'></div>
  <div className='multi-main'>
 <div className='multi-img-div'>
-<img src="../../Assets/picseq.jpg" alt="" />
+<img src="../../Assets/pickseq.jpg" alt="" />
 
 </div>
 <div className='multi-content'>

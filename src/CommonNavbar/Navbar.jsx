@@ -26,7 +26,7 @@ function CollapsibleExample() {
     navigate("/purveyordermanagementsystem");
   };
   const handleCasestudies = () => {
-    navigate("/casestudies");
+    navigate("/articles");
   };
   const handlePurveywarehousemanagement = () => {
     navigate("/productwarehousemanagementsystem");
@@ -34,8 +34,8 @@ function CollapsibleExample() {
   const handleLastmiledelivery=()=>{
     navigate('/deliverymanagementsystem')
   }
-  const handleBlogs = () => {
-    navigate("blogs");
+  const handleBlog = () => {
+    navigate("/blog");
   };
   const handleYardmanagement=()=>{
     navigate('/yardmanagement')
@@ -111,7 +111,7 @@ function CollapsibleExample() {
           <Nav.Link onClick={() => { handleCasestudies(); handleLinkClick(); }}>
           Articles
           </Nav.Link>
-          <Nav.Link onClick={() => { handleBlogs(); handleLinkClick(); }}>
+          <Nav.Link onClick={() => { handleBlog(); handleLinkClick(); }}>
             Blogs
           </Nav.Link>
         </Nav>

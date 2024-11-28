@@ -7,7 +7,7 @@ function Chart2() {
 
 const navigate=useNavigate()
 const handleInbountreceipt=()=>{
-  navigate('/inbountreceipt')
+  navigate('/inboundreceipt')
 }
 const handleCrossdocking=()=>{
   navigate('/crossdocking')

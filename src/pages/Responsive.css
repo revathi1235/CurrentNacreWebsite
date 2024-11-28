@@ -21,8 +21,8 @@
     
     .btn-5 {
       
-        width: 130px;
-        height: 20px;
+        width: 170px;
+        height: 60px;
         line-height: 4px;
         padding: 0;
         border: none;
@@ -286,13 +286,11 @@
     margin-top: 100px;
     width: 100%;
     height: 42vh;
-    background-image: url('../Assets/cuttingedge.webp');
-    background-size: cover;
-    background-position: center;
+
 }
 .overlay {
   height: 42vh;
-  font-size: 6px;
+  font-size: 9px;
 }
     .aporafulfillment-starting{
         height: 35vh;
@@ -1429,6 +1427,10 @@ margin-top: 20px;
     height: 620px;
     
   }
+  .card-crossdocking{
+    width: 320px;
+    margin-top: 40px;
+  }
 }
 /* Responsive adjustments for mobile devices */
 @media (max-width: 480px) {
@@ -1438,7 +1440,7 @@ margin-top: 20px;
     height: auto; /* Allow the container to adjust to content */
     padding: 5px;
     gap: 5px;
-    margin-top: 370px;
+    margin-top: 447px;
   }
 
   .multi-img-div,
@@ -1452,6 +1454,7 @@ margin-top: 20px;
     width: 100%; /* Ensure it scales to the container width */
     object-fit: cover;
   }
+  
 }
 
 
@@ -1499,7 +1502,7 @@ margin-top: 20px;
    }
    .overlay-p-multi{
     font-size: 18px;
-    color: white;
+    color: rgb(5, 5, 5);
    }
    .bio-orderprocessing {
     display: block;
@@ -1551,7 +1554,33 @@ margin-left: -200px;
 .card-orderprocessing{
   height: 380px;
 }
+.card-orderprocessing-ecom{
+height: 485px;
+margin-top: -40px;
+}
 .mob-footer{
   margin-top: -400px;
+}
+.card-orderprocessing-page {
+  background-color: #393B45;
+  /* height: 470px; */
+  height: 400px;
+  width: 100%;
+  margin-top: -50px;
+  margin: 10vh auto;
+  border-radius: 25px;
+  padding-bottom: 1px;
+  box-shadow: 2px 2px 5px #757575;
+}
+.card-orderprocessing-picklistgen{
+  background-color: #393B45;
+  /* height: 470px; */
+  height: 500px;
+  width: 100%;
+  margin-top: -50px;
+  margin: 10vh auto;
+  border-radius: 25px;
+  padding-bottom: 1px;
+  box-shadow: 2px 2px 5px #757575;
 }
 }

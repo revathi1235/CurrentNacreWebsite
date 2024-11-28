@@ -110,7 +110,7 @@ function Dummydemo() {
             <li
               class="item-homepage"
               style={{
-                backgroundImage: "url('../../Assets/aporahomepage.png')",
+                backgroundImage: "url('../../Assets/wmspic.png')",
               }}
             >
               {/* <div class="bg-homepageeffect">  */}

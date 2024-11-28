@@ -4,6 +4,7 @@ import efficiency from "../Assets/Efficiency.svg";
 import improvedorderaccuracy from "../Assets/improvedorderaccuracy.svg";
 import improveresouceutilisation from "../Assets/Improveresourceutilisation.svg";
 import { Helmet } from 'react-helmet';
+import {Row,Col } from 'react-bootstrap'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft,faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import { Container } from "react-bootstrap";
@@ -131,15 +132,9 @@ function Workforcemanagement() {
     <div data-aos="fade-up" data-aos-anchor-placement="center-center">
       <div style={{ height: "40vh" }}>
       <Helmet>
-        <title>AI-Powered Workforce Optimization for Warehouse Efficiency</title>
-        <meta name="description" content="Revolutionize warehouse productivity with AI-powered workforce optimization. Maximize efficiency, reduce errors, and streamline order fulfillment through intelligent task allocation and real-time monitoring." />
-        <meta name="keywords" content="Workforce Management, AI-powered workforce optimization, Warehouse Efficiency, Order Fulfillment, Task Allocation, Real-time Monitoring" />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="AI-Powered Workforce Optimization for Warehouse Efficiency" />
-        <meta property="og:description" content="Achieve operational excellence in warehouse picking with AI-driven workforce optimization. Boost productivity and minimize errors with intelligent task allocation and monitoring." />
-        {/* <meta property="og:image" content={workforceImage} /> */}
-        <meta property="og:type" content="website" />
-      </Helmet>
+        <title>Warehouse Management: Putaway, Yard & Delivery Efficiency | workforce management page</title>
+        <meta name="description" content="Optimize warehouse operations with advanced inventory, putaway, fulfillment automation, and yard management to enhance efficiency and customer satisfaction." />
+         </Helmet>
         <div className="starting-picklistgeneration">
           <h1 className="gradient-text">
             Automated Task Allocation and Work Load Balancing
@@ -216,7 +211,7 @@ function Workforcemanagement() {
 <div style={{height:'30vh'}} className='mob-multi-space'></div>
  <div className='multi-main'>
  <div className='multi-content'>
-  <p style={{fontSize:'16.8px'}}>  <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/>  In the dynamic world of warehousing and order fulfilment, optimizing workforce productivity is a constant challenge. Optimizing your workforce is crucial for achieving operational excellence and maintaining a competitive edge. Workforce optimization involves strategically managing your human resources, empowering them with the right tools and technologies. With AI-powered workforce optimization, organizations can revolutionize their warehouse picking processes.
+  <p  className="fs-4">  <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/>  In the dynamic world of warehousing and order fulfilment, optimizing workforce productivity is a constant challenge. Optimizing your workforce is crucial for achieving operational excellence and maintaining a competitive edge. Workforce optimization involves strategically managing your human resources, empowering them with the right tools and technologies. With AI-powered workforce optimization, organizations can revolutionize their warehouse picking processes.
   Upon arrival, goods are quickly scanned and recorded in the system, AI-powered workforce optimization is a game-changer for organizations striving for efficiency and productivity in warehouse picking processes. By harnessing the power of artificial intelligence, businesses can optimize task allocation, maximize workforce productivity, and minimize errors. With intelligent task allocation, real-time performance monitoring, and machine learning algorithms, organizations can unlock the full potential of their workforce and meet customer demands effectively.<FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
 </div>
 {/* <div className='multi-img-div'>
@@ -283,7 +278,9 @@ function Workforcemanagement() {
         </div>
         <div className="row justify-content-center ">
           {/* Card 1 */}
-          <div className="col-md-4 col-sm-12 mb-4">
+         
+        <Row>
+          <Col lg={4}>
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Accelerated Efficiency</h5>
             {/* <div className='image-crop-orderprocessing'>
@@ -296,10 +293,8 @@ function Workforcemanagement() {
               <p  className="mob-workforce-feature-content">AI-powered workforce optimization leverages advanced algorithms to intelligently allocate tasks and resources. By analysing real-time data such as order volumes, item locations, and employee performance, the system optimizes the assignment of picking tasks to the workforce. This automation streamlines the picking process, reduces travel time, and increases overall efficiency.</p>
             </div>
           </div>
-          </div>
-
-          {/* Card 2 */}
-          <div className="col-md-4 col-sm-12 mb-4">
+          </Col>
+          <Col lg={4}>
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Improved Productivity
 
@@ -311,10 +306,8 @@ function Workforcemanagement() {
               <p className="mob-workforce-feature-content">With AI-powered workforce optimization, organizations can unlock the full potential of their workforce. The system takes into account employee skills, experience, and availability to allocate tasks that align with individual strengths. By matching the right employees with the right tasks, productivity is maximized, and employees are empowered to perform at their best.</p>
             </div>
           </div>
-          </div>
-
-          {/* Card 3 */}
-          <div className="col-md-4 col-sm-12 mb-4">
+          </Col>
+          <Col lg={4}>
           <div className='card-orderprocessing' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Adaptive Planning</h5>
             {/* <div className='image-crop-orderprocessing'>
@@ -326,7 +319,19 @@ function Workforcemanagement() {
 </p>
             </div>
           </div>
-          </div>
+          
+          </Col>
+        </Row>
+         
+
+          {/* Card 2 */}
+        
+         
+          
+
+          {/* Card 3 */}
+          
+         
         </div>
       </div>
 

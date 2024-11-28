@@ -88,7 +88,20 @@ ul {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 40px;
-  position: relative;
+  /* position: relative; */
+}
+
+.footer-links {
+  list-style-type: none;  /* This removes the default list bullets */
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+.footer-links li{
+  padding: 10px;
+}
+.footer-links li:hover{
+  color: green;
 }
 .footer-widget-heading h3 {
   color: #080808;
@@ -106,15 +119,61 @@ ul {
   width: 120px;
   background: linear-gradient(to left,green,blue);
 }
+.footer-widget-heading-h3 h3 {
+  color: #080808;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading-h3 h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 380px;
+  background: linear-gradient(to left,green,blue);
+}
+.footer-widget-heading-h3 span {
+  color: #080808;
+  
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading-h3 span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 220px;
+  background: linear-gradient(to left,green,blue);
+}
+
+/* styles.css */
+.footer-widget ul {
+  list-style: none;
+  padding: 0;
+}
+
 .footer-widget ul li {
-  display: inline-block;
-  float: left;
-  width: 50%;
-  margin-bottom: 12px;
+  display: block;
+  margin-bottom: 10px;
 }
-.footer-widget ul li a:hover{
-  color: #ff5e14;
+
+.footer-widget ul li a {
+  text-decoration: none;
+  color: #000;
 }
+
+.footer-title {
+  border-bottom: 2px solid #a61f2d;
+  padding-bottom: 25px;
+  margin-bottom: 35px;
+}
+
 .footer-widget ul li a {
   color: #0a0a0a;
   text-transform: capitalize;
@@ -165,6 +224,6 @@ ul {
 }
 .footer-menu li a {
   font-size: 14px;
-  color: #878787;
+  color: #030303;
 }
 

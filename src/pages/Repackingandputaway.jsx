@@ -18,7 +18,7 @@ import { faQuoteLeft,faQuoteRight } from '@fortawesome/free-solid-svg-icons'
 function Repackingandputaway() {
   const navigate=useNavigate()
 const handleInbountreceipt=()=>{
-  navigate('/inbountreceipt')
+  navigate('/inboundreceipt')
 }
 const handleCrossdocking=()=>{
   navigate('/crossdocking')
@@ -57,16 +57,8 @@ const handlePurveywms=()=>{
   return (
     <div>
        <Helmet>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="The Repacking & Put Away module in PURVEY WMS optimizes warehouse operations by simplifying repacking, updating packaging information, and ensuring accurate inventory management for efficient order fulfillment." />
-        <meta name="keywords" content="repacking, warehouse management system, WMS, put away, inventory management, order fulfillment, packaging, warehouse optimization" />
-        <meta name="author" content="Purvey WMS" />
-        <meta property="og:title" content="Repacking & Put Away Module - PURVEY Warehouse Management System" />
-        <meta property="og:description" content="Optimize warehouse operations with the Repacking & Put Away module in PURVEY WMS. Streamline repacking, manage packaging, and maintain accurate inventory for efficient order fulfillment and storage." />
-        <meta property="og:image" content="https://example.com/your-image.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com/repacking-put-away" />
-        <title>Repacking & Put Away Module - PURVEY WMS</title>
+       <title>Warehouse Management: Putaway, Yard & Delivery Efficiency | Repacking and Putaway </title>
+         <meta name="description" content="Optimize warehouse operations with advanced inventory, putaway, fulfillment automation, and yard management to enhance efficiency and customer satisfaction." />
       </Helmet>
       <div style={{height:"40vh"}}>
  <div className='starting-picklistgeneration'>

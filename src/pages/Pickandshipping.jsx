@@ -123,16 +123,9 @@ function Pickandshipping    () {
     <div data-aos="fade-up"
     data-aos-anchor-placement="center-center">
        <Helmet>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Leverage AI-powered package optimization to enhance efficiency, reduce costs, and meet sustainability goals. Optimize packaging configurations and minimize material wastage with intelligent algorithms." />
-        <meta name="keywords" content="AI-powered package optimization, sustainable packaging, cost-saving packaging solutions, intelligent packaging algorithms, fulfillment efficiency, material wastage reduction, warehouse management system integration" />
-        <meta name="author" content="Your Company Name" />
-        <meta property="og:title" content="AI-Powered Package Optimization for Sustainable Fulfillment" />
-        <meta property="og:description" content="Achieve cost savings, reduce material wastage, and streamline fulfillment operations with AI-powered packaging solutions that prioritize sustainability." />
-        <meta property="og:image" content="https://example.com/your-image.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com/ai-powered-package-optimization" />
-        <title>AI-Powered Package Optimization for Sustainable Fulfillment</title>
+       <title>Warehouse Management: Putaway, Yard & Delivery Efficiency | package and shipping page</title>
+
+        <meta name="description" content="Optimize warehouse operations with advanced inventory, putaway, fulfillment automation, and yard management to enhance efficiency and customer satisfaction." />
       </Helmet>
  <div style={{height:"40vh"}}>
  <div className='starting-picklistgeneration'>
@@ -219,7 +212,7 @@ function Pickandshipping    () {
 <div style={{height:'30vh'}} className='mob-multi-space'></div>
  <div className='multi-main'>
 <div className='multi-img-div'>
-<img src="../../Assets/picklistgeneration.jpg" alt="" />
+<img src="../../Assets/packandship.jpeg" alt="" />
 
 </div>
 <div className='multi-content'>

@@ -14,7 +14,7 @@ import { faQuoteLeft,faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 function Inventorymanagement() {
   const navigate = useNavigate();
   const handleInbountreceipt = () => {
-    navigate("/inbountreceipt");
+    navigate("/inboundreceipt");
   };
   const handleCrossdocking = () => {
     navigate("/crossdocking");
@@ -54,16 +54,9 @@ function Inventorymanagement() {
   return (
     <div>
       <Helmet>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Purvey WMS provides real-time inventory visibility, allowing you to monitor stock levels, track movement, and make informed decisions. Ensure accurate stock management and minimize stockouts with detailed item location and status tracking." />
-        <meta name="keywords" content="real-time inventory, warehouse management system, WMS, stock management, inventory tracking, stock levels, minimize stockouts" />
-        <meta name="author" content="Purvey WMS" />
-        <meta property="og:title" content="Real-Time Inventory Visibility - PURVEY Warehouse Management System" />
-        <meta property="og:description" content="Gain real-time visibility into your inventory with Purvey WMS. Track stock levels, monitor movement, and make data-driven decisions to ensure accurate stock management and avoid stockouts." />
-        <meta property="og:image" content="https://example.com/your-image.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com/real-time-inventory" />
-        <title>Real-Time Inventory Visibility - PURVEY WMS</title>
+      <title>Warehouse Management: Putaway, Yard & Delivery Efficiency | Inventory Management</title>
+
+         <meta name="description" content="Optimize warehouse operations with advanced inventory, putaway, fulfillment automation, and yard management to enhance efficiency and customer satisfaction." />
       </Helmet>
       <div style={{ height: "40vh" }}>
         <div className="starting-picklistgeneration">

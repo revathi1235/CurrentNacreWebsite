@@ -17,16 +17,9 @@ function Deliverymanagementsystem() {
   return (
     <div>
       <Helmet>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Optimize your routes for better logistics and transportation efficiency." />
-        <meta name="keywords" content="logistics, route optimization, transportation, cost reduction, smart algorithms" />
-        <meta name="author" content="Your Company Name" />
-        <meta property="og:title" content="Route Optimization for Logistics" />
-        <meta property="og:description" content="Find the most efficient routes to reduce costs and delays with our advanced route optimization algorithms." />
-        <meta property="og:image" content="https://example.com/your-image.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com/route-optimization" />
-        <title>Route Optimization for Logistics</title>
+      <title>Warehouse Management: Putaway, Yard & Delivery Efficiency | Delivery Management page</title>
+
+        <meta name="description" content="Optimize warehouse operations with advanced inventory, putaway, fulfillment automation, and yard management to enhance efficiency and customer satisfaction." />
       </Helmet>
       <div className="starting-picklistgeneration  ">
         <h1 className="gradient-text"> Delivery Management System</h1>

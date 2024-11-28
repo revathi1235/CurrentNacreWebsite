@@ -149,15 +149,9 @@ const handleApora=()=>{
 
 
 <Helmet>
-        <title>AI-Powered Picklist Generation for Order Fulfillment</title>
-        <meta name="description" content="Optimize order fulfillment with AI-powered picklist generation. Enhance efficiency and accuracy in meeting customer demands with intelligent order processing." />
-        <meta name="keywords" content="Picklist Generation, AI-powered picklist, Order Fulfillment, Warehouse Efficiency, Inventory Management, Optimized Order Processing" />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="AI-Powered Picklist Generation for Order Fulfillment" />
-        <meta property="og:description" content="Transform order fulfillment with AI-driven picklist generation. Efficient, accurate, and streamlined processes to meet customer demands." />
-        {/* <meta property="og:image" content={picklistImage} /> */}
-        <meta property="og:type" content="website" />
-      </Helmet> 
+        <title>Warehouse Management: Putaway, Yard & Delivery Efficiency | picklist generation page</title>
+        <meta name="description" content="Optimize warehouse operations with advanced inventory, putaway, fulfillment automation, and yard management to enhance efficiency and customer satisfaction." />
+       </Helmet> 
 
 
 
@@ -322,8 +316,9 @@ const handleApora=()=>{
       </div>
       <div className='row justify-content-center '>
      
-          <div className='col-md-4 col-sm-12 mb-4'>
-          <div className='card-orderprocessing' style={{background:"white"}}>
+       <Row>
+        <Col lg={4}>
+        <div className='card-orderprocessing-picklistgen' style={{background:"white"}}>
             <h5 style={{color:"white",background:"#303097"}}>Maximized Output</h5>
             <div className='image-crop-orderprocessing'>
             <img className='avatar-orderprocessing' src='../../Assets/max.jpg' alt='Order Analysis' />
@@ -332,7 +327,32 @@ const handleApora=()=>{
             <p style={{color:"black",fontSize:"14px"}}>AI-powered picklist generation automates the process of creating optimized picklists. By analysing order data, inventory levels, and other relevant factors, the system intelligently generates multiple orders synchronised picklists. This automation eliminates the time-consuming task of manually sorting through orders and increases the efficiency of order fulfilment.</p>
             </div>
           </div>
-        </div>
+        </Col>
+        <Col lg={4}>
+        <div className='card-orderprocessing-picklistgen' style={{background:"white"}}>
+          <h5 style={{color:"white",background:"#303097"}}>Optimal Resource Utilization</h5>
+            <div className='image-crop-orderprocessing'>
+            <img className='avatar-orderprocessing' src='../../Assets/optimized.webp' alt='Inventory Management' />
+            </div>
+            <div className='bio-orderprocessing' >
+            <p style={{color:"black",fontSize:"14px"}}>Efficient resource allocation is crucial for streamlining order fulfilment. AI-powered picklist generation takes into account factors such as warehouse layout and staff availability to optimize the allocation of resources.</p>
+            </div>
+          </div>
+        </Col>
+        <Col lg={4}>
+        <div className='card-orderprocessing-picklistgen' style={{background:"white"}}>
+          <h5 style={{color:"white",background:"#303097"}}>Improved Accuracy</h5>
+            <div className='image-crop-orderprocessing'>
+            <img className='avatar-orderprocessing' src='../../Assets/improvedaccuracy.webp' alt='Inventory Management' />
+            </div>
+            <div className='bio-orderprocessing' >
+            <p style={{color:"black",fontSize:"14px"}}>Human errors in generating picklists can lead to mispicks, delays, and customer dissatisfaction. AI-powered picklist generation minimizes the risk of errors by using advanced algorithms to analyse order details and guide pick process with Barcode/ QR code/ RFID systems to ensure order accuracy and customer satisfaction.</p>
+            </div>
+          </div>
+        </Col>
+       </Row>
+         
+    
 
         {/* Card 2 */}
         {/* <div className='col-md-4 col-sm-12 mb-4'>
@@ -346,17 +366,9 @@ const handleApora=()=>{
             </div>
           </div>
         </div> */}
-         <div className='col-md-4 col-sm-12 mb-4'>
-          <div className='card-orderprocessing' style={{background:"white"}}>
-          <h5 style={{color:"white",background:"#303097"}}>Optimal Resource Utilization</h5>
-            <div className='image-crop-orderprocessing'>
-            <img className='avatar-orderprocessing' src='../../Assets/optimized.webp' alt='Inventory Management' />
-            </div>
-            <div className='bio-orderprocessing' >
-            <p style={{color:"black",fontSize:"14px"}}>Efficient resource allocation is crucial for streamlining order fulfilment. AI-powered picklist generation takes into account factors such as warehouse layout and staff availability to optimize the allocation of resources.</p>
-            </div>
-          </div>
-        </div>
+       
+         
+    
 
         {/* Card 3 */}
         {/* <div className='col-md-4 col-sm-12 mb-4 '>
@@ -370,17 +382,9 @@ const handleApora=()=>{
             </div>
           </div>
         </div> */}
-          <div className='col-md-4 col-sm-12 mb-4'>
-          <div className='card-orderprocessing' style={{background:"white"}}>
-          <h5 style={{color:"white",background:"#303097"}}>Improved Accuracy</h5>
-            <div className='image-crop-orderprocessing'>
-            <img className='avatar-orderprocessing' src='../../Assets/improvedaccuracy.webp' alt='Inventory Management' />
-            </div>
-            <div className='bio-orderprocessing' >
-            <p style={{color:"black",fontSize:"14px"}}>Human errors in generating picklists can lead to mispicks, delays, and customer dissatisfaction. AI-powered picklist generation minimizes the risk of errors by using advanced algorithms to analyse order details and guide pick process with Barcode/ QR code/ RFID systems to ensure order accuracy and customer satisfaction.</p>
-            </div>
-          </div>
-        </div>
+        
+         
+      
       </div>
     </div>
 

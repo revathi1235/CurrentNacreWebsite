@@ -116,16 +116,9 @@ function AporaFulfillmentautomation() {
     <div data-aos="fade-up"
     data-aos-anchor-placement="center-center">
          <Helmet>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Unlock the potential of fulfillment automation with APORA's AI-powered system, Opti-Pick, reducing errors and boosting efficiency in warehouse operations." />
-        <meta name="keywords" content="AI-powered fulfillment, warehouse automation, Opti-Pick, SwiftShip, IoT-driven validation, precision picking, order fulfillment, e-commerce, logistics" />
-        <meta name="author" content="APORA Technologies" />
-        <meta property="og:title" content="AI-Powered Fulfillment Automation with APORA" />
-        <meta property="og:description" content="Discover how APORA's advanced AI-powered fulfillment system and Opti-Pick algorithm optimize warehouse efficiency, boost productivity, and deliver superior customer satisfaction." />
-        <meta property="og:image" content="https://example.com/your-image.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com/ai-powered-fulfillment" />
-        <title>AI-Powered Fulfillment Automation System by APORA</title>
+         <title>AI-Powered Fulfillment Automation System by APORA</title>
+
+       <meta name="description" content="Unlock the potential of fulfillment automation with APORA's AI-powered system, Opti-Pick, reducing errors and boosting efficiency in warehouse operations." />
       </Helmet>
  <div style={{height:"90vh"}}>
  <div className='starting-picklistgeneration  '>

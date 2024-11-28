@@ -15,7 +15,7 @@ import { faQuoteLeft,faQuoteRight } from '@fortawesome/free-solid-svg-icons'
 function Pickmanagement() {
   const navigate=useNavigate()
 const handleInbountreceipt=()=>{
-  navigate('/inbountreceipt')
+  navigate('/inboundreceipt')
 }
 const handleCrossdocking=()=>{
   navigate('/crossdocking')
@@ -53,17 +53,10 @@ const handlePurveywms=()=>{
         }
   return (
     <div>
-      <Helmet>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Purvey WMS offers efficient and reliable discrete picking solutions to optimize warehouse operations. Our technology enhances productivity, accuracy, and streamlines the picking process to address common warehouse challenges." />
-        <meta name="keywords" content="discrete picking, warehouse management system, WMS, productivity, accuracy, warehouse operations, error-free picking, technology solutions" />
-        <meta name="author" content="Purvey WMS" />
-        <meta property="og:title" content="Discrete Picking Solutions - PURVEY Warehouse Management System" />
-        <meta property="og:description" content="Streamline your warehouse operations with Purvey WMS’s discrete picking solutions. Improve picking accuracy, boost productivity, and ensure error-free operations with cutting-edge technology." />
-        <meta property="og:image" content="https://example.com/your-image.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com/discrete-picking" />
-        <title>Discrete Picking Solutions - PURVEY WMS</title>
+      <Helmet>   
+             <title>Warehouse Management: Putaway, Yard & Delivery Efficiency | Pick Management</title>
+
+        <meta name="description" content="Optimize warehouse operations with advanced inventory, putaway, fulfillment automation, and yard management to enhance efficiency and customer satisfaction." />
       </Helmet>
       <div style={{height:"40vh"}}>
  <div className='starting-picklistgeneration'>

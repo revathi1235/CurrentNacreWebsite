@@ -6,9 +6,10 @@ import Content from './pages/Content';
 import Multichannelintegration from './pages/Multichannelintegration'
 // import Deconsolidation from './pages/Deconsolidation';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { HashRouter,Routes,Route  } from 'react-router-dom';
+import { useEffect } from 'react';
+import { BrowserRouter as Router,Routes,Route  } from 'react-router-dom';
 // import NavbarCommon from './pages/NavbarCommon';
-import Inbountreceipt from './pages/Inbountreceipt';
+import Inboundreceipt from './pages/Inboundreceipt';
 // import CommonContact from './pages/CommonContact';
 import Navbar from './CommonNavbar/Navbar'
 import AporaFulfillmentautomation from './pages/AporaFulfillmentautomation';
@@ -31,21 +32,31 @@ import Dispatch from './pages/Dispatch';
 import Inventorymanagement from './pages/Inventorymanagement';
 import APIintegration from './pages/APIintegration';
 import IOTintegration from './pages/IOTintegration';
-import Casestudies from './pages/Casestudies';
+import Articles from './pages/Articles';
 import Productwarehousemanagementsystem from './pages/Productwarehousemanagementsystem';
 import Blogs from './pages/Blogs';
 import LastmileDelivery from './pages/Deliverymanagementsystem';
 import Yardmanagement from './pages/Yardmanagement';
 import Deliverymanagementsystem from './pages/Deliverymanagementsystem';
 import Oncloud from './pages/Oncloud';
+import ScrollToTop from './ScrollToTop';
+import ReactGA from 'react-ga4'
 
 function App() {
+
+  const TRACKING_ID='G-EB2KNZYZYT';
+  ReactGA.initialize(TRACKING_ID);
+  useEffect(() => {
+    ReactGA.send({hitType:'pageview',page:window.location.pathname + window.location.search , title:'Home page'})
+  }, [])
+  
   return (
-    <HashRouter>
+    <Router>
     <div className="App">
-    {/* <CommonNavbar/> */}
-    {/* <NavbarCommon/> */}
+   
     <Navbar/>
+    <ScrollToTop />
+
     <Routes>
     
      <Route path='/' element={<Content/>}/>
@@ -62,7 +73,7 @@ function App() {
     <Route path='/ecommerceintegration' element={<Ecommerceintegration/>}/>
     <Route path='/contactus' element={<Contactus/>}/>
     < Route path='/purveyordermanagementsystem' element={<Purveyordermanagementsystem/>}/>
-    <Route path='/inbountreceipt' element={<Inbountreceipt/>}/>
+    <Route path='/inboundreceipt' element={<Inboundreceipt/>}/>
     <Route path='/crossdocking' element={<Crossdocking/>}/>
     <Route path='/purveydeconsolidation' element={<Purveydeconsolidation/>}/>
     <Route path='/qualitycheck' element={<Qualitycheck/>}/> 
@@ -72,22 +83,17 @@ function App() {
     <Route path='/inventorymanagement' element={<Inventorymanagement/>}/>
     <Route path='/apiintegration' element={<APIintegration/>}/>
     <Route path='/iotintegration' element={<IOTintegration/>}/>
-    <Route path='/casestudies' element={<Casestudies/>}/>
+    <Route path='/articles' element={<Articles/>}/>
     <Route path='/productwarehousemanagementsystem' element={<Productwarehousemanagementsystem/>}/>
-    <Route path='/blogs' element={<Blogs/>}/>
+    <Route path='/blog' element={<Blogs/>}/>
     <Route path='/deliverymanagementsystem' element={<Deliverymanagementsystem/>}/>
     <Route path='/yardmanagement' element={<Yardmanagement/>}/>
-     
      <Route path='/oncloud' element={<Oncloud/>}/>
      
-     {/* <Route path='/deconsolidation' element={<Deconsolidation/>}/>
-   
-    <Route path='/contactus' element={<CommonContact/>}/>
-<Route path='/navbar' element={<Navbar/>}/> */}
+     
    </Routes>
-       {/* <Footer/> */}
     </div>
-    </HashRouter>
+    </Router>
   );
 }
 

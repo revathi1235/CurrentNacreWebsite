@@ -39,16 +39,10 @@ function Yardmanagement() {
   return (
     <div>
         <Helmet>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Effective yard management is critical to warehouse operations. Ensure the correct placement and labeling of aisles, racks, and totes to avoid operational inefficiencies and financial losses." />
-        <meta name="keywords" content="yard management, warehouse operations, warehouse efficiency, operational safety, item placement, logistics" />
-        <meta name="author" content="Your Company Name" />
-        <meta property="og:title" content="Effective Yard Management for Warehouse Operations" />
-        <meta property="og:description" content="Ensure proper yard management with clear zone definitions, labeling of aisles, racks, and totes to prevent misplacement, expiry, and operational inefficiencies in warehouses." />
-        <meta property="og:image" content="https://example.com/your-image.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com/yard-management" />
-        <title>Yard Management for Warehouse Efficiency</title>
+        <title>Warehouse Management: Putaway, Yard & Delivery Efficiency |Yard management page </title>
+
+       <meta name="description" content="Optimize warehouse operations with advanced inventory, putaway, fulfillment automation, and yard management to enhance efficiency and customer satisfaction." />
+       
       </Helmet>
       <div className="starting-picklistgeneration  ">
         <h1 className="gradient-text">Yard Management</h1>
@@ -125,7 +119,6 @@ function Yardmanagement() {
  <div className='multi-main'>
 <div className='multi-img-div'>
 <img src="../../Assets/yard.jpeg" alt="" />
-
 </div>
 <div className='multi-content'>
   <p style={{fontSize:'18.3px'}}>   Effective yard management is critical to warehouse operations. Without clear zone definitions, and proper labeling of aisles, racks, and totes, warehouses face numerous challenges, including:

@@ -101,7 +101,7 @@ function NavbarCommon() {
               
             </NavDropdown>
             <Nav.Link href="/" onClick={handleAboutus   }>Case Studies</Nav.Link>
-            <Nav.Link href="/" onClick={handleAboutus   }>Blogs</Nav.Link>
+            <Nav.Link href="/" onClick={handleAboutus   }>blog</Nav.Link>
             <Nav.Link  onClick={handleContactus   }>Contact Us</Nav.Link>
           </Nav>
           <Nav className='main-custom-btn-div'>

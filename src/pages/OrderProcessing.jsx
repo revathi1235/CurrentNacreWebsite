@@ -135,14 +135,9 @@ function Orderprocessing() {
 
 
 <Helmet>
-        <title>Order Processing & AI-Powered Synchronization</title>
-        <meta name="description" content="Enhance your warehouse efficiency with AI-powered order synchronization. Optimize same-day delivery and streamline inventory with reduced picklists." />
-        <meta name="keywords" content="Order Processing, AI-powered synchronization, Warehouse efficiency, Same-day delivery, Inventory management, Just-in-time inventory" />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Order Processing & AI-Powered Synchronization" />
-        <meta property="og:description" content="Revolutionize warehouse operations with AI-powered order synchronization for faster same-day delivery and streamlined inventory." />
-        <meta property="og:image" content={orderprocessing} />
-        <meta property="og:type" content="website" />
+        <title>Warehouse Management: Putaway, Yard & Delivery Efficiency | order processing page</title>
+        <meta name="description" content="Optimize warehouse operations with advanced inventory, putaway, fulfillment automation, and yard management to enhance efficiency and customer satisfaction." />
+        
       </Helmet>
 
 
@@ -232,7 +227,7 @@ function Orderprocessing() {
  <div className='multi-main'>
 
 <div className='multi-content'>
-  <p style={{fontSize:'19.5px'}}>  <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/> Same day delivery is increasingly becoming normal expectation of customers. With capital scarcity Brick and mortar business are also keen to achieve just-in-time inventory efficiency. In the bustling world of warehouse operations, streamlining processes to maximize efficiency is a top priority. Traditional order picking methods often result in a large number of picklists, leading to increased complexity and reduced productivity. However, with the power of AI-powered order synchronization, organizations can revolutionize their warehouse operations. Our AI-powered order synchronization, showcases how it optimizes efficiency and effectively reduces the number of picklists, which results in significant reduction of walk around time and increase same day deliveries<FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
+  <p style={{fontSize:'19.5px'}}>  <FontAwesomeIcon icon={faQuoteLeft} style={{color:'blue',fontSize:"30px"}}/> Same day delivery is increasingly becoming normal expectation of customers. With capital scarcity Brick and mortar business are also keen to achieve just-in-time inventory efficiency. In the bustling world of warehouse operations, streamlining processes to maximize efficiency is a top priority. Traditional order picking methods often result in a large number of picklists, leading to increased complexity and reduced productivity. However, with the power of AI-powered order synchronization, organizations can revolutionize their warehouse operations. Our AI-powered order synchronization, showcases how it optimizes efficiency and effectively reduces the number of picklists, which results in significant reduction of walk around time and increase same day deliveries .<FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
 </div>
 <div className='multi-img-div'>
 <img src="../Assets/order-processing-workflow.png" alt="orderprocessing image" />
@@ -247,10 +242,11 @@ function Orderprocessing() {
       <div className='d-flex justify-content-center'>
         <h2 style={{fontSize:"30px"}}>Features</h2>
       </div>
-      <div className='row justify-content-center '>
+    
+       <Row>
        
-        <div className='col-md-4 col-sm-12 mb-4'>
-          <div className='card-orderprocessing' style={{background:"white"}}>
+        <Col lg={4}>
+        <div className='card-orderprocessing-page' style={{background:"white"}}>
             <div style={{color:"white",background:"#303097",padding:'20px',textAlign:'center',borderRadius:'10px'}} className='fs-3'>Intelligent Order Analysis</div>
             <div className='image-crop-orderprocessing mt-2'>
               <img className='avatar-orderprocessing' src='../Assets/intelligentorderanalysis.jpeg' alt='Order Analysis' />
@@ -259,11 +255,10 @@ function Orderprocessing() {
               <p style={{color:"black"}}>The AI-powered order synchronization system utilizes advanced algorithms to analyse order similarities and content item proximities within the warehouse. By understanding the relationships between orders and item locations, the system intelligently synchronizes orders to minimize the number of picklists required.</p>
             </div>
           </div>
-        </div>
+        </Col>
 
-        {/* Card 2 */}
-        <div className='col-md-4 col-sm-12 mb-4'>
-          <div className='card-orderprocessing' style={{background:"white"}}>
+        <Col lg={4}>
+        <div className='card-orderprocessing-page' style={{background:"white"}}>
           <div style={{color:"white",background:"#303097",padding:'20px',textAlign:'center',borderRadius:'10px'}} className='fs-3'>Real-Time Data Integration</div>
             {/* <h5 style={{color:"white",background:"#303097"}}>Real-Time Data Integration</h5> */}
             <div className='image-crop-orderprocessing mt-2'>
@@ -273,11 +268,9 @@ function Orderprocessing() {
               <p style={{color:"black"}}>The system seamlessly integrates with existing warehouse management systems, to receive real-time data on order details, item locations, and availability. This integration ensures accurate and up-to-date information, enabling the system to make informed decisions for order synchronization.</p>
             </div>
           </div>
-        </div>
-
-        {/* Card 3 */}
-        <div className='col-md-4 col-sm-12 mb-4'>
-          <div className='card-orderprocessing' style={{background:"white"}}>
+        </Col>
+        <Col lg={4}>
+        <div className='card-orderprocessing-page' style={{background:"white"}}>
           <div style={{color:"white",background:"#303097",padding:'20px',textAlign:'center',borderRadius:'10px'}} className='fs-3'>Tailored Sync Rules</div>
             {/* <h5 style={{color:"white",background:"#303097",fontSize:"18px"}}>Customizable Synchronization Rules</h5> */}
             <div className='image-crop-orderprocessing mt-2'>
@@ -287,10 +280,24 @@ function Orderprocessing() {
               <p style={{color:"black"}}>The AI-powered order synchronization system considers criteria such as item similarity, item proximity, or order priorities to tailor the synchronization process to their unique needs.</p>
             </div>
           </div>
-        </div>
+    
+        </Col>
+       </Row>
+        
+          
+       
+
+        {/* Card 2 */}
+       
+          
+       
+
+        {/* Card 3 */}
+    
+         
         
       </div>
-    </div>
+
 
 
 

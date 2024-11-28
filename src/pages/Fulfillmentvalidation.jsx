@@ -125,16 +125,9 @@ const handleApora=()=>{
     <div data-aos="fade-up"
     data-aos-anchor-placement="center-center">
       <Helmet>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Revolutionize your warehouse picking process with AI-powered fulfillment validation. Enhance accuracy, efficiency, and customer satisfaction by automating order verification, item inspection, packaging, and labeling checks." />
-        <meta name="keywords" content="AI-powered fulfillment validation, warehouse automation, order verification, item inspection, packaging validation, AI in logistics, fulfillment accuracy, efficiency, customer satisfaction" />
-        <meta name="author" content="Your Company Name" />
-        <meta property="og:title" content="AI-Powered Fulfillment Validation for Warehouse Operations" />
-        <meta property="og:description" content="Boost warehouse efficiency and accuracy with AI-powered fulfillment validation, automating order verification, item inspection, and packaging checks for seamless order fulfillment." />
-        <meta property="og:image" content="https://example.com/your-image.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com/ai-powered-fulfillment-validation" />
-        <title>AI-Powered Fulfillment Validation for Warehouse Operations</title>
+      <title>Warehouse Management: Putaway, Yard & Delivery Efficiency | Apora Fulfillment validation page</title>
+
+        <meta name="description" content="Optimize warehouse operations with advanced inventory, putaway, fulfillment automation, and yard management to enhance efficiency and customer satisfaction." />
       </Helmet>
  <div style={{height:"40vh"}}>
  <div className='starting-picklistgeneration'>

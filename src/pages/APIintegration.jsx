@@ -15,7 +15,7 @@ import { Helmet } from 'react-helmet';
 function APIintegration() {
   const navigate=useNavigate()
 const handleInbountreceipt=()=>{
-  navigate('/inbountreceipt')
+  navigate('/inboundreceipt')
 }
 const handleCrossdocking=()=>{
   navigate('/crossdocking')
@@ -54,16 +54,9 @@ const handlePurveywms=()=>{
   return (
     <div>
        <Helmet>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Unlock the benefits of seamless communication and data exchange with API integration in Purvey WMS. Connect your warehouse management system with ERP, CRM, e-commerce platforms, and third-party logistics providers for real-time data synchronization and enhanced efficiency." />
-        <meta name="keywords" content="API integration, warehouse management system, WMS, real-time data synchronization, ERP integration, CRM integration, e-commerce platforms, third-party logistics" />
-        <meta name="author" content="Purvey WMS" />
-        <meta property="og:title" content="API Integration in PURVEY Warehouse Management System" />
-        <meta property="og:description" content="Enhance connectivity and improve operational efficiency with API integration in Purvey WMS. Streamline your warehouse processes by integrating with ERP, CRM, and other systems for real-time data exchange." />
-        <meta property="og:image" content="https://example.com/your-image.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com/api-integration" />
-        <title>API Integration in PURVEY WMS</title>
+       <title>Warehouse Management: Putaway, Yard & Delivery Efficiency | API Integration</title>
+
+         <meta name="description" content="Optimize warehouse operations with advanced inventory, putaway, fulfillment automation, and yard management to enhance efficiency and customer satisfaction." />
       </Helmet>
       <div style={{height:"40vh"}}>
  <div className='starting-picklistgeneration'>

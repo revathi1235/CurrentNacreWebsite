@@ -64,16 +64,9 @@ function Services() {
   return (
     <div>
        <Helmet>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Revolutionize your e-commerce order fulfillment with API-based integrations. Seamlessly connect online stores with warehouse systems for real-time order synchronization, inventory management, tracking, and improved processing efficiency." />
-        <meta name="keywords" content="e-commerce API integration, order fulfillment, inventory management, real-time synchronization, warehouse integration, order tracking, API for e-commerce, order accuracy, operational efficiency, seamless integration" />
-        <meta name="author" content="Your Company Name" />
-        <meta property="og:title" content="API-Based E-Commerce Integration for Efficient Order Fulfillment" />
-        <meta property="og:description" content="Streamline your e-commerce order fulfillment with API-based integrations. Real-time synchronization, inventory management, and order tracking improve operational efficiency and customer satisfaction." />
-        <meta property="og:image" content="https://example.com/your-image.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com/api-ecommerce-integration" />
-        <title>API-Based E-Commerce Integration for Efficient Order Fulfillment</title>
+       <title>Warehouse Management: Putaway, Yard & Delivery Efficiency | services page</title>
+
+        <meta name="description" content="Optimize warehouse operations with advanced inventory, putaway, fulfillment automation, and yard management to enhance efficiency and customer satisfaction." />
       </Helmet>
       <div className="starting-picklistgeneration  ">
         <h1 className="gradient-text">Services</h1>

@@ -18,7 +18,7 @@ import { faQuoteLeft,faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 function Crossdocking() {
   const navigate=useNavigate()
 const handleInbountreceipt=()=>{
-  navigate('/inbountreceipt')
+  navigate('/inboundreceipt')
 }
 const handleCrossdocking=()=>{
   navigate('/crossdocking')
@@ -54,19 +54,26 @@ const handlePurveywms=()=>{
         const handleRequestdemo=()=>{
             navigate('/contactus')
         }
+        const structuredData = {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "Nacre System",
+          "url": "https://www.nacresys.com/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.nacresys.com/#/crossdocking{customersatisfaction}",
+          }
+        };
   return (
     <div>
       <Helmet>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Efficient order fulfillment is critical to success in today's fast-paced business environment. Cross-docking reduces cycle times by sorting and consolidating goods for direct outbound shipping, improving customer satisfaction." />
-        <meta name="keywords" content="order fulfillment, cross-docking, efficient shipping, logistics, customer satisfaction, order processing, cycle time reduction" />
-        <meta name="author" content="Your Company Name" />
-        <meta property="og:title" content="Efficient Order Fulfillment with Cross-Docking" />
-        <meta property="og:description" content="Improve order fulfillment efficiency and customer satisfaction with cross-docking. Sort and consolidate goods for immediate outbound shipping, reducing cycle times and improving business competitiveness." />
-        <meta property="og:image" content="https://example.com/your-image.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com/order-fulfillment" />
-        <title>Order Fulfillment & Cross-Docking Process</title>
+      <title>Warehouse Management: Putaway, Yard & Delivery Efficiency | cross docking page</title>
+        <meta name="description" content="Optimize warehouse operations with advanced inventory, putaway, fulfillment automation, and yard management to enhance efficiency and customer satisfaction." />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      
+      
       </Helmet>
       <div style={{height:"40vh"}}>
  <div className='starting-picklistgeneration'>
@@ -205,7 +212,7 @@ const handlePurveywms=()=>{
 
   <Row>
     <Col lg={3}>
-    <Card style={{ width: '24rem' }} className='card-crossdocking'>
+    <Card className='card-crossdocking'>
       {/* <Card.Img variant="top" src='../../Assets/seamlessintegration.webp' /> */}
       <Card.Body>
         <Card.Title>Real-Time Tracking and Visibility </Card.Title>
@@ -217,7 +224,7 @@ const handlePurveywms=()=>{
     </Col>
     <Col lg={5}></Col>
     <Col lg={3}>
-    <Card style={{ width: '24rem' }} className='card-crossdocking'>
+    <Card  className='card-crossdocking'>
       {/* <Card.Img variant="top" src='../../Assets/seamlessintegration.webp' /> */}
       <Card.Body>
         <Card.Title>Automated Processing </Card.Title>
@@ -236,7 +243,7 @@ const handlePurveywms=()=>{
   </Row>
   <Row>
     <Col lg={3}>
-    <Card style={{ width: '24rem' }} className='card-crossdocking'>
+    <Card  className='card-crossdocking'>
       {/* <Card.Img variant="top" src='../../Assets/seamlessintegration.webp' /> */}
       <Card.Body>
         <Card.Title>Hybrid Web & Mobile App Solutions </Card.Title>
@@ -248,7 +255,7 @@ const handlePurveywms=()=>{
     </Col>
     <Col lg={5}></Col>
     <Col lg={3}>
-    <Card style={{ width: '24rem' }} className='card-crossdocking'>
+    <Card  className='card-crossdocking'>
       {/* <Card.Img variant="top" src='../../Assets/seamlessintegration.webp' /> */}
       <Card.Body>
         <Card.Title>Built-in Quality Control </Card.Title>

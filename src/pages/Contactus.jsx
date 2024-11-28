@@ -22,7 +22,9 @@ function Contactus() {
 
   const [capValue, setCapvalue] = useState(null);
 
-  const keycaptcha = process.env.REACT_APP_SITE_KEY; //v2 checkbox NacreWebsite
+  const keycaptcha = process.env.REACT_APP_SITE_KEY; 
+
+   //v2 checkbox NacreWebsite
 
 
 
@@ -248,12 +250,12 @@ function Contactus() {
                   </div>
                   <div class="contact-info-text">
                     <h2>address</h2>
-                    <span style={{ color: "grey" }}>
+                    <span style={{ color: "white" }}>
                       <FontAwesomeIcon
                         icon={faLocationDot}
                         style={{ color: "white" }}
                       />{" "}
-                      Malampuzha Rd, Olavakkode,
+                      Malampuzha Rd, 
                       <br />
                       Palakkad Kerala 678002
                     </span>
@@ -275,14 +277,18 @@ function Contactus() {
                         icon={faEnvelope}
                         style={{ color: "white" }}
                       />{" "}
-                      info@nacresys.com
+<a style={{ textDecoration: 'none' }} className="text-white" href="mailto:info@nacresys.com">
+  info@nacresys.com
+</a>                   
                     </span>
                     <span>
                       <FontAwesomeIcon
                         icon={faPhone}
                         style={{ color: "white" }}
                       />{" "}
-                      +91 77367 42072
+                     <a style={{ textDecoration: 'none' }} className="text-white" href="tel:+91 77367 42072">
+                     +91 77367 42072
+</a>
                     </span>
                   </div>
                 </div>
@@ -302,14 +308,20 @@ function Contactus() {
                         icon={faEnvelope}
                         style={{ color: "white" }}
                       />{" "}
+                    
+                      <a style={{ textDecoration: 'none' }} className="text-white" href="mailto:kumar@nacresys.com">
                       kumar@nacresys.com
+</a>
                     </span>
                     <span>
                       <FontAwesomeIcon
                         icon={faPhone}
                         style={{ color: "white" }}
                       />{" "}
+                     
+                      <a style={{ textDecoration: 'none' }} className="text-white" href="tel: +971 56 815 9306">
                       +971 56 815 9306
+</a>
                     </span>
                   </div>
                 </div>
@@ -582,7 +594,7 @@ function Contactus() {
                           value={formData.message}
                           onChange={handleInputChange}
                         /> */}
-                        <FloatingLabel
+                        {/* <FloatingLabel
                           controlId="floatingTextarea2"
                           label="Write Your Message"
                         >
@@ -593,8 +605,17 @@ function Contactus() {
                             onChange={handleInputChange}
                             style={{ height: "100px" }}
                           />
-                        </FloatingLabel>
-
+                        </FloatingLabel> */}
+                        <FloatingLabel controlId="floatingTextarea2" label="Write Your Message">
+        <Form.Control
+           name="message"
+          as="textarea"
+          placeholder="Leave a comment here"
+          value={formData.message}
+          onChange={handleInputChange}
+          style={{ height: '100px' }}
+        />
+      </FloatingLabel>
                         <ReCAPTCHA className="mt-2"
                           ref={recaptcha}
                           sitekey={keycaptcha}

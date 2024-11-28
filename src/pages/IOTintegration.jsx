@@ -15,7 +15,7 @@ import { Helmet } from 'react-helmet';
 function IOTintegration() {
   const navigate=useNavigate()
 const handleInbountreceipt=()=>{
-  navigate('/inbountreceipt')
+  navigate('/inboundreceipt')
 }
 const handleCrossdocking=()=>{
   navigate('/crossdocking')
@@ -54,16 +54,9 @@ const handlePurveywms=()=>{
   return (
     <div>
        <Helmet>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Discover how IoT and API integration in Purvey WMS enhance warehouse operations, enabling automation, real-time data exchange, and connectivity for improved efficiency and accuracy." />
-        <meta name="keywords" content="IoT, API integration, warehouse management system, WMS, real-time data exchange, automation, efficiency, connectivity" />
-        <meta name="author" content="Purvey WMS" />
-        <meta property="og:title" content="IoT and API Integration in PURVEY WMS" />
-        <meta property="og:description" content="Enhance your warehouse operations with IoT and API integration in Purvey WMS, driving automation, real-time data synchronization, and improved efficiency across your supply chain." />
-        <meta property="og:image" content="https://example.com/your-image.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com/iot-api-integration" />
-        <title>IoT and API Integration in PURVEY WMS</title>
+       <title>Warehouse Management: Putaway, Yard & Delivery Efficiency</title>
+
+       <meta name="description" content="Optimize warehouse operations with advanced inventory, putaway, fulfillment automation, and yard management to enhance efficiency and customer satisfaction." />
       </Helmet>
       <div style={{height:"40vh"}}>
  <div className='starting-picklistgeneration'>

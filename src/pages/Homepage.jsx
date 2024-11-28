@@ -140,7 +140,7 @@ function Homepage() {
       </div>
     </div>
         <Nav.Link className="common-nav">Case Studies</Nav.Link>
-        <Nav.Link className="common-nav">Blogs</Nav.Link>
+        <Nav.Link className="common-nav">blog</Nav.Link>
         <Nav.Link className="common-nav">Contact Us</Nav.Link>
       </Nav>
     </Navbar.Collapse>

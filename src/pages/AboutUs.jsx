@@ -10,23 +10,30 @@ import { useNavigate } from 'react-router-dom';
         const handleRequestdemo=()=>{
             navigate('/contactus')
         }
+
+        const structuredData = {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "Nacre System",
+            "url": "https://www.nacresys.com/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.nacresys.com/#/aboutus{warehousemanagement}",
+            }
+          };
     return (
         <div>
          <Helmet>
-        <title>About Nacre System | Leading AI-Powered IT Solutions</title>
+        <title>Warehouse Management: Optimize Yard, Resources, and Delivery Efficiency
+        | about us page
+        </title>
         <meta
           name="description"
-          content="Learn about Nacre System, a leading provider of AI-powered Warehouse Management Systems, E-commerce Fulfilment solutions, and 3PL management. Discover our commitment to innovation and customer success."
+          content="Optimize warehouse operations with advanced inventory, putaway, fulfillment automation, and yard management. Boost customer satisfaction with efficient service and systems."
         />
-        <meta property="og:title" content="About Nacre System" />
-        <meta
-          property="og:description"
-          content="Discover Nacre System's innovative IT solutions, including AI-powered warehouse management and e-commerce fulfilment services. Join us in shaping the future of technology."
-        />
-        <meta property="og:image" content="URL_TO_YOUR_IMAGE" />
-        <meta property="og:url" content="YOUR_WEBSITE_URL/about" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="YOUR_WEBSITE_URL/about" />
+          <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
       </Helmet>
 
             <div className='aboutpage-starting'>

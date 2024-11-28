@@ -127,34 +127,11 @@ const handleApora=()=>{
 
 
       <Helmet>
-        <title>Multi-Channel Integration | APORA Fulfilment Automation</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+        <title>Warehouse Management: Putaway, Yard & Delivery Efficiency | Multichannelintegration page</title>
+       
         {/* Description */}
-        <meta name="description" content="Discover APORA's multi-channel integration solutions for fulfillment automation. Enhance efficiency, accuracy, and customer satisfaction across all sales channels." />
+        <meta name="description" content="Optimize warehouse operations with advanced inventory, putaway, fulfillment automation, and yard management to enhance efficiency and customer satisfaction." />
 
-        {/* Keywords */}
-        <meta name="keywords" content="APORA, fulfillment automation, multi-channel integration, order processing, efficiency, accuracy, resource utilization, e-commerce, inventory management" />
-
-        {/* Author */}
-        <meta name="author" content="Your Name or Company Name" />
-
-        {/* Open Graph Tags for Social Media Sharing */}
-        <meta property="og:title" content="Multi-Channel Integration | APORA Fulfilment Automation" />
-        <meta property="og:description" content="Enhance your business operations with APORA's cutting-edge multi-channel integration for fulfillment automation." />
-        <meta property="og:image" content="URL_to_your_image" /> {/* Replace with the actual image URL */}
-        <meta property="og:url" content="URL_to_your_page" /> {/* Replace with the actual URL of the page */}
-        <meta property="og:type" content="website" />
-
-        {/* Twitter Card Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Multi-Channel Integration | APORA Fulfilment Automation" />
-        <meta name="twitter:description" content="Discover how APORA's multi-channel integration can transform your fulfillment processes." />
-        <meta name="twitter:image" content="URL_to_your_image" /> {/* Replace with the actual image URL */}
-
-        {/* Favicon */}
-        <link rel="icon" href="path_to_your_favicon.ico" type="image/x-icon" /> {/* Replace with the actual path to your favicon */}
       </Helmet>
 
 
@@ -276,7 +253,7 @@ const handleApora=()=>{
   Multi-channel integration is the key to providing this seamless experience. It allows businesses to connect their various sales channels to a single fulfilment system. This ensures that inventory levels are always up-to-date and that orders can be picked and packed quickly and  efficiently.<FontAwesomeIcon icon={faQuoteRight} style={{color:'blue',fontSize:"30px"}}/></p>
 </div> */}
 {/* </div> */}
-<div style={{height:'10vh'}} className='mob-multi-space'></div>
+<div style={{height:'10vh'}} className='mob-multi-space-new'></div>
 
    {/* <div className='firstdiv-multichannelintegration ' >
    <div className="multichannelintegration-image">
