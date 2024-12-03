@@ -4772,3 +4772,8 @@ background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
     margin-top:2300px;
   }
 }
+.subheading-dms{
+  font-size: 30px;
+    margin-top: 50px;
+    font-family: pirulen;
+}

@@ -352,7 +352,7 @@ function Deliverymanagementsystem() {
 
             <div className='valuedelivered-section-inbountreceipt'>
   <div className='value-del-aporafulfillment'>
-    <h1 style={{fontSize:"30px",marginTop:"50px",fontFamily:'pirulen'}}>Key Benefits of Route Optimization
+    <h1  className="subheading-dms">Key Benefits of Route Optimization
     </h1>
     </div>
     <div class="container-inbountreceipt mt-5">

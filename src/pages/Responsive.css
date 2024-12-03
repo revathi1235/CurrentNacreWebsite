@@ -1379,16 +1379,33 @@ margin-top: 20px;
     width: 100%; /* Take full width */
     margin-top: 300px; /* Adjust padding for smaller screens */
   }
-  .seconddiv-workforcemanagement-yardmanagement{
+  /* .seconddiv-workforcemanagement-yardmanagement{
     margin-top: 500px;
-  }
-  .deliverymanagement-system-seconddiv{
+  } */
+  /* .deliverymanagement-system-seconddiv{
     margin-top: 500px;
-  }
+  } */
   .common-font-family-heading{
     font-size: 16px;
   }
- 
+ .subheading-dms{
+  font-size: 20px;
+    margin-top: 50px;
+    font-family: pirulen;
+ }
+ .footer-widget-heading-h3 h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 292px;
+  background: linear-gradient(to left, green, blue);
+}
+.article-one{
+  width: 320px;
+  /* overflow-x: hidden; */
+}
 } 
 
 
@@ -1440,7 +1457,7 @@ margin-top: 20px;
     height: auto; /* Allow the container to adjust to content */
     padding: 5px;
     gap: 5px;
-    margin-top: 447px;
+    /* margin-top: 447px; */
   }
 
   .multi-img-div,

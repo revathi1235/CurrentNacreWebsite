@@ -217,7 +217,7 @@
       left: 1rem;
     }
     .title-homepage-h3{
-      width: 100%;
+      width: 150px;
       font-size: 14px;
      } 
     .content-homepage .title-homepage {
@@ -267,7 +267,8 @@
     }
   
     .content-homepage .description-homepage {
-      font-size: 0.4rem;
+      font-size: 8px;
+      width: 100px;
       
     }
   .description-homepage{

@@ -38,7 +38,7 @@ function Articles() {
           </Col>
           <Col lg={2}></Col>
           <Col lg={5}>
-          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7198559254495059969" height="838" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          <iframe className='article-one' src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7198559254495059969" height="838" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
           </Col>
         </Row>
        </Container>
@@ -46,11 +46,11 @@ function Articles() {
        <Container >
         <Row>
           <Col lg={5}>
-          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7145307059549290496" height="865" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          <iframe className='article-one' src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7145307059549290496" height="865" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
           </Col>
           <Col lg={2}></Col>
           <Col lg={5}>
-          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7114572055873785856" height="865" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          <iframe className='article-one' src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7114572055873785856" height="865" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
           </Col>
         </Row>
        </Container>
@@ -60,47 +60,16 @@ function Articles() {
        <Container >
         <Row>
           <Col lg={5}>
-          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7094636868473917441" height="912" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          <iframe className='article-one' src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7094636868473917441" height="912" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
           </Col>
           <Col lg={2}></Col>
           <Col lg={5}>
-          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7084059403984793600" height="835" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          <iframe className='article-one' src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7084059403984793600" height="835" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
           </Col>
         </Row>
        </Container>
 
 
-
-
-
-
-
-
-
-       <Container >
-        <Row>
-          <Col lg={5}>
-          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7090205460896624640" height="735" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>          </Col>
-          <Col lg={2}></Col>
-          <Col lg={5}>
-          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7081568169663889408" height="745" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>          </Col>
-        </Row>
-       </Container>
-
-
-
-
-
-
-       <Container >
-        <Row>
-          <Col lg={5}>
-          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7076905190984994816" height="876" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>          </Col>
-          <Col lg={2}></Col>
-          <Col lg={5}>
-          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7073925218993405952" height="797" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>          </Col>
-        </Row>
-       </Container>
 
 
 
@@ -111,7 +80,38 @@ function Articles() {
        <Container >
         <Row>
           <Col lg={5}>
-          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7066282555775340544" height="801" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>          </Col>
+          <iframe className='article-one' src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7090205460896624640" height="735" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>          </Col>
+          <Col lg={2}></Col>
+          <Col lg={5}>
+          <iframe className='article-one' src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7081568169663889408" height="745" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>          </Col>
+        </Row>
+       </Container>
+
+
+
+
+
+
+       <Container >
+        <Row>
+          <Col lg={5}>
+          <iframe className='article-one' src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7076905190984994816" height="876" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>          </Col>
+          <Col lg={2}></Col>
+          <Col lg={5}>
+          <iframe className='article-one' src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7073925218993405952" height="797" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>          </Col>
+        </Row>
+       </Container>
+
+
+
+
+
+
+
+       <Container >
+        <Row>
+          <Col lg={5}>
+          <iframe className='article-one' src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7066282555775340544" height="801" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>          </Col>
           <Col lg={2}></Col>
           <Col lg={5}>
           
