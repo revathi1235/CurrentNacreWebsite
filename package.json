@@ -1,4 +1,5 @@
 {
+  "homepage": "https://revathi1235.github.io/currentNacreWebsite",
   "name": "mywebsite",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +14,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
+    "gh-pages": "^6.2.0",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.5",
     "react-dom": "^18.3.1",
@@ -29,6 +31,8 @@
   },
   "scripts": {
     "start": "react-scripts start --host 0.0.0.0",
+    "preploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
